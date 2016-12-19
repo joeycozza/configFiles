@@ -1,0 +1,13 @@
+Surround
+	cs'" - change surrounding single quote to double quote
+	ds" - delete surrounding double quote
+  ysiw" - yank surrounding inner word wrap it in double quote
+
+Remapping
+  ;; - put semicolon on end of line
+
+File Finding
+  <spc>f - Open Fuzzy File Finder
+  <tab> - switch between open buffers
+  <ctrl>n - Open Nerd Tree of Left at root of git directory
+	
