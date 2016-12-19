@@ -1,16 +1,26 @@
 call plug#begin('~/.vim/plugged')
-
+  
 Plug 'myusuf3/numbers.vim'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
-
-
+Plug 'vim-syntastic/syntastic'
+Plug 'moll/vim-node'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
+"-----------------------------------------------
+" --------------Remapping Keys------------------
+"  ---------------------------------------------
+
+nnoremap ;; A;<Esc>
+
+"  ---------------------------------------------
+"  -------------End Remapping Keys--------------
+"  ---------------------------------------------
 
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
@@ -37,6 +47,13 @@ set nowrap                      " Don't wrap long lines Don't
 set nocursorcolumn
 set cursorline
 let mapleader=' '
+
+" indenting http://tedlogan.com/techblog3.html
+set autoindent 
+set expandtab "hitting tab insert spaces instead of <Tab>
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 syntax on
 colorscheme gruvbox
@@ -120,5 +137,30 @@ endfunction
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 let g:airline#extensions#tabline#enabled=1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
+"************************************************************************************************
+"**************END PLUGIN SETTINGS***************************************************************
+"************************************************************************************************
 
 
