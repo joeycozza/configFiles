@@ -11,3 +11,13 @@ File Finding
   <tab> - switch between open buffers
   <ctrl>n - Open Nerd Tree of Left at root of git directory
 	
+Tern
+  :TernRename 
+  :TernDef
+  :TernRefs
+
+Bookmarking
+  mLOWERCHAR - mark a line for the file
+  mUPPERCHAR - mark a file for bookmarking
+  'LOWERCHAR - go to local bookmark
+  'UPPERCHAR - go to global bookmark

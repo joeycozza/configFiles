@@ -9,19 +9,16 @@ Plug 'bling/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'moll/vim-node'
 Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'othree/yajs.vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'mxw/vim-jsx'
+Plug 'Shougo/deoplete.nvim'
+Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
+Plug 'ervandew/supertab'
 
 call plug#end()
-
-"-----------------------------------------------
-" --------------Remapping Keys------------------
-"  ---------------------------------------------
-
-nnoremap ;; A;<Esc>
-
-"  ---------------------------------------------
-"  -------------End Remapping Keys--------------
-"  ---------------------------------------------
-
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
@@ -61,6 +58,27 @@ set background=dark
 
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
+
+"-----------------------------------------------
+" --------------Remapping Keys------------------
+"  ---------------------------------------------
+
+nnoremap ;; A;<Esc>
+
+" vimrc edit and source
+nnoremap <Leader>ev :e $MYVIMRC<cr>
+nnoremap <Leader>sv :source $MYVIMRC<cr>
+
+
+" use tab to forward cycle
+inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" use tab to backward cycle
+inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
+
+"  ---------------------------------------------
+"  -------------End Remapping Keys--------------
+"  ---------------------------------------------
+
 
 
 " -----------------------------------------------------
@@ -158,6 +176,12 @@ highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
+
+let g:used_javascript_libs = 'underscore,react,chai'
+let g:deoplete#enable_at_startup = 1
+
+
+let g:SuperTabDefaultCompletionType = '<C-j>'
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
