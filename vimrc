@@ -6,7 +6,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
-Plug 'vim-syntastic/syntastic'
 Plug 'moll/vim-node'
 Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
@@ -36,7 +35,7 @@ set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 " -----------------------------------------------------
 set backspace=indent,eol,start  " Backspace for dummies
 set linespace=0                 " No extra spaces between rows
-set nu				"putting line numbers on in insert mode"
+set nu				                  "putting line numbers on in insert mode"
 
 set scrolljump=1                " Lines to scroll when cursor leaves screen
 set scrolloff=10                 " Minimum lines to keep above and below cursor
@@ -64,6 +63,15 @@ noremap <S-tab> :bp<CR>
 "  ---------------------------------------------
 
 nnoremap ;; A;<Esc>
+nnoremap <c-k> dd<Up><Up>p 
+nnoremap <c-j> ddp
+
+inoremap jk <Esc>:w<Enter>
+inoremap <c-h> <Left>
+inoremap <c-l> <Right>
+inoremap <c-j> <Down>
+inoremap <c-k> <Up>
+
 
 " vimrc edit and source
 nnoremap <Leader>ev :e $MYVIMRC<cr>
@@ -156,35 +164,14 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 let g:airline#extensions#tabline#enabled=1
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-
-let g:syntastic_error_symbol = '❌'
-let g:syntastic_style_error_symbol = '⁉️'
-let g:syntastic_warning_symbol = '⚠️'
-let g:syntastic_style_warning_symbol = '💩'
-
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
-
 let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
 
 
 let g:SuperTabDefaultCompletionType = '<C-j>'
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
-
 
