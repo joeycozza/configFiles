@@ -9,6 +9,7 @@ Remapping
 File Finding
   <spc>f - Open Fuzzy File Finder
   <tab> - switch between open buffers
+  <Leader>d - close current buffer
   <ctrl>n - Open Nerd Tree of Left at root of git directory
 	
 Tern

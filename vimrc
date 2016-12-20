@@ -58,13 +58,18 @@ set background=dark
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
 
+set hidden "switch buffers without saving
+
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
+nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit and source
+nnoremap <Leader>sv :source $MYVIMRC<cr>
 nnoremap ;; A;<Esc>
 nnoremap <c-k> dd<Up><Up>p 
 nnoremap <c-j> ddp
+nnoremap <Leader>d :bd<Enter>
 
 inoremap jk <Esc>:w<Enter>
 inoremap <c-h> <Left>
@@ -73,9 +78,6 @@ inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 
 
-" vimrc edit and source
-nnoremap <Leader>ev :e $MYVIMRC<cr>
-nnoremap <Leader>sv :source $MYVIMRC<cr>
 
 
 " use tab to forward cycle
