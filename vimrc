@@ -16,8 +16,10 @@ Plug 'mxw/vim-jsx'
 Plug 'Shougo/deoplete.nvim'
 Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
 Plug 'ervandew/supertab'
+Plug 'benekastah/neomake'
 
 call plug#end()
+
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
@@ -29,6 +31,10 @@ set iskeyword-=-                " '-' is an end of word designator
 set laststatus=2                " Always show the status bar / Airline
 
 set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
+
+set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold smarter
+set nofoldenable " when opening a file, dont start with any folding
+set foldnestmax=20
 
 " -----------------------------------------------------
 " Displaying text
@@ -77,7 +83,8 @@ inoremap <c-l> <Right>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 
-
+nnoremap <Space>= za
+nnoremap <Space>- zc
 
 
 " use tab to forward cycle
@@ -173,7 +180,17 @@ let g:deoplete#enable_at_startup = 1
 let g:SuperTabDefaultCompletionType = '<C-j>'
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
+let g:neomake_javascript_enabled_makers = ['eslint']
+autocmd! BufWritePost * Neomake
+let g:neomake_open_list = 2
+
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
 
+function! EslintFix()
+   let l:winview = winsaveview()
+   silent !eslint --fix %
+   call winrestview(l:winview)
+endfunction
+command! EslintFix :call EslintFix()

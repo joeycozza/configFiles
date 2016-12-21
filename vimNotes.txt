@@ -22,3 +22,7 @@ Bookmarking
   mUPPERCHAR - mark a file for bookmarking
   'LOWERCHAR - go to local bookmark
   'UPPERCHAR - go to global bookmark
+
+Code Folding
+  <Space>= - to toggle or especially open the fold
+  <Space>- - to fold where the cursor is. Can be used multiple times
