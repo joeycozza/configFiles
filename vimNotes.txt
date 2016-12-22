@@ -26,3 +26,10 @@ Bookmarking
 Code Folding
   <Space>= - to toggle or especially open the fold
   <Space>- - to fold where the cursor is. Can be used multiple times
+
+Macros
+  q<REGISTER> - start recording the entire macro
+  q again to stop recording 
+  @<REGISTER> - execute the macro
+  <number>@<REGISTER> - execute the macro <number> of times
+  @@ - execute the last executed macro again
