@@ -18,6 +18,7 @@ Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
 Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
 Plug 'SirVer/ultisnips'
+Plug 'junegunn/vim-easy-align'
 
 call plug#end()
 
@@ -71,10 +72,10 @@ set hidden "switch buffers without saving
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
-nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit 
+nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
 nnoremap ;; A;<Esc>
-nnoremap <c-k> dd<Up><Up>p 
+nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 nnoremap <Leader>d :bd<Enter>
 
@@ -88,10 +89,14 @@ nnoremap <Space>= za
 nnoremap <Space>- zc
 
 
+nnoremap <silent> <c-c> :<C-u>nohlsearch<cr><c-l>
+
 " use tab to forward cycle
 inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " use tab to backward cycle
 inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
+
+vmap     <Enter> <Plug>(EasyAlign) " align when in visual mode
 
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
