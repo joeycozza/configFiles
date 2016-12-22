@@ -17,6 +17,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
 Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -70,8 +71,8 @@ set hidden "switch buffers without saving
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
-nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit and source
-nnoremap <Leader>sv :source $MYVIMRC<cr>
+nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit 
+nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
 nnoremap ;; A;<Esc>
 nnoremap <c-k> dd<Up><Up>p 
 nnoremap <c-j> ddp
@@ -183,6 +184,14 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 let g:neomake_javascript_enabled_makers = ['eslint']
 autocmd! BufWritePost * Neomake
 let g:neomake_open_list = 2
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsListSnippets = "<c-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
+
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
