@@ -23,8 +23,6 @@ Plug 'wikitopian/hardmode'
 
 call plug#end()
 
-set nocompatible
-
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
