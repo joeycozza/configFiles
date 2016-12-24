@@ -19,8 +19,11 @@ Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/vim-easy-align'
+Plug 'wikitopian/hardmode'
 
 call plug#end()
+
+set nocompatible
 
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
@@ -71,6 +74,7 @@ set hidden "switch buffers without saving
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
