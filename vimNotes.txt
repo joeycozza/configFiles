@@ -33,3 +33,8 @@ Macros
   @<REGISTER> - execute the macro
   <number>@<REGISTER> - execute the macro <number> of times
   @@ - execute the last executed macro again
+
+Commenting
+ <Leader>c<Space> - toggle comment
+ <Leader>cc - comment line
+

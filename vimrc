@@ -21,6 +21,7 @@ Plug 'SirVer/ultisnips'
 Plug 'junegunn/vim-easy-align'
 Plug 'wikitopian/hardmode'
 Plug 'fatih/vim-go'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
