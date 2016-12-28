@@ -20,6 +20,7 @@ Plug 'benekastah/neomake'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/vim-easy-align'
 Plug 'wikitopian/hardmode'
+Plug 'fatih/vim-go'
 
 call plug#end()
 
@@ -199,7 +200,9 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 
-
+let g:go_fmt_command = "goimports"
+nmap <Leader>b :GoBuild<cr>
+nmap <Leader>r :GoRun<cr>
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
