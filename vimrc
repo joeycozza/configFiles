@@ -89,8 +89,8 @@ inoremap <c-l> <Right>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 
-nnoremap <Space>= za
-nnoremap <Space>- zc
+nnoremap <Leader>= za
+nnoremap <Leader>- zc
 
 
 nnoremap <silent> <c-c> :<C-u>nohlsearch<cr><c-l>
