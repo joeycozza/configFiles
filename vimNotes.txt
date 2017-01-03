@@ -34,11 +34,18 @@ Macros
   <number>@<REGISTER> - execute the macro <number> of times
   @@ - execute the last executed macro again
 
+Git Stuffs
+  <Leader>hs - Stage Hunk to be committed
+  <Leader>hu - Undo changes of current hunk
+  
+
 Commenting
  <Leader>c<Space> - toggle comment
  <Leader>cc - comment line
 
 Movement
+  [c    - Next Changed Hunk (git-gutter)
+  ]c    - Prev Changed Hunk (git-gutter)
   <c-u> - Page Up half page
   <c-d> - Page Down half page
   H     - Cursor at Head
