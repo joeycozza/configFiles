@@ -38,3 +38,14 @@ Commenting
  <Leader>c<Space> - toggle comment
  <Leader>cc - comment line
 
+Movement
+  <c-u> - Page Up half page
+  <c-d> - Page Down half page
+  H     - Cursor at Head
+  M     - Cursor at Middle
+  L     - Cursor at Last
+  *     - creates a search based on word under cursor. Use n/N to cycle through
+  #     - same as * but backwards searching
+  g*    - creates a more fuzzy search based on word under cursor. 
+  g#    - same as g* but backwards searching
+
