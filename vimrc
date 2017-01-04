@@ -28,6 +28,10 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+let mapleader=' '
+let @f = 'diwdf(f)xa=> jk' 
+let @g = 'diwxf)a =>jk' 
+
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
@@ -46,6 +50,10 @@ set foldnestmax=20
 
 set updatetime=250
 set noswapfile
+
+set hidden "switch buffers without saving
+set showcmd "show as commands are being typed
+
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
@@ -58,7 +66,6 @@ set scrolloff=10                 " Minimum lines to keep above and below cursor
 set nowrap                      " Don't wrap long lines Don't
 set nocursorcolumn
 set cursorline
-let mapleader=' '
 
 " indenting http://tedlogan.com/techblog3.html
 set autoindent 
@@ -72,7 +79,6 @@ colorscheme gruvbox
 set background=dark
 
 
-set hidden "switch buffers without saving
 
 "-----------------------------------------------
 " --------------Remapping Keys------------------
