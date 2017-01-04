@@ -5,7 +5,8 @@ Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'moll/vim-node'
 Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
@@ -22,6 +23,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'wikitopian/hardmode'
 Plug 'fatih/vim-go'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -41,6 +44,8 @@ set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold sma
 set nofoldenable " when opening a file, dont start with any folding
 set foldnestmax=20
 
+set updatetime=250
+set noswapfile
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
@@ -66,8 +71,6 @@ syntax on
 colorscheme gruvbox
 set background=dark
 
-noremap <tab> :bn<CR>
-noremap <S-tab> :bp<CR>
 
 set hidden "switch buffers without saving
 
@@ -102,6 +105,17 @@ inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
 
 vmap     <Enter> <Plug>(EasyAlign) " align when in visual mode
 
+"Fugitive remappings for ease of use
+nnoremap <Leader>gs :Gstatus<Enter>
+nnoremap <Leader>gc :Gcommit<Enter>
+nnoremap <Leader>gd :Gdiff<Enter>
+nnoremap <Leader>gb :Gblame<Enter>
+nnoremap <Leader>gl :Glog<Enter>
+nnoremap <Leader>gp :Gpush<Enter>
+
+"tab and shift tab for moving between buffers
+noremap <tab> :bn<CR>
+noremap <S-tab> :bp<CR>
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
@@ -183,6 +197,7 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 let g:airline#extensions#tabline#enabled=1
 
+
 let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
 
@@ -204,6 +219,8 @@ let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 let g:go_fmt_command = "goimports"
 nmap <Leader>b :GoBuild<cr>
 nmap <Leader>r :GoRun<cr>
+
+let g:airline_theme='simple'
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
