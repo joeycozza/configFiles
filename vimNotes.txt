@@ -1,3 +1,9 @@
+Code Searching Global
+  <Leader><Leader>/ - sets up ag for a search of the word/s underneath
+  <ctrl>ww          - moves cursor to next buffer
+  <Left> and <Right>- traverse the list and open new buffer
+                    - If cursor is down there, use j/k and <Enter> to pick and choose 
+
 Surround
 	cs'" - change surrounding single quote to double quote
 	ds" - delete surrounding double quote
@@ -38,7 +44,6 @@ Git Stuffs
   <Leader>hs - Stage Hunk to be committed
   <Leader>hu - Undo changes of current hunk
   
-
 Commenting
  <Leader>c<Space> - toggle comment
  <Leader>cc - comment line

@@ -25,13 +25,16 @@ Plug 'fatih/vim-go'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
+Plug 'rking/ag.vim'
 
 call plug#end()
 
 let mapleader=' '
-let @f = 'diwdf(f)xa=> jk' 
-let @g = 'diwxf)a =>jk' 
-
+"///////////////////Defaulting Registers////////////////////////////////////
+let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
+let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
+"///////////////////////End Defaulting Registers/////////////////////////////
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
@@ -78,7 +81,7 @@ syntax on
 colorscheme gruvbox
 set background=dark
 
-
+set clipboard=unnamed "copy to system clipboard
 
 "-----------------------------------------------
 " --------------Remapping Keys------------------
@@ -122,6 +125,18 @@ nnoremap <Leader>gp :Gpush<Enter>
 "tab and shift tab for moving between buffers
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
+
+" Find project wide
+nnoremap <Leader><Leader>/ :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
+vnoremap <Leader><Leader>/ "hy:ProjectRootExe Ag<space><C-r>h<space>
+
+" Quick fix file navigation
+nmap <silent> <RIGHT> :cnext<CR>
+nmap <silent> <LEFT> :cprev<CR>
+
+"Clear search highlighting and redraw the screen
+nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
+
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
