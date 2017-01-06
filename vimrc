@@ -27,6 +27,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'rking/ag.vim'
+Plug 'yuttie/comfortable-motion.vim'
+
+
 
 call plug#end()
 
