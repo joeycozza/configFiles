@@ -28,8 +28,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
-
-
+Plug 'flowtype/vim-flow'
 
 call plug#end()
 
@@ -164,7 +163,7 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 " FZF customizations" 
 " This is the default extra key bindings
-let $FZF_DEFAULT_COMMAND='ag -g ""'
+let $FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
