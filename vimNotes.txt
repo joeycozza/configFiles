@@ -13,7 +13,7 @@ Remapping
   ;; - put semicolon on end of line
 
 File Finding
-  <spc>f - Open Fuzzy File Finder
+  <Leader>f - Open Fuzzy File Finder
   <tab> - switch between open buffers
   <Leader>d - close current buffer
   <ctrl>n - Open Nerd Tree of Left at root of git directory
@@ -45,8 +45,10 @@ Git Stuffs
   <Leader>hu - Undo changes of current hunk
   
 Commenting
- <Leader>c<Space> - toggle comment
- <Leader>cc - comment line
+  gc - comment verb  Use it with motions or counts to use it well
+  gcc - comment line
+  gcap - comment a paragraph
+  <VISUAL>gc - comment highlighted stuff
 
 Movement
   [c    - Next Changed Hunk (git-gutter)
