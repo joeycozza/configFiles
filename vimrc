@@ -31,6 +31,7 @@ Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'flowtype/vim-flow'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -95,6 +96,7 @@ nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
 nnoremap ;; A;<Esc>
+nnoremap ,, A,<Esc>
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 nnoremap <Leader>d :bd<Enter>
@@ -246,6 +248,10 @@ nmap <Leader>b :GoBuild<cr>
 nmap <Leader>r :GoRun<cr>
 
 let g:airline_theme='simple'
+
+let g:flow#autoclose=1
+let g:flow#timeout=4
+
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
