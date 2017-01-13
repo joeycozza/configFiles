@@ -30,7 +30,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
-Plug 'flowtype/vim-flow'
 Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
@@ -147,7 +146,7 @@ nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l>
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
 
-
+autocmd FileType javascript let &formatprg='prettier --stdin --single-quote --print-width=120'
 
 " -----------------------------------------------------
 " PLugin settings
@@ -249,8 +248,11 @@ nmap <Leader>r :GoRun<cr>
 
 let g:airline_theme='simple'
 
-let g:flow#autoclose=1
-let g:flow#timeout=4
+" let g:flow#autoclose=1
+" let g:flow#timeout=4
+
+nmap <Leader>hn <Plug>GitGutterNextHunk
+nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
