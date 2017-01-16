@@ -62,4 +62,5 @@ Movement
   #     - same as * but backwards searching
   g*    - creates a more fuzzy search based on word under cursor. 
   g#    - same as g* but backwards searching
+  ''    - go to previous location!!!!
 

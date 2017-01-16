@@ -15,7 +15,6 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mxw/vim-jsx'
 Plug 'Shougo/deoplete.nvim'
 Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
-Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/vim-easy-align'
@@ -228,7 +227,6 @@ let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
 
 
-let g:SuperTabDefaultCompletionType = '<C-j>'
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 let g:neomake_javascript_enabled_makers = ['eslint']
