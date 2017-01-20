@@ -112,9 +112,9 @@ nnoremap <Leader>- zc
 nnoremap <silent> <c-c> :<C-u>nohlsearch<cr><c-l>
 
 " use tab to forward cycle
-inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " use tab to backward cycle
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
+" inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
 
 vmap     <Enter> <Plug>(EasyAlign) " align when in visual mode
 
@@ -133,6 +133,7 @@ noremap <S-tab> :bp<CR>
 " Find project wide
 nnoremap <Leader><Leader>/ :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
 vnoremap <Leader><Leader>/ "hy:ProjectRootExe Ag<space><C-r>h<space>
+let g:ag_highlight=1
 
 " Quick fix file navigation
 nmap <silent> <RIGHT> :cnext<CR>
@@ -165,11 +166,8 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 " FZF customizations" 
 " This is the default extra key bindings
-let $FZF_DEFAULT_COMMAND='ag --hidden -g ""'
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
+let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 
 " Default fzf layout
 " - down / up / left / right
@@ -222,10 +220,8 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 let g:airline#extensions#tabline#enabled=1
 
-
 let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
-
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
