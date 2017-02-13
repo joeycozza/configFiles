@@ -60,6 +60,9 @@ set noswapfile
 set hidden "switch buffers without saving
 set showcmd "show as commands are being typed
 
+set suffixesadd+=.js
+set path+=$PWD/node_modules
+
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
@@ -116,7 +119,7 @@ nnoremap <silent> <c-c> :<C-u>nohlsearch<cr><c-l>
 " use tab to backward cycle
 " inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
 
-vmap     <Enter> <Plug>(EasyAlign) " align when in visual mode
+xmap <Enter> <Plug>(EasyAlign)
 
 "Fugitive remappings for ease of use
 nnoremap <Leader>gs :Gstatus<Enter>
@@ -247,6 +250,9 @@ let g:airline_theme='simple'
 
 nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
+
+" Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
+let g:javascript_opfirst = 1
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************

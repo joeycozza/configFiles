@@ -1,0 +1,1 @@
+- Delete 2 tables on the live database because I thought I was on local.
