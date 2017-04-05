@@ -11,6 +11,7 @@ Surround
 
 Remapping
   ;; - put semicolon on end of line
+  ,, - put comma on the end of the line
 
 File Finding
   <Leader>f - Open Fuzzy File Finder
@@ -32,6 +33,7 @@ Bookmarking
 Code Folding
   <Space>= - to toggle or especially open the fold
   <Space>- - to fold where the cursor is. Can be used multiple times
+  zR       - unfold all folds in current buffer
 
 Macros
   q<REGISTER> - start recording the entire macro
@@ -43,6 +45,7 @@ Macros
 Git Stuffs
   <Leader>hs - Stage Hunk to be committed
   <Leader>hu - Undo changes of current hunk
+  <Leader>hn - jump to next hunk
   
 Commenting
   gc - comment verb  Use it with motions or counts to use it well
@@ -63,4 +66,5 @@ Movement
   g*    - creates a more fuzzy search based on word under cursor. 
   g#    - same as g* but backwards searching
   ''    - go to previous location!!!!
+  %     - go to matching brace
 

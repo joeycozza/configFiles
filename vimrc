@@ -30,6 +30,7 @@ Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'flowtype/vim-flow'
 
 call plug#end()
 
@@ -62,6 +63,7 @@ set showcmd "show as commands are being typed
 
 set suffixesadd+=.js
 set path+=$PWD/node_modules
+set inccommand=nosplit
 
 " -----------------------------------------------------
 " Displaying text
@@ -101,6 +103,7 @@ nnoremap ,, A,<Esc>
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 nnoremap <Leader>d :bd<Enter>
+nnoremap <Leader><Leader>d :bd!<Enter>
 
 inoremap jk <Esc>:w<Enter>
 inoremap <c-h> <Left>
@@ -145,6 +148,23 @@ nmap <silent> <LEFT> :cprev<CR>
 "Clear search highlighting and redraw the screen
 nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
 
+" neomake
+nmap <Leader><Space>o :lopen<CR>                          " open location window
+nmap <Leader><Space>c :lclose<CR>:EslintFix<CR>:e<CR>:w<CR>     " close location window
+nmap <Leader><Space>, :ll<CR>                             " go to current error/warning
+nmap <Leader><Space>n :lnext<CR>                          " next error/warning
+nmap <Leader><Space>p :lprev<CR>                          " previous error/warning
+
+" Format json
+nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
+vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
+nmap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p<Leader><Leader>j
+
+" repeat last replacement of a word
+nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
+" leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
+nmap <Leader>a vip<Enter>=
+
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
@@ -159,7 +179,7 @@ map <C-n> :exe 'NERDTreeToggle ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
 
 let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\~$', '\.swp$', '^\.git$','^node_modules$', '^\.DS_Store$']
+let NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
 let NERDTreeChDirMode=0
 let NERDTreeQuitOnOpen=1
 let NERDTreeMouseMode=2
@@ -245,10 +265,25 @@ nmap <Leader>r :GoRun<cr>
 
 let g:airline_theme='simple'
 
-" let g:flow#autoclose=1
-" let g:flow#timeout=4
+let g:flow#autoclose=1
+let g:flow#timeout=4
+let g:javascript_plugin_flow=1
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_null                 = "ø"
+let g:javascript_conceal_this                 = "@"
+let g:javascript_conceal_return               = "⇚"
+let g:javascript_conceal_undefined            = "¿"
+let g:javascript_conceal_NaN                  = "ℕ"
+let g:javascript_conceal_prototype            = "¶"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_arrow_function       = "⇒"
+let g:javascript_conceal_noarg_arrow_function = "🞅"
+let g:javascript_conceal_underscore_arrow_function = "🞅"
 
-nmap <Leader>hn <Plug>GitGutterNextHunk
+map <leader>c :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
+
+map <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 " Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
@@ -264,3 +299,5 @@ function! EslintFix()
    call winrestview(l:winview)
 endfunction
 command! EslintFix :call EslintFix()
+
+
