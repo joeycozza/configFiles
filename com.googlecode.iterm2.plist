@@ -182,13 +182,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>-925 1039 606 456 -1194 900 1920 1057 </string>
+	<string>171 97 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-722 1097 918 495 -1194 900 1920 1057 </string>
+	<string>235 322 1018 447 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>881 1373 592 584 726 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1194 921 1914 1035 -1194 900 1920 1057 </string>
+	<string>-254 906 1914 1051 -254 900 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-921 914 650 427 -1194 900 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -6494,18 +6494,30 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncConfirmShellIntegrationCommand</key>
+	<true/>
+	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
+	<integer>0</integer>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
+	<key>NoSyncInstallUtilitiesPackage</key>
+	<true/>
+	<key>NoSyncInstallUtilitiesPackage_selection</key>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
 	<string>E5D14FDA-914F-4B1F-86F5-7A2A80D0D9B0</string>
 	<key>NoSyncLastTipTime</key>
-	<real>510074153.72161502</real>
+	<real>514907397.48610401</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>506973496.67393398</real>
 	<key>NoSyncTipsToNotShow</key>
@@ -6537,6 +6549,46 @@
 		<string>0023</string>
 		<string>0024</string>
 		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -6590,9 +6642,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-03-01T14:45:47Z</date>
+	<date>2017-05-01T03:54:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.26766826923076925</real>
 	<key>TabStyle</key>
@@ -18427,7 +18481,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.0.15</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

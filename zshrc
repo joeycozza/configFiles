@@ -14,28 +14,19 @@ ZSH_THEME="garyblessington"
 plugins=(git brew colorize node npm k)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/lib/zsh/antigen.zsh
+source <(antibody init)
 
-antigen bundle rimraf/k
-antigen bundle caarlos0/zsh-open-pr
-antigen apply
+antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 
 # User configuration
 
 export PATH="/Users/joeycozza/nim/bin:/Users/joeycozza/.nvm/v0.10.32/bin:/usr/local:/usr/local/sbin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/tools:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin"
-
-export ANDROID_HOME=~/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export EDITOR="nvim"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias wun="gulp watch"
 alias gun="gulp run"
 alias pr="open-pr develop"
@@ -46,12 +37,20 @@ alias cleanmods="clean && mods"
 alias p="ps -A | peco"
 alias up="git hf update"
 alias ppp="ggpush && pr"
-alias v="nvim"
-alias go="cd ~/Documents/workspace/go/src/github.com/joeycozza/"
+alias iso="cd ~/modulesGrow/grow-isomorphic"
+alias model="cd ~/modulesGrow/grow-models"
+alias grow="cd ~/grow"
+alias v="$EDITOR"
+#similar to my vim config to open and edit .vimrc and to source .vimrc
+alias ev="$EDITOR ~/.zshrc"
+alias sv="source ~/.zshrc"
 
-export GOPATH=~/Documents/workspace/go
-
-export PATH=/usr/local:/usr/local/sbin:/usr/local/bin:/usr/local/opt/go/libexec/bin:$GOPATH/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/tools:$PATH
+#piping aliases
+alias -g G="| grep"
+alias -g P="| peco"
+alias -g T="| tail"
+alias -g S="| sort"
+alias -g U="| uniq"
 
 export NVM_DIR="/Users/joeycozza/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -66,3 +65,4 @@ function grepex() {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source /Users/joeycozza/.gulp.plugin.zsh/gulp.plugin.zsh
