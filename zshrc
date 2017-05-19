@@ -22,6 +22,9 @@ antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 
 export PATH="/Users/joeycozza/nim/bin:/Users/joeycozza/.nvm/v0.10.32/bin:/usr/local:/usr/local/sbin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/tools:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin"
 export EDITOR="nvim"
+export GROW_NPM_TOKEN="3457676d-d485-47fe-8dd7-d7a37a06d8dd"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

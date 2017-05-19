@@ -31,7 +31,8 @@ Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flowtype/vim-flow'
-
+Plug 'google/vim-searchindex'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 let mapleader=' '
@@ -100,6 +101,7 @@ nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
 nnoremap ;; A;<Esc>
 nnoremap ,, A,<Esc>
+nnoremap :: $x<Esc>
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 nnoremap <Leader>d :bd<Enter>
@@ -117,11 +119,6 @@ nnoremap <Leader>- zc
 
 nnoremap <silent> <c-c> :<C-u>nohlsearch<cr><c-l>
 
-" use tab to forward cycle
-" inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
-" use tab to backward cycle
-" inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
-
 xmap <Enter> <Plug>(EasyAlign)
 
 "Fugitive remappings for ease of use
@@ -132,9 +129,13 @@ nnoremap <Leader>gb :Gblame<Enter>
 nnoremap <Leader>gl :Glog<Enter>
 nnoremap <Leader>gp :Gpush<Enter>
 
-"tab and shift tab for moving between buffers
-noremap <tab> :bn<CR>
-noremap <S-tab> :bp<CR>
+"leader [ and leader ] for moving between buffers
+noremap <Leader>] :bn<CR>
+noremap <Leader>[ :bp<CR>
+
+"leader i and leader o for traversing the jump list
+noremap <Leader>o <c-o>
+noremap <Leader>i <c-i>
 
 " Find project wide
 nnoremap <Leader><Leader>/ :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
@@ -242,6 +243,8 @@ endfunction
 autocmd! User FzfStatusLine call <SID>fzf_statusline()
 
 let g:airline#extensions#tabline#enabled=1
+
+let g:tern#is_show_argument_hints_enabled=1
 
 let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
