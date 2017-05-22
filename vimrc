@@ -33,6 +33,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'flowtype/vim-flow'
 Plug 'google/vim-searchindex'
 Plug 'wakatime/vim-wakatime'
+Plug 'JamshedVesuna/vim-markdown-preview'
+
 call plug#end()
 
 let mapleader=' '
@@ -291,6 +293,9 @@ nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 " Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
 let g:javascript_opfirst = 1
+
+
+let vim_markdown_preview_github=1
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
