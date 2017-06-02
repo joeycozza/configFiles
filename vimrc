@@ -34,6 +34,8 @@ Plug 'flowtype/vim-flow'
 Plug 'google/vim-searchindex'
 Plug 'wakatime/vim-wakatime'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'sunaku/vim-shortcut'
 
 call plug#end()
 
