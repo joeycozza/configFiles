@@ -1,0 +1,104 @@
+let mapleader=' '
+"///////////////////Defaulting Registers////////////////////////////////////
+let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
+let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
+"///////////////////////End Defaulting Registers/////////////////////////////
+set incsearch                   " Find as you type search
+set hlsearch                    " Highlight search terms
+set ignorecase                  " Case insensitive search
+set smartcase                   " Case sensitive when uc present
+
+set iskeyword-=.                " '.' is an end of word designator
+set iskeyword-=#                " '#' is an end of word designator
+set iskeyword-=-                " '-' is an end of word designator
+set laststatus=2                " Always show the status bar / Airline
+
+set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
+
+set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold smarter
+set nofoldenable " when opening a file, dont start with any folding
+set foldnestmax=20
+
+set updatetime=250
+set noswapfile
+
+set hidden "switch buffers without saving
+set showcmd "show as commands are being typed
+
+set suffixesadd+=.js,.scala
+set path+=$PWD/node_modules
+set inccommand=nosplit
+
+"this will stop intelliJ from doing bell sound. IdeaVim doesn't handle set
+"noerrorbells yet, but it does silently ignore the visualbell.  :)
+set visualbell
+"IdeaVim has surround built in, so you can set this option
+set surround
+
+" -----------------------------------------------------
+" Displaying text
+" -----------------------------------------------------
+set backspace=indent,eol,start  " Backspace for dummies
+set linespace=0                 " No extra spaces between rows
+
+set scrolljump=1                " Lines to scroll when cursor leaves screen
+set scrolloff=8                 " Minimum lines to keep above and below cursor
+set nowrap                      " Don't wrap long lines Don't
+set nocursorcolumn
+set cursorline
+
+" indenting http://tedlogan.com/techblog3.html
+set autoindent 
+set expandtab "hitting tab insert spaces instead of <Tab>
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+set clipboard=unnamed "copy to system clipboard
+
+"-----------------------------------------------
+" --------------Remapping Keys------------------
+"  ---------------------------------------------
+
+nnoremap <Leader>p diw"0P<CR>
+nnoremap <leader>ev :e $MYVIMRC<cr> " vimrc edit
+nnoremap <leader>sv :source $MYVIMRC<cr> " vimrc source
+nnoremap ;; A;<Esc>
+nnoremap ,, A,<Esc>
+nnoremap :: $x<Esc>
+nnoremap <c-k> dd<Up><Up>p
+nnoremap <c-j> ddp
+
+inoremap jk <Esc>:w<Enter>
+inoremap <c-h> <Left>
+inoremap <c-l> <Right>
+inoremap <c-j> <Down>
+inoremap <c-k> <Up>
+
+"leader i and leader o for traversing the jump list
+noremap <leader>o <c-o>
+noremap <leader>i <c-i>
+
+"Clear search highlighting and redraw the screen
+nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
+
+" Format json
+nnoremap <leader><leader>j :%!python -m json.tool<CR>
+vnoremap <leader><leader>j :'<,'>!python -m json.tool<CR><Paste>
+nmap <leader><leader>json :enew<CR>:file scratchJSON<CR>p<leader><leader>j
+
+" repeat last replacement of a word
+nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
+
+" intelliJ IdeaVim Actions
+nnoremap <leader>d :action CloseContent<CR>
+nnoremap <leader>= :action ExpandRegion<CR>
+nnoremap <leader>- :action CollapseRegion<CR>
+nnoremap <leader>u :action FindUsages<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>f :action GotoFile<CR>
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>qj :action QuickJavaDoc<CR>
+nnoremap <leader><tab> :action NextTab<CR>
+nnoremap <leader><c-tab> :action PreviousTab<CR>
+nnoremap <leader>b :action Annotate<CR>
