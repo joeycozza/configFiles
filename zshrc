@@ -23,7 +23,6 @@ antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 export PATH="/Users/joeycozza/nim/bin:/Users/joeycozza/.nvm/v0.10.32/bin:/usr/local:/usr/local/sbin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/tools:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin"
 export EDITOR="nvim"
 export GROW_NPM_TOKEN="3457676d-d485-47fe-8dd7-d7a37a06d8dd"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -33,20 +32,18 @@ export PATH=$JAVA_HOME/bin:$PATH
 alias wun="gulp watch"
 alias gun="gulp run"
 alias pr="open-pr develop"
-alias pun="gulp run --dsEnv=production"
-alias clean="noti rm -rf node_modules"
-alias mods="noti yarn"
+alias clean="rm -rf node_modules"
+alias mods="yarn"
 alias cleanmods="clean && mods"
 alias p="ps -A | peco"
 alias up="git hf update"
 alias ppp="ggpush && pr"
-alias iso="cd ~/modulesGrow/grow-isomorphic"
-alias model="cd ~/modulesGrow/grow-models"
-alias grow="cd ~/grow"
+alias lucid="cd ~/lucid/main"
 alias v="$EDITOR"
 #similar to my vim config to open and edit .vimrc and to source .vimrc
 alias ev="$EDITOR ~/.zshrc"
 alias sv="source ~/.zshrc"
+alias sbt-debug="sbt -mem 4096 -jvm-debug 9999"
 
 #piping aliases
 alias -g G="| grep"
@@ -58,7 +55,6 @@ alias -g U="| uniq"
 export NVM_DIR="/Users/joeycozza/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source /Users/joeycozza/.gulp.plugin.zsh/gulp.plugin.zsh
 ulimit -n 1024
 
 function grepex() {
@@ -68,4 +64,3 @@ function grepex() {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-source /Users/joeycozza/.gulp.plugin.zsh/gulp.plugin.zsh
