@@ -11,7 +11,7 @@ ZSH_THEME="garyblessington"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew colorize node npm k)
+plugins=(git brew node npm)
 
 source $ZSH/oh-my-zsh.sh
 source <(antibody init)
@@ -22,7 +22,6 @@ antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 
 export PATH="/Users/joeycozza/nim/bin:/Users/joeycozza/.nvm/v0.10.32/bin:/usr/local:/usr/local/sbin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Developer/SDKs/adt-bundle-mac-x86_64-20140321/sdk/tools:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin"
 export EDITOR="nvim"
-export GROW_NPM_TOKEN="3457676d-d485-47fe-8dd7-d7a37a06d8dd"
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
