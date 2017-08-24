@@ -36,18 +36,26 @@ Plug 'wakatime/vim-wakatime'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'sunaku/vim-shortcut'
+Plug 'derekwyatt/vim-scala'
+Plug 'ensime/ensime-vim'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
 let mapleader=' '
+
 "///////////////////Defaulting Registers////////////////////////////////////
 let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
 "///////////////////////End Defaulting Registers/////////////////////////////
+
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
+
+set nocompatible
+filetype plugin on
 
 set iskeyword-=.                " '.' is an end of word designator
 set iskeyword-=#                " '#' is an end of word designator
@@ -66,10 +74,14 @@ set noswapfile
 set hidden "switch buffers without saving
 set showcmd "show as commands are being typed
 
-set suffixesadd+=.js
+set suffixesadd+=.js,.scala
 set path+=$PWD/node_modules
 set inccommand=nosplit
 
+set undofile                 "Save undo's after file closes
+set undodir=$HOME/.vim/undo  " where to save undo histories
+set undolevels=1000          "How many undos
+set undoreload=10000         "number of lines to save for undo
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
@@ -78,7 +90,7 @@ set linespace=0                 " No extra spaces between rows
 set nu				                  "putting line numbers on in insert mode"
 
 set scrolljump=1                " Lines to scroll when cursor leaves screen
-set scrolloff=10                 " Minimum lines to keep above and below cursor
+set scrolloff=7                 " Minimum lines to keep above and below cursor
 set nowrap                      " Don't wrap long lines Don't
 set nocursorcolumn
 set cursorline
@@ -99,7 +111,12 @@ set clipboard=unnamed "copy to system clipboard
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+nnoremap <Leader>v diw"0P<CR>
+
+noremap <Leader>y "+y
+noremap <Leader>p "+p  
+
+nnoremap <Leader>h <Esc>:call ToggleHardMode()<CR>
 
 nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
@@ -167,9 +184,11 @@ nmap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p<Leader><Leader>j
 
 " repeat last replacement of a word
 nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
+
 " leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
 nmap <Leader>a vip<Enter>=
 
+nnoremap <Leader>t :EnType<CR>
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
@@ -299,6 +318,7 @@ let g:javascript_opfirst = 1
 
 let vim_markdown_preview_github=1
 
+autocmd BufWritePost *.scala silent :EnTypeCheck
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
