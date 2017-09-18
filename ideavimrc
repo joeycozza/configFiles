@@ -58,9 +58,13 @@ set clipboard=unnamed "copy to system clipboard
 
 "-----------------------------------------------
 " --------------Remapping Keys------------------
-"  ---------------------------------------------
+" ---------------------------------------------
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p  
 
-nnoremap <Leader>p diw"0P<CR>
+nnoremap <Leader>v diw"0P<CR>
 nnoremap <leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <leader>sv :source $MYVIMRC<cr> " vimrc source
 nnoremap ;; A;<Esc>

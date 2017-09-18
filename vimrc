@@ -18,8 +18,6 @@ Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
 Plug 'benekastah/neomake'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/vim-easy-align'
-Plug 'wikitopian/hardmode'
-Plug 'fatih/vim-go'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -36,9 +34,8 @@ Plug 'wakatime/vim-wakatime'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'sunaku/vim-shortcut'
-Plug 'derekwyatt/vim-scala'
-Plug 'ensime/ensime-vim'
 Plug 'vimwiki/vimwiki'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
