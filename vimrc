@@ -30,12 +30,11 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flowtype/vim-flow'
 Plug 'google/vim-searchindex'
-Plug 'wakatime/vim-wakatime'
-Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'sunaku/vim-shortcut'
 Plug 'vimwiki/vimwiki'
 Plug 'leafgarland/typescript-vim'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -113,8 +112,6 @@ nnoremap <Leader>v diw"0P<CR>
 noremap <Leader>y "+y
 noremap <Leader>p "+p  
 
-nnoremap <Leader>h <Esc>:call ToggleHardMode()<CR>
-
 nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
 nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
 nnoremap ;; A;<Esc>
@@ -131,6 +128,9 @@ inoremap <c-l> <Right>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 
+nnoremap <Leader>r :TernRename<cr>
+
+"folding 
 nnoremap <Leader>= za
 nnoremap <Leader>- zc
 
@@ -147,17 +147,17 @@ nnoremap <Leader>gb :Gblame<Enter>
 nnoremap <Leader>gl :Glog<Enter>
 nnoremap <Leader>gp :Gpush<Enter>
 
-"leader [ and leader ] for moving between buffers
-noremap <Leader>] :bn<CR>
-noremap <Leader>[ :bp<CR>
+"leader tab and leader \ for moving between buffers
+noremap <Leader><Tab>  :bp<CR>
+noremap <Leader>\      :bn<CR>
 
 "leader i and leader o for traversing the jump list
 noremap <Leader>o <c-o>
 noremap <Leader>i <c-i>
 
 " Find project wide
-nnoremap <Leader><Leader>/ :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
-vnoremap <Leader><Leader>/ "hy:ProjectRootExe Ag<space><C-r>h<space>
+nnoremap <Leader>sp :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
+vnoremap <Leader>sp "hy:ProjectRootExe Ag<space><C-r>h<space>
 let g:ag_highlight=1
 
 " Quick fix file navigation
@@ -281,10 +281,6 @@ let g:UltiSnipsListSnippets = "<c-tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
-
-let g:go_fmt_command = "goimports"
-nmap <Leader>b :GoBuild<cr>
-nmap <Leader>r :GoRun<cr>
 
 let g:airline_theme='simple'
 
