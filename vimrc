@@ -15,7 +15,6 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'mxw/vim-jsx'
 Plug 'Shougo/deoplete.nvim'
 Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
-Plug 'benekastah/neomake'
 Plug 'SirVer/ultisnips'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
@@ -28,12 +27,9 @@ Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'flowtype/vim-flow'
 Plug 'google/vim-searchindex'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'sunaku/vim-shortcut'
 Plug 'vimwiki/vimwiki'
-Plug 'leafgarland/typescript-vim'
 Plug 'easymotion/vim-easymotion'
 
 call plug#end()
@@ -50,7 +46,6 @@ set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
 
-set nocompatible
 filetype plugin on
 
 set iskeyword-=.                " '.' is an end of word designator
@@ -70,7 +65,7 @@ set noswapfile
 set hidden "switch buffers without saving
 set showcmd "show as commands are being typed
 
-set suffixesadd+=.js,.scala
+set suffixesadd+=.js
 set path+=$PWD/node_modules
 set inccommand=nosplit
 
@@ -83,7 +78,7 @@ set undoreload=10000         "number of lines to save for undo
 " -----------------------------------------------------
 set backspace=indent,eol,start  " Backspace for dummies
 set linespace=0                 " No extra spaces between rows
-set nu				                  "putting line numbers on in insert mode"
+set number				                  "putting line numbers on in insert mode"
 
 set scrolljump=1                " Lines to scroll when cursor leaves screen
 set scrolloff=7                 " Minimum lines to keep above and below cursor
@@ -161,18 +156,11 @@ vnoremap <Leader>sp "hy:ProjectRootExe Ag<space><C-r>h<space>
 let g:ag_highlight=1
 
 " Quick fix file navigation
-nmap <silent> <RIGHT> :cnext<CR>
-nmap <silent> <LEFT> :cprev<CR>
+nnoremap <silent> <RIGHT> :cnext<CR>
+nnoremap <silent> <LEFT> :cprev<CR>
 
 "Clear search highlighting and redraw the screen
 nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
-
-" neomake
-nmap <Leader><Space>o :lopen<CR>                          " open location window
-nmap <Leader><Space>c :lclose<CR>:EslintFix<CR>:e<CR>:w<CR>     " close location window
-nmap <Leader><Space>, :ll<CR>                             " go to current error/warning
-nmap <Leader><Space>n :lnext<CR>                          " next error/warning
-nmap <Leader><Space>p :lprev<CR>                          " previous error/warning
 
 " Format json
 nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
@@ -185,12 +173,11 @@ nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
 " leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
 nmap <Leader>a vip<Enter>=
 
-nnoremap <Leader>t :EnType<CR>
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
 
-autocmd FileType javascript let &formatprg='prettier --stdin --single-quote --print-width=120'
+" autocmd FileType javascript let &formatprg='prettier --stdin --single-quote --print-width=120'
 
 " -----------------------------------------------------
 " PLugin settings
@@ -271,10 +258,6 @@ let g:deoplete#enable_at_startup = 1
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-let g:neomake_javascript_enabled_makers = ['eslint']
-autocmd! BufWritePost * Neomake
-let g:neomake_open_list = 2
-
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsListSnippets = "<c-tab>"
@@ -284,26 +267,9 @@ let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 
 let g:airline_theme='simple'
 
-let g:flow#autoclose=1
-let g:flow#timeout=4
-let g:javascript_plugin_flow=1
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
-
-map <leader>c :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
-
 map <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
+nnoremap <Leader>h <Esc>:call ToggleHardMode()<CR>
 
 " Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
 let g:javascript_opfirst = 1
@@ -311,7 +277,6 @@ let g:javascript_opfirst = 1
 
 let vim_markdown_preview_github=1
 
-autocmd BufWritePost *.scala silent :EnTypeCheck
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
