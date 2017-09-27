@@ -102,19 +102,27 @@ set clipboard=unnamed "copy to system clipboard
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
-nnoremap <Leader>v diw"0P<CR>
 
-noremap <Leader>y "+y
-noremap <Leader>p "+p  
+" this will replace the current word with the last thing yanked. Can be
+" repeated without fear of overriding the last yanked thing
+nnoremap <Leader>v diw"0P
 
-nnoremap <Leader>ev :e $MYVIMRC<cr> " vimrc edit
-nnoremap <Leader>sv :source $MYVIMRC<cr> " vimrc source
+"convenience for editing and sourcing .vimrc file
+nnoremap <Leader>ev :e $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
+" helpers for adding semicolon or comma and removing always at end of the current line
 nnoremap ;; A;<Esc>
 nnoremap ,, A,<Esc>
 nnoremap :: $x<Esc>
+
+" move whole line up or down
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
+
+" delete current working buffer.
 nnoremap <Leader>d :bd<Enter>
+" for delete if you dont care about saving
 nnoremap <Leader><Leader>d :bd!<Enter>
 
 inoremap jk <Esc>:w<Enter>
@@ -123,24 +131,9 @@ inoremap <c-l> <Right>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 
-nnoremap <Leader>r :TernRename<cr>
-
 "folding 
 nnoremap <Leader>= za
 nnoremap <Leader>- zc
-
-
-nnoremap <silent> <c-c> :<C-u>nohlsearch<cr><c-l>
-
-xmap <Enter> <Plug>(EasyAlign)
-
-"Fugitive remappings for ease of use
-nnoremap <Leader>gs :Gstatus<Enter>
-nnoremap <Leader>gc :Gcommit<Enter>
-nnoremap <Leader>gd :Gdiff<Enter>
-nnoremap <Leader>gb :Gblame<Enter>
-nnoremap <Leader>gl :Glog<Enter>
-nnoremap <Leader>gp :Gpush<Enter>
 
 "leader tab and leader \ for moving between buffers
 noremap <Leader><Tab>  :bp<CR>
@@ -149,6 +142,32 @@ noremap <Leader>\      :bn<CR>
 "leader i and leader o for traversing the jump list
 noremap <Leader>o <c-o>
 noremap <Leader>i <c-i>
+
+" repeat last replacement of a word
+nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
+
+
+nnoremap <Leader>r :TernRename<cr>
+
+"Clear search highlighting and redraw the screen
+nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
+
+" Begin easyAlign 
+xmap <Enter> <Plug>(EasyAlign)
+" leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
+nmap <Leader>a vip<Enter>=
+
+
+"Fugitive remappings for ease of use
+nnoremap <Leader>gs :Gstatus<Enter>
+nnoremap <Leader>gc :Gcommit<Enter>
+nnoremap <Leader>gd :Gdiff<Enter>
+nnoremap <Leader>gb :Gblame<Enter>
+nnoremap <Leader>gl :Glog<Enter>
+nnoremap <Leader>gp :Gpush<Enter>
+" move to next or previous gittable chunk change in file
+nmap <Leader>hn <Plug>GitGutterNextHunk
+nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 " Find project wide
 nnoremap <Leader>sp :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
@@ -159,20 +178,16 @@ let g:ag_highlight=1
 nnoremap <silent> <RIGHT> :cnext<CR>
 nnoremap <silent> <LEFT> :cprev<CR>
 
-"Clear search highlighting and redraw the screen
-nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
-
 " Format json
 nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
 vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
 nmap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p<Leader><Leader>j
 
-" repeat last replacement of a word
-nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
+nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
 
-" leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
-nmap <Leader>a vip<Enter>=
-
+" NERDTree customizations
+map <C-n> :exe 'NERDTreeToggle ' . <SID>fzf_root()<CR>
+nmap <Leader>nt :NERDTreeFind<CR>
 "  ---------------------------------------------
 "  -------------End Remapping Keys--------------
 "  ---------------------------------------------
@@ -182,9 +197,6 @@ nmap <Leader>a vip<Enter>=
 " -----------------------------------------------------
 " PLugin settings
 " -----------------------------------------------------
-" NERFTree customizations
-map <C-n> :exe 'NERDTreeToggle ' . <SID>fzf_root()<CR>
-nmap <Leader>nt :NERDTreeFind<CR>
 
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
@@ -225,19 +237,11 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " Normal mode completion
-fun! s:fzf_root()
+function! s:fzf_root()
 	let path = finddir(".git", expand("%:p:h").";")
 	return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
-endfun
+endfunction
 
-nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
-
-" Insert mode completion
-imap <C-x><C-f> <plug>(fzf-complete-file-ag)
-imap <C-x><C-l> <plug>(fzf-complete-line)
-
-" Advanced customization using autoload functions
-inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
 
 function! s:fzf_statusline()
   " Override statusline as you like
@@ -267,13 +271,8 @@ let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 
 let g:airline_theme='simple'
 
-map <Leader>hn <Plug>GitGutterNextHunk
-nmap <Leader>hp <Plug>GitGutterPrevHunk
-nnoremap <Leader>h <Esc>:call ToggleHardMode()<CR>
-
 " Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
 let g:javascript_opfirst = 1
-
 
 let vim_markdown_preview_github=1
 
