@@ -1,5 +1,5 @@
-# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+# Path to your oh-my-zsh installation.
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -39,8 +39,8 @@ alias up="git hf update"
 alias ppp="ggpush && pr"
 alias lucid="cd ~/lucid/main"
 alias v="$EDITOR"
-alias sbt-debug="sbt -mem 4096 -jvm-debug 9999"
-alias gitLucidRebase="git checkout master && ggpull && git checkout @{-1} && git rebase -i master"
+# heroku local, but using Procfile.dev if there is one
+alias fs="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"
 #similar to my vim config to open and edit .vimrc and to source .vimrc
 alias ev="$EDITOR ~/.zshrc"
 alias sv="source ~/.zshrc"
