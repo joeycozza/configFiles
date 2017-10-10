@@ -31,6 +31,7 @@ Plug 'google/vim-searchindex'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'easymotion/vim-easymotion'
+Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -61,7 +62,6 @@ set foldnestmax=20
 
 set updatetime=250
 set noswapfile
-
 set hidden "switch buffers without saving
 set showcmd "show as commands are being typed
 
@@ -131,10 +131,6 @@ inoremap <c-l> <Right>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 
-"folding 
-nnoremap <Leader>= za
-nnoremap <Leader>- zc
-
 "leader tab and leader \ for moving between buffers
 noremap <Leader><Tab>  :bp<CR>
 noremap <Leader>\      :bn<CR>
@@ -188,14 +184,11 @@ nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
 " NERDTree customizations
 map <C-n> :exe 'NERDTreeToggle ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
-"  ---------------------------------------------
-"  -------------End Remapping Keys--------------
-"  ---------------------------------------------
 
-" autocmd FileType javascript let &formatprg='prettier --stdin --single-quote --print-width=120'
+nnoremap <Leader>p :ALEFix<CR>
 
 " -----------------------------------------------------
-" PLugin settings
+" Plugin settings
 " -----------------------------------------------------
 
 let NERDTreeShowBookmarks=1
@@ -236,23 +229,6 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-" Normal mode completion
-function! s:fzf_root()
-	let path = finddir(".git", expand("%:p:h").";")
-	return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
-endfunction
-
-
-function! s:fzf_statusline()
-  " Override statusline as you like
-  highlight fzf1 ctermfg=161 ctermbg=251
-  highlight fzf2 ctermfg=23 ctermbg=251
-  highlight fzf3 ctermfg=237 ctermbg=251
-  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
-endfunction
-
-autocmd! User FzfStatusLine call <SID>fzf_statusline()
-
 let g:airline#extensions#tabline#enabled=1
 
 let g:tern#is_show_argument_hints_enabled=1
@@ -260,7 +236,7 @@ let g:tern#is_show_argument_hints_enabled=1
 let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -274,7 +250,13 @@ let g:airline_theme='simple'
 " Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
 let g:javascript_opfirst = 1
 
-let vim_markdown_preview_github=1
+let vim_markdown_preview_github = 1
+
+let g:ale_fixers = {'javascript': ['eslint', 'prettier']}
+let g:ale_fix_on_save = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:airline#extensions#ale#enables = 1
+let g:ale_javascript_prettier_options = '--single-quote --print-width=120'
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
@@ -288,3 +270,16 @@ endfunction
 command! EslintFix :call EslintFix()
 
 
+function! s:fzf_statusline()
+  " Override statusline as you like
+  highlight fzf1 ctermfg=161 ctermbg=251
+  highlight fzf2 ctermfg=23 ctermbg=251
+  highlight fzf3 ctermfg=237 ctermbg=251
+  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
+endfunction
+
+" Normal mode completion
+function! s:fzf_root()
+	let path = finddir(".git", expand("%:p:h").";")
+	return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
+endfunction
