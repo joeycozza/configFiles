@@ -37,7 +37,7 @@ alias cleanmods="clean && mods"
 alias p="ps -A | peco"
 alias up="git hf update"
 alias ppp="ggpush && pr"
-alias lucid="cd ~/lucid/main"
+alias fs="cd ~/fs"
 alias v="$EDITOR"
 # heroku local, but using Procfile.dev if there is one
 alias fs="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp ~/Documents/configFiles/vimrc ~/.vimrc
-cp ~/Documents/configFiles/zshrc ~/.zshrc
-cp ~/Documents/configFiles/gitConfig ~/.gitconfig
+ln -s ~/Documents/configFiles/vimrc ~/.vimrc
+ln -s ~/Documents/configFiles/zshrc ~/.zshrc
+ln -s ~/Documents/configFiles/gitConfig ~/.gitconfig
 source ~/.zshrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install fzf

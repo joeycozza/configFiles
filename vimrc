@@ -103,6 +103,8 @@ set clipboard=unnamed "copy to system clipboard
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
+nnoremap <Leader>_ :term n_<CR>
+
 " this will replace the current word with the last thing yanked. Can be
 " repeated without fear of overriding the last yanked thing
 nnoremap <Leader>v diw"0P
@@ -256,7 +258,7 @@ let g:ale_fixers = {'javascript': ['eslint', 'prettier']}
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enables = 1
-let g:ale_javascript_prettier_options = '--single-quote --print-width=120'
+let g:ale_javascript_prettier_options = '--single-quote --print-width=130'
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
