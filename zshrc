@@ -40,7 +40,7 @@ alias ppp="ggpush && pr"
 alias fs="cd ~/fs"
 alias v="$EDITOR"
 # heroku local, but using Procfile.dev if there is one
-alias fs="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"
+alias fsh="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"
 #similar to my vim config to open and edit .vimrc and to source .vimrc
 alias ev="$EDITOR ~/.zshrc"
 alias sv="source ~/.zshrc"

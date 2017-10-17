@@ -32,6 +32,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'easymotion/vim-easymotion'
 Plug 'w0rp/ale'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 call plug#end()
 
