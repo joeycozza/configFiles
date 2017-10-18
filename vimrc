@@ -254,6 +254,7 @@ let g:airline_theme='simple'
 let g:javascript_opfirst = 1
 
 let vim_markdown_preview_github = 1
+let vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {'javascript': ['eslint', 'prettier']}
 let g:ale_fix_on_save = 0

@@ -34,3 +34,5 @@
 	precommit = diff --cached --diff-algorithm=minimal -w
 	uncommit = reset --soft HEAD~
 	cod = checkout develop
+  com = checkout master
+  rmi = rebase -i master
