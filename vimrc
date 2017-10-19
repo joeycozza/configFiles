@@ -33,6 +33,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'easymotion/vim-easymotion'
 Plug 'w0rp/ale'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
@@ -160,7 +161,6 @@ nmap <Leader>a vip<Enter>=
 "Fugitive remappings for ease of use
 nnoremap <Leader>gs :Gstatus<Enter>
 nnoremap <Leader>gc :Gcommit<Enter>
-nnoremap <Leader>gd :Gdiff<Enter>
 nnoremap <Leader>gb :Gblame<Enter>
 nnoremap <Leader>gl :Glog<Enter>
 nnoremap <Leader>gp :Gpush<Enter>
@@ -182,7 +182,10 @@ nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
 vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
 nmap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p<Leader><Leader>j
 
+nnoremap <Leader>gd <C-]>
 nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
+nnoremap <silent> <Leader>zm :Marks<CR>
+nnoremap <silent> <Leader>zt :Tags<CR>
 
 " NERDTree customizations
 map <C-n> :exe 'NERDTreeToggle ' . <SID>fzf_root()<CR>
