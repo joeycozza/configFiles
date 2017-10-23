@@ -34,6 +34,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'w0rp/ale'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'sjl/gundo.vim'
+Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
 
@@ -194,6 +196,7 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 nnoremap <Leader>p :ALEFix<CR>
 
+nnoremap <Leader>ur :GundoToggle<CR>
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
@@ -266,6 +269,7 @@ let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enables = 1
 let g:ale_javascript_prettier_options = '--single-quote --print-width=130'
 
+let g:highlightedyank_highlight_duration = 5000
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
