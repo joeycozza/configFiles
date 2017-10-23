@@ -103,6 +103,7 @@ set background=dark
 
 set clipboard=unnamed "copy to system clipboard
 
+set diffopt=filler,vertical
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
@@ -164,8 +165,16 @@ nmap <Leader>a vip<Enter>=
 nnoremap <Leader>gs :Gstatus<Enter>
 nnoremap <Leader>gc :Gcommit<Enter>
 nnoremap <Leader>gb :Gblame<Enter>
-nnoremap <Leader>gl :Glog<Enter>
+nnoremap <Leader>gm :Gdiff<Enter>
 nnoremap <Leader>gp :Gpush<Enter>
+nnoremap <Leader>gr :Gread<Enter>
+nnoremap <Leader>gw :Gwrite<Enter>
+nnoremap <Leader>gu :diffupdate<Enter>
+nnoremap <Leader>g2 :diffget //2<Enter>
+nnoremap <Leader>g3 :diffget //3<Enter>
+nnoremap <Leader>gn [c
+nnoremap <Leader>gp ]c
+
 " move to next or previous gittable chunk change in file
 nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk

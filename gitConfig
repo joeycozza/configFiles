@@ -8,16 +8,6 @@
 	sslVerify = false
 [push]
 	default = simple
-[merge]
- tool = vimdiff
-[mergetool]
- prompt = true
-[mergetool "vimdiff"]
- cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[difftool]
- prompt = false
-[diff]
- tool = vimdiff
 [alias]
 	co = checkout
 	cob = checkout -b
