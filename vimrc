@@ -197,6 +197,7 @@ nnoremap <Leader>gd <C-]>
 nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
 nnoremap <silent> <Leader>zm :Marks<CR>
 nnoremap <silent> <Leader>zt :Tags<CR>
+nnoremap <silent> <Leader>zl :Lines<CR>
 
 " NERDTree customizations
 map <C-n> :exe 'NERDTreeToggle ' . <SID>fzf_root()<CR>
