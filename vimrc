@@ -275,7 +275,7 @@ let vim_markdown_preview_browser = 'Google Chrome'
 let g:ale_fixers = {'javascript': ['eslint', 'prettier']}
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_text_changed = 'never'
-let g:airline#extensions#ale#enables = 1
+let g:airline#extensions#ale#enabled = 1
 let g:ale_javascript_prettier_options = '--single-quote --print-width=130'
 
 let g:highlightedyank_highlight_duration = 5000
