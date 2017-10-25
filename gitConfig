@@ -21,3 +21,7 @@
 	cod = checkout develop
   com = checkout master
   rmi = rebase -i master
+[url "https://"]
+	insteadOf = git://
+[branch]
+	autosetuprebase = always
