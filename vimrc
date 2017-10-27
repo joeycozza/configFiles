@@ -24,7 +24,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-speeddating'
 Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
-Plug 'rking/ag.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'google/vim-searchindex'
@@ -180,9 +179,19 @@ nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 " Find project wide
-nnoremap <Leader>sp :ProjectRootExe Ag<space><C-r><C-w><space>-Q<space>-w
-vnoremap <Leader>sp "hy:ProjectRootExe Ag<space><C-r>h<space>
-let g:ag_highlight=1
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --ignore-case: Case insensitive search
+" --no-ignore: Do not respect .gitignore, etc...
+" --hidden: Search hidden files and folders
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+set grepprg=rg\ --vimgrep
+
+nnoremap <Leader>sp :Find <C-r><C-w>
 
 " Quick fix file navigation
 nnoremap <silent> <RIGHT> :cnext<CR>
@@ -221,7 +230,6 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 " FZF customizations" 
 " This is the default extra key bindings
-let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 
 " Default fzf layout
@@ -276,7 +284,7 @@ let g:ale_fixers = {'javascript': ['eslint', 'prettier']}
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
-let g:ale_javascript_prettier_options = '--single-quote --print-width=130'
+let g:ale_javascript_prettier_options = '--single-quote --print-width=150'
 
 let g:highlightedyank_highlight_duration = 5000
 "************************************************************************************************

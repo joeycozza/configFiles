@@ -8,9 +8,10 @@ source ~/.zshrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install fzf
 $(brew --prefix)/opt/fzf/install
-brew install the_silver_searcher
 brew install neovim
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install peco
+brew install ripgrep
 # grip is for markdown preview github option
 brew install grip
 ln -s ~/.vimrc ~/.config/nvim/init.vim

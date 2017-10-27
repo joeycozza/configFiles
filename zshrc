@@ -23,6 +23,7 @@ antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 export PATH="/Users/joeycozza/nim/bin:/usr/local:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/X11/bin:/usr/local/git/bin"
 export EDITOR="nvim"
 export PATH=$JAVA_HOME/bin:$PATH
+export FZF_DEFAULT_COMMAND='rg --files --hidden --smartcase --glob "!.git/*"'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
