@@ -38,6 +38,10 @@ Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
 
+if has('nvim') && executable('nvr')
+  let $VISUAL="nvm -cc split --remote-wait +'set bufhidden=wipe'"
+endif
+
 let g:mapleader=' '
 
 "///////////////////Defaulting Registers////////////////////////////////////

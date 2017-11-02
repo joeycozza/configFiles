@@ -17,10 +17,9 @@ brew install ripgrep
 brew install grip
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-sudo pip2 install neovim
 sudo pip3 install neovim
-sudo pip2 install vim-vint
 sudo pip3 install vim-vint
+sudo pip3 install neovim-remote
 sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
