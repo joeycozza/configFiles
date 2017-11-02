@@ -107,6 +107,7 @@ set diffopt=filler,vertical
 "  ---------------------------------------------
 
 nnoremap <Leader>_ :term n_<CR>
+nnoremap / /\v
 
 " this will replace the current word with the last thing yanked. Can be
 " repeated without fear of overriding the last yanked thing
