@@ -4,6 +4,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ln -s ~/Documents/configFiles/vimrc ~/.vimrc
 ln -s ~/Documents/configFiles/zshrc ~/.zshrc
 ln -s ~/Documents/configFiles/gitConfig ~/.gitconfig
+ln -s ~/Documents/configFiles/vintrc.yaml ~/.vintrc.yaml
 source ~/.zshrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install fzf
@@ -18,6 +19,8 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo pip2 install neovim
 sudo pip3 install neovim
+sudo pip2 install vim-vint
+sudo pip3 install vim-vint
 sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa

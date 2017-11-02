@@ -38,14 +38,13 @@ Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
 
-let mapleader=' '
+let g:mapleader=' '
 
 "///////////////////Defaulting Registers////////////////////////////////////
 let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
 "///////////////////////End Defaulting Registers/////////////////////////////
 
-set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
@@ -219,13 +218,13 @@ nnoremap <Leader>ur :GundoToggle<CR>
 " Plugin settings
 " -----------------------------------------------------
 
-let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
-let NERDTreeChDirMode=0
-let NERDTreeQuitOnOpen=1
-let NERDTreeMouseMode=2
-let NERDTreeShowHidden=1
-let NERDTreeKeepTreeInNewTab=1
+let g:NERDTreeShowBookmarks=1
+let g:NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
+let g:NERDTreeChDirMode=0
+let g:NERDTreeQuitOnOpen=1
+let g:NERDTreeMouseMode=2
+let g:NERDTreeShowHidden=1
+let g:NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
 " FZF customizations"
@@ -264,10 +263,10 @@ let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
 
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsListSnippets = "<c-tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsListSnippets = '<c-tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 
 let g:airline_theme='simple'
@@ -275,10 +274,14 @@ let g:airline_theme='simple'
 " Don't indent promise chains (https://github.com/pangloss/vim-javascript/issues/467#issuecomment-247851078)
 let g:javascript_opfirst = 1
 
-let vim_markdown_preview_github = 1
-let vim_markdown_preview_browser = 'Google Chrome'
+let g:vim_markdown_preview_github = 1
+let g:vim_markdown_preview_browser = 'Google Chrome'
 
-let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'json': ['prettier']}
+let g:ale_fixers = {
+                  \ 'javascript': ['eslint', 'prettier'], 
+                  \ 'json': ['prettier'],
+                  \ 'vim': ['vint']
+                  \}
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
