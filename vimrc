@@ -278,10 +278,10 @@ let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
-                  \ 'javascript': ['eslint', 'prettier'], 
-                  \ 'json': ['prettier'],
-                  \ 'vim': ['vint']
-                  \}
+      \ 'javascript': ['eslint', 'prettier'],
+      \ 'json': ['prettier'],
+      \ 'vim': ['vint']
+      \ }
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
@@ -301,6 +301,6 @@ command! EslintFix :call EslintFix()
 
 " Normal mode completion
 function! s:fzf_root()
-  let path = finddir(".git", expand("%:p:h").";")
-  return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
+  let l:path = finddir('.git', expand('%:p:h').';')
+  return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
 endfunction
