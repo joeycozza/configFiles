@@ -18,6 +18,9 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo pip2 install neovim
 sudo pip3 install neovim
+sudo gem install neovim
+nvim --headless +PlugInstall +qa
+nvim --headless +UpdateRemotePlugins +qa
 curl https://github.com/tonsky/FiraCode/releases/download/1.204/FiraCode_1.204.zip -o ~/Downloads/FiraCode_1.204.zip
 curl https://iterm2.com/downloads/beta/iTerm2-3_1_beta_10.zip -o ~/Downloads/iterm2Beta.zip
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
@@ -27,5 +30,4 @@ nvm install node
 echo ""
 echo "Manually set iterm2 settings to point to the configFile"
 echo "Manually setup firacode for iterm2"
-echo "Manually run PlugUpdate and UpdateRemotePlugins within neovim"
 echo "Download better touch tools, karabiner"

@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
-  
-Plug 'myusuf3/numbers.vim'
+
+Plug 'myusuf3/numbers.vim' 
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -73,7 +73,7 @@ set path+=$PWD/node_modules
 set inccommand=nosplit
 
 set undofile                 "Save undo's after file closes
-set undodir=$HOME/.vim/undo  " where to save undo histories
+set undodir=$HOME/.vim/undo  "Where to save undo histories
 set undolevels=1000          "How many undos
 set undoreload=10000         "number of lines to save for undo
 " -----------------------------------------------------
@@ -81,7 +81,7 @@ set undoreload=10000         "number of lines to save for undo
 " -----------------------------------------------------
 set backspace=indent,eol,start  " Backspace for dummies
 set linespace=0                 " No extra spaces between rows
-set number				                  "putting line numbers on in insert mode"
+set number                      " putting line numbers on in insert mode"
 
 set scrolljump=1                " Lines to scroll when cursor leaves screen
 set scrolloff=7                 " Minimum lines to keep above and below cursor
@@ -90,7 +90,7 @@ set nocursorcolumn
 set cursorline
 
 " indenting http://tedlogan.com/techblog3.html
-set autoindent 
+set autoindent
 set expandtab "hitting tab insert spaces instead of <Tab>
 set tabstop=2
 set shiftwidth=2
@@ -152,9 +152,9 @@ nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
 nnoremap <Leader>r :TernRename<cr>
 
 "Clear search highlighting and redraw the screen
-nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l> 
+nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l>
 
-" Begin easyAlign 
+" Begin easyAlign
 xmap <Enter> <Plug>(EasyAlign)
 " leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
 nmap <Leader>a vip<Enter>=
@@ -228,7 +228,7 @@ let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-" FZF customizations" 
+" FZF customizations"
 " This is the default extra key bindings
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 
@@ -263,8 +263,6 @@ let g:tern#is_show_argument_hints_enabled=1
 let g:used_javascript_libs = 'underscore,react,chai'
 let g:deoplete#enable_at_startup = 1
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsListSnippets = "<c-tab>"
@@ -280,7 +278,7 @@ let g:javascript_opfirst = 1
 let vim_markdown_preview_github = 1
 let vim_markdown_preview_browser = 'Google Chrome'
 
-let g:ale_fixers = {'javascript': ['eslint', 'prettier']}
+let g:ale_fixers = {'javascript': ['eslint', 'prettier'], 'json': ['prettier']}
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
@@ -298,17 +296,8 @@ function! EslintFix()
 endfunction
 command! EslintFix :call EslintFix()
 
-
-function! s:fzf_statusline()
-  " Override statusline as you like
-  highlight fzf1 ctermfg=161 ctermbg=251
-  highlight fzf2 ctermfg=23 ctermbg=251
-  highlight fzf3 ctermfg=237 ctermbg=251
-  setlocal statusline=%#fzf1#\ >\ %#fzf2#fz%#fzf3#f
-endfunction
-
 " Normal mode completion
 function! s:fzf_root()
-	let path = finddir(".git", expand("%:p:h").";")
-	return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
+  let path = finddir(".git", expand("%:p:h").";")
+  return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
 endfunction
