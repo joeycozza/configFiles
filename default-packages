@@ -3,3 +3,5 @@ fast-cli
 gulp
 mocha
 prettier
+diff-so-fancy
+eslint

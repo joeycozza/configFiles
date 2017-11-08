@@ -64,7 +64,7 @@ set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 
 set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold smarter
 set nofoldenable " when opening a file, dont start with any folding
-set foldnestmax=20
+set foldnestmax=1
 
 set updatetime=250
 set noswapfile
@@ -109,13 +109,14 @@ set diffopt=filler,vertical
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
+nnoremap ; :
 
-nnoremap <Leader>_ :term n_<CR>
-nnoremap / /\v
+nnoremap <Leader>_ :terminal n_<CR>
 
 " this will replace the current word with the last thing yanked. Can be
 " repeated without fear of overriding the last yanked thing
-nnoremap <Leader>v diw"0P
+" delete into blackhole register, then paste 0 register (last yanked item)
+nnoremap <Leader>v "_diw"0P
 
 "convenience for editing and sourcing .vimrc file
 nnoremap <Leader>ev :e $MYVIMRC<CR>
@@ -132,14 +133,10 @@ nnoremap <c-j> ddp
 
 " delete current working buffer.
 nnoremap <Leader>d :bd<Enter>
-" for delete if you dont care about saving
+" for delete buffer if you dont care about saving
 nnoremap <Leader><Leader>d :bd!<Enter>
 
 inoremap jk <Esc>:w<Enter>
-inoremap <c-h> <Left>
-inoremap <c-l> <Right>
-inoremap <c-j> <Down>
-inoremap <c-k> <Up>
 
 "leader tab and leader \ for moving between buffers
 noremap <Leader><Tab>  :bp<CR>
@@ -196,9 +193,14 @@ set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
 nnoremap <Leader>sp :Find <C-r><C-w>
 
-" Quick fix file navigation
-nnoremap <silent> <RIGHT> :cnext<CR>
-nnoremap <silent> <LEFT> :cprev<CR>
+" LocationList navigation
+nnoremap <Up> :lopen<CR>
+nnoremap <Down> :lclose<CR>
+nnoremap <Left> :lprev<CR>
+nnoremap <Right> :lnext<CR>
+nnoremap <Leader><Left> :lfirst<CR>
+nnoremap <Leader><Right> :llast<CR>
+
 
 " Format json
 nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
@@ -282,14 +284,20 @@ let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
-      \ 'javascript': ['eslint', 'prettier'],
-      \ 'json': ['prettier'],
+      \ 'javascript': ['prettier'],
+      \ 'json': ['prettier']
+      \ }
+
+let g:ale_linters = {
+      \ 'javascript': ['eslint'],
       \ 'vim': ['vint']
       \ }
+
 let g:ale_fix_on_save = 0
+let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
-let g:ale_javascript_prettier_options = '--single-quote --print-width=150'
+let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
 
 let g:highlightedyank_highlight_duration = 5000
 "************************************************************************************************
