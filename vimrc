@@ -201,7 +201,6 @@ nnoremap <Right> :lnext<CR>
 nnoremap <Leader><Left> :lfirst<CR>
 nnoremap <Leader><Right> :llast<CR>
 
-
 " Format json
 nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
 vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
