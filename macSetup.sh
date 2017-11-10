@@ -13,6 +13,8 @@ brew install neovim
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install peco
 brew install ripgrep
+# luajit is for neovim plugins and such
+brew install luajit
 # grip is for markdown preview github option
 brew install grip
 ln -s ~/.vimrc ~/.config/nvim/init.vim
