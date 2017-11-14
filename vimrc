@@ -219,6 +219,10 @@ nmap <Leader>nt :NERDTreeFind<CR>
 nnoremap <Leader>p :ALEFix<CR>
 
 nnoremap <Leader>ur :GundoToggle<CR>
+inoremap <c-h> <Left>
+inoremap <c-j> <Right>
+inoremap <c-k> <Down>
+inoremap <c-l> <Up>
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
@@ -264,7 +268,7 @@ let g:airline#extensions#tabline#enabled=1
 
 let g:tern#is_show_argument_hints_enabled=1
 
-let g:used_javascript_libs = 'underscore,react,chai'
+let g:used_javascript_libs = 'underscore,chai'
 let g:deoplete#enable_at_startup = 1
 
 " better key bindings for UltiSnipsExpandTrigger
@@ -284,7 +288,8 @@ let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
       \ 'javascript': ['prettier'],
-      \ 'json': ['prettier']
+      \ 'json': ['prettier'],
+      \ 'markdown': ['prettier']
       \ }
 
 let g:ale_linters = {
