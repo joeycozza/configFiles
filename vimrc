@@ -220,9 +220,9 @@ nnoremap <Leader>p :ALEFix<CR>
 
 nnoremap <Leader>ur :GundoToggle<CR>
 inoremap <c-h> <Left>
-inoremap <c-j> <Right>
-inoremap <c-k> <Down>
-inoremap <c-l> <Up>
+inoremap <c-j> <Down>
+inoremap <c-k> <Up>
+inoremap <c-l> <Right>
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
