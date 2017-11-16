@@ -16,12 +16,10 @@ Plug 'mxw/vim-jsx'
 Plug 'Shougo/deoplete.nvim'
 Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
 Plug 'SirVer/ultisnips'
-Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-speeddating'
 Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'yuttie/comfortable-motion.vim'
@@ -33,7 +31,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'w0rp/ale'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'sjl/gundo.vim'
 Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
@@ -132,9 +129,9 @@ nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 
 " delete current working buffer.
-nnoremap <Leader>d :bd<Enter>
+nnoremap <Leader>d :bdelete<Enter>
 " for delete buffer if you dont care about saving
-nnoremap <Leader><Leader>d :bd!<Enter>
+nnoremap <Leader><Leader>d :bdelete!<Enter>
 
 inoremap jk <Esc>:w<Enter>
 
@@ -149,17 +146,10 @@ noremap <Leader>i <c-i>
 " repeat last replacement of a word
 nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
 
-
 nnoremap <Leader>r :TernRename<cr>
 
 "Clear search highlighting and redraw the screen
 nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l>
-
-" Begin easyAlign
-xmap <Enter> <Plug>(EasyAlign)
-" leader= will easy align the current paragraph on the = sign (requires   xmap <Enter> <Plug>(EasyAlign)   to be mapped as well)
-nmap <Leader>a vip<Enter>=
-
 
 "Fugitive remappings for ease of use
 nnoremap <Leader>gs :Gstatus<Enter>
@@ -218,7 +208,7 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 nnoremap <Leader>p :ALEFix<CR>
 
-nnoremap <Leader>ur :GundoToggle<CR>
+" this is mainly for movement within the autocompletion lists
 inoremap <c-h> <Left>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
@@ -287,7 +277,7 @@ let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
-      \ 'javascript': ['prettier'],
+      \ 'javascript': ['prettier', 'eslint'],
       \ 'json': ['prettier'],
       \ 'markdown': ['prettier']
       \ }
