@@ -12,7 +12,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'mxw/vim-jsx'
 Plug 'Shougo/deoplete.nvim'
 Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
 Plug 'SirVer/ultisnips'
@@ -21,7 +20,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
-Plug 'dbakker/vim-projectroot' " Gives you the ProjectRootExe function
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'google/vim-searchindex'
@@ -219,6 +217,7 @@ inoremap <c-l> <Right>
 
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
+let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeChDirMode=0
 let g:NERDTreeQuitOnOpen=1
 let g:NERDTreeMouseMode=2
