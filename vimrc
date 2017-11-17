@@ -1,35 +1,64 @@
+function! LoadAndDestroy(plugin, ...) abort
+  call plug#load(a:plugin)
+  execute 'autocmd! Defer_'.a:plugin
+  if a:0
+    execute a:1
+  endif
+endfunction
+
+function! Defer(github_ref, ...) abort
+  if !has('vim_starting')
+    return
+  endif
+  let l:plug_args = a:0 ? a:1 : {}
+  call extend(l:plug_args, { 'on': [] })
+  call plug#(a:github_ref, l:plug_args)
+  let plugin = a:github_ref[stridx(a:github_ref, '/') + 1:]
+  let lad_args = '"'.plugin.'"'
+  if a:0 > 1
+    let lad_args .= ', "'.a:2.'"'
+  endif
+  let call_loadAndDestroy = 'call LoadAndDestroy('.lad_args.')'
+  execute 'augroup Defer_'.plugin.' |'
+        \ '  autocmd CursorHold,CursorHoldI * '.call_loadAndDestroy.' | '
+        \ 'augroup end'
+endfunction
+
+command! -nargs=+ DeferPlug call Defer(<args>)
+
 call plug#begin('~/.vim/plugged')
 
-Plug 'myusuf3/numbers.vim'
 Plug 'morhetz/gruvbox'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'moll/vim-node'
-Plug 'pangloss/vim-javascript'
-Plug 'othree/yajs.vim'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'Shougo/deoplete.nvim'
-Plug 'kshenoy/vim-signature' " Adds label in gutter for marks
-Plug 'SirVer/ultisnips'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-gitgutter'
-Plug 'yuttie/comfortable-motion.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'google/vim-searchindex'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'vimwiki/vimwiki'
-Plug 'easymotion/vim-easymotion'
-Plug 'w0rp/ale'
-Plug 'JamshedVesuna/vim-markdown-preview'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'machakann/vim-highlightedyank'
+Plug 'othree/yajs.vim'
+
+DeferPlug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+DeferPlug 'junegunn/fzf.vim'
+DeferPlug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+DeferPlug 'myusuf3/numbers.vim'
+DeferPlug 'scrooloose/nerdtree'
+DeferPlug 'moll/vim-node'
+DeferPlug 'pangloss/vim-javascript'
+DeferPlug 'Shougo/deoplete.nvim'
+DeferPlug 'kshenoy/vim-signature'
+DeferPlug 'SirVer/ultisnips'
+DeferPlug 'tpope/vim-surround'
+DeferPlug 'tpope/vim-fugitive'
+DeferPlug 'tpope/vim-repeat'
+DeferPlug 'tpope/vim-commentary'
+DeferPlug 'airblade/vim-gitgutter'
+DeferPlug 'yuttie/comfortable-motion.vim'
+DeferPlug 'jiangmiao/auto-pairs'
+DeferPlug 'google/vim-searchindex'
+DeferPlug 'AndrewRadev/splitjoin.vim'
+DeferPlug 'vimwiki/vimwiki'
+DeferPlug 'easymotion/vim-easymotion'
+DeferPlug 'w0rp/ale'
+DeferPlug 'JamshedVesuna/vim-markdown-preview'
+DeferPlug 'ludovicchabant/vim-gutentags'
+DeferPlug 'machakann/vim-highlightedyank'
 
 call plug#end()
 
