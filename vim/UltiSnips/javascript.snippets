@@ -1,3 +1,6 @@
+snippet get "Lodash getify"
+_.get(`!p snip.rv = snip.v.text.split(".")[0]`, '`!p snip.rv = ".".join(snip.v.text.split(".")[1:])`')
+endsnippet
 snippet 64 "base64 for Node"
 const base64Auth = new Buffer(\`${${1:username}}:${${2:password}}\`).toString('base64');
 endsnippet
