@@ -16,6 +16,9 @@ module.exports = app => {
   });
 };
 endsnippet
+snippet 64 "base64 for Node"
+const base64Auth = new Buffer(\`${${1:username}}:${${2:password}}\`).toString('base64');
+endsnippet
 snippet comp "React component" i
 import React from 'react';
 import {observer} from 'mobx-react';
@@ -41,7 +44,7 @@ snippet i_ "import lodash"
 import _ from 'lodash';
 endsnippet
 snippet r_ "require lodash"
-const _ = requre('lodash');
+const _ = require('lodash');
 endsnippet
 snippet exportIndex "Export" i
 export default from './$1.jsx';
@@ -69,7 +72,7 @@ snippet catch "catch"
   $0
 })
 endsnippet
-snippet finally "catch"
+snippet finally "finally"
 .finally(() => {
   $0
 });
@@ -89,6 +92,9 @@ _.map($1, ($2, $3) => {
   $0
 });
 endsnippet
+snippet todo "todo comment"
+//TODO: JOEY 
+endsnippet
 snippet jss "JSON.stringify()" i
 JSON.stringify(${VISUAL}${0})
 endsnippet
@@ -98,7 +104,7 @@ endsnippet
 snippet jsp "JSON.parse()" i
 JSON.parse(${VISUAL}${0})
 endsnippet
-snippet cons "console.log()" i
+snippet cons "Joeys favorite console.log()" i
 console.log('${VISUAL}$1', ${VISUAL}${1});
 endsnippet
 snippet con "console.log()" i
@@ -118,12 +124,12 @@ endsnippet
 snippet ra "require for angular" b
 require('./$0')(app);
 endsnippet
-snippet if "if" i
+snippet if "if" 
 if ($1) {
   ${VISUAL}$0
 }
 endsnippet
-snippet ife "if" i
+snippet ife "if" 
 if ($1) {
   ${VISUAL}$0
 } else {
