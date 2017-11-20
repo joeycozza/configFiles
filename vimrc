@@ -1,64 +1,41 @@
-function! LoadAndDestroy(plugin, ...) abort
-  call plug#load(a:plugin)
-  execute 'autocmd! Defer_'.a:plugin
-  if a:0
-    execute a:1
-  endif
-endfunction
-
-function! Defer(github_ref, ...) abort
-  if !has('vim_starting')
-    return
-  endif
-  let l:plug_args = a:0 ? a:1 : {}
-  call extend(l:plug_args, { 'on': [] })
-  call plug#(a:github_ref, l:plug_args)
-  let plugin = a:github_ref[stridx(a:github_ref, '/') + 1:]
-  let lad_args = '"'.plugin.'"'
-  if a:0 > 1
-    let lad_args .= ', "'.a:2.'"'
-  endif
-  let call_loadAndDestroy = 'call LoadAndDestroy('.lad_args.')'
-  execute 'augroup Defer_'.plugin.' |'
-        \ '  autocmd CursorHold,CursorHoldI * '.call_loadAndDestroy.' | '
-        \ 'augroup end'
-endfunction
-
-command! -nargs=+ DeferPlug call Defer(<args>)
-
 call plug#begin('~/.vim/plugged')
 
+"visual plugins
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'othree/yajs.vim'
+Plug 'myusuf3/numbers.vim'
+Plug 'machakann/vim-highlightedyank'
+Plug 'airblade/vim-gitgutter'
+Plug 'google/vim-searchindex'
 
-DeferPlug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-DeferPlug 'junegunn/fzf.vim'
-DeferPlug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-DeferPlug 'myusuf3/numbers.vim'
-DeferPlug 'scrooloose/nerdtree'
-DeferPlug 'moll/vim-node'
-DeferPlug 'pangloss/vim-javascript'
-DeferPlug 'Shougo/deoplete.nvim'
-DeferPlug 'kshenoy/vim-signature'
-DeferPlug 'SirVer/ultisnips'
-DeferPlug 'tpope/vim-surround'
-DeferPlug 'tpope/vim-fugitive'
-DeferPlug 'tpope/vim-repeat'
-DeferPlug 'tpope/vim-commentary'
-DeferPlug 'airblade/vim-gitgutter'
-DeferPlug 'yuttie/comfortable-motion.vim'
-DeferPlug 'jiangmiao/auto-pairs'
-DeferPlug 'google/vim-searchindex'
-DeferPlug 'AndrewRadev/splitjoin.vim'
-DeferPlug 'vimwiki/vimwiki'
-DeferPlug 'easymotion/vim-easymotion'
-DeferPlug 'w0rp/ale'
-DeferPlug 'JamshedVesuna/vim-markdown-preview'
-DeferPlug 'ludovicchabant/vim-gutentags'
-DeferPlug 'machakann/vim-highlightedyank'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" javascript/node plugins
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'moll/vim-node', { 'for': 'javascript' }
+Plug 'ternjs/tern_for_vim', { 'on': 'TernRename', 'do': 'npm install' }
+
+" extend functionality plugins
+Plug 'w0rp/ale'
+Plug 'vimwiki/vimwiki'
+Plug 'Shougo/deoplete.nvim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
+Plug 'kshenoy/vim-signature'
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'yuttie/comfortable-motion.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
@@ -156,11 +133,11 @@ nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 
 " delete current working buffer.
-nnoremap <Leader>d :bdelete<Enter>
+nnoremap <Leader>d :bdelete<CR>
 " for delete buffer if you dont care about saving
-nnoremap <Leader><Leader>d :bdelete!<Enter>
+nnoremap <Leader><Leader>d :bdelete!<CR>
 
-inoremap jk <Esc>:w<Enter>
+inoremap jk <Esc>:w<CR>
 
 "leader tab and leader \ for moving between buffers
 noremap <Leader><Tab>  :bp<CR>
@@ -171,24 +148,24 @@ noremap <Leader>o <c-o>
 noremap <Leader>i <c-i>
 
 " repeat last replacement of a word
-nnoremap <leader>. :let @/=@"<cr>/<cr>cgn<c-r>.<esc>
+nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
 
-nnoremap <Leader>r :TernRename<cr>
+nnoremap <Leader>r :TernRename<CR>
 
 "Clear search highlighting and redraw the screen
-nnoremap <silent> <c-l> :<C-u>nohlsearch<cr><c-l>
+nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
 
 "Fugitive remappings for ease of use
-nnoremap <Leader>gs :Gstatus<Enter>
-nnoremap <Leader>gc :Gcommit<Enter>
-nnoremap <Leader>gb :Gblame<Enter>
-nnoremap <Leader>gm :Gdiff<Enter>
-nnoremap <Leader>gp :Gpush<Enter>
-nnoremap <Leader>gr :Gread<Enter>
-nnoremap <Leader>gw :Gwrite<Enter>
-nnoremap <Leader>gu :diffupdate<Enter>
-nnoremap <Leader>g2 :diffget //2<Enter>:diffupdate<Enter>
-nnoremap <Leader>g3 :diffget //3<Enter>:diffupdate<Enter>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gm :Gdiff<CR>
+nnoremap <Leader>gp :Gpush<CR>
+nnoremap <Leader>gr :Gread<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gu :diffupdate<CR>
+nnoremap <Leader>g2 :diffget //2<CR>:diffupdate<CR>
+nnoremap <Leader>g3 :diffget //3<CR>:diffupdate<CR>
 nnoremap <Leader>gp [c
 nnoremap <Leader>gn ]c
 
@@ -240,6 +217,9 @@ inoremap <c-h> <Left>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 inoremap <c-l> <Right>
+
+vnoremap <c-s> y :UltiSnipsEdit<CR>
+
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
@@ -327,9 +307,9 @@ let g:highlightedyank_highlight_duration = 5000
 "************************************************************************************************
 
 function! EslintFix()
-   let l:winview = winsaveview()
-   silent !eslint --fix %
-   call winrestview(l:winview)
+  let l:winview = winsaveview()
+  silent !eslint --fix %
+  call winrestview(l:winview)
 endfunction
 command! EslintFix :call EslintFix()
 
