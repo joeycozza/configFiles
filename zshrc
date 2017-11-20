@@ -30,14 +30,12 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias wun="gulp watch"
-alias gun="gulp run"
 alias pr="open-pr master"
+alias ppp="ggpush && pr"
 alias clean="rm -rf node_modules"
 alias mods="npm install"
 alias cleanmods="clean && mods"
 alias p="ps -A | peco"
-alias ppp="ggpush && pr"
 alias fs="cd ~/fs"
 alias gitRebaseMaster="git checkout master && ggpull && git checkout @{-1} && git rebase -i master"
 alias v="$EDITOR"
