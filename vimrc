@@ -198,7 +198,7 @@ nnoremap <Leader><Right> :llast<CR>
 " Format json
 nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
 vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
-nmap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p<Leader><Leader>j
+nnoremap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p:%!python -m json.tool<CR>:set syntax=json<CR>
 
 nnoremap <Leader>gd <C-]>
 nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>

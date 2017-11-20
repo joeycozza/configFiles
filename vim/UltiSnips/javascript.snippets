@@ -15,12 +15,12 @@ export default from './$1.jsx';
 endsnippet
 snippet fn  "es6 function" i
 ($1) =>  {
-    $0
+  $0
 }
 endsnippet
 snippet fun  "es5 function" i
 function ($1) {
-    $0
+  $0
 }
 endsnippet
 snippet cline "console.log(CURRENT LINE NUMBER)"
@@ -55,9 +55,6 @@ snippet map "lodash map" i
 _.map($1, ($2, $3) => {
   $0
 });
-endsnippet
-snippet todo "todo comment"
-//TODO: JOEY 
 endsnippet
 snippet jss "JSON.stringify()" i
 JSON.stringify(${VISUAL}${0})
@@ -109,14 +106,14 @@ ${1:class_name}.prototype.${2:method_name} = function (${3:first_argument}) {
 endsnippet
 snippet it "it test block"
 it('$1', () => {
-    $0
+  $0
 });
 endsnippet
 snippet des "describe test block"
 describe('$1', () => {
-    it('$2', () => {
-        $0
-    });
+  it('$2', () => {
+    $0
+  });
 });
 endsnippet
 # The options currently supported are: >
