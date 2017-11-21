@@ -285,9 +285,10 @@ let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
-      \ 'javascript': ['prettier', 'eslint'],
-      \ 'json': ['prettier'],
-      \ 'markdown': ['prettier']
+      \ 'javascript': ['trim_whitespace', 'prettier', 'eslint'],
+      \ 'json': ['trim_whitespace', 'prettier'],
+      \ 'markdown': ['trim_whitespace', 'prettier'],
+      \ 'vim' : ['trim_whitespace']
       \ }
 
 let g:ale_linters = {
