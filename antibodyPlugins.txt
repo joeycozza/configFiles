@@ -1,4 +1,2 @@
 rimraf/k
 caarlos0/zsh-open-pr
-Tarrasch/zsh-bd
-caarlos0/ports kind:path

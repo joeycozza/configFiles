@@ -11,7 +11,7 @@ ZSH_THEME="garyblessington"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew node npm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source <(antibody init)
@@ -20,11 +20,14 @@ antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 
 # User configuration
 
-export PATH="/Users/joeycozza/nim/bin:/usr/local:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/X11/bin:/usr/local/git/bin"
 export EDITOR="nvim"
 export VISUAL=nvim
 export PATH=$JAVA_HOME/bin:$PATH
 export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
+
+export PATH="/usr/local:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/X11/bin:/usr/local/git/bin"
+export INTELLIJ_HOME="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS"
+PATH=$INTELLIJ_HOME:$PATH
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -46,9 +49,7 @@ alias ev="$EDITOR ~/.zshrc"
 alias sv="source ~/.zshrc"
 
 #piping aliases
-alias -g G="| grep"
 alias -g P="| peco"
-alias -g T="| tail"
 alias -g S="| sort"
 alias -g U="| uniq"
 
