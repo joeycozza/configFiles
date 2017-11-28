@@ -157,17 +157,7 @@ nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
 
 "Fugitive remappings for ease of use
 nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gm :Gdiff<CR>
-nnoremap <Leader>gp :Gpush<CR>
-nnoremap <Leader>gr :Gread<CR>
-nnoremap <Leader>gw :Gwrite<CR>
-nnoremap <Leader>gu :diffupdate<CR>
-nnoremap <Leader>g2 :diffget //2<CR>:diffupdate<CR>
-nnoremap <Leader>g3 :diffget //3<CR>:diffupdate<CR>
-nnoremap <Leader>gp [c
-nnoremap <Leader>gn ]c
 
 " move to next or previous gittable chunk change in file
 nmap <Leader>hn <Plug>GitGutterNextHunk
