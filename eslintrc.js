@@ -2,7 +2,8 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    mocha: true
+    mocha: true,
+    jasmine: true
   },
   extends: 'eslint:recommended',
   ecmaVersion: 7
