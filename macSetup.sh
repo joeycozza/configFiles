@@ -35,7 +35,7 @@ source ~/.zshrc
 cp ~/Documents/configFiles/default-packages $NVM_DIR/default-packages
 nvm install node
 echo ""
-echo "Manually set iterm2 settings to point to the configFile"
+echo "Manually set iterm2 settings to point to the configFile and Install Shell Integrations"
 echo "Manually setup firacode for iterm2"
 echo "Download better touch tools, karabiner"
 echo "Download intelliJ community and make sure the directory matches what gitconfig is looking for"

@@ -18,12 +18,14 @@ source <(antibody init)
 
 antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 
+
 # User configuration
 
 export EDITOR="nvim"
 export VISUAL=nvim
 export PATH=$JAVA_HOME/bin:$PATH
 export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
+export NVM_DIR="/Users/joeycozza/.nvm"
 
 export PATH="/usr/local:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/X11/bin:/usr/local/git/bin"
 
@@ -51,16 +53,11 @@ alias -g P="| peco"
 alias -g S="| sort"
 alias -g U="| uniq"
 
-export NVM_DIR="/Users/joeycozza/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ulimit -n 1024
-
-function grepex() {
-  grep -r $1 --exclude-dir={bower_components,node_modules} $PWD
-}
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
