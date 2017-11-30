@@ -292,7 +292,6 @@ let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
 
-let g:highlightedyank_highlight_duration = 5000
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
