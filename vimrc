@@ -64,13 +64,13 @@ set laststatus=2                " Always show the status bar / Airline
 set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 
 set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold smarter
-set nofoldenable " when opening a file, dont start with any folding
-set foldnestmax=1
+set nofoldenable       " when opening a file, dont start with any folding
+set foldnestmax=10
 
 set updatetime=250
 set noswapfile
-set hidden "switch buffers without saving
-set showcmd "show as commands are being typed
+set hidden             "switch buffers without saving
+set showcmd            "show as commands are being typed
 
 set suffixesadd+=.js
 set path+=$PWD/node_modules
@@ -79,15 +79,13 @@ set inccommand=nosplit
 set undofile                 "Save undo's after file closes
 set undodir=$HOME/.vim/undo  "Where to save undo histories
 set undolevels=1000          "How many undos
-set undoreload=10000         "number of lines to save for undo
+set undoreload=1000          "number of lines to save for undo
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
 set backspace=indent,eol,start  " Backspace for dummies
-set linespace=0                 " No extra spaces between rows
 set number                      " putting line numbers on in insert mode"
 
-set scrolljump=1                " Lines to scroll when cursor leaves screen
 set scrolloff=7                 " Minimum lines to keep above and below cursor
 set nowrap                      " Don't wrap long lines Don't
 set nocursorcolumn
@@ -106,7 +104,6 @@ set background=dark
 
 set clipboard=unnamed "copy to system clipboard
 
-set diffopt=filler,vertical
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
