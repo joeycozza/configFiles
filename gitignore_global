@@ -1,2 +1,6 @@
 *~
 .DS_Store
+Session.vim
+tags
+tags.lock
+tags.temp
