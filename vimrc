@@ -251,6 +251,9 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#obsession#enabled = 1
+let g:airline#extensions#obsession#indicator_text = '$e$$ion'
 
 let g:tern#is_show_argument_hints_enabled=1
 
@@ -287,7 +290,6 @@ let g:ale_linters = {
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
-let g:airline#extensions#ale#enabled = 1
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
 
 "************************************************************************************************
