@@ -49,6 +49,7 @@ let g:mapleader=' '
 "///////////////////Defaulting Registers////////////////////////////////////
 let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
+let @s = 'lb"rdw"tyWO"rp"tpa= null;' " @s macro for splitting a declaration and initialization. The cursor needs to be on the word var, let or const for it to work.
 "///////////////////////End Defaulting Registers/////////////////////////////
 
 set hlsearch                    " Highlight search terms
