@@ -51,7 +51,6 @@ let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and delet
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
 "///////////////////////End Defaulting Registers/////////////////////////////
 
-set hlsearch                    " Highlight search terms
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
 
@@ -60,7 +59,6 @@ filetype plugin on
 set iskeyword-=.                " '.' is an end of word designator
 set iskeyword-=#                " '#' is an end of word designator
 set iskeyword-=-                " '-' is an end of word designator
-set laststatus=2                " Always show the status bar / Airline
 
 set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 
@@ -71,7 +69,6 @@ set foldnestmax=10
 set updatetime=250
 set noswapfile
 set hidden             "switch buffers without saving
-set showcmd            "show as commands are being typed
 
 set suffixesadd+=.js
 set path+=$PWD/node_modules
@@ -84,7 +81,6 @@ set undoreload=1000          "number of lines to save for undo
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
-set backspace=indent,eol,start  " Backspace for dummies
 set number                      " putting line numbers on in insert mode"
 
 set scrolloff=7                 " Minimum lines to keep above and below cursor
@@ -92,8 +88,6 @@ set nowrap                      " Don't wrap long lines Don't
 set nocursorcolumn
 set cursorline
 
-" indenting http://tedlogan.com/techblog3.html
-set autoindent
 set expandtab "hitting tab insert spaces instead of <Tab>
 set tabstop=2
 set shiftwidth=2
