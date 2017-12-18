@@ -42,6 +42,8 @@ alias p="ps -A | peco"
 alias fs="cd ~/fs"
 alias gitRebaseMaster="git checkout master && ggpull && git checkout @{-1} && git rebase -i master"
 alias v="$EDITOR"
+# open up neovim with saved session info
+alias vs="$EDITOR -S"
 # heroku local, but using Procfile.dev if there is one
 alias fsh="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"
 #similar to my vim config to open and edit .vimrc and to source .vimrc
