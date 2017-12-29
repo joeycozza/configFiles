@@ -103,6 +103,7 @@ set clipboard=unnamed "copy to system clipboard
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 nnoremap ; :
+nnoremap ; :
 
 nnoremap <Leader>_ :terminal n_<CR>
 
@@ -180,9 +181,11 @@ nnoremap <Leader><Right> :llast<CR>
 " Format json
 nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
 vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
-nnoremap <Leader><Leader>json :enew<CR>:file scratchJSON<CR>p:%!python -m json.tool<CR>:set syntax=json<CR>
+nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>
 
+" Goto definition using tag data
 nnoremap <Leader>gd <C-]>
+
 nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
 nnoremap <silent> <Leader>zm :Marks<CR>
 nnoremap <silent> <Leader>zt :Tags<CR>
