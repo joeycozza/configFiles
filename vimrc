@@ -179,8 +179,7 @@ nnoremap <Leader><Left> :lfirst<CR>
 nnoremap <Leader><Right> :llast<CR>
 
 " Format json
-nnoremap <Leader><Leader>j :%!python -m json.tool<CR>
-vnoremap <Leader><Leader>j :'<,'>!python -m json.tool<CR><Paste>
+vnoremap <Leader><Leader>j :'<,'>!python ~/Documents/configFiles/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>
 
 " Goto definition using tag data
