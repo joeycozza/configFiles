@@ -1,6 +1,6 @@
 trash-cli
 fast-cli
-gulp
+gulp-cli
 mocha
 prettier
 diff-so-fancy
