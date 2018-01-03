@@ -259,3 +259,7 @@ function! s:fzf_root()
   let l:path = finddir('.git', expand('%:p:h').';')
   return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
 endfunction
+
+augroup leavingVimStuff
+  autocmd VimLeave * set guicursor=a:ver10-blinkon0
+augroup END
