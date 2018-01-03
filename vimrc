@@ -103,7 +103,6 @@ set clipboard=unnamed "copy to system clipboard
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 nnoremap ; :
-nnoremap ; :
 
 nnoremap <Leader>_ :terminal n_<CR>
 
@@ -186,12 +185,7 @@ nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype
 nnoremap <Leader>gd <C-]>
 
 nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
-nnoremap <silent> <Leader>zm :Marks<CR>
-nnoremap <silent> <Leader>zt :Tags<CR>
-nnoremap <silent> <Leader>zl :Lines<CR>
-
 nmap <Leader>nt :NERDTreeFind<CR>
-
 nnoremap <Leader>p :ALEFix<CR>
 
 " this is mainly for movement within the autocompletion lists
@@ -199,8 +193,6 @@ inoremap <c-h> <Left>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 inoremap <c-l> <Right>
-
-vnoremap <c-s> y :UltiSnipsEdit<CR>
 
 " -----------------------------------------------------
 " Plugin settings
@@ -262,7 +254,7 @@ let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-b
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
 
-" Normal mode completion
+" Used in Normal mode completion
 function! s:fzf_root()
   let l:path = finddir('.git', expand('%:p:h').';')
   return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
