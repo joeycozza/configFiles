@@ -261,5 +261,6 @@ function! s:fzf_root()
 endfunction
 
 augroup leavingVimStuff
+  autocmd!
   autocmd VimLeave * set guicursor=a:ver10-blinkon0
 augroup END
