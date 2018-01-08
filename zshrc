@@ -36,7 +36,7 @@ export PATH="/usr/local:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/
 alias pr="open-pr master"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias ppp="ggpush && pr"
-alias cleanmods="trash package-lock.json node_modules && npm install"
+alias cleanmods="rm -f package-lock.json && rm -rf node_modules && npm install"
 alias p="ps -A | peco"
 alias fs="cd ~/fs"
 alias gitRebaseMaster="git checkout master && ggpull && git checkout @{-1} && git rebase -i master"
