@@ -191,7 +191,7 @@ Split Arrangment:Restore Window Arrangement</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-707 1698 918 394 -1049 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 838 1023 0 0 1680 1027 </string>
+	<string>-1049 1050 1920 1057 -1049 1050 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1514,7 +1514,7 @@ Split Arrangment:Restore Window Arrangement</string>
 	<key>NoSyncInstallationId</key>
 	<string>AF76E95F-8EC4-4133-B466-9AD570F13AA9</string>
 	<key>NoSyncLastTipTime</key>
-	<real>535392896.42876297</real>
+	<real>537209302.45794594</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1570,6 +1570,15 @@ Split Arrangment:Restore Window Arrangement</string>
 		<string>0039</string>
 		<string>0040</string>
 		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -1627,11 +1636,11 @@ Split Arrangment:Restore Window Arrangement</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-14T16:08:02Z</date>
+	<date>2018-01-09T16:12:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.26766826923076925</real>
 	<key>TabStyle</key>
