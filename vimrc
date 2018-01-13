@@ -103,7 +103,6 @@ set clipboard=unnamed "copy to system clipboard
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 nnoremap ; :
-nnoremap ; :
 
 nnoremap <Leader>_ :terminal n_<CR>
 
@@ -165,7 +164,7 @@ nmap <Leader>hp <Plug>GitGutterPrevHunk
 " --follow: Follow symlinks
 " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 " --color: Search color options
-command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --smart-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
 nnoremap <Leader>sp :Find <C-r><C-w>
@@ -186,12 +185,7 @@ nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype
 nnoremap <Leader>gd <C-]>
 
 nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
-nnoremap <silent> <Leader>zm :Marks<CR>
-nnoremap <silent> <Leader>zt :Tags<CR>
-nnoremap <silent> <Leader>zl :Lines<CR>
-
 nmap <Leader>nt :NERDTreeFind<CR>
-
 nnoremap <Leader>p :ALEFix<CR>
 
 " this is mainly for movement within the autocompletion lists
@@ -199,8 +193,6 @@ inoremap <c-h> <Left>
 inoremap <c-j> <Down>
 inoremap <c-k> <Up>
 inoremap <c-l> <Right>
-
-vnoremap <c-s> y :UltiSnipsEdit<CR>
 
 " -----------------------------------------------------
 " Plugin settings
@@ -262,8 +254,13 @@ let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-b
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
 
-" Normal mode completion
+" Used in Normal mode completion
 function! s:fzf_root()
   let l:path = finddir('.git', expand('%:p:h').';')
   return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
 endfunction
+
+augroup leavingVimStuff
+  autocmd!
+  autocmd VimLeave * set guicursor=a:ver10-blinkon0
+augroup END
