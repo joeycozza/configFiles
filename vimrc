@@ -104,8 +104,6 @@ set clipboard=unnamed "copy to system clipboard
 "  ---------------------------------------------
 nnoremap ; :
 
-nnoremap <Leader>_ :terminal n_<CR>
-
 " this will replace the current word with the last thing yanked. Can be
 " repeated without fear of overriding the last yanked thing
 " delete into blackhole register, then paste 0 register (last yanked item)
@@ -124,9 +122,7 @@ nnoremap :: $x<Esc>
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 
-" delete current working buffer.
 nnoremap <Leader>d :bdelete<CR>
-" for delete buffer if you dont care about saving
 nnoremap <Leader><Leader>d :bdelete!<CR>
 
 inoremap jk <Esc>:w<CR>
@@ -134,10 +130,6 @@ inoremap jk <Esc>:w<CR>
 "leader tab and leader \ for moving between buffers
 noremap <Leader><Tab>  :bp<CR>
 noremap <Leader>\      :bn<CR>
-
-"leader i and leader o for traversing the jump list
-noremap <Leader>o <c-o>
-noremap <Leader>i <c-i>
 
 " repeat last replacement of a word
 nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
@@ -237,12 +229,15 @@ let g:ale_fixers = {
       \ 'javascript': ['trim_whitespace', 'prettier', 'eslint'],
       \ 'json': ['trim_whitespace', 'prettier'],
       \ 'markdown': ['prettier'],
-      \ 'vim' : ['trim_whitespace']
+      \ 'vim' : ['trim_whitespace'],
+      \ 'css' : ['prettier']
       \ }
 
 let g:ale_linters = {
+      \ 'dockerfile': ['hadolint'],
       \ 'javascript': ['eslint'],
-      \ 'vim': ['vint']
+      \ 'vim': ['vint'],
+      \ 'yaml': ['yamllint']
       \ }
 
 let g:ale_fix_on_save = 0

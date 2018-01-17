@@ -15,6 +15,7 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install peco
 brew install ripgrep
 brew install zsh-syntax-highlighting
+brew install hadolint
 # luajit is for neovim plugins and such
 brew install luajit
 # grip is for markdown preview github option
@@ -25,6 +26,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 sudo pip3 install neovim
 sudo pip3 install vim-vint
 sudo pip3 install neovim-remote
+sudo pip3 install yamllint
 sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa

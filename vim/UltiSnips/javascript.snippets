@@ -1,3 +1,17 @@
+snippet str "ES6 String Templatize a string concat visual selection"
+\``!p
+split = snip.v.text.split("+")
+finalStr = ""
+for x in split:
+  x = x.strip()
+	if x[0] == "'" or x[0] == "\"":
+		x = x.strip("\"'")
+		finalStr += x
+	else:
+		finalStr += "${" + x + "}"
+snip.rv = finalStr
+`\`
+endsnippet
 snippet try "write the try/catch"
 try {
 
