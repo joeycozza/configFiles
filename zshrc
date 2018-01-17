@@ -23,11 +23,24 @@ antibody bundle < ~/Documents/configFiles/antibodyPlugins.txt
 
 export EDITOR="nvim"
 export VISUAL=nvim
-export PATH=$JAVA_HOME/bin:$PATH
 export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
 export NVM_DIR="/Users/joeycozza/.nvm"
 
-export PATH="/usr/local:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/gcc-4.8.2/bin:/usr/local/lib/node_modules:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/X11/bin:/usr/local/git/bin"
+export PATH="/bin:$PATH"
+export PATH="/sbin:$PATH"
+export PATH="/usr/bin:$PATH"
+export PATH="/usr/sbin:$PATH"
+export PATH="/usr/local:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/git/bin:$PATH"
+export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/lib/node_modules:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/gcc-4.8.2/bin:$PATH"
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
+export PATH="/opt/X11/bin:$PATH"
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
