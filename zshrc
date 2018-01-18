@@ -1,10 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 # Path to your oh-my-zsh installation.
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+ZSH_CUSTOM=$HOME/Documents/configFiles/customZSH
 ZSH_THEME="mynode"
 
 source $ZSH/oh-my-zsh.sh
