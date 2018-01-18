@@ -16,5 +16,5 @@ function package_json_info() {
     package_version=" v${package_version}"
   fi
 
-  echo "${SPACESHIP_PACKAGE_SYMBOL}${package_version}"
+  echo "${ZSH_THEME_PACKAGE_SYMBOL}${package_version}"
 }
