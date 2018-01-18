@@ -2,6 +2,7 @@
 
 # Misc Aliases
 alias cleanmods="rm -f package-lock.json && rm -rf node_modules && npm install"
+alias conf="cd ~/Documents/configFiles"
 alias p="ps -A | peco"
 alias v="nvim"
 alias vs="nvim -S"
@@ -10,7 +11,7 @@ alias vs="nvim -S"
 alias ev="nvim ~/.zshrc"
 alias sv="source ~/.zshrc"
 
-#piping aliases
+# Piping aliases
 alias -g P="| peco"
 alias -g S="| sort"
 alias -g U="| uniq"
