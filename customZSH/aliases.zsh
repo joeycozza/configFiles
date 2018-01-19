@@ -2,7 +2,7 @@
 
 # Misc Aliases
 alias cleanmods="rm -f package-lock.json && rm -rf node_modules && npm install"
-alias conf="cd ~/Documents/configFiles"
+alias conf="cd $CONFIG_FILES_PATH"
 alias p="ps -A | peco"
 alias v="nvim"
 alias vs="nvim -S"

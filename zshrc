@@ -1,13 +1,13 @@
 export ZSH=$HOME/.oh-my-zsh
-# Path to your oh-my-zsh installation.
+export CONFIG_FILES_PATH=$HOME/Documents/configFiles
 
-ZSH_CUSTOM=$HOME/Documents/configFiles/customZSH
+ZSH_CUSTOM=$CONFIG_FILES_PATH/customZSH
 ZSH_THEME="mynode"
 
 source $ZSH/oh-my-zsh.sh
 source <(antibody init)
 
-antibody bundle < $HOME/Documents/configFiles/antibodyPlugins.txt
+antibody bundle < $CONFIG_FILES_PATH/antibodyPlugins.txt
 
 # User configuration
 export EDITOR="nvim"
@@ -31,9 +31,8 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ulimit -n 1024
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
