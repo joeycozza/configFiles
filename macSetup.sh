@@ -7,7 +7,6 @@ ln -s $CONFIG_FILES_PATH/zshrc ~/.zshrc
 ln -s $CONFIG_FILES_PATH/gitConfig ~/.gitconfig
 ln -s $CONFIG_FILES_PATH/gitignore_global ~/.gitignore_global
 ln -s $CONFIG_FILES_PATH/vintrc.yaml ~/.vintrc.yaml
-ln -s $CONFIG_FILES_PATH/default-packages $NVM_DIR/default-packages
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install fzf
 $(brew --prefix)/opt/fzf/install
@@ -16,6 +15,7 @@ brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install peco
 brew install ripgrep
 brew install zsh-syntax-highlighting
+# hadolint is a dockerfile linter tool
 brew install hadolint
 # luajit is for neovim plugins and such
 brew install luajit
@@ -24,6 +24,7 @@ brew install grip
 source ~/.zshrc
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+source ~/.zshrc
 sudo pip3 install neovim
 sudo pip3 install vim-vint
 sudo pip3 install neovim-remote
@@ -35,6 +36,7 @@ curl https://github.com/tonsky/FiraCode/releases/download/1.204/FiraCode_1.204.z
 curl https://iterm2.com/downloads/beta/iTerm2-3_1_beta_10.zip -o ~/Downloads/iterm2Beta.zip
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 source ~/.zshrc
+ln -s $CONFIG_FILES_PATH/default-packages $NVM_DIR/default-packages
 nvm install node
 echo ""
 echo "Manually set iterm2 settings to point to the configFile"
