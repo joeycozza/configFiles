@@ -1,8 +1,26 @@
-# PACKAGE
+function open_git_repo() {
+  local config_location
+
+  if [ -f .git/config ]; then
+    config_location='.git/config'
+  elif [ -f ../.git/config ]; then
+    config_location='../.git/config'
+  fi
+
+  [[ -f $config_location ]] || return
+
+  local repo_name=$(grep url $config_location | sed -E s/.*://)
+
+  if [ ! "$repo_name" ]; then
+    echo "git repo url not found"
+  else
+    open "https://github.com/$repo_name"
+  fi
+}
+
 # Show current package version
 function package_json_info() {
   # Show package version only when repository is a package
-  # @todo: add more package managers
   [[ -f package.json ]] || return
 
   # Grep and cut out package version
