@@ -12,6 +12,10 @@ ZSH_THEME_PACKAGE_SYMBOL="\u24C5"
 
 local node_version='$(nvm_prompt_info)'
 local package_version='$(package_json_info)'
+local gitBranch='$(git_prompt_info)'
 
-PROMPT='%{$fg[cyan]%}%c%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}% %{$reset_color%}: '
+local cyanColor='%F{cyan}'
+local lastDirectoryOfCWD='%1~'
+
+PROMPT='${cyanColor}${lastDirectoryOfCWD}%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}% %{$reset_color%}: '
 RPROMPT="${node_version}%{$reset_color%}${package_version}"
