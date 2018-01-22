@@ -6,6 +6,7 @@ export CONFIG_FILES_PATH=$HOME/Documents/configFiles
 ZSH_CUSTOM=$CONFIG_FILES_PATH/customZSH
 ZSH_THEME="mynode"
 
+plugins=(dotenv)
 source $ZSH/oh-my-zsh.sh
 source <(antibody init)
 
