@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 function open_git_repo() {
   local config_location
 
@@ -5,16 +7,30 @@ function open_git_repo() {
     config_location='.git/config'
   elif [ -f ../.git/config ]; then
     config_location='../.git/config'
+  elif [ -f ../../.git/config ]; then
+    config_location='../../.git/config'
   fi
 
   [[ -f $config_location ]] || return
 
-  local repo_name=$(grep url $config_location | sed -E s/.*://)
+  local url_line_with_git_at="$(grep 'git@' $config_location)"
 
-  if [ ! "$repo_name" ]; then
-    echo "git repo url not found"
-  else
-    open "https://github.com/$repo_name"
+  if [ "$url_line_with_git_at" ]; then
+    local repo_name=$(grep url $config_location | sed -E s/.*://)
+
+    if [ ! "$repo_name" ]; then
+      echo "git repo_name not found"
+    else
+      open "https://github.com/$repo_name"
+    fi
+  else 
+    local repo_url=$(grep url $config_location | sed -E s/.*https:/https:/)
+
+    if [ ! "$repo_url" ]; then
+      echo "git repo url not found"
+    else
+      open "$repo_url"
+    fi
   fi
 }
 

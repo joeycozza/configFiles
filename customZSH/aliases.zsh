@@ -1,5 +1,6 @@
-# For a full list of active aliases, run `alias`.
+#! /bin/zsh
 
+# For a full list of active aliases, run `alias`.
 # Misc Aliases
 alias cleanmods="rm -f package-lock.json && rm -rf node_modules && npm install"
 alias conf="cd $CONFIG_FILES_PATH"

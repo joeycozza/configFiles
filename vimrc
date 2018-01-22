@@ -234,10 +234,12 @@ let g:ale_fixers = {
       \ }
 
 let g:ale_linters = {
+      \ 'bash': ['shellcheck'],
       \ 'dockerfile': ['hadolint'],
       \ 'javascript': ['eslint'],
       \ 'vim': ['vint'],
-      \ 'yaml': ['yamllint']
+      \ 'yaml': ['yamllint'],
+      \ 'zsh': ['shellcheck']
       \ }
 
 let g:ale_fix_on_save = 0
