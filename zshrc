@@ -4,6 +4,7 @@ if [[ -v ZSH_PROF ]]; then
   zmodload zsh/zprof
   # env ZSH_PROF= zsh -ic zprof
   # That cmd will profile starting up zsh
+  # https://github.com/robbyrussell/oh-my-zsh/issues/5327 for more info and help debugging
 fi
 
 export ZSH=$HOME/.oh-my-zsh
