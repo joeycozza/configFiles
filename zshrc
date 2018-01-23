@@ -1,5 +1,11 @@
 #! /bin/zsh
 
+if [[ -v ZSH_PROF ]]; then
+  zmodload zsh/zprof
+  # env ZSH_PROF= zsh -ic zprof
+  # That cmd will profile starting up zsh
+fi
+
 export ZSH=$HOME/.oh-my-zsh
 export CONFIG_FILES_PATH=$HOME/Documents/configFiles
 
