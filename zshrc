@@ -1,5 +1,4 @@
 #! /bin/zsh
-
 if [[ -v ZSH_PROF ]]; then
   zmodload zsh/zprof
   # env ZSH_PROF= zsh -ic zprof
@@ -42,7 +41,7 @@ export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ulimit -n 1024

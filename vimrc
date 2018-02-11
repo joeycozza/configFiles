@@ -200,13 +200,10 @@ let g:NERDTreeShowHidden=1
 let g:NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-" FZF customizations"
-" This is the default extra key bindings
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
-
-" Default fzf layout
 let g:fzf_layout = { 'down': '~20%' }
 
+let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#obsession#enabled = 1
@@ -219,8 +216,6 @@ let g:deoplete#enable_at_startup = 1
 
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
-
-let g:airline_theme='simple'
 
 let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
