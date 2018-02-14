@@ -21,7 +21,7 @@ antibody bundle < $CONFIG_FILES_PATH/antibodyPlugins.txt
 # User configuration
 export EDITOR="nvim"
 export VISUAL=nvim
-export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
+export FZF_DEFAULT_COMMAND='rg --files --glob "!.git/*"'
 export NVM_DIR="$HOME/.nvm"
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
