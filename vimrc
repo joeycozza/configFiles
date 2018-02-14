@@ -180,11 +180,9 @@ nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
 nnoremap <Leader>p :ALEFix<CR>
 
-" this is mainly for movement within the autocompletion lists
-inoremap <c-h> <Left>
-inoremap <c-j> <Down>
-inoremap <c-k> <Up>
-inoremap <c-l> <Right>
+" use tab/shift-tab to forward/backward cycle deoplete completion list
+inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
 
 " -----------------------------------------------------
 " Plugin settings
@@ -214,7 +212,9 @@ let g:tern#is_show_argument_hints_enabled=1
 let g:used_javascript_libs = 'underscore,chai'
 let g:deoplete#enable_at_startup = 1
 
-let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsExpandTrigger = ';;'
+let g:UltiSnipsJumpForwardTrigger = ';;'
+let g:UltiSnipsJumpBackwardTrigger = '::'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 
 let g:vim_markdown_preview_github = 1

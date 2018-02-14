@@ -23,6 +23,7 @@ export EDITOR="nvim"
 export VISUAL=nvim
 export FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/*"'
 export NVM_DIR="$HOME/.nvm"
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 export PATH="/bin:$PATH"
 export PATH="/sbin:$PATH"

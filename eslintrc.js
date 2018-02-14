@@ -6,5 +6,7 @@ module.exports = {
     jasmine: true
   },
   extends: 'eslint:recommended',
-  ecmaVersion: 7
+  parserOptions: {
+    ecmaVersion: 8
+  }
 };
