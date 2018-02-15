@@ -99,6 +99,7 @@ set background=dark
 
 set clipboard=unnamed "copy to system clipboard
 
+set nofixendofline
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
