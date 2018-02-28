@@ -26,6 +26,10 @@
 	<real>528344121.35325098</real>
 	<key>DeleteProfile_selection</key>
 	<integer>0</integer>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -203,9 +207,9 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>-399 1548 620 392 -1049 1050 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-707 1624 958 451 -1049 1050 1920 1057 </string>
+	<string>206 492 918 452 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 573 1680 454 0 0 1680 1027 </string>
+	<string>-1049 1050 1920 1057 -1049 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 1090 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -815,7 +819,7 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.13291560913705586</real>
+			<real>0.075309327411167512</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -1673,13 +1677,13 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-09T13:57:45Z</date>
+	<date>2018-02-26T16:40:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.26766826923076925</real>
+	<real>0.25959284855769232</real>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>ToolbeltTools</key>
