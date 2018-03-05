@@ -8,5 +8,8 @@ module.exports = {
   extends: 'eslint:recommended',
   parserOptions: {
     ecmaVersion: 8
+  },
+  rules: {
+    'no-console': 'off'
   }
 };
