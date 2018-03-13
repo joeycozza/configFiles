@@ -40,7 +40,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'takac/vim-hardtime'
 
 call plug#end()
 
@@ -53,7 +52,7 @@ let g:mapleader=' '
 "///////////////////Defaulting Registers////////////////////////////////////
 let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
-let @c = 'ciwconstjk'      " @c macro for changing a variable definition to const
+let @c = '0ciwconstjkj'      " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
 
 set ignorecase                  " Case insensitive search
@@ -246,14 +245,6 @@ let g:ale_fix_on_save = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
-
-let g:hardtime_default_on = 1
-let g:hardtime_maxcount = 3
-let g:list_of_normal_keys = ['h', 'l']
-let g:list_of_visual_keys = ['h', 'l']
-let g:list_of_insert_keys = []
-let g:list_of_disabled_keys = []
-
 
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
