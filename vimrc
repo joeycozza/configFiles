@@ -16,11 +16,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " javascript/node plugins
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'moll/vim-node', { 'for': 'javascript' }
-Plug 'ternjs/tern_for_vim', { 'on': 'TernRename', 'do': 'npm install' }
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/yajs.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'moll/vim-node'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 " extend functionality plugins
 Plug 'w0rp/ale'
@@ -74,8 +74,6 @@ set updatetime=250
 set noswapfile
 set hidden             "switch buffers without saving
 
-set suffixesadd+=.js
-set path+=$PWD/node_modules
 set inccommand=nosplit
 
 set undofile                 "Save undo's after file closes
@@ -107,7 +105,6 @@ set nofixendofline
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
-nnoremap ; :
 
 " this will replace the current word with the last thing yanked. Can be
 " repeated without fear of overriding the last yanked thing
