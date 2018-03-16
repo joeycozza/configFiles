@@ -55,6 +55,10 @@ let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps
 let @c = '0ciwconstjkj'      " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
 
+"Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down. 
+"With this change it only rerenders at the end of the macro.
+set lazyredraw 
+
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
 
@@ -102,6 +106,17 @@ set background=dark
 set clipboard=unnamed "copy to system clipboard
 
 set nofixendofline
+
+" Find project wide
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+set grepprg=rg\ -H\ --no-heading\ --vimgrep
+
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
@@ -149,15 +164,8 @@ nnoremap <Leader>gb :Gblame<CR>
 nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
 
-" Find project wide
-" --line-number: Show line number
-" --no-heading: Do not show file headings in results
-" --fixed-strings: Search term as a literal string
-" --follow: Follow symlinks
-" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-" --color: Search color options
-command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-set grepprg=rg\ -H\ --no-heading\ --vimgrep
+" who needs EX mode? last macro with Q
+nnoremap Q @@ 
 
 nnoremap <Leader>sp :Find <C-r><C-w>
 
