@@ -13,7 +13,6 @@ brew install fzf
 "$(brew --prefix)"/opt/fzf/install
 brew install neovim
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-brew install peco
 brew install ripgrep
 brew install zsh-syntax-highlighting
 # hadolint is a dockerfile linter tool
