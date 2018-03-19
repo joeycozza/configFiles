@@ -130,6 +130,8 @@ nnoremap <Leader>v "_diw"0P
 nnoremap <Leader>ev :e $MYVIMRC<CR>
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 
+nnoremap ; :
+
 " helpers for adding semicolon or comma and removing always at end of the current line
 nnoremap ;; A;<Esc>
 nnoremap ,, A,<Esc>
