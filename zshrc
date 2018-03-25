@@ -46,5 +46,3 @@ export PATH="$JAVA_HOME/bin:$PATH"
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ulimit -n 1024
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
