@@ -12,7 +12,11 @@ export CONFIG_FILES_PATH=$HOME/Documents/configFiles
 ZSH_CUSTOM=$CONFIG_FILES_PATH/customZSH
 ZSH_THEME="mynode"
 
-plugins=(gulpComplete)
+plugins=(
+  gulpComplete
+  myNvm
+)
+
 source $ZSH/oh-my-zsh.sh
 source <(antibody init)
 
@@ -22,8 +26,7 @@ antibody bundle < $CONFIG_FILES_PATH/antibodyPlugins.txt
 export EDITOR="nvim"
 export VISUAL=nvim
 export FZF_DEFAULT_COMMAND='rg --files --glob "!.git/*"'
-export NVM_DIR="$HOME/.nvm"
-export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+export RIPGREP_CONFIG_PATH="$CONFIG_FILES_PATH/ripgreprc"
 
 export PATH="/bin:$PATH"
 export PATH="/sbin:$PATH"
@@ -41,8 +44,9 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ulimit -n 1024
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

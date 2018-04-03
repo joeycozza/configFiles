@@ -8,7 +8,6 @@ ln -s "$CONFIG_FILES_PATH/gitConfig" "$HOME/gitconfig"
 ln -s "$CONFIG_FILES_PATH/gitignore_global" "$HOME/gitignore_global"
 ln -s "$CONFIG_FILES_PATH/vintrc.yaml" "$HOME/vintrc.yaml"
 ln -s "$CONFIG_FILES_PATH/eslintrc.js" "$HOME/.eslintrc.js"
-ln -s "$CONFIG_FILES_PATH/ripgreprc" "$HOME"/.ripgreprc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install fzf
 "$(brew --prefix)"/opt/fzf/install

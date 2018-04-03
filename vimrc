@@ -9,9 +9,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'airblade/vim-gitgutter'
 Plug 'google/vim-searchindex'
 
-" LSP Plugin stuff
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -213,6 +210,7 @@ let g:fzf_layout = { 'down': '~20%' }
 
 let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#obsession#enabled = 1
 let g:airline#extensions#obsession#indicator_text = '0b$3$$3d'
@@ -252,25 +250,6 @@ let g:ale_fix_on_save = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
-
-" Automatically start language servers.
-let g:LanguageClient_autoStart = 1
-
-" Minimal LSP configuration for JavaScript
-let g:LanguageClient_serverCommands = {}
-if executable('javascript-typescript-stdio')
-  let g:LanguageClient_serverCommands.javascript = ['javascript-typescript-stdio']
-else
-  echo "javascript-typescript-stdio not installed!\n"
-  :cq
-endif
-
-nnoremap <silent> <Leader>lh :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> <Leader>ld :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <Leader>lr :call LanguageClient_textDocument_rename()<CR>
-nnoremap <silent> <Leader>ls :call LanguageClient_textDocument_documentSymbol()<CR>
-" lu for languageUsages for the references since lr was taken for rename
-nnoremap <silent> <Leader>lu :call LanguageClient_textDocument_references()<CR>
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
