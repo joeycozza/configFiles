@@ -36,7 +36,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
-Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
