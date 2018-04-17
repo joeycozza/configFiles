@@ -51,9 +51,9 @@ let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps
 let @c = '0ciwconstjkj'      " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
 
-"Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down. 
+"Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 "With this change it only rerenders at the end of the macro.
-set lazyredraw 
+set lazyredraw
 
 set ignorecase                  " Case insensitive search
 set smartcase                   " Case sensitive when uc present
@@ -137,6 +137,7 @@ nnoremap :: $x<Esc>
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 
+nnoremap <Leader>t :term npm test<CR>
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader><Leader>d :bdelete!<CR>
 
@@ -163,7 +164,7 @@ nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
 
 " who needs EX mode? last macro with Q
-nnoremap Q @@ 
+nnoremap Q @@
 
 nnoremap <Leader>sp :Find <C-r><C-w>
 
@@ -254,13 +255,34 @@ let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-b
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
 
+augroup leavingVimStuff
+  autocmd!
+  autocmd VimLeave * set guicursor=a:ver10-blinkon0
+augroup END
+
 " Used in Normal mode completion
 function! s:fzf_root()
   let l:path = finddir('.git', expand('%:p:h').';')
   return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
 endfunction
 
-augroup leavingVimStuff
-  autocmd!
-  autocmd VimLeave * set guicursor=a:ver10-blinkon0
-augroup END
+command! -nargs=+ -complete=custom,s:LebabComplete Lebab call s:Lebab(<f-args>)
+function! s:Lebab(...)
+  let l:transforms = a:000
+  let l:filename = expand('%:p')
+
+  let l:command_line = 'lebab '.shellescape(l:filename).' --transform '.join(l:transforms, ',')
+
+  let l:new_lines = systemlist(l:command_line)
+  if v:shell_error
+    echoerr 'There was an error running lebab: '.join(l:new_lines, "\n")
+    return
+  endif
+
+  %delete _
+  call setline(1, l:new_lines)
+endfunction
+function! s:LebabComplete(argument_lead, command_line, cursor_position)
+  let l:lebab_transforms = ['arg-rest', 'arg-spread', 'arrow', 'class:unsafe', 'commonjs:unsafe', 'default-param:unsafe', 'destruct-param:unsafe', 'exponent', 'for-each', 'for-of', 'includes:unsafe', 'let:unsafe', 'multi-var', 'no-strict', 'obj-method', 'obj-shorthand', 'template:unsafe']
+  return join(l:lebab_transforms, "\n")
+endfunction
