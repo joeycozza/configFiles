@@ -33,7 +33,7 @@ sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
 curl https://github.com/tonsky/FiraCode/releases/download/1.204/FiraCode_1.204.zip -o "$HOME/Downloads/FiraCode_1.204.zip"
-curl https://iterm2.com/downloads/beta/iTerm2-3_1_beta_10.zip -o "$HOME/Downloads/iterm2Beta.zip"
+curl https://iterm2.com/downloads/stable/iTerm2-3_1_5.zip -o "$HOME/Downloads/iterm2Beta.zip"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 source "$HOME/zshrc"
 ln -s "$CONFIG_FILES_PATH/default-packages" "$NVM_DIR/default-packages"
