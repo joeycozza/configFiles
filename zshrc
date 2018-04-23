@@ -16,12 +16,10 @@ plugins=(
   gulpComplete
   myNvm
   frontier
+  openPr
 )
 
 source $ZSH/oh-my-zsh.sh
-source <(antibody init)
-
-antibody bundle < $CONFIG_FILES_PATH/antibodyPlugins.txt
 
 # User configuration
 export EDITOR="nvim"

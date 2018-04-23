@@ -1,2 +1,0 @@
-rimraf/k
-caarlos0/zsh-open-pr
