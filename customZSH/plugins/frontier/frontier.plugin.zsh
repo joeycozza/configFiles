@@ -1,0 +1,1 @@
+/Users/joeycozza/fs/frontier-cli/frontier-completion.zsh

@@ -15,6 +15,7 @@ ZSH_THEME="mynode"
 plugins=(
   gulpComplete
   myNvm
+  frontier
 )
 
 source $ZSH/oh-my-zsh.sh
