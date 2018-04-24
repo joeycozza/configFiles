@@ -40,7 +40,6 @@ function package_json_info() {
   [[ -f package.json ]] || return
 
   # Grep and cut out package version
-  # Grep -E does not support \d for digits shortcut, should use [:digit:] or [0-9] instead
   local package_version=$(grep -E '"version": "v?([0-9]+\.){1,}' package.json | cut -d\" -f4 2> /dev/null)
 
   # Handle version not found
