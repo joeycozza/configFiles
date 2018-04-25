@@ -254,6 +254,10 @@ let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-b
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
+augroup FiletypeGroup
+  autocmd!
+  au BufNewFile,BufRead *.html set filetype=javascript.html
+augroup END
 
 augroup leavingVimStuff
   autocmd!

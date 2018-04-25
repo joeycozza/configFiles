@@ -5,7 +5,8 @@ module.exports = {
     mocha: true,
     jasmine: true
   },
-  extends: 'eslint:recommended',
+  plugins: ['html'],
+  extends: ['eslint:recommended'],
   parserOptions: {
     ecmaVersion: 8
   },

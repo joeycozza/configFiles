@@ -207,7 +207,7 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>-399 1548 620 392 -1049 1050 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>206 492 918 452 0 0 1680 1027 </string>
+	<string>451 522 770 429 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-1049 1050 1920 1057 -1049 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1074,7 +1074,7 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 			<key>Cursor Type</key>
 			<integer>1</integer>
 			<key>Custom Command</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Custom Directory</key>
 			<string>No</string>
 			<key>Default Bookmark</key>
@@ -1677,13 +1677,13 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-26T16:40:54Z</date>
+	<date>2018-04-24T15:40:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.25959284855769232</real>
+	<real>0.23144781650641028</real>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>ToolbeltTools</key>
@@ -4062,7 +4062,7 @@ Split Work Monitor:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

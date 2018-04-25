@@ -5,6 +5,7 @@ mocha
 prettier
 diff-so-fancy
 eslint
+eslint-plugin-html
 neovim
 npm-check
 n_
