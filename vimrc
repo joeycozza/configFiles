@@ -229,7 +229,7 @@ let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
-      \ 'javascript': ['trim_whitespace', 'prettier', 'eslint'],
+      \ 'javascript': ['trim_whitespace', 'eslint', 'prettier'],
       \ 'json': ['trim_whitespace', 'prettier'],
       \ 'html': ['prettier'],
       \ 'markdown': ['prettier'],
