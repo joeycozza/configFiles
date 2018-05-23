@@ -19,6 +19,8 @@ plugins=(
   openPr
 )
 
+bindkey '\C-e' edit-command-line
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

@@ -174,8 +174,6 @@ nnoremap <Up> :lopen<CR>
 nnoremap <Down> :lclose<CR>
 nnoremap <Left> :lprev<CR>
 nnoremap <Right> :lnext<CR>
-nnoremap <Leader><Left> :lfirst<CR>
-nnoremap <Leader><Right> :llast<CR>
 
 " Format json
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
