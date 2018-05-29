@@ -15,7 +15,6 @@ ZSH_THEME="mynode"
 plugins=(
   gulpComplete
   myNvm
-  frontier
   openPr
 )
 
