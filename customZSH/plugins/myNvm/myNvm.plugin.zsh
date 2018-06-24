@@ -5,6 +5,3 @@
 
 # Load nvm if it exists
 [[ -f "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-
-# Setup the tab completion that comes with nvm if it exists
-[[ -r "$NVM_DIR/bash_completion" ]] && \. $NVM_DIR/bash_completion
