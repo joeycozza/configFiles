@@ -114,6 +114,9 @@ set nofixendofline
 command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
+" pangloss/javascript sometimes sets conceal level. This will turn it off
+set conceallevel=0
+
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
@@ -249,6 +252,7 @@ let g:ale_fix_on_save = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
+
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
