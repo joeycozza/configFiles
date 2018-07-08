@@ -18,7 +18,6 @@ Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-Plug 'janko-m/vim-test'
 
 " extend functionality plugins
 Plug 'w0rp/ale'
@@ -115,7 +114,7 @@ set nofixendofline
 command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
-" pangloss/javascript sometimes sets conceal level. This will turn it off
+" pangloss/javascript sometimes sets conceal level. hidden reveal shorten This will turn it off
 set conceallevel=0
 
 "-----------------------------------------------
@@ -142,11 +141,6 @@ nnoremap :: $x<Esc>
 nnoremap <c-k> dd<Up><Up>p
 nnoremap <c-j> ddp
 
-nnoremap <Leader>ts :TestSuite<CR>
-nnoremap <Leader>tf :TestFile<CR>
-nnoremap <Leader>tn :TestNearest<CR>
-nnoremap <Leader>tl :TestLast<CR>
-nnoremap <Leader>tv :TestVisit<CR>
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader><Leader>d :bdelete!<CR>
 
