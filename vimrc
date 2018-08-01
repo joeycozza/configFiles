@@ -70,6 +70,7 @@ set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold smarter
 set nofoldenable       " when opening a file, dont start with any folding
 set foldnestmax=10
+set foldlevel=10
 
 set updatetime=250
 set noswapfile
