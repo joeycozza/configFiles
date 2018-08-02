@@ -37,6 +37,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'wellle/targets.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
