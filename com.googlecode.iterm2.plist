@@ -230,9 +230,9 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>-399 1548 620 392 -1049 1050 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>355 569 918 452 0 0 1680 1027 </string>
+	<string>-617 1649 918 452 -1068 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1068 1050 1920 1057 -1068 1050 1920 1057 </string>
+	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 1090 567 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -842,7 +842,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.075309327411167512</real>
+			<real>0.099365482233502542</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -2146,7 +2146,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.11697929885786802</real>
+			<real>0.22255512373096448</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -2338,7 +2338,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-01T20:05:01Z</date>
+	<date>2018-08-06T15:57:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
