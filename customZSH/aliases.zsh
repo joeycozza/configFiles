@@ -8,6 +8,9 @@ alias p="ps -A | fzf"
 alias v="nvim"
 alias vs="nvim -S"
 
+# Get disk usage of top 40 largest directories from within current directory
+alias diskusage="du -mx | sort --reverse --numeric-sort | head -41 | tail -40 | (echo 'Mb      Directory\n-----------------' && cat) "
+
 #similar to my vim config to open and edit .vimrc and to source .vimrc
 alias ev="nvim ~/.zshrc"
 alias sv="source ~/.zshrc"
