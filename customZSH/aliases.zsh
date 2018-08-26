@@ -36,3 +36,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias ppp="ggpush && pr"
 alias gitRebaseMaster="git checkout master && ggpull && git checkout @{-1} && git rebase -i master"
 alias or="open_git_repo"
+
+# Overwriting basic commands with newer ones
+alias ping="prettyping --nolegend"
+alias cat="bat"
