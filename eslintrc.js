@@ -3,11 +3,11 @@ module.exports = {
     es6: true,
     node: true,
     mocha: true,
-    jasmine: true
   },
   extends: ['eslint:recommended'],
   parserOptions: {
-    ecmaVersion: 8
+    ecmaVersion: 8,
+    sourceType: 'module'
   },
   rules: {
     'no-console': 'off'

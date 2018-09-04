@@ -19,6 +19,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
+"React/html plugins
+Plug 'mxw/vim-jsx'
+
 " extend functionality plugins
 Plug 'w0rp/ale'
 Plug 'vimwiki/vimwiki'
@@ -50,7 +53,7 @@ let g:mapleader=' '
 "///////////////////Defaulting Registers////////////////////////////////////
 let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
-let @c = '0ciwconstjkj'      " @c macro for changing a variable definition to const
+let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
 
 "Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
@@ -220,7 +223,7 @@ let g:airline#extensions#obsession#indicator_text = '0b$3$$3d'
 
 let g:tern#is_show_argument_hints_enabled=1
 
-let g:used_javascript_libs = 'underscore,chai'
+let g:used_javascript_libs = 'underscore,chai,react'
 let g:deoplete#enable_at_startup = 1
 
 let g:UltiSnipsExpandTrigger = ';;'
@@ -254,14 +257,15 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
 
+let g:jsx_ext_required = 0
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
-augroup FiletypeGroup
-  autocmd!
-  au BufNewFile,BufRead *.html set filetype=javascript.html
-augroup END
+" augroup FiletypeGroup
+"   autocmd!
+"   au BufNewFile,BufRead *.html set filetype=javascript.html
+" augroup END
 
 augroup leavingVimStuff
   autocmd!
