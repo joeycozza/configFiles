@@ -16,6 +16,7 @@ plugins=(
   gulpComplete
   myNvm
   openPr
+  gitHelpers
 )
 
 bindkey '\C-e' edit-command-line
