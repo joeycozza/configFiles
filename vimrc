@@ -254,6 +254,13 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
 
+" Use just ESLint (not prettier) for fixing js files found in the /nunya/ directory
+let g:ale_pattern_options = {
+ \   '\/nunya\/.*\.js$': {
+ \       'ale_fixers': ['eslint'],
+ \   },
+ \}
+
 let g:jsx_ext_required = 0
 
 "************************************************************************************************
