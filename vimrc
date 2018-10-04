@@ -232,12 +232,13 @@ let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
+      \ 'css' : ['prettier'],
       \ 'javascript': ['trim_whitespace', 'eslint', 'prettier'],
       \ 'json': ['trim_whitespace', 'prettier'],
       \ 'html': ['prettier'],
       \ 'markdown': ['prettier'],
       \ 'vim' : ['trim_whitespace'],
-      \ 'css' : ['prettier']
+      \ 'yaml': ['prettier']
       \ }
 
 let g:ale_linters = {
@@ -254,9 +255,10 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
 
-" Use just ESLint (not prettier) for fixing js files found in the /nunya/ directory
+" Use just ESLint (not prettier) for fixing js or jsx files found in the /nunya/ directory
+" \= is to match 0 or 1 of the preceeding character in vim. http://vimregex.com/
 let g:ale_pattern_options = {
- \   '\/nunya\/.*\.js$': {
+ \   '\/nunya\/.*\.jsx\=$': {
  \       'ale_fixers': ['eslint'],
  \   },
  \}
