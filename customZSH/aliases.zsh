@@ -9,7 +9,7 @@ alias v="nvim"
 alias vs="nvim -S"
 
 # Get disk usage of top 40 largest directories from within current directory
-alias diskusage="du -mx | sort --reverse --numeric-sort | head -46 | tail -45 | (echo 'Mb      Directory\n-----------------' && cat) "
+alias diskusage="du -mx | sort --reverse --numeric-sort | head -46 | tail -45 | (echo 'Mb      Directory\n-----------------' && command cat) "
 alias deleteNodeModules="find . -name node_modules -type d -prune -exec rm -rf {} +"
 alias deleteBowerComponents="find . -name bower_components -type d -prune -exec rm -rf {} +"
 alias cleanpackages="deleteNodeModules && deleteBowerComponents"

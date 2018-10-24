@@ -149,8 +149,8 @@ nnoremap <Leader><Leader>d :bdelete!<CR>
 inoremap jk <Esc>:w<CR>
 
 "leader tab and leader \ for moving between buffers
-noremap <Leader><Tab>  :bp<CR>
-noremap <Leader>\      :bn<CR>
+noremap <Leader><Tab>  :bprevious<CR>
+noremap <Leader>\      :bnext<CR>
 
 " repeat last replacement of a word
 nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
