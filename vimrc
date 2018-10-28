@@ -132,7 +132,7 @@ set conceallevel=0
 nnoremap <Leader>v "_diw"0P
 
 "convenience for editing and sourcing .vimrc file
-nnoremap <Leader>ev :e $MYVIMRC<CR>
+nnoremap <Leader>ev :edit $MYVIMRC<CR>
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " helpers for adding comma and removing always at end of the current line
@@ -186,7 +186,7 @@ nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype
 " Goto definition using tag data
 nnoremap <Leader>gd <C-]>
 
-nnoremap <silent> <Leader>f :exe 'Files ' . <SID>fzf_root()<CR>
+nnoremap <silent> <Leader>f :execute 'Files ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
 nnoremap <Leader>p :ALEFix<CR>
 
