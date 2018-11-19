@@ -261,6 +261,9 @@ let g:ale_pattern_options = {
  \   '\/nunya\/.*\.jsx\=$': {
  \       'ale_fixers': ['eslint'],
  \   },
+ \   '\/changelog\/.*\.jsx\=$': {
+ \       'ale_fixers': ['eslint'],
+ \   },
  \}
 
 let g:jsx_ext_required = 0
