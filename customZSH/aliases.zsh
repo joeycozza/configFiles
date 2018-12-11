@@ -33,3 +33,5 @@ alias fs="cd ~/fs"
 # Overwriting basic commands with newer ones
 alias ping="prettyping --nolegend"
 alias cat="bat"
+
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
