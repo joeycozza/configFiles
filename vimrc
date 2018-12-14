@@ -276,6 +276,14 @@ let g:jsx_ext_required = 0
 "   au BufNewFile,BufRead *.html set filetype=javascript.html
 " augroup END
 
+
+" Help with terminal mode. Esc will now go back to normal mode
+" if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
+
 augroup leavingVimStuff
   autocmd!
   autocmd VimLeave * set guicursor=a:ver10-blinkon0
