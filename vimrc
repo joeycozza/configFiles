@@ -253,7 +253,7 @@ let g:ale_linters = {
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_javascript_prettier_options = '--single-quote --print-width=120 --no-bracket-spacing'
+let g:ale_javascript_prettier_options = '--single-quote --print-width=100'
 
 " Use just ESLint (not prettier) for fixing js or jsx files found in the /nunya/ directory
 " \= is to match 0 or 1 of the preceeding character in vim. http://vimregex.com/
