@@ -106,6 +106,10 @@ colorscheme gruvbox
 set background=dark
 
 set clipboard=unnamed "copy to system clipboard
+
+" setting the clipboard variable manually as per this reddit post
+" https://www.reddit.com/r/neovim/comments/ab01n8/improve_neovim_startup_by_60ms_for_free_on_macos/
+" This reduced my nvim startup time by about 40ms
 let g:clipboard = {
   \ 'name': 'pbcopy',
   \ 'copy': {
