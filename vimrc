@@ -106,6 +106,18 @@ colorscheme gruvbox
 set background=dark
 
 set clipboard=unnamed "copy to system clipboard
+let g:clipboard = {
+  \ 'name': 'pbcopy',
+  \ 'copy': {
+  \    '+': 'pbcopy',
+  \    '*': 'pbcopy',
+  \  },
+  \ 'paste': {
+  \    '+': 'pbpaste',
+  \    '*': 'pbpaste',
+  \ },
+  \ 'cache_enabled': 0,
+  \ }
 
 set nofixendofline
 
