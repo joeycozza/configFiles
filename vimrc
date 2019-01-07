@@ -151,9 +151,10 @@ nnoremap <Leader>v "_diw"0P
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 
-" helpers for adding comma and removing always at end of the current line
-nnoremap ,, A,<Esc>
-nnoremap :: $x<Esc>
+"add comma to end of line and put cursor back where it was
+nnoremap ,, m`A,<Esc>``m`
+"remove last character from line and put cursor back where it was
+nnoremap :: m`$x<Esc>``m`
 
 " move whole line up or down
 nnoremap <c-k> dd<Up><Up>p
@@ -164,7 +165,7 @@ nnoremap <Leader><Leader>d :bdelete!<CR>
 
 inoremap jk <Esc>:w<CR>
 
-"leader tab and leader \ for moving between buffers
+"leader tab and leader \ for moving between buffers (nice for my ergodox keyboard)
 noremap <Leader><Tab>  :bprevious<CR>
 noremap <Leader>\      :bnext<CR>
 
