@@ -18,10 +18,10 @@
 	b = branch
 	graph = log --graph -20 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
 	precommit = diff --cached --diff-algorithm=minimal -w
-	uncommit = reset --soft HEAD~
 	cod = checkout develop
   com = checkout master
   rmi = rebase -i master
+	uncommit = reset --soft HEAD~
   open = "!f() { REPO_URL=$(git config remote.origin.url); open ${REPO_URL%%.git}; }; f"
   rebaseMaster = !git checkout master && git pull origin master && git checkout @{-1} && git rebase -i master
 [url "https://"]
