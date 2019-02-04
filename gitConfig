@@ -22,6 +22,8 @@
 	cod = checkout develop
   com = checkout master
   rmi = rebase -i master
+  open = "!f() { REPO_URL=$(git config remote.origin.url); open ${REPO_URL%%.git}; }; f"
+  rebaseMaster = !git checkout master && ggpull && git checkout @{-1} && git rebase -i master
 [url "https://"]
 	insteadOf = git://
 [branch]
@@ -54,3 +56,8 @@
    prompt = false
 [pager]
 	branch = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
