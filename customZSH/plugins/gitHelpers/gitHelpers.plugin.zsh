@@ -9,4 +9,3 @@ alias ggpull='git pull origin $(git_current_branch)'
 alias ggpush='git push origin $(git_current_branch)'
 alias pr="open-pr master"
 alias ppp="ggpush && pr"
-alias gitRebaseMaster="git checkout master && ggpull && git checkout @{-1} && git rebase -i master"
