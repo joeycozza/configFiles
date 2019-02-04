@@ -23,7 +23,7 @@
   com = checkout master
   rmi = rebase -i master
   open = "!f() { REPO_URL=$(git config remote.origin.url); open ${REPO_URL%%.git}; }; f"
-  rebaseMaster = !git checkout master && ggpull && git checkout @{-1} && git rebase -i master
+  rebaseMaster = !git checkout master && git pull origin master && git checkout @{-1} && git rebase -i master
 [url "https://"]
 	insteadOf = git://
 [branch]
