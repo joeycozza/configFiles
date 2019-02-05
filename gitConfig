@@ -16,7 +16,7 @@
 	cm = commit -a -m
 	s = status
 	b = branch
-	graph = log --graph -20 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
+	graph = log --graph -100 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %cr) %Cred%d' --date-order
 	precommit = diff --cached --diff-algorithm=minimal -w
 	cod = checkout develop
   com = checkout master
