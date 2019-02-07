@@ -18,6 +18,7 @@ Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 
 "React/html plugins
 Plug 'mxw/vim-jsx'
