@@ -42,6 +42,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'wellle/targets.vim'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'sjl/gundo.vim'
 
 call plug#end()
 
