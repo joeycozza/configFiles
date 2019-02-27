@@ -283,6 +283,9 @@ let g:ale_pattern_options = {
  \   '\/changelog\/.*\.jsx\=$': {
  \       'ale_fixers': ['eslint'],
  \   },
+ \   '\/cra-eslint-test\/.*\.jsx\=$': {
+ \       'ale_fixers': ['eslint'],
+ \   },
  \}
 
 let g:jsx_ext_required = 0

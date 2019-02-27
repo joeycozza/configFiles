@@ -21,7 +21,7 @@
   com = checkout master
   rmi = rebase -i master
 	uncommit = reset --soft HEAD~
-  open = "!f() { REPO_URL=$(git config remote.origin.url); open ${REPO_URL%%.git}; }; f"
+  open = !open $(git config remote.origin.url)
   rebaseMaster = !git checkout master && git pull origin master && git checkout @{-1} && git rebase -i master
 [url "https://"]
 	insteadOf = git://
