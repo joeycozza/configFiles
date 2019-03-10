@@ -286,6 +286,12 @@ let g:ale_pattern_options = {
  \   '\/cra-eslint-test\/.*\.jsx\=$': {
  \       'ale_fixers': ['eslint'],
  \   },
+ \   '\/zion\/.*\.jsx\=$': {
+ \       'ale_fixers': ['eslint'],
+ \   },
+ \   '\/zion-sandbox\/.*\.jsx\=$': {
+ \       'ale_fixers': ['eslint'],
+ \   }
  \}
 
 let g:jsx_ext_required = 0
@@ -337,3 +343,23 @@ function! s:LebabComplete(argument_lead, command_line, cursor_position)
   let l:lebab_transforms = ['arg-rest', 'arg-spread', 'arrow', 'class:unsafe', 'commonjs:unsafe', 'default-param:unsafe', 'destruct-param:unsafe', 'exponent', 'for-each', 'for-of', 'includes:unsafe', 'let:unsafe', 'multi-var', 'no-strict', 'obj-method', 'obj-shorthand', 'template:unsafe']
   return join(l:lebab_transforms, "\n")
 endfunction
+
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
