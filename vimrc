@@ -207,7 +207,8 @@ nnoremap <Leader>gd <C-]>
 
 nnoremap <silent> <Leader>f :execute 'Files ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
-nnoremap <Leader>p :ALEFix<CR>
+nnoremap <Leader>af :ALEFix<CR>
+nnoremap <Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
 
 " use tab/shift-tab to forward/backward cycle deoplete completion list
 inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
@@ -252,8 +253,8 @@ let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:ale_fixers = {
       \ 'css' : ['prettier'],
-      \ 'javascript': ['trim_whitespace', 'eslint', 'prettier'],
-      \ 'json': ['trim_whitespace', 'prettier'],
+      \ 'javascript': ['eslint'],
+      \ 'json': ['prettier'],
       \ 'html': ['prettier'],
       \ 'markdown': ['prettier'],
       \ 'vim' : ['trim_whitespace'],
@@ -272,27 +273,7 @@ let g:ale_linters = {
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_javascript_prettier_options = '--single-quote --print-width=100'
 
-" Use just ESLint (not prettier) for fixing js or jsx files found in the /nunya/ directory
-" \= is to match 0 or 1 of the preceeding character in vim. http://vimregex.com/
-let g:ale_pattern_options = {
- \   '\/nunya\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   },
- \   '\/changelog\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   },
- \   '\/cra-eslint-test\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   },
- \   '\/zion\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   },
- \   '\/zion-sandbox\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   }
- \}
 
 let g:jsx_ext_required = 0
 
