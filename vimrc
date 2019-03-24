@@ -22,6 +22,7 @@ Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 
 "React/html plugins
 Plug 'mxw/vim-jsx'
+Plug 'alvan/vim-closetag'
 
 " extend functionality plugins
 Plug 'w0rp/ale'
@@ -36,7 +37,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
 Plug 'yuttie/comfortable-motion.vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
@@ -276,6 +276,8 @@ let g:ale_lint_on_text_changed = 'never'
 
 
 let g:jsx_ext_required = 0
+
+let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx'
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************

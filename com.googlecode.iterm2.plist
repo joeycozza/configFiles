@@ -229,8 +229,10 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 	<string>871 1050 616 174 871 1050 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>-399 1548 620 392 -1049 1050 1920 1057 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>220 120 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-617 1649 918 452 -1068 1050 1920 1057 </string>
+	<string>355 570 918 452 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -804,7 +806,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -842,7 +844,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.099365482233502542</real>
+			<real>0.04618496192893401</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -2184,6 +2186,12 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 	<true/>
 	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
 	<integer>0</integer>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -2338,7 +2346,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-06T15:57:02Z</date>
+	<date>2019-03-20T15:09:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -3949,7 +3957,7 @@ SplitDev:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.7</string>
+	<string>3.2.7</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
