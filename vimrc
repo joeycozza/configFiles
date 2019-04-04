@@ -43,6 +43,7 @@ Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'wellle/targets.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'sjl/gundo.vim'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 

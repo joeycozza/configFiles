@@ -1,3 +1,17 @@
+snippet case "Makes a javascript case statement"
+case '$1':
+  $0
+  break
+endsnippet
+snippet switch "Makes a javascript switch statement"
+switch ($1) {
+  case '$2':
+	  $0
+		break
+  default:
+	  console.log('Default Case')
+}
+endsnippet
 snippet rc "A very basic react component"
 import React from 'react'
 import PropTypes from 'prop-types'
