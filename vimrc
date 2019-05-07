@@ -9,9 +9,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'airblade/vim-gitgutter'
 Plug 'google/vim-searchindex'
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
 " javascript/node plugins
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/yajs.vim'
@@ -26,24 +23,30 @@ Plug 'alvan/vim-closetag'
 
 " extend functionality plugins
 Plug 'w0rp/ale'
-Plug 'vimwiki/vimwiki'
 Plug 'Shougo/deoplete.nvim'
+
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
+
+Plug 'vimwiki/vimwiki'
 Plug 'kshenoy/vim-signature'
 Plug 'SirVer/ultisnips'
+
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
-Plug 'yuttie/comfortable-motion.vim'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
+
 Plug 'wellle/targets.vim'
+Plug 'yuttie/comfortable-motion.vim'
+Plug 'easymotion/vim-easymotion'
+
+Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'sjl/gundo.vim'
 Plug 'jiangmiao/auto-pairs'
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
