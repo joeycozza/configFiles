@@ -25,14 +25,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " extend functionality
-Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
 
 Plug 'vimwiki/vimwiki'
 Plug 'kshenoy/vim-signature'
-Plug 'SirVer/ultisnips'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -210,15 +208,15 @@ nnoremap <Right> :lnext<CR>
 
 " Format json
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
-nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>
+" nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>
 
 " Goto definition using tag data
 nnoremap <Leader>gd <C-]>
 
 nnoremap <silent> <Leader>f :execute 'Files ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
-nnoremap <Leader>af :ALEFix<CR>
-nnoremap <Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
+" nnoremap <Leader>af :ALEFix<CR>
+" nnoremap <Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
 
 " use tab/shift-tab to forward/backward cycle deoplete completion list
 inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
@@ -244,7 +242,6 @@ let g:fzf_layout = { 'down': '~20%' }
 let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_idx_mode=1
-let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#obsession#enabled = 1
 let g:airline#extensions#obsession#indicator_text = '0b$3$$3d'
 
@@ -253,37 +250,15 @@ let g:tern#is_show_argument_hints_enabled=1
 let g:used_javascript_libs = 'underscore,chai,react'
 let g:deoplete#enable_at_startup = 1
 
-let g:UltiSnipsExpandTrigger = ';;'
-let g:UltiSnipsJumpForwardTrigger = ';;'
-let g:UltiSnipsJumpBackwardTrigger = '::'
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
+" jump to next and prev placeholders of the snippet
+let g:coc_snippet_next = ';;'
+let g:coc_snippet_prev = '::'
+" Use ;; for both expand and jump (make expand higher priority.)
+imap ;; <Plug>(coc-snippets-expand-jump)
+
 
 let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
-
-let g:ale_fixers = {
-      \ 'css' : ['prettier'],
-      \ 'javascript': ['eslint'],
-      \ 'json': ['prettier'],
-      \ 'html': ['prettier'],
-      \ 'markdown': ['prettier'],
-      \ 'vim' : ['trim_whitespace'],
-      \ 'yaml': ['prettier']
-      \ }
-
-let g:ale_linters = {
-      \ 'bash': ['shellcheck'],
-      \ 'dockerfile': ['hadolint'],
-      \ 'javascript': ['eslint'],
-      \ 'vim': ['vint'],
-      \ 'yaml': ['yamllint'],
-      \ 'zsh': ['shellcheck']
-      \ }
-
-let g:ale_fix_on_save = 0
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 'never'
-
 
 let g:jsx_ext_required = 0
 
@@ -304,6 +279,8 @@ if has('nvim')
   tnoremap <Esc> <C-\><C-n>
   tnoremap <C-v><Esc> <Esc>
 endif
+
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 augroup leavingVimStuff
   autocmd!
