@@ -1,15 +1,14 @@
 call plug#begin('~/.vim/plugged')
 
-"visual plugins
+"visual
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'myusuf3/numbers.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'airblade/vim-gitgutter'
 Plug 'google/vim-searchindex'
 
-" javascript/node plugins
+" javascript/node
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
@@ -17,11 +16,15 @@ Plug 'moll/vim-node'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 
-"React/html plugins
+"React/html
 Plug 'mxw/vim-jsx'
 Plug 'alvan/vim-closetag'
 
-" extend functionality plugins
+" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" extend functionality
 Plug 'w0rp/ale'
 Plug 'Shougo/deoplete.nvim'
 
@@ -32,7 +35,6 @@ Plug 'kshenoy/vim-signature'
 Plug 'SirVer/ultisnips'
 
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
@@ -162,9 +164,13 @@ nnoremap ,, m`A,<Esc>``m`
 "remove last character from line and put cursor back where it was
 nnoremap :: m`$x<Esc>``m`
 
-" move whole line up or down
-nnoremap <c-k> dd<Up><Up>p
-nnoremap <c-j> ddp
+" mode selection (or line) up or down
+nnoremap <c-j> :m .+1<CR>==
+nnoremap <c-k> :m .-2<CR>==
+inoremap <c-j> <Esc>:m .+1<CR>==gi
+inoremap <c-k> <Esc>:m .-2<CR>==gi
+vnoremap <c-j> :m '>+1<CR>gv=gv
+vnoremap <c-k> :m '<-2<CR>gv=gv
 
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader><Leader>d :bdelete!<CR>
