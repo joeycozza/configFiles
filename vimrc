@@ -42,7 +42,6 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'easymotion/vim-easymotion'
 
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -61,6 +60,12 @@ let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and delet
 let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
+
+" https://github.com/neoclide/coc.nvim#example-vim-configuration
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
+set cmdheight=2
 
 "Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 "With this change it only rerenders at the end of the macro.
@@ -182,8 +187,6 @@ noremap <Leader>\      :bnext<CR>
 " repeat last replacement of a word
 nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
 
-nnoremap <Leader>r :TernRename<CR>
-
 "Clear search highlighting and redraw the screen
 nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
 
@@ -208,15 +211,21 @@ nnoremap <Right> :lnext<CR>
 
 " Format json
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
-" nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>
-
-" Goto definition using tag data
-nnoremap <Leader>gd <C-]>
+nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
 nnoremap <silent> <Leader>f :execute 'Files ' . <SID>fzf_root()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
-" nnoremap <Leader>af :ALEFix<CR>
-" nnoremap <Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+nmap <Leader>r <Plug>(coc-rename)
+
+nnoremap <Leader>p :CocCommand prettier.formatFile<CR>
+nnoremap <Leader>prettier :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
 
 " use tab/shift-tab to forward/backward cycle deoplete completion list
 inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
@@ -239,11 +248,13 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'down': '~20%' }
 
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#obsession#enabled = 1
-let g:airline#extensions#obsession#indicator_text = '0b$3$$3d'
+let g:airline#extensions#obsession#indicator_text = 'Obessed'
 
 let g:tern#is_show_argument_hints_enabled=1
 

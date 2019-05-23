@@ -19,7 +19,6 @@ ZSH_THEME="mynode"
 
 plugins=(
   gulpComplete
-  nodeComplete
   myNvm
   openPr
   gitHelpers
