@@ -42,7 +42,6 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'easymotion/vim-easymotion'
 
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
-Plug 'jiangmiao/auto-pairs'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
