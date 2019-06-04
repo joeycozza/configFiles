@@ -1,0 +1,16 @@
+{
+  "commands": {
+    "%2FUsers%2Fjoeycozza%2Ffs%2Fcra-storybook-preset-testing": [
+      "server"
+    ],
+    "%2FUsers%2Fjoeycozza%2Ffs%2Fzion": [
+      "eslin",
+      "eslint"
+    ]
+  },
+  "snippets": {
+    "%2FUsers%2Fjoeycozza%2Ffs%2Fzion": [
+      " d"
+    ]
+  }
+}

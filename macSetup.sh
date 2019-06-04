@@ -9,6 +9,7 @@ ln -s "$CONFIG_FILES_PATH/gitConfig" "$HOME/.gitconfig"
 ln -s "$CONFIG_FILES_PATH/gitignore_global" "$HOME/.gitignore_global"
 ln -s "$CONFIG_FILES_PATH/vintrc.yaml" "$HOME/.vintrc.yaml"
 ln -s "$CONFIG_FILES_PATH/eslintrc.js" "$HOME/.eslintrc.js"
+ln -s "$CONFIG_FILES_PATH/coc" "$HOME/.config/coc"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install fzf
 "$(brew --prefix)"/opt/fzf/install
@@ -33,7 +34,7 @@ sudo pip3 install yamllint
 sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
-curl https://github.com/tonsky/FiraCode/releases/download/1.204/FiraCode_1.204.zip -o "$HOME/Downloads/FiraCode_1.204.zip"
+curl https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip -o "$HOME/Downloads/FiraCode_1.206.zip"
 curl https://iterm2.com/downloads/stable/iTerm2-3_1_5.zip -o "$HOME/Downloads/iterm2Beta.zip"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 source "$HOME/.zshrc"

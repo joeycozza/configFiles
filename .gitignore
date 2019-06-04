@@ -1,4 +1,5 @@
 vim/plugged/
 vim/undo/
 vim/autoload/
+coc/extensions/node_modules/
 customZSH/secrets.zsh

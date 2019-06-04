@@ -224,6 +224,7 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <Leader>r <Plug>(coc-rename)
 
 nnoremap <Leader>p :CocCommand prettier.formatFile<CR>
+nnoremap <Leader>af :CocCommand eslint.executeAutoFix<CR>
 nnoremap <Leader><Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
 
 " use tab/shift-tab to forward/backward cycle deoplete completion list
