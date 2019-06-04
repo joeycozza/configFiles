@@ -1,5 +1,8 @@
 vim/plugged/
 vim/undo/
 vim/autoload/
+
 coc/extensions/node_modules/
+coc/snippets-mru
+
 customZSH/secrets.zsh

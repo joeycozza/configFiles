@@ -227,9 +227,13 @@ nnoremap <Leader>p :CocCommand prettier.formatFile<CR>
 nnoremap <Leader>af :CocCommand eslint.executeAutoFix<CR>
 nnoremap <Leader><Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
 
-" use tab/shift-tab to forward/backward cycle deoplete completion list
-inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<c-d>"
+" use tab/shift-tab to forward/backward cycle completion list
+inoremap <expr> <Tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<c-p>" : "\<S-Tab>"
+" Use Enter to confirm completion
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Use Enter to confirm first option if no option is chosen
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
 " -----------------------------------------------------
 " Plugin settings
