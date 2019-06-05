@@ -5,7 +5,8 @@
     "coc-pairs": "^1.2.10",
     "coc-prettier": "^1.1.1",
     "coc-snippets": "^2.0.15",
-    "coc-tsserver": "^1.2.4",
-    "coc-yaml": "^1.0.1"
+    "coc-tsserver": "^1.2.5",
+    "coc-yaml": "^1.0.1",
+    "coc-yank": "^1.0.2"
   }
 }

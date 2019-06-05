@@ -3,6 +3,9 @@ vim/undo/
 vim/autoload/
 
 coc/extensions/node_modules/
+coc/extensions/coc-yank-data/
+coc/extensions/db.json
+coc/snippets-mru/
 coc/snippets-mru
 
 customZSH/secrets.zsh

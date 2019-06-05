@@ -5,7 +5,6 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'myusuf3/numbers.vim'
-Plug 'machakann/vim-highlightedyank'
 Plug 'google/vim-searchindex'
 
 " javascript/node
