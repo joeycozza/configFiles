@@ -18,6 +18,7 @@ Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 "React/html
 Plug 'mxw/vim-jsx'
 Plug 'alvan/vim-closetag'
+Plug 'jxnblk/vim-mdx-js'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -34,7 +35,8 @@ Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-obsession'
+
+Plug 'joeycozza/vim-obsession'
 
 Plug 'wellle/targets.vim'
 Plug 'yuttie/comfortable-motion.vim'
@@ -84,6 +86,7 @@ set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold sma
 set nofoldenable       " when opening a file, dont start with any folding
 set foldnestmax=10
 set foldlevel=10
+set foldtext=FoldText()
 
 set updatetime=250
 set noswapfile
@@ -233,7 +236,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<c-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Use Enter to confirm first option if no option is chosen
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
@@ -281,11 +283,6 @@ let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx'
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
-" augroup FiletypeGroup
-"   autocmd!
-"   au BufNewFile,BufRead *.html set filetype=javascript.html
-" augroup END
-
 
 " Help with terminal mode. Esc will now go back to normal mode
 " if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
@@ -347,3 +344,26 @@ call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+
+" Improved Vim fold-text
+function! FoldText()
+	" Get first non-blank line
+	let fs = v:foldstart
+	while getline(fs) =~? '^\s*$' | let fs = nextnonblank(fs + 1)
+	endwhile
+	if fs > v:foldend
+		let line = getline(v:foldstart)
+	else
+		let line = substitute(getline(fs), '\t', repeat(' ', &tabstop), 'g')
+	endif
+
+	let w = winwidth(0) - &foldcolumn - (&number ? 8 : 0)
+	let foldSize = 1 + v:foldend - v:foldstart
+	let foldSizeStr = ' ' . foldSize . ' lines '
+	let foldLevelStr = ' foldLevel:' . v:foldlevel
+	" let foldLevelStr = repeat('+--', v:foldlevel)
+	let lineCount = line('$')
+	let foldPercentage = printf('[%.1f', (foldSize*1.0)/lineCount*100) . '%] '
+	let expansionString = repeat(' ', w - strwidth(line.foldSizeStr.foldPercentage.foldLevelStr))
+	return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
+endfunction

@@ -46,18 +46,16 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/gcc-4.8.2/bin:$PATH"
+
+export PATH="/Users/joeycozza/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/2.7/bin:$PATH"
+
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 ulimit -n 1024
 
-[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-
-# added by travis gem
-[ -f /Users/joeycozza/.travis/travis.sh ] && source /Users/joeycozza/.travis/travis.sh
+[ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
+[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

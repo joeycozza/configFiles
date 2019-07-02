@@ -253,6 +253,8 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			<string>iTermTouchBarIdentifierNextMark</string>
 		</array>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>528 644 445 103 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>871 1050 616 174 871 1050 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -260,9 +262,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>220 120 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-765 1560 958 470 -1150 1050 1920 1057 </string>
+	<string>-765 1592 958 470 -1150 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1150 1050 1920 1057 -1150 1050 1920 1057 </string>
+	<string>0 0 1680 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-770 1158 1090 567 -1068 1050 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -2220,6 +2222,8 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<integer>1</integer>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -2374,13 +2378,15 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-12T15:30:48Z</date>
+	<date>2019-06-07T16:10:11Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.23144781650641028</real>
+	<key>SwitchTabModifier</key>
+	<integer>4</integer>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>ToolbeltTools</key>
@@ -5611,7 +5617,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.8</string>
+	<string>3.2.9</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

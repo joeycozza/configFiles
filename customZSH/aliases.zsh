@@ -6,7 +6,6 @@ alias cleanmods="rm -f package-lock.json && rm -rf node_modules && npm install"
 alias conf="cd $CONFIG_FILES_PATH"
 alias p="ps -A | fzf"
 alias v="nvim"
-alias vs="nvim -S"
 
 # Get disk usage of top 45 largest directories from within current directory
 alias diskusage="du -mx | sort --reverse --numeric-sort | head -46 | tail -45 | (echo 'Mb      Directory\n-----------------' && command cat) "
@@ -24,11 +23,15 @@ alias sv="source ~/.zshrc"
 alias -g F="| fzf"
 alias -g S="| sort"
 alias -g U="| uniq"
+alias -g C="| pbcopy"
+
+alias copy='eval "$(fc -ln -1) | pbcopy"'
 
 # Useful FamilySearch Aliases
 # heroku local, but using Procfile.dev if there is one
 alias fsh="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"
 alias fs="cd ~/fs"
+alias nrs="npm run storybook"
 
 # Overwriting basic commands with newer ones
 alias ping="prettyping --nolegend"
