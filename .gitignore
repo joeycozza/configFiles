@@ -3,6 +3,7 @@ vim/undo/
 vim/autoload/
 
 coc/extensions/node_modules/
+coc/extensions/.cache
 coc/extensions/coc-yank-data/
 coc/extensions/db.json
 coc/snippets-mru/

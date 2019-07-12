@@ -1,5 +1,5 @@
-ZSH_THEME_NVM_PROMPT_PREFIX="%{$fg[green]%}⬢ "
-ZSH_THEME_NVM_PROMPT_SUFFIX=""
+ZSH_THEME_NODE_PROMPT_PREFIX="%{$fg[green]%}⬢ "
+ZSH_THEME_NODE_PROMPT_SUFFIX=""
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -10,7 +10,7 @@ ZSH_THEME_BOWER_SYMBOL="\u24B7"
 ZSH_THEME_NPM_PROMPT_PREFIX="%{$fg[red]%}\u24C3"
 ZSH_THEME_PACKAGE_SYMBOL="\u24C5"
 
-local node_version='$(nvm_prompt_info)'
+local node_version='$(node_prompt_info)'
 local package_version='$(package_json_info)'
 local gitBranch='$(git_prompt_info)'
 

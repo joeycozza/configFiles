@@ -1,5 +1,14 @@
 #! /bin/zsh
 
+# get the node.js version
+function node_prompt_info() {
+  local node_prompt
+  node_prompt=$(node -v 2>/dev/null)
+  [[ "${node_prompt}x" == "x" ]] && return
+  node_prompt=${node_prompt:1}
+  echo "${ZSH_THEME_NODE_PROMPT_PREFIX}${node_prompt}${ZSH_THEME_NODE_PROMPT_SUFFIX}"
+}
+
 # Show current package version
 function package_json_info() {
   # Show package version only when repository is a package
