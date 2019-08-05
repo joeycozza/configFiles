@@ -1,5 +1,8 @@
 #! /bin/zsh
 
+PACKAGE_SYMBOL="\u24C5"
+NODE_SYMBOL="⬢ "
+
 # get the node.js version
 function node_prompt_info() {
   local node_prompt
@@ -22,25 +25,9 @@ function package_json_info() {
     package_version="⚠"
   fi
 
-  echo " ${ZSH_THEME_PACKAGE_SYMBOL} ${package_version}"
+  echo "${PACKAGE_SYMBOL} ${package_version}"
 }
 
-# Show current bower version
-function bower_json_info() {
-  # Show bower version only when repository has a bower.json
-  [[ -f bower.json ]] || return
-
-  # Grep and cut out bower version
-  # Grep -E does not support \d for digits shortcut, should use [:digit:] or [0-9] instead
-  local bower_version=$(grep -E '"version": "v?([0-9]+\.){1,}' bower.json | cut -d\" -f4 2> /dev/null)
-
-  # Handle version not found
-  if [ ! "$bower_version" ]; then
-    bower_version="⚠"
-  fi
-
-  echo " ${ZSH_THEME_BOWER_SYMBOL} ${bower_version}"
-}
 # 
 # get the npm version
 function npm_prompt_info() {

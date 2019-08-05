@@ -15,13 +15,14 @@ export ZSH=$HOME/.oh-my-zsh
 export CONFIG_FILES_PATH=$HOME/Documents/configFiles
 
 ZSH_CUSTOM=$CONFIG_FILES_PATH/customZSH
-ZSH_THEME="mynode"
+ZSH_THEME="gitinfo"
 
 plugins=(
   gulpComplete
   myNvm
   openPr
   gitHelpers
+  frontend-search
 )
 
 bindkey '\C-e' edit-command-line
@@ -61,3 +62,9 @@ ulimit -n 1024
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fnm
 eval "$(fnm env --multi)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+iterm2_print_user_vars() {
+  iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
+}
