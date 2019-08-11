@@ -22,7 +22,6 @@ plugins=(
   myNvm
   openPr
   gitHelpers
-  frontend-search
 )
 
 bindkey '\C-e' edit-command-line
