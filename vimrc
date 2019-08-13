@@ -65,7 +65,7 @@ let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to cons
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
-set cmdheight=2
+set cmdheight=1
 
 "Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 "With this change it only rerenders at the end of the macro.
@@ -253,18 +253,23 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'down': '~20%' }
 
+
+" turn off the git branch info since it is in terminal status bar already
+let g:airline_section_b = ''
+" turn off fileencoding and fileformat info
+let g:airline_section_y = ''
+
+let g:airline_theme='simple'
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
 let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
-let g:airline_theme='simple'
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#obsession#enabled = 1
 let g:airline#extensions#obsession#indicator_text = 'Obsessed'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_idx_mode=1
 
 let g:tern#is_show_argument_hints_enabled=1
 
 let g:used_javascript_libs = 'underscore,chai,react'
-let g:deoplete#enable_at_startup = 1
 
 " jump to next and prev placeholders of the snippet
 let g:coc_snippet_next = ';;'
@@ -293,6 +298,7 @@ endif
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
+" This fixes my cursor the way I like it in the terminal after quitting vim
 augroup leavingVimStuff
   autocmd!
   autocmd VimLeave * set guicursor=a:ver10-blinkon0
@@ -334,6 +340,7 @@ endfunction
 call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('mdx', 'lightblue', 'none', '#3366FF', '#151515')
 call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
