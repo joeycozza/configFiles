@@ -259,7 +259,7 @@ let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_idx_mode=1
 let g:airline#extensions#obsession#enabled = 1
-let g:airline#extensions#obsession#indicator_text = 'Obessed'
+let g:airline#extensions#obsession#indicator_text = 'Obsessed'
 
 let g:tern#is_show_argument_hints_enabled=1
 
@@ -278,7 +278,7 @@ let g:vim_markdown_preview_browser = 'Google Chrome'
 
 let g:jsx_ext_required = 0
 
-let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx'
+let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*.mdx,*.md'
 
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
