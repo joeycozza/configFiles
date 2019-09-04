@@ -1,2 +1,4 @@
+prettier.formatFile
+eslint.executeAutoFix
 eslint.executeAutofix
 snippets.editSnippets

@@ -14,6 +14,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'styled-components/vim-styled-components', {'branch': 'main'}
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 "React/html
 Plug 'mxw/vim-jsx'
@@ -308,27 +310,6 @@ augroup END
 function! s:fzf_root()
   let l:path = finddir('.git', expand('%:p:h').';')
   return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
-endfunction
-
-command! -nargs=+ -complete=custom,s:LebabComplete Lebab call s:Lebab(<f-args>)
-function! s:Lebab(...)
-  let l:transforms = a:000
-  let l:filename = expand('%:p')
-
-  let l:command_line = 'lebab '.shellescape(l:filename).' --transform '.join(l:transforms, ',')
-
-  let l:new_lines = systemlist(l:command_line)
-  if v:shell_error
-    echoerr 'There was an error running lebab: '.join(l:new_lines, "\n")
-    return
-  endif
-
-  %delete _
-  call setline(1, l:new_lines)
-endfunction
-function! s:LebabComplete(argument_lead, command_line, cursor_position)
-  let l:lebab_transforms = ['arg-rest', 'arg-spread', 'arrow', 'class:unsafe', 'commonjs:unsafe', 'default-param:unsafe', 'destruct-param:unsafe', 'exponent', 'for-each', 'for-of', 'includes:unsafe', 'let:unsafe', 'multi-var', 'no-strict', 'obj-method', 'obj-shorthand', 'template:unsafe']
-  return join(l:lebab_transforms, "\n")
 endfunction
 
 " NERDTress File highlighting

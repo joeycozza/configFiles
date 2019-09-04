@@ -1,13 +1,15 @@
 #! /bin/zsh
+
+ZSH_DISABLE_COMPFIX=true
+
+# That cmd will profile starting up zsh https://github.com/robbyrussell/oh-my-zsh/issues/5327#issuecomment-298378567 for more info and help debugging
 if [[ -v ZSH_PROF ]]; then
   # run this command to use this zsh/zprof stuff
-  # "env ZSH_PROF= zsh -ic zprof"
-  # That cmd will profile starting up zsh
-  # https://github.com/robbyrussell/oh-my-zsh/issues/5327 for more info and help debugging
-
+  #
+  # "env ZSH_PROF=1 zsh -ic zprof"
   zmodload zsh/zprof
 
-  # another startup profiling way is with
+  # nvim startup profiling. run the command, and then look at trash.log
   # "nvim --startuptime trash.log"
 fi
 
@@ -59,7 +61,6 @@ ulimit -n 1024
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# fnm
 eval "$(fnm env --multi)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -67,3 +68,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
 }
+# fnm
+eval "$(fnm env --multi)"

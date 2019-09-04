@@ -282,7 +282,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-765 1592 958 470 -1150 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1006,6 +1006,46 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 					</dict>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarWorkingDirectoryComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>maxwidth</key>
+								<real>+infinity</real>
+								<key>minwidth</key>
+								<integer>0</integer>
+								<key>path</key>
+								<string>path</string>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.90000000000000002</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.70714285714285685</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>1</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarGitComponent</string>
 						<key>configuration</key>
 						<dict>
@@ -1016,7 +1056,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 								<key>base: priority</key>
 								<real>5</real>
 								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
-								<real>3</real>
+								<real>2</real>
 								<key>maxwidth</key>
 								<real>+infinity</real>
 								<key>minwidth</key>
@@ -1071,46 +1111,6 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 									<real>0.78428571428571436</real>
 									<key>Red Component</key>
 									<real>0.63</real>
-								</dict>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>1</integer>
-								<key>font</key>
-								<string>.AppleSystemUIFont 12</string>
-							</dict>
-						</dict>
-					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarWorkingDirectoryComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>base: compression resistance</key>
-								<integer>1</integer>
-								<key>base: priority</key>
-								<real>5</real>
-								<key>maxwidth</key>
-								<real>+infinity</real>
-								<key>minwidth</key>
-								<integer>0</integer>
-								<key>path</key>
-								<string>path</string>
-								<key>shared text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>0.63</real>
-									<key>Red Component</key>
-									<real>0.70714285714285685</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -2564,9 +2564,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{-1073, 1050}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{269, 597}</string>
+		<string>{-481, 1915}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2583,9 +2583,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncInstallationId</key>
 	<string>AF76E95F-8EC4-4133-B466-9AD570F13AA9</string>
 	<key>NoSyncLastTipTime</key>
-	<real>587223172.050385</real>
+	<real>587417475.13844001</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>12</integer>
+	<integer>17</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2599,7 +2599,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>587252520.47506797</real>
+		<real>588092194.93420398</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -3347,6 +3347,10 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<string>/Users/joeycozza/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/github_stars.py</string>
 	<key>NoSyncScriptNameForStatusBarComponent_engineering.dane.iterm-components.sentinel</key>
 	<string>/Users/joeycozza/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/hello_world.py</string>
+	<key>NoSyncSearchHistory</key>
+	<array>
+		<string>jest</string>
+	</array>
 	<key>NoSyncSuppressMissingProfileInArrangementWarning</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -3430,6 +3434,8 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 		<string>0073</string>
 		<string>0074</string>
 		<string>0075</string>
+		<string>0076</string>
+		<string>0077</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -3487,7 +3493,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-11T13:32:51Z</date>
+	<date>2019-08-19T14:56:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
