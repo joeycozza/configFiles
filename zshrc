@@ -2,10 +2,10 @@
 
 ZSH_DISABLE_COMPFIX=true
 
-# That cmd will profile starting up zsh https://github.com/robbyrussell/oh-my-zsh/issues/5327#issuecomment-298378567 for more info and help debugging
+# That cmd will profile starting up zsh 
+# https://github.com/robbyrussell/oh-my-zsh/issues/5327#issuecomment-298378567 for more info and help debugging
 if [[ -v ZSH_PROF ]]; then
-  # run this command to use this zsh/zprof stuff
-  #
+  # run the following command to use this zsh/zprof stuff
   # "env ZSH_PROF=1 zsh -ic zprof"
   zmodload zsh/zprof
 
@@ -69,5 +69,3 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
 }
-# fnm
-eval "$(fnm env --multi)"
