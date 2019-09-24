@@ -33,6 +33,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR="nvim"
 export VISUAL=nvim
+export MANPAGER="sh -c 'col -b | bat -l man -p'"
 export FZF_DEFAULT_COMMAND='rg --files --glob "!.git/*"'
 export RIPGREP_CONFIG_PATH="$CONFIG_FILES_PATH/ripgreprc"
 
