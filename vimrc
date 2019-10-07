@@ -58,8 +58,6 @@ endif
 let g:mapleader=' '
 
 "///////////////////Defaulting Registers////////////////////////////////////
-let @f = 'diwdf(f)xa=> jk' " @f macro for converting function to arrow and deletes the parens
-let @g = 'diwxf)a =>jk'    " @g macro for converting function to arrow and keeps the parens
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
 

@@ -62,10 +62,12 @@ ulimit -n 1024
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-eval "$(fnm env --multi)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
 }
+
+# fnm
+eval "$(fnm env --multi)"
