@@ -15,10 +15,10 @@ Plug 'moll/vim-node'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 
 "React/html
 Plug 'mxw/vim-jsx'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'alvan/vim-closetag'
 Plug 'jxnblk/vim-mdx-js'
 

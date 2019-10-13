@@ -282,7 +282,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-765 1592 958 470 -1150 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
+	<string>0 0 1280 777 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -1209,7 +1209,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.04618496192893401</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -2547,9 +2547,12 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.2</string>
 		<string>3.2.9</string>
-		<string>3.3.0</string>
 		<string>3.3.1</string>
+		<string>3.3.4</string>
+		<string>3.3.0</string>
+		<string>3.3.3</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2561,12 +2564,19 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
 	<integer>1</integer>
-	<key>NoSyncFrame_SharedPreferences</key>
+	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{-1073, 1050}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{-481, 1915}</string>
+		<string>{-416, 1972}</string>
+	</dict>
+	<key>NoSyncFrame_SharedPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {1280, 800}}</string>
+		<key>topLeft</key>
+		<string>{90, 705}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2583,9 +2593,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncInstallationId</key>
 	<string>AF76E95F-8EC4-4133-B466-9AD570F13AA9</string>
 	<key>NoSyncLastTipTime</key>
-	<real>587417475.13844001</real>
+	<real>589389893.029755</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>17</integer>
+	<integer>47</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2599,7 +2609,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>588092194.93420398</real>
+		<real>592418034.29669094</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -3063,6 +3073,14 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>number</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -3351,6 +3369,19 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<array>
 		<string>jest</string>
 	</array>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>click</string>
+		<string>role</string>
+		<string>storybook-addons</string>
+		<string>theme-selector</string>
+		<string>WILL</string>
+		<string>zion/p</string>
+		<string>zion/packages/</string>
+		<string>sot</string>
+		<string>exclude</string>
+		<string>babel-loader</string>
+	</array>
 	<key>NoSyncSuppressMissingProfileInArrangementWarning</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -3436,6 +3467,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 		<string>0075</string>
 		<string>0076</string>
 		<string>0077</string>
+		<string>0078</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -3478,6 +3510,8 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/joeycozza/Documents/configFiles</string>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -3493,17 +3527,21 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-19T14:56:34Z</date>
+	<date>2019-10-08T16:33:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
+	<key>SeparateStatusBarsPerPane</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
+	<key>ShowPaneTitles</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.23144781650641028</real>
+	<real>0.28099624292484993</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>SwitchTabModifier</key>
@@ -3514,10 +3552,14 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<integer>6</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>TabsHaveCloseButton</key>
+	<false/>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Jobs</string>
 	</array>
+	<key>UseBorder</key>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
@@ -6744,7 +6786,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.1</string>
+	<string>3.3.4</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
