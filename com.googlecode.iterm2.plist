@@ -19,7 +19,7 @@
 		<string>ls</string>
 	</array>
 	<key>Default Arrangement Name</key>
-	<string>SplitDev</string>
+	<string>2/3 Real Estate</string>
 	<key>Default Bookmark Guid</key>
 	<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
 	<key>DeleteProfile_SilenceUntil</key>
@@ -46,8 +46,8 @@
 			<key>Action</key>
 			<integer>25</integer>
 			<key>Text</key>
-			<string>SplitDevFinal
-SplitDevFinal:Restore Window Arrangement as Tabs</string>
+			<string>2/3 Real Estate
+2/3 Real Estate:Restore Window Arrangement as Tabs</string>
 		</dict>
 		<key>0x68-0x180000</key>
 		<dict>
@@ -222,24 +222,24 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
-	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoK4HCA8aGxwdHh8gJjAxMlUkbnVsbNIJCgsOWk5TLm9iamVjdHNWJGNsYXNzogwN
-	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
-	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
-	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
-	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
-	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
-	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrgsMEx4fICEiIyQqNDU2VSRu
+	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
+	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
+	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
+	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
+	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
+	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
 	AAAAADoAAAAAAAAAAAAAAAAAAAFM
 	</data>
 	<key>NSTableView Sort Ordering v2 KeyBingingTable</key>
 	<data>
-	YnBsaXN0MDDUAQIDBAUGFBVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA1VJG51bGzSCQoLDFpOUy5vYmplY3RzViRjbGFzc6CAAtIODxARWiRjbGFz
-	c25hbWVYJGNsYXNzZXNeTlNNdXRhYmxlQXJyYXmjEBITV05TQXJyYXlYTlNPYmplY3Rf
-	EA9OU0tleWVkQXJjaGl2ZXLRFhdVQXJyYXmAAQgRGiMtMjc7QUZRWFlbYGt0g4ePmKqt
-	swAAAAAAAAEBAAAAAAAAABgAAAAAAAAAAAAAAAAAAAC1
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABowsMEVUkbnVsbNINDg8QWk5T
+	Lm9iamVjdHNWJGNsYXNzoIAC0hITFBVaJGNsYXNzbmFtZVgkY2xhc3Nlc15OU011dGFi
+	bGVBcnJheaMUFhdXTlNBcnJheVhOU09iamVjdAgRGiQpMjdJTFJUWF5jbnV2eH2IkaCk
+	rAAAAAAAAAEBAAAAAAAAABgAAAAAAAAAAAAAAAAAAAC1
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
@@ -282,7 +282,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-765 1592 958 470 -1150 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 777 0 0 1280 777 </string>
+	<string>840 0 835 1027 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -842,7 +842,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 15</string>
+			<string>FiraCode-Retina 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1026,13 +1026,13 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.78428571428571425</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
+									<real>0.90000000000000002</real>
 									<key>Red Component</key>
-									<real>0.70714285714285685</real>
+									<real>0.63</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1066,13 +1066,13 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.78428572416305542</real>
+									<real>0.90000000000000002</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.89999997615814209</real>
+									<real>0.78428571428571436</real>
 									<key>Red Component</key>
-									<real>0.62999999523162842</real>
+									<real>0.63</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1108,9 +1108,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.78428571428571436</real>
-									<key>Red Component</key>
 									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.70714285714285685</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1140,13 +1140,13 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.082352941176470587</real>
+									<real>0.25513444840908051</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.85490196078431369</real>
+									<real>0.68701171875</real>
 									<key>Red Component</key>
-									<real>0.25098039215686274</real>
+									<real>0.26878876529487383</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1158,48 +1158,6 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 							</dict>
 						</dict>
 					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarRPCProvidedTextComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>base: compression resistance</key>
-								<integer>1</integer>
-								<key>base: priority</key>
-								<real>5</real>
-								<key>json_pretty_printer</key>
-								<integer>1</integer>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>1</integer>
-								<key>font</key>
-								<string>.AppleSystemUIFont 12</string>
-							</dict>
-							<key>registration request</key>
-							<data>
-							CgRjb3JvEgcKBWtub2Jz
-							KANC1QEKE0pTT04gUHJl
-							dHR5IFByaW50ZXISXVNl
-							bGVjdCBKU09OIGluIHRo
-							ZSB0ZXJtaW5hbCwgdGhl
-							biBjbGljayB0aGlzIHN0
-							YXR1cyBiYXIgY29tcG9u
-							ZW50IHRvIHNlZSBpdCBu
-							aWNlbHkgZm9ybWF0dGVk
-							Lho1ChNKU09OIFByZXR0
-							eSBQcmludGVyEAEaACIF
-							ZmFsc2UqE2pzb25fcHJl
-							dHR5X3ByaW50ZXIiCHsg
-							SlNPTiB9Mh5jb20uaXRl
-							cm0yLmpzb24tcHJldHR5
-							LXByaW50ZXI=
-							</data>
-						</dict>
-					</dict>
 				</array>
 			</dict>
 			<key>Sync Title</key>
@@ -1209,7 +1167,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.095635707487309651</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -1823,7 +1781,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 15</string>
+			<string>FiraCode-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2463,7 +2421,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 15</string>
+			<string>FiraCode-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2547,12 +2505,22 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.6</string>
 		<string>3.3.2</string>
-		<string>3.2.9</string>
 		<string>3.3.1</string>
-		<string>3.3.4</string>
-		<string>3.3.0</string>
 		<string>3.3.3</string>
+		<string>3.3.5</string>
+		<string>3.2.9</string>
+		<string>3.3.0</string>
+		<string>3.3.4</string>
+	</array>
+	<key>NoSyncBFPFavorites</key>
+	<array>
+		<string>Fira Code</string>
+	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Fira Code</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2574,9 +2542,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1280, 800}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{90, 705}</string>
+		<string>{318, 864}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2595,7 +2563,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncLastTipTime</key>
 	<real>589389893.029755</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>47</integer>
+	<integer>63</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2609,7 +2577,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>592418034.29669094</real>
+		<real>593803422.93038297</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -3146,9 +3114,25 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3527,7 +3511,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-08T16:33:54Z</date>
+	<date>2019-10-25T16:44:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3564,7 +3548,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<false/>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>SplitDev</key>
+		<key>2/3 Real Estate</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -3574,15 +3558,17 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1057</real>
+				<real>1417</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
 				<true/>
+				<key>Initial Profile</key>
+				<dict/>
 				<key>Is Hotkey Window</key>
 				<false/>
 				<key>Saved Window Type</key>
-				<integer>0</integer>
+				<integer>13</integer>
 				<key>Screen</key>
 				<integer>1</integer>
 				<key>Selected Tab Index</key>
@@ -3847,7 +3833,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 												<real>0.90000000000000002</real>
 											</dict>
 											<key>Guid</key>
-											<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
+											<string>53B0DEE2-C06B-4550-94A6-7AD86E154F5F</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -4155,9 +4141,11 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>FiraCode-Regular 15</string>
+											<string>FiraCode-Regular 18</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
 											<key>Prompt Before Closing 2</key>
 											<integer>0</integer>
 											<key>Right Option Key Sends</key>
@@ -4167,7 +4155,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<key>Screen</key>
 											<integer>-1</integer>
 											<key>Scrollback Lines</key>
-											<integer>1000</integer>
+											<integer>0</integer>
 											<key>Selected Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -4194,18 +4182,282 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<false/>
 											<key>Shortcut</key>
 											<string></string>
+											<key>Show Status Bar</key>
+											<true/>
 											<key>Silence Bell</key>
 											<false/>
 											<key>Smart Cursor Color</key>
 											<false/>
+											<key>Status Bar Layout</key>
+											<dict>
+												<key>advanced configuration</key>
+												<dict>
+													<key>algorithm</key>
+													<integer>1</integer>
+													<key>font</key>
+													<string>.AppleSystemUIFont 12</string>
+												</dict>
+												<key>components</key>
+												<array>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarMemoryUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.63</real>
+																	<key>Red Component</key>
+																	<real>0.90000000000000002</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarCPUUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.86142857142857143</real>
+																	<key>Red Component</key>
+																	<real>0.90000000000000002</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSpringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+																<integer>1</integer>
+																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+																<real>0.01</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Red Component</key>
+																	<real>0.7071428571428573</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarWorkingDirectoryComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>maxwidth</key>
+																<real>+infinity</real>
+																<key>minwidth</key>
+																<integer>0</integer>
+																<key>path</key>
+																<string>path</string>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.63</real>
+																	<key>Red Component</key>
+																	<real>0.70714285714285685</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarGitComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarGitComponentPollingIntervalKey</key>
+																<real>2</real>
+																<key>maxwidth</key>
+																<real>+infinity</real>
+																<key>minwidth</key>
+																<integer>0</integer>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSpringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+																<integer>1</integer>
+																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+																<real>0.01</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.78428571428571436</real>
+																	<key>Red Component</key>
+																	<real>0.63</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSwiftyStringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>expression</key>
+																<string>\(user.nodeVersion)</string>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.082352941176470587</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.85490196078431369</real>
+																	<key>Red Component</key>
+																	<real>0.25098039215686274</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+												</array>
+											</dict>
 											<key>Sync Title</key>
 											<false/>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
+											<key>Title Components</key>
+											<integer>3</integer>
 											<key>Transparency</key>
-											<real>0.075309327411167512</real>
+											<real>0.0</real>
 											<key>Triggers</key>
 											<array>
 												<dict>
@@ -4236,74 +4488,100 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<key>Working Directory</key>
 											<string>/Users/joeycozza</string>
 										</dict>
-										<key>Bookmark Name</key>
-										<string>Default</string>
 										<key>Columns</key>
-										<integer>51</integer>
+										<integer>50</integer>
 										<key>Commands</key>
-										<array/>
+										<array>
+											<string>fs</string>
+										</array>
 										<key>Directories</key>
 										<array>
 											<string>/Users/joeycozza</string>
 											<string>/Users/joeycozza</string>
 											<string>/Users/joeycozza</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
+											<string>/Users/joeycozza</string>
 											<string>/Users/joeycozza/fs</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/joeycozza/fs</string>
+											<string>/Users/joeycozza</string>
+										</dict>
+										<key>Hostname to Shell</key>
+										<dict>
+											<key>joeycozza@Josephs-MacBook-Pro-3.local</key>
+											<string>zsh</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
 											<dict>
 												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
+												<string>Josephs-MacBook-Pro-3.local</string>
 												<key>User name</key>
 												<string>joeycozza</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
 												<key>User name</key>
 												<string>joeycozza</string>
 											</dict>
 										</array>
 										<key>Is UTF-8</key>
 										<true/>
+										<key>Name Controller State</key>
+										<dict>
+											<key>icon title stack</key>
+											<array/>
+											<key>window title stack</key>
+											<array/>
+										</dict>
 										<key>Program</key>
 										<dict>
 											<key>Type</key>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>56</integer>
-										<key>Session Default Name</key>
-										<string>Default</string>
+										<integer>61</integer>
 										<key>Session GUID</key>
-										<string>AC34EBBD-990A-4B49-A0C1-F1C5027CF5BA</string>
-										<key>Session Name</key>
-										<string>~/fs</string>
-										<key>Session Window Title</key>
-										<string>joeycozza@Josephs-MacBook-Pro-2: ~/fs</string>
+										<string>2569C5D4-C28C-4C35-A1E0-9AF38D7B163F</string>
 										<key>Shell Integration Ever Used</key>
 										<true/>
+										<key>Short Lived Single Use</key>
+										<false/>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
 										<string>/Users/joeycozza/fs</string>
+										<key>Working Directory Poller Disabled</key>
+										<true/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1034</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>469</real>
+										<real>560</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4563,7 +4841,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 												<real>0.90000000000000002</real>
 											</dict>
 											<key>Guid</key>
-											<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
+											<string>39DCBD89-005E-4E35-8A6B-C8643E2EDDBD</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -4871,9 +5149,11 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<key>Non-ASCII Anti Aliased</key>
 											<true/>
 											<key>Normal Font</key>
-											<string>FiraCode-Regular 15</string>
+											<string>FiraCode-Regular 18</string>
 											<key>Option Key Sends</key>
 											<integer>0</integer>
+											<key>Original Guid</key>
+											<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
 											<key>Prompt Before Closing 2</key>
 											<integer>0</integer>
 											<key>Right Option Key Sends</key>
@@ -4883,7 +5163,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<key>Screen</key>
 											<integer>-1</integer>
 											<key>Scrollback Lines</key>
-											<integer>1000</integer>
+											<integer>0</integer>
 											<key>Selected Text Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -4910,18 +5190,282 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<false/>
 											<key>Shortcut</key>
 											<string></string>
+											<key>Show Status Bar</key>
+											<true/>
 											<key>Silence Bell</key>
 											<false/>
 											<key>Smart Cursor Color</key>
 											<false/>
+											<key>Status Bar Layout</key>
+											<dict>
+												<key>advanced configuration</key>
+												<dict>
+													<key>algorithm</key>
+													<integer>1</integer>
+													<key>font</key>
+													<string>.AppleSystemUIFont 12</string>
+												</dict>
+												<key>components</key>
+												<array>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarMemoryUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.63</real>
+																	<key>Red Component</key>
+																	<real>0.90000000000000002</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarCPUUtilizationComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.86142857142857143</real>
+																	<key>Red Component</key>
+																	<real>0.90000000000000002</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSpringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+																<integer>1</integer>
+																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+																<real>0.01</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.63</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Red Component</key>
+																	<real>0.7071428571428573</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarWorkingDirectoryComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>maxwidth</key>
+																<real>+infinity</real>
+																<key>minwidth</key>
+																<integer>0</integer>
+																<key>path</key>
+																<string>path</string>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.63</real>
+																	<key>Red Component</key>
+																	<real>0.70714285714285685</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarGitComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarGitComponentPollingIntervalKey</key>
+																<real>2</real>
+																<key>maxwidth</key>
+																<real>+infinity</real>
+																<key>minwidth</key>
+																<integer>0</integer>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSpringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+																<integer>1</integer>
+																<key>iTermStatusBarSpringComponentSpringConstantKey</key>
+																<real>0.01</real>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.90000000000000002</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.78428571428571436</real>
+																	<key>Red Component</key>
+																	<real>0.63</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+													<dict>
+														<key>class</key>
+														<string>iTermStatusBarSwiftyStringComponent</string>
+														<key>configuration</key>
+														<dict>
+															<key>knobs</key>
+															<dict>
+																<key>base: compression resistance</key>
+																<integer>1</integer>
+																<key>base: priority</key>
+																<real>5</real>
+																<key>expression</key>
+																<string>\(user.nodeVersion)</string>
+																<key>shared text color</key>
+																<dict>
+																	<key>Alpha Component</key>
+																	<real>1</real>
+																	<key>Blue Component</key>
+																	<real>0.082352941176470587</real>
+																	<key>Color Space</key>
+																	<string>sRGB</string>
+																	<key>Green Component</key>
+																	<real>0.85490196078431369</real>
+																	<key>Red Component</key>
+																	<real>0.25098039215686274</real>
+																</dict>
+															</dict>
+															<key>layout advanced configuration dictionary value</key>
+															<dict>
+																<key>algorithm</key>
+																<integer>1</integer>
+																<key>font</key>
+																<string>.AppleSystemUIFont 12</string>
+															</dict>
+														</dict>
+													</dict>
+												</array>
+											</dict>
 											<key>Sync Title</key>
 											<false/>
 											<key>Tags</key>
 											<array/>
 											<key>Terminal Type</key>
 											<string>xterm-256color</string>
+											<key>Title Components</key>
+											<integer>3</integer>
 											<key>Transparency</key>
-											<real>0.075309327411167512</real>
+											<real>0.0</real>
 											<key>Triggers</key>
 											<array>
 												<dict>
@@ -4952,169 +5496,182 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 											<key>Working Directory</key>
 											<string>/Users/joeycozza</string>
 										</dict>
-										<key>Bookmark Name</key>
-										<string>Default</string>
 										<key>Columns</key>
-										<integer>160</integer>
+										<integer>141</integer>
 										<key>Commands</key>
-										<array/>
+										<array>
+											<string>v</string>
+											<string>l</string>
+											<string>l</string>
+											<string>l</string>
+											<string>trash .zcompdump-Joseph’s\ MacBook\ Pro*</string>
+											<string>l</string>
+											<string>xcode-select --install</string>
+											<string>fs</string>
+											<string>zion</string>
+											<string>fs</string>
+											<string>l</string>
+										</array>
 										<key>Directories</key>
 										<array>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
+											<string>/Users/joeycozza</string>
 											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
+											<string>/Users/joeycozza/fs/zion</string>
 											<string>/Users/joeycozza/fs</string>
 											<string>/Users/joeycozza/fs</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/joeycozza/fs</string>
+											<string>/Users/joeycozza</string>
+										</dict>
+										<key>Hostname to Shell</key>
+										<dict>
+											<key>joeycozza@Josephs-MacBook-Pro-3.local</key>
+											<string>zsh</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
 											<dict>
 												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
+												<string>Josephs-MacBook-Pro-3.local</string>
 												<key>User name</key>
 												<string>joeycozza</string>
 											</dict>
 											<dict>
 												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
+												<key>User name</key>
+												<string>joeycozza</string>
+											</dict>
+											<dict>
+												<key>Host name</key>
+												<string>Josephs-MacBook-Pro-3.local</string>
 												<key>User name</key>
 												<string>joeycozza</string>
 											</dict>
 										</array>
 										<key>Is UTF-8</key>
 										<true/>
+										<key>Name Controller State</key>
+										<dict>
+											<key>icon title stack</key>
+											<array/>
+											<key>window title stack</key>
+											<array/>
+										</dict>
 										<key>Program</key>
 										<dict>
 											<key>Type</key>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>56</integer>
-										<key>Session Default Name</key>
-										<string>Default</string>
+										<integer>61</integer>
 										<key>Session GUID</key>
-										<string>98DDB65A-8273-4BB8-9685-6835700FBB44</string>
-										<key>Session Name</key>
-										<string>~/fs</string>
-										<key>Session Window Title</key>
-										<string>joeycozza@Josephs-MacBook-Pro-2: ~/fs</string>
+										<string>28E00F8A-043F-40A1-AD6D-268AEDCF36C9</string>
 										<key>Shell Integration Ever Used</key>
 										<true/>
+										<key>Short Lived Single Use</key>
+										<false/>
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
 										<string>/Users/joeycozza/fs</string>
+										<key>Working Directory Poller Disabled</key>
+										<true/>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1034</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>1450</real>
+										<real>1561</real>
 										<key>x</key>
-										<real>470</real>
+										<real>561</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -5125,9 +5682,9 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1034</real>
+								<real>1372</real>
 								<key>width</key>
-								<real>1920</real>
+								<real>2122</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -5139,1619 +5696,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-ED995CF1-E97F-4783-8E5B-83E6BE89033E</string>
-				<key>Width</key>
-				<real>1920</real>
-				<key>Window Type</key>
-				<integer>0</integer>
-				<key>X Origin</key>
-				<real>-1068</real>
-				<key>Y Origin</key>
-				<real>1050</real>
-			</dict>
-		</array>
-		<key>SplitDevFinal</key>
-		<array>
-			<dict>
-				<key>Desired Columns</key>
-				<integer>120</integer>
-				<key>Desired Rows</key>
-				<integer>30</integer>
-				<key>Has Toolbelt</key>
-				<false/>
-				<key>Height</key>
-				<real>1057</real>
-				<key>Hide After Opening</key>
-				<false/>
-				<key>Hiding Toolbelt Should Resize Window</key>
-				<true/>
-				<key>Is Hotkey Window</key>
-				<false/>
-				<key>Saved Window Type</key>
-				<integer>0</integer>
-				<key>Screen</key>
-				<integer>1</integer>
-				<key>Selected Tab Index</key>
-				<integer>0</integer>
-				<key>Tabs</key>
-				<array>
-					<dict>
-						<key>Root</key>
-						<dict>
-							<key>Subviews</key>
-							<array>
-								<dict>
-									<key>Is Active</key>
-									<integer>0</integer>
-									<key>Session</key>
-									<dict>
-										<key>Bookmark</key>
-										<dict>
-											<key>ASCII Anti Aliased</key>
-											<true/>
-											<key>ASCII Ligatures</key>
-											<true/>
-											<key>Ambiguous Double Width</key>
-											<false/>
-											<key>Ansi 0 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 1 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 10 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 11 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Ansi 12 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 13 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Ansi 14 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 15 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Ansi 2 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 3 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 4 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 5 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 6 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 7 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 8 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 9 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>BM Growl</key>
-											<true/>
-											<key>Background Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.10000000000000001</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>0.10000000000000001</real>
-												<key>Red Component</key>
-												<real>0.10000000000000001</real>
-											</dict>
-											<key>Background Image Location</key>
-											<string></string>
-											<key>Blinking Cursor</key>
-											<false/>
-											<key>Blur</key>
-											<false/>
-											<key>Blur Radius</key>
-											<real>1.2974401173857864</real>
-											<key>Bold Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Character Encoding</key>
-											<integer>4</integer>
-											<key>Close Sessions On End</key>
-											<true/>
-											<key>Columns</key>
-											<integer>120</integer>
-											<key>Command</key>
-											<string></string>
-											<key>Cursor Boost</key>
-											<real>0.0</real>
-											<key>Cursor Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>0.149627685546875</real>
-											</dict>
-											<key>Cursor Text Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Cursor Type</key>
-											<integer>1</integer>
-											<key>Custom Command</key>
-											<string>No</string>
-											<key>Custom Directory</key>
-											<string>No</string>
-											<key>Default Bookmark</key>
-											<string>No</string>
-											<key>Description</key>
-											<string>Default</string>
-											<key>Disable Window Resizing</key>
-											<true/>
-											<key>Flashing Bell</key>
-											<false/>
-											<key>Foreground Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.90000000000000002</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>0.90000000000000002</real>
-												<key>Red Component</key>
-												<real>0.90000000000000002</real>
-											</dict>
-											<key>Guid</key>
-											<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
-											<key>Horizontal Spacing</key>
-											<real>1</real>
-											<key>Idle Code</key>
-											<integer>0</integer>
-											<key>Initial Text</key>
-											<string></string>
-											<key>Jobs to Ignore</key>
-											<array>
-												<string>rlogin</string>
-												<string>ssh</string>
-												<string>slogin</string>
-												<string>telnet</string>
-											</array>
-											<key>Keyboard Map</key>
-											<dict>
-												<key>0x2d-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1f</string>
-												</dict>
-												<key>0x32-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x00</string>
-												</dict>
-												<key>0x33-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b</string>
-												</dict>
-												<key>0x34-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1c</string>
-												</dict>
-												<key>0x35-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1d</string>
-												</dict>
-												<key>0x36-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1e</string>
-												</dict>
-												<key>0x37-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1f</string>
-												</dict>
-												<key>0x38-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x7f</string>
-												</dict>
-												<key>0xf700-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2A</string>
-												</dict>
-												<key>0xf700-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5A</string>
-												</dict>
-												<key>0xf700-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6A</string>
-												</dict>
-												<key>0xf700-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x41</string>
-												</dict>
-												<key>0xf701-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2B</string>
-												</dict>
-												<key>0xf701-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5B</string>
-												</dict>
-												<key>0xf701-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6B</string>
-												</dict>
-												<key>0xf701-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x42</string>
-												</dict>
-												<key>0xf702-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2D</string>
-												</dict>
-												<key>0xf702-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5D</string>
-												</dict>
-												<key>0xf702-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6D</string>
-												</dict>
-												<key>0xf702-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x44</string>
-												</dict>
-												<key>0xf703-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2C</string>
-												</dict>
-												<key>0xf703-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5C</string>
-												</dict>
-												<key>0xf703-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6C</string>
-												</dict>
-												<key>0xf703-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x43</string>
-												</dict>
-												<key>0xf704-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2P</string>
-												</dict>
-												<key>0xf705-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2Q</string>
-												</dict>
-												<key>0xf706-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2R</string>
-												</dict>
-												<key>0xf707-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2S</string>
-												</dict>
-												<key>0xf708-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[15;2~</string>
-												</dict>
-												<key>0xf709-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[17;2~</string>
-												</dict>
-												<key>0xf70a-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[18;2~</string>
-												</dict>
-												<key>0xf70b-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[19;2~</string>
-												</dict>
-												<key>0xf70c-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[20;2~</string>
-												</dict>
-												<key>0xf70d-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[21;2~</string>
-												</dict>
-												<key>0xf70e-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[23;2~</string>
-												</dict>
-												<key>0xf70f-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[24;2~</string>
-												</dict>
-												<key>0xf729-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2H</string>
-												</dict>
-												<key>0xf729-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5H</string>
-												</dict>
-												<key>0xf72b-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2F</string>
-												</dict>
-												<key>0xf72b-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5F</string>
-												</dict>
-											</dict>
-											<key>Minimum Contrast</key>
-											<real>0.06091772151898734</real>
-											<key>Mouse Reporting</key>
-											<true/>
-											<key>Name</key>
-											<string>Default</string>
-											<key>Non Ascii Font</key>
-											<string>Monaco 12</string>
-											<key>Non-ASCII Anti Aliased</key>
-											<true/>
-											<key>Normal Font</key>
-											<string>FiraCode-Regular 15</string>
-											<key>Option Key Sends</key>
-											<integer>0</integer>
-											<key>Prompt Before Closing 2</key>
-											<integer>0</integer>
-											<key>Right Option Key Sends</key>
-											<integer>0</integer>
-											<key>Rows</key>
-											<integer>30</integer>
-											<key>Screen</key>
-											<integer>-1</integer>
-											<key>Scrollback Lines</key>
-											<integer>0</integer>
-											<key>Selected Text Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Selection Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>0.8353000283241272</real>
-												<key>Red Component</key>
-												<real>0.70980000495910645</real>
-											</dict>
-											<key>Send Code When Idle</key>
-											<false/>
-											<key>Shortcut</key>
-											<string></string>
-											<key>Silence Bell</key>
-											<false/>
-											<key>Smart Cursor Color</key>
-											<false/>
-											<key>Sync Title</key>
-											<false/>
-											<key>Tags</key>
-											<array/>
-											<key>Terminal Type</key>
-											<string>xterm-256color</string>
-											<key>Transparency</key>
-											<real>0.04618496192893401</real>
-											<key>Triggers</key>
-											<array>
-												<dict>
-													<key>action</key>
-													<string>GrowlTrigger</string>
-													<key>parameter</key>
-													<string>Yarn Install: \0</string>
-													<key>regex</key>
-													<string>Done in [\d]{1,5}\.?[\d]{0,3}s</string>
-												</dict>
-											</array>
-											<key>Unlimited Scrollback</key>
-											<true/>
-											<key>Use Bold Font</key>
-											<true/>
-											<key>Use Bright Bold</key>
-											<true/>
-											<key>Use Italic Font</key>
-											<true/>
-											<key>Use Non-ASCII Font</key>
-											<false/>
-											<key>Vertical Spacing</key>
-											<real>1</real>
-											<key>Visual Bell</key>
-											<true/>
-											<key>Window Type</key>
-											<integer>0</integer>
-											<key>Working Directory</key>
-											<string>/Users/joeycozza</string>
-										</dict>
-										<key>Bookmark Name</key>
-										<string>Default</string>
-										<key>Columns</key>
-										<integer>51</integer>
-										<key>Commands</key>
-										<array/>
-										<key>Directories</key>
-										<array>
-											<string>/Users/joeycozza</string>
-											<string>/Users/joeycozza</string>
-											<string>/Users/joeycozza</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-										</array>
-										<key>Environment</key>
-										<dict>
-											<key>PWD</key>
-											<string>/Users/joeycozza/fs</string>
-										</dict>
-										<key>Hosts</key>
-										<array>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-3.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-3.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-										</array>
-										<key>Is UTF-8</key>
-										<true/>
-										<key>Program</key>
-										<dict>
-											<key>Type</key>
-											<string>Shell Launcher</string>
-										</dict>
-										<key>Rows</key>
-										<integer>56</integer>
-										<key>Session Default Name</key>
-										<string>Default</string>
-										<key>Session GUID</key>
-										<string>F2BF2382-24DB-4772-BB71-660FF425C635</string>
-										<key>Session Name</key>
-										<string>~/fs</string>
-										<key>Session Window Title</key>
-										<string>joeycozza@Josephs-MacBook-Pro-3: ~/fs</string>
-										<key>Shell Integration Ever Used</key>
-										<true/>
-										<key>Substitutions</key>
-										<dict/>
-										<key>Working Directory</key>
-										<string>/Users/joeycozza/fs</string>
-									</dict>
-									<key>View Type</key>
-									<string>SessionView</string>
-									<key>frame</key>
-									<dict>
-										<key>height</key>
-										<real>1034</real>
-										<key>width</key>
-										<real>469</real>
-										<key>x</key>
-										<real>0.0</real>
-										<key>y</key>
-										<real>0.0</real>
-									</dict>
-								</dict>
-								<dict>
-									<key>Is Active</key>
-									<integer>1</integer>
-									<key>Session</key>
-									<dict>
-										<key>Bookmark</key>
-										<dict>
-											<key>ASCII Anti Aliased</key>
-											<true/>
-											<key>ASCII Ligatures</key>
-											<true/>
-											<key>Ambiguous Double Width</key>
-											<false/>
-											<key>Ansi 0 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 1 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 10 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 11 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Ansi 12 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 13 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Ansi 14 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 15 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Ansi 2 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 3 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 4 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 5 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 6 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Ansi 7 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.73333334922790527</real>
-												<key>Green Component</key>
-												<real>0.73333334922790527</real>
-												<key>Red Component</key>
-												<real>0.73333334922790527</real>
-											</dict>
-											<key>Ansi 8 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>0.3333333432674408</real>
-											</dict>
-											<key>Ansi 9 Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>0.3333333432674408</real>
-												<key>Green Component</key>
-												<real>0.3333333432674408</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>BM Growl</key>
-											<true/>
-											<key>Background Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.10000000000000001</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>0.10000000000000001</real>
-												<key>Red Component</key>
-												<real>0.10000000000000001</real>
-											</dict>
-											<key>Background Image Location</key>
-											<string></string>
-											<key>Blinking Cursor</key>
-											<false/>
-											<key>Blur</key>
-											<false/>
-											<key>Blur Radius</key>
-											<real>1.2974401173857864</real>
-											<key>Bold Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Character Encoding</key>
-											<integer>4</integer>
-											<key>Close Sessions On End</key>
-											<true/>
-											<key>Columns</key>
-											<integer>120</integer>
-											<key>Command</key>
-											<string></string>
-											<key>Cursor Boost</key>
-											<real>0.0</real>
-											<key>Cursor Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>0.149627685546875</real>
-											</dict>
-											<key>Cursor Text Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>1</real>
-												<key>Red Component</key>
-												<real>1</real>
-											</dict>
-											<key>Cursor Type</key>
-											<integer>1</integer>
-											<key>Custom Command</key>
-											<string>No</string>
-											<key>Custom Directory</key>
-											<string>No</string>
-											<key>Default Bookmark</key>
-											<string>No</string>
-											<key>Description</key>
-											<string>Default</string>
-											<key>Disable Window Resizing</key>
-											<true/>
-											<key>Flashing Bell</key>
-											<false/>
-											<key>Foreground Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.90000000000000002</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>0.90000000000000002</real>
-												<key>Red Component</key>
-												<real>0.90000000000000002</real>
-											</dict>
-											<key>Guid</key>
-											<string>C5742565-1C80-4EB3-A142-5197CEA896D9</string>
-											<key>Horizontal Spacing</key>
-											<real>1</real>
-											<key>Idle Code</key>
-											<integer>0</integer>
-											<key>Initial Text</key>
-											<string></string>
-											<key>Jobs to Ignore</key>
-											<array>
-												<string>rlogin</string>
-												<string>ssh</string>
-												<string>slogin</string>
-												<string>telnet</string>
-											</array>
-											<key>Keyboard Map</key>
-											<dict>
-												<key>0x2d-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1f</string>
-												</dict>
-												<key>0x32-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x00</string>
-												</dict>
-												<key>0x33-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b</string>
-												</dict>
-												<key>0x34-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1c</string>
-												</dict>
-												<key>0x35-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1d</string>
-												</dict>
-												<key>0x36-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1e</string>
-												</dict>
-												<key>0x37-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1f</string>
-												</dict>
-												<key>0x38-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x7f</string>
-												</dict>
-												<key>0xf700-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2A</string>
-												</dict>
-												<key>0xf700-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5A</string>
-												</dict>
-												<key>0xf700-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6A</string>
-												</dict>
-												<key>0xf700-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x41</string>
-												</dict>
-												<key>0xf701-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2B</string>
-												</dict>
-												<key>0xf701-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5B</string>
-												</dict>
-												<key>0xf701-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6B</string>
-												</dict>
-												<key>0xf701-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x42</string>
-												</dict>
-												<key>0xf702-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2D</string>
-												</dict>
-												<key>0xf702-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5D</string>
-												</dict>
-												<key>0xf702-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6D</string>
-												</dict>
-												<key>0xf702-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x44</string>
-												</dict>
-												<key>0xf703-0x220000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2C</string>
-												</dict>
-												<key>0xf703-0x240000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5C</string>
-												</dict>
-												<key>0xf703-0x260000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;6C</string>
-												</dict>
-												<key>0xf703-0x280000</key>
-												<dict>
-													<key>Action</key>
-													<integer>11</integer>
-													<key>Text</key>
-													<string>0x1b 0x1b 0x5b 0x43</string>
-												</dict>
-												<key>0xf704-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2P</string>
-												</dict>
-												<key>0xf705-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2Q</string>
-												</dict>
-												<key>0xf706-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2R</string>
-												</dict>
-												<key>0xf707-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2S</string>
-												</dict>
-												<key>0xf708-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[15;2~</string>
-												</dict>
-												<key>0xf709-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[17;2~</string>
-												</dict>
-												<key>0xf70a-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[18;2~</string>
-												</dict>
-												<key>0xf70b-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[19;2~</string>
-												</dict>
-												<key>0xf70c-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[20;2~</string>
-												</dict>
-												<key>0xf70d-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[21;2~</string>
-												</dict>
-												<key>0xf70e-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[23;2~</string>
-												</dict>
-												<key>0xf70f-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[24;2~</string>
-												</dict>
-												<key>0xf729-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2H</string>
-												</dict>
-												<key>0xf729-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5H</string>
-												</dict>
-												<key>0xf72b-0x20000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;2F</string>
-												</dict>
-												<key>0xf72b-0x40000</key>
-												<dict>
-													<key>Action</key>
-													<integer>10</integer>
-													<key>Text</key>
-													<string>[1;5F</string>
-												</dict>
-											</dict>
-											<key>Minimum Contrast</key>
-											<real>0.06091772151898734</real>
-											<key>Mouse Reporting</key>
-											<true/>
-											<key>Name</key>
-											<string>Default</string>
-											<key>Non Ascii Font</key>
-											<string>Monaco 12</string>
-											<key>Non-ASCII Anti Aliased</key>
-											<true/>
-											<key>Normal Font</key>
-											<string>FiraCode-Regular 15</string>
-											<key>Option Key Sends</key>
-											<integer>0</integer>
-											<key>Prompt Before Closing 2</key>
-											<integer>0</integer>
-											<key>Right Option Key Sends</key>
-											<integer>0</integer>
-											<key>Rows</key>
-											<integer>30</integer>
-											<key>Screen</key>
-											<integer>-1</integer>
-											<key>Scrollback Lines</key>
-											<integer>0</integer>
-											<key>Selected Text Color</key>
-											<dict>
-												<key>Alpha Component</key>
-												<real>1</real>
-												<key>Blue Component</key>
-												<real>0.0</real>
-												<key>Color Space</key>
-												<string>sRGB</string>
-												<key>Green Component</key>
-												<real>0.0</real>
-												<key>Red Component</key>
-												<real>0.0</real>
-											</dict>
-											<key>Selection Color</key>
-											<dict>
-												<key>Blue Component</key>
-												<real>1</real>
-												<key>Green Component</key>
-												<real>0.8353000283241272</real>
-												<key>Red Component</key>
-												<real>0.70980000495910645</real>
-											</dict>
-											<key>Send Code When Idle</key>
-											<false/>
-											<key>Shortcut</key>
-											<string></string>
-											<key>Silence Bell</key>
-											<false/>
-											<key>Smart Cursor Color</key>
-											<false/>
-											<key>Sync Title</key>
-											<false/>
-											<key>Tags</key>
-											<array/>
-											<key>Terminal Type</key>
-											<string>xterm-256color</string>
-											<key>Transparency</key>
-											<real>0.04618496192893401</real>
-											<key>Triggers</key>
-											<array>
-												<dict>
-													<key>action</key>
-													<string>GrowlTrigger</string>
-													<key>parameter</key>
-													<string>Yarn Install: \0</string>
-													<key>regex</key>
-													<string>Done in [\d]{1,5}\.?[\d]{0,3}s</string>
-												</dict>
-											</array>
-											<key>Unlimited Scrollback</key>
-											<true/>
-											<key>Use Bold Font</key>
-											<true/>
-											<key>Use Bright Bold</key>
-											<true/>
-											<key>Use Italic Font</key>
-											<true/>
-											<key>Use Non-ASCII Font</key>
-											<false/>
-											<key>Vertical Spacing</key>
-											<real>1</real>
-											<key>Visual Bell</key>
-											<true/>
-											<key>Window Type</key>
-											<integer>0</integer>
-											<key>Working Directory</key>
-											<string>/Users/joeycozza</string>
-										</dict>
-										<key>Bookmark Name</key>
-										<string>Default</string>
-										<key>Columns</key>
-										<integer>160</integer>
-										<key>Commands</key>
-										<array/>
-										<key>Directories</key>
-										<array>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs/component-catalog</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-											<string>/Users/joeycozza/fs</string>
-										</array>
-										<key>Environment</key>
-										<dict>
-											<key>PWD</key>
-											<string>/Users/joeycozza/fs</string>
-										</dict>
-										<key>Hosts</key>
-										<array>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-2.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-3.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-											<dict>
-												<key>Host name</key>
-												<string>Josephs-MacBook-Pro-3.local</string>
-												<key>User name</key>
-												<string>joeycozza</string>
-											</dict>
-										</array>
-										<key>Is UTF-8</key>
-										<true/>
-										<key>Program</key>
-										<dict>
-											<key>Type</key>
-											<string>Shell Launcher</string>
-										</dict>
-										<key>Rows</key>
-										<integer>56</integer>
-										<key>Session Default Name</key>
-										<string>Default</string>
-										<key>Session GUID</key>
-										<string>AC5C2EED-2238-4D23-8C10-D0D68E562C9A</string>
-										<key>Session Name</key>
-										<string>~/fs</string>
-										<key>Session Window Title</key>
-										<string>joeycozza@Josephs-MacBook-Pro-3: ~/fs</string>
-										<key>Shell Integration Ever Used</key>
-										<true/>
-										<key>Substitutions</key>
-										<dict/>
-										<key>Working Directory</key>
-										<string>/Users/joeycozza/fs</string>
-									</dict>
-									<key>View Type</key>
-									<string>SessionView</string>
-									<key>frame</key>
-									<dict>
-										<key>height</key>
-										<real>1034</real>
-										<key>width</key>
-										<real>1450</real>
-										<key>x</key>
-										<real>470</real>
-										<key>y</key>
-										<real>0.0</real>
-									</dict>
-								</dict>
-							</array>
-							<key>View Type</key>
-							<string>Splitter</string>
-							<key>frame</key>
-							<dict>
-								<key>height</key>
-								<real>1034</real>
-								<key>width</key>
-								<real>1920</real>
-								<key>x</key>
-								<real>0.0</real>
-								<key>y</key>
-								<real>0.0</real>
-							</dict>
-							<key>isVertical</key>
-							<true/>
-						</dict>
-					</dict>
-				</array>
-				<key>TerminalGuid</key>
-				<string>pty-ED995CF1-E97F-4783-8E5B-83E6BE89033E</string>
+				<string>pty-416732D3-9BA9-4952-8D19-47D8896A112F</string>
 				<key>Toolbelt Proportions</key>
 				<dict>
 					<key>proportions</key>
@@ -6767,11 +5712,11 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 				<key>Use Transparency</key>
 				<true/>
 				<key>Width</key>
-				<real>1920</real>
+				<real>2122</real>
 				<key>Window Type</key>
-				<integer>0</integer>
+				<integer>13</integer>
 				<key>X Origin</key>
-				<real>-1150</real>
+				<real>-858</real>
 				<key>Y Origin</key>
 				<real>1050</real>
 			</dict>
@@ -6786,7 +5731,7 @@ SplitDevFinal:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.4</string>
+	<string>3.3.6</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

@@ -32,7 +32,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
 
 Plug 'vimwiki/vimwiki'
-Plug 'kshenoy/vim-signature'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -227,7 +226,7 @@ nmap <Leader>r <Plug>(coc-rename)
 
 nnoremap <Leader>p :CocCommand prettier.formatFile<CR>
 nnoremap <Leader>af :CocCommand eslint.executeAutoFix<CR>
-nnoremap <Leader><Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 100<CR>
+nnoremap <Leader><Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>
 
 " use tab/shift-tab to forward/backward cycle completion list
 inoremap <expr> <Tab> pumvisible() ? "\<c-n>" : "\<tab>"

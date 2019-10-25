@@ -14,9 +14,10 @@ ln -s "$CONFIG_FILES_PATH/coc" "$HOME/.config/coc"
 brew install fzf
 "$(brew --prefix)"/opt/fzf/install
 brew install neovim
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install ripgrep
 brew install zsh-syntax-highlighting
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
 # hadolint is a dockerfile linter tool
 brew install hadolint
 # luajit is for neovim plugins and such
@@ -34,14 +35,13 @@ sudo pip3 install yamllint
 sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
-curl https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip -o "$HOME/Downloads/FiraCode_1.206.zip"
 curl https://iterm2.com/downloads/stable/iTerm2-3_3_0.zip -o "$HOME/Downloads/iterm2Beta.zip"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
 source "$HOME/.zshrc"
 ln -s "$CONFIG_FILES_PATH/default-packages" "$NVM_DIR/default-packages"
 nvm install node
 echo ""
-echo "Manually set iterm2 settings to point to the configFile"
+echo "Manually set iterm2 settings to point to the configFile directory"
 echo "Manually setup firacode for iterm2"
 echo "Download better touch tools, karabiner"
 echo "Download intelliJ community and make sure the directory matches what gitconfig is looking for"
