@@ -17,8 +17,7 @@ Plug 'styled-components/vim-styled-components', {'branch': 'main'}
 Plug 'leafgarland/typescript-vim'
 
 "React/html
-Plug 'mxw/vim-jsx'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'alvan/vim-closetag'
 Plug 'jxnblk/vim-mdx-js'
 
