@@ -1,4 +1,7 @@
+importCost.toggle
+snippets.editSnippets
+snippets.openSnippetFiles
+extensions.forceUpdateAll
+eslint.executeAutofix
 prettier.formatFile
 eslint.executeAutoFix
-eslint.executeAutofix
-snippets.editSnippets

@@ -6,6 +6,15 @@
     "%2FUsers%2Fjoeycozza%2Ffs%2Fzion": [
       "eslin",
       "eslint"
+    ],
+    "%2FUsers%2Fjoeycozza%2FDocuments%2FconfigFiles": [
+      "snippets.open",
+      "snippeto",
+      "snipp"
+    ],
+    "%2FUsers%2Fjoeycozza%2Ffs%2Ffrontier-app-react": [
+      "importCost",
+      "import"
     ]
   },
   "snippets": {
@@ -16,6 +25,11 @@
   "lists": {
     "%2FUsers%2Fjoeycozza%2FDocuments%2FconfigFiles": [
       "exte"
+    ]
+  },
+  "extensions": {
+    "%2FUsers%2Fjoeycozza%2FDocuments%2FconfigFiles": [
+      "jj"
     ]
   }
 }

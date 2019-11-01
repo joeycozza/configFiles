@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "coc-eslint": ">=1.2.2",
-    "coc-json": ">=1.2.3",
+    "coc-json": ">=1.2.4",
     "coc-pairs": ">=1.2.18",
     "coc-prettier": ">=1.1.10",
     "coc-snippets": ">=2.1.13",
-    "coc-tsserver": ">=1.4.4",
-    "coc-yaml": "^1.0.2",
-    "coc-yank": ">=1.1.2"
+    "coc-tsserver": ">=1.4.5",
+    "coc-yaml": ">=1.0.2",
+    "coc-yank": ">=1.1.2",
+    "coc-import-cost": ">=1.0.1"
   }
 }

@@ -1,0 +1,251 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet ed "eslint disable next line"
+/* eslint-disable-next-line $0 */
+endsnippet
+snippet case "Makes a javascript case statement"
+case '$1':
+  $0
+  break
+endsnippet
+snippet switch "Makes a javascript switch statement"
+switch ($1) {
+  case '$2':
+	  $0
+		break
+  default:
+	  console.log('Default Case')
+}
+endsnippet
+snippet rc "A very basic react component"
+import React from 'react'
+import PropTypes from 'prop-types'
+
+export default function `!p snip.rv = snip.basename`({ name }) {
+  return <div>Name: {name}</div>
+}
+
+`!p snip.rv = snip.basename`.propTypes = {
+  name: PropTypes.string,
+}
+endsnippet
+snippet str "ES6 String Templatize a string concat visual selection"
+\``!p
+split = snip.v.text.split("+")
+finalStr = ""
+for x in split:
+  x = x.strip()
+	if x[0] == "'" or x[0] == "\"":
+		x = x.strip("\"'")
+		finalStr += x
+	else:
+		finalStr += "${" + x + "}"
+snip.rv = finalStr
+`\`
+endsnippet
+snippet ed "Export Default"
+export default $0;
+endsnippet
+snippet try "write the try/catch"
+try {
+  $0
+} catch (err) {
+}
+endsnippet
+snippet get "Lodash getify"
+_.get(`!p snip.rv = snip.v.text.split(".")[0]`, '`!p snip.rv = ".".join(snip.v.text.split(".")[1:])`')
+endsnippet
+snippet 64 "base64 for Node"
+const base64Auth = new Buffer(\`${${1:username}}:${${2:password}}\`).toString('base64');
+endsnippet
+snippet i_ "import lodash"
+import _ from 'lodash'
+endsnippet
+snippet i "import"
+import $1 from '$1'
+endsnippet
+snippet ii "import different things"
+import $1 from '$2'
+endsnippet
+snippet ir "import react"
+import React from 'react'
+endsnippet
+snippet r_ "require lodash"
+const _ = require('lodash');
+endsnippet
+snippet exportIndex "Export" i
+export default from './$1.jsx';
+endsnippet
+snippet fn  "es6 function" i
+($1) => {
+  $0
+}
+endsnippet
+snippet fun  "anonymous es5 function" i
+function ($1) {
+  $0
+}
+endsnippet
+snippet func  "es5 function" i
+function $1($2) {
+  $0
+}
+endsnippet
+snippet cline "console.log(CURRENT LINE NUMBER)"
+console.log('Line: `!v line('.')`')
+endsnippet
+snippet then "then"
+.then($1 => {
+  $0
+})
+endsnippet
+snippet catch "catch"
+.catch(err => {
+  $0
+})
+endsnippet
+snippet finally "finally"
+.finally(() => {
+  $0
+});
+endsnippet
+snippet prom "New Promise"
+return new Promise((resolve, reject) => {
+  $0
+});
+endsnippet
+snippet for "lodash forEach"
+_.forEach($1, ($2, $3) => {
+  $0
+});
+endsnippet
+snippet map "lodash map" i
+_.map($1, ($2, $3) => {
+  $0
+});
+endsnippet
+snippet jss "JSON.stringify()" i
+JSON.stringify(${VISUAL}${0})
+endsnippet
+snippet jsss "Pretty JSON.stringify()" i
+JSON.stringify(${VISUAL}${0}, null, 2)
+endsnippet
+snippet jsp "JSON.parse()" i
+JSON.parse(${VISUAL}${0})
+endsnippet
+snippet cons "Joeys favorite console.log()" i
+console.log('${VISUAL}$1: ', ${VISUAL}${1})$0
+endsnippet
+snippet con "console.log()" i
+console.log('${1}')$0
+endsnippet
+snippet r "require" b
+const $1 = require('$1');
+endsnippet
+snippet me "module.exports" b
+module.exports = {$0};
+endsnippet
+snippet :f "Object Method"
+${1:method_name}: function (${3:attribute}) {
+  ${VISUAL}$0
+}${10:,}
+endsnippet
+snippet :, "Object Value JS"
+${1:value_name}: ${0:value},
+endsnippet
+snippet : "Object key key: 'value'"
+${1:"${2:key}"}: ${3:"${4:value}"}${5:,}
+endsnippet
+snippet proto "Prototype (proto)"
+${1:class_name}.prototype.${2:method_name} = function (${3:first_argument}) {
+  ${VISUAL}$0
+};
+endsnippet
+snippet it "it test block"
+it('$1', () => {
+  $0
+});
+endsnippet
+snippet des "describe test block"
+describe('$1', () => {
+  it('$2', () => {
+    $0
+  });
+});
+endsnippet
+# The options currently supported are: >
+# b   Beginning of line - A snippet with this option is expanded only if the
+# tab trigger is the first word on the line. In other words, if only
+# whitespace precedes the tab trigger, expand. The default is to expand
+# snippets at any position regardless of the preceding non-whitespace
+# characters.
+# 
+# i   In-word expansion - By default a snippet is expanded only if the tab
+# trigger is the first word on the line or is preceded by one or more
+# whitespace characters. A snippet with this option is expanded
+# regardless of the preceding character. In other words, the snippet can
+# be triggered in the middle of a word.
+# 
+# w   Word boundary - With this option, the snippet is expanded if
+# the tab trigger start matches a word boundary and the tab trigger end
+# matches a word boundary. In other words the tab trigger must be
+# preceded and followed by non-word characters. Word characters are
+# defined by the 'iskeyword' setting. Use this option, for example, to
+# permit expansion where the tab trigger follows punctuation without
+# expanding suffixes of larger words.
+# 
+# r   Regular expression - With this option, the tab trigger is expected to
+# be a python regular expression. The snippet is expanded if the recently
+# typed characters match the regular expression. Note: The regular
+# expression MUST be quoted (or surrounded with another character) like a
+# multi-word tab trigger (see above) whether it has spaces or not. A
+# resulting match is passed to any python code blocks in the snippet
+# definition as the local variable "match".
+# 
+# t   Do not expand tabs - If a snippet definition includes leading tab
+# characters, by default UltiSnips expands the tab characters honoring
+# the Vim 'shiftwidth', 'softtabstop', 'expandtab' and 'tabstop'
+# indentation settings. (For example, if 'expandtab' is set, the tab is
+#       replaced with spaces.) If this option is set, UltiSnips will ignore the
+# Vim settings and insert the tab characters as is. This option is useful
+# for snippets involved with tab delimited formats, for example.
+# 
+# s   Remove whitespace immediately before the cursor at the end of a line
+# before jumping to the next tabstop.  This is useful if there is a
+# tabstop with optional text at the end of a line.
+# 
+# m   Trim all whitespaces from right side of snippet lines. Useful when
+# snippet contains empty lines which should remain empty after expanding.
+# Without this option empty lines in snippets definition will have
+# indentation too.
+# 
+# e   Context snippets - With this option expansion of snippet can be
+# controlled not only by previous characters in line, but by any given
+# python expression. This option can be specified along with other
+# options, like 'b'. See |UltiSnips-context-snippets| for more info.
+# 
+# A   Snippet will be triggered automatically, when condition matches.
+# See |UltiSnips-autotrigger| for more info.
