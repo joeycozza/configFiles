@@ -248,7 +248,6 @@ let g:NERDTreeShowHidden=1
 let g:NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-let g:fzf_action = {'ctrl-t': 'tab split', 'ctrl-x': 'split', 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'down': '~20%' }
 
 
@@ -290,8 +289,8 @@ let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*.mdx,*.md'
 " Help with terminal mode. Esc will now go back to normal mode
 " if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
 if has('nvim')
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
+  highlight! link TermCursor Cursor
+  highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
 endif
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
