@@ -1,7 +1,7 @@
-importCost.toggle
+prettier.formatFile
 snippets.editSnippets
 snippets.openSnippetFiles
+importCost.toggle
 extensions.forceUpdateAll
 eslint.executeAutofix
-prettier.formatFile
 eslint.executeAutoFix
