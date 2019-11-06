@@ -52,6 +52,7 @@ export PATH="/usr/gcc-4.8.2/bin:$PATH"
 
 export PATH="/Users/joeycozza/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/2.7/bin:$PATH"
+export PATH="/Users/joeycozza/Library/Python/3.7/bin:$PATH"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"

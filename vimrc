@@ -50,7 +50,7 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 
 if has('nvim') && executable('nvr')
-  let $VISUAL="nvm -cc split --remote-wait +'set bufhidden=wipe'"
+  let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
 endif
 
 let g:mapleader=' '
