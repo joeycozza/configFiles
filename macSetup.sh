@@ -36,7 +36,7 @@ sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
 curl https://iterm2.com/downloads/stable/iTerm2-3_3_0.zip -o "$HOME/Downloads/iterm2Beta.zip"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 source "$HOME/.zshrc"
 ln -s "$CONFIG_FILES_PATH/default-packages" "$NVM_DIR/default-packages"
 nvm install node
