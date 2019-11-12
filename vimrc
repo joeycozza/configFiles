@@ -253,8 +253,6 @@ let g:fzf_layout = { 'down': '~20%' }
 
 " turn off the git branch info since it is in terminal status bar already
 let g:airline_section_b = ''
-" turn off fileencoding and fileformat info
-let g:airline_section_y = ''
 
 let g:airline_theme='simple'
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
