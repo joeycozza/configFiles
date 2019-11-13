@@ -25,7 +25,7 @@ brew install luajit
 # grip is for markdown preview github option
 brew install grip
 source "$HOME/.zshrc"
-ln -s "$HOME/.vimrc" "$HOME/config/nvim/init.vim"
+ln -s "$HOME/.vimrc" "$HOME/.config/nvim/init.vim"
 curl -fLo "$HOME/local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 source "$HOME/.zshrc"
 sudo pip3 install neovim
