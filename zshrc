@@ -21,7 +21,6 @@ ZSH_THEME="minimal"
 
 plugins=(
   gulpComplete
-  myNvm
   openPr
   gitHelpers
 )
