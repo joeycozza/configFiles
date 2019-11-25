@@ -455,6 +455,8 @@ More than half:Restore Window Arrangement as Tabs</string>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
+			<key>Badge Text</key>
+			<string></string>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
@@ -1167,7 +1169,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.095635707487309651</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array>
 				<dict>
@@ -1869,6 +1871,8 @@ More than half:Restore Window Arrangement as Tabs</string>
 			<true/>
 			<key>ASCII Ligatures</key>
 			<true/>
+			<key>Allow Title Setting</key>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -2031,6 +2035,8 @@ More than half:Restore Window Arrangement as Tabs</string>
 				<real>0.10000000000000001</real>
 			</dict>
 			<key>Background Image Location</key>
+			<string></string>
+			<key>Badge Text</key>
 			<string></string>
 			<key>Blinking Cursor</key>
 			<false/>
@@ -2506,11 +2512,12 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.2.9</string>
+		<string>3.3.0</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
-		<string>3.3.0</string>
+		<string>3.3.7</string>
+		<string>3.2.9</string>
 		<string>3.3.2</string>
 		<string>3.3.4</string>
 	</array>
@@ -2544,7 +2551,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{317, 864}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2563,7 +2570,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncLastTipTime</key>
 	<real>589389893.029755</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>69</integer>
+	<integer>81</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2577,7 +2584,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>595039103.23655903</real>
+		<real>596053426.40866101</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -2812,6 +2819,14 @@ More than half:Restore Window Arrangement as Tabs</string>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>user.badge</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>tab</string>
@@ -2994,6 +3009,14 @@ More than half:Restore Window Arrangement as Tabs</string>
 				<true/>
 				<key>name</key>
 				<string>currentTab.window</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.user.badge</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3213,6 +3236,14 @@ More than half:Restore Window Arrangement as Tabs</string>
 				<true/>
 				<key>name</key>
 				<string>window</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.user.badge</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3511,7 +3542,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-08T02:12:27Z</date>
+	<date>2019-11-20T16:01:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -7960,7 +7991,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.7</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
