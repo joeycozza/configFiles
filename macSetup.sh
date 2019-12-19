@@ -40,7 +40,7 @@ sudo pip3 install yamllint
 sudo gem install neovim
 nvim --headless +PlugInstall +qa
 nvim --headless +UpdateRemotePlugins +qa
-curl https://iterm2.com/downloads/stable/iTerm2-3_3_0.zip -o "$HOME/Downloads/iterm2Beta.zip"
+curl https://iterm2.com/downloads/stable/iTerm2-3_3_7.zip -o "$HOME/Downloads/iterm2Beta.zip"
 
 # setting up fast-node-manager and node
 brew install Schniz/tap/fnm

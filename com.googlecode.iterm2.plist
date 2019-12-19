@@ -112,13 +112,6 @@ More than half:Restore Window Arrangement as Tabs</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x380000</key>
-		<dict>
-			<key>Action</key>
-			<integer>51</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf703-0x300000</key>
 		<dict>
 			<key>Action</key>
@@ -130,13 +123,6 @@ More than half:Restore Window Arrangement as Tabs</string>
 		<dict>
 			<key>Action</key>
 			<integer>34</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0xf703-0x380000</key>
-		<dict>
-			<key>Action</key>
-			<integer>52</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -282,7 +268,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>-765 1592 958 470 -1150 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-858 1050 1880 1417 -858 1050 3440 1417 </string>
+	<string>4 6 1671 1014 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -2512,14 +2498,14 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.0</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.3.7</string>
 		<string>3.2.9</string>
+		<string>3.3.0</string>
 		<string>3.3.2</string>
-		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -2570,7 +2556,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncLastTipTime</key>
 	<real>589389893.029755</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>81</integer>
+	<integer>86</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2584,7 +2570,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncPersistentRateLimitedUpdates</key>
 	<dict>
 		<key>CheckForUpdatedPythonRuntime</key>
-		<real>596053426.40866101</real>
+		<real>597367007.32137597</real>
 	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -3542,7 +3528,7 @@ More than half:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-20T16:01:35Z</date>
+	<date>2019-12-04T23:17:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

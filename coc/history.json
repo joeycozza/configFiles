@@ -29,12 +29,24 @@
   "lists": {
     "%2FUsers%2Fjoeycozza%2FDocuments%2FconfigFiles": [
       "exte"
+    ],
+    "%2FUsers%2Fjoeycozza%2Ffs%2Fzion": [
+      "snippets"
     ]
   },
   "extensions": {
     "%2FUsers%2Fjoeycozza%2FDocuments%2FconfigFiles": [
       "jj",
       "jjj"
+    ],
+    "%2FUsers%2Fjoeycozza%2Ffs%2Fzion": [
+      "import",
+      " d"
+    ]
+  },
+  "actions": {
+    "%2FUsers%2Fjoeycozza%2Ffs": [
+      "snippet"
     ]
   }
 }

@@ -57,7 +57,7 @@ snippet str "ES6 String Templatize a string concat visual selection"
 split = snip.v.text.split("+")
 finalStr = ""
 for x in split:
-  x = x.strip()
+	x = x.strip()
 	if x[0] == "'" or x[0] == "\"":
 		x = x.strip("\"'")
 		finalStr += x

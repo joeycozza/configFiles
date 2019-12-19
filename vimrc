@@ -63,7 +63,7 @@ let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to cons
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
-set cmdheight=1
+set cmdheight=2
 
 "Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 "With this change it only rerenders at the end of the macro.
