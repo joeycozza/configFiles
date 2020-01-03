@@ -28,6 +28,8 @@ Plug 'tpope/vim-fugitive'
 " extend functionality
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'voldikss/vim-floaterm'
+
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
 
 Plug 'vimwiki/vimwiki'
@@ -55,6 +57,9 @@ if has('nvim') && executable('nvr')
 endif
 
 let g:mapleader=' '
+
+let g:floaterm_position='center'
+let g:floaterm_width=0.8 * &columns
 
 " speed up python executable finding, and fix issue with not finding python3 correctly
 let g:python_host_prog  = '/usr/local/Cellar/python@2/2.7.17_1/bin/python2.7'
@@ -181,6 +186,7 @@ vnoremap <c-k> :m '<-2<CR>gv=gv
 
 nnoremap <Leader>d :bdelete<CR>
 nnoremap <Leader><Leader>d :bdelete!<CR>
+tnoremap <Leader><Leader>d <c-\><c-n>:bdelete!<CR>
 
 inoremap jk <Esc>:w<CR>
 
@@ -241,6 +247,8 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 
 " S to split under cursor, remove trailing whitespace on first line, and auto indent second line
 nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
+
+nnoremap <Leader>t :FloatermNew<CR>
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
