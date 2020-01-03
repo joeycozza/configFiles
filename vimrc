@@ -31,6 +31,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
 
 Plug 'vimwiki/vimwiki'
+Plug 'SirVer/ultisnips'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
@@ -54,6 +55,10 @@ if has('nvim') && executable('nvr')
 endif
 
 let g:mapleader=' '
+
+" speed up python executable finding, and fix issue with not finding python3 correctly
+let g:python_host_prog  = '/usr/local/Cellar/python@2/2.7.17_1/bin/python2.7'
+let g:python3_host_prog = '/usr/local/Cellar/python/3.7.6_1/bin/python3.7'
 
 "///////////////////Defaulting Registers////////////////////////////////////
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
@@ -222,7 +227,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 nmap <Leader>r <Plug>(coc-rename)
-
 nnoremap <Leader>p :CocCommand prettier.formatFile<CR>
 nnoremap <Leader>af :CocCommand eslint.executeAutoFix<CR>
 nnoremap <Leader><Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>
@@ -269,12 +273,10 @@ let g:tern#is_show_argument_hints_enabled=1
 
 let g:used_javascript_libs = 'underscore,chai,react'
 
-" jump to next and prev placeholders of the snippet
-let g:coc_snippet_next = ';;'
-let g:coc_snippet_prev = '::'
-" Use ;; for both expand and jump (make expand higher priority.)
-imap ;; <Plug>(coc-snippets-expand-jump)
-
+let g:UltiSnipsExpandTrigger = ';;'
+let g:UltiSnipsJumpForwardTrigger = ';;'
+let g:UltiSnipsJumpBackwardTrigger = '::'
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
 
 let g:vim_markdown_preview_github = 1
 let g:vim_markdown_preview_browser = 'Google Chrome'
