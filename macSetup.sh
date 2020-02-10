@@ -19,6 +19,7 @@ brew install fzf
 brew install ripgrep
 brew install zsh-syntax-highlighting
 brew tap homebrew/cask-fonts
+# TODO figure out how to auto download the Nerd-Fonts patched fira-code so vim-devicons works
 brew cask install font-fira-code
 # hadolint is a dockerfile linter tool
 brew install hadolint

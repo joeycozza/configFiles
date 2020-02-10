@@ -1,11 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
 "visual
+
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'myusuf3/numbers.vim'
 Plug 'google/vim-searchindex'
+Plug 'ryanoasis/vim-devicons'
 
 " javascript/node
 Plug 'othree/javascript-libraries-syntax.vim'
@@ -28,8 +29,6 @@ Plug 'tpope/vim-fugitive'
 " extend functionality
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'voldikss/vim-floaterm'
-
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
 
 Plug 'vimwiki/vimwiki'
@@ -50,6 +49,8 @@ Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'dstein64/vim-startuptime'
+
 call plug#end()
 
 if has('nvim') && executable('nvr')
@@ -58,8 +59,6 @@ endif
 
 let g:mapleader=' '
 
-let g:floaterm_position='center'
-let g:floaterm_width=0.8 * &columns
 
 " speed up python executable finding, and fix issue with not finding python3 correctly
 let g:python_host_prog  = '/usr/local/Cellar/python@2/2.7.17_1/bin/python2.7'
@@ -224,6 +223,7 @@ vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Past
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
 nnoremap <silent> <Leader>f :execute 'Files ' . <SID>fzf_root()<CR>
+nnoremap <silent> <Leader>jf :call Fzf_dev_previews()<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
 
 " Remap keys for gotos
@@ -248,7 +248,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 " S to split under cursor, remove trailing whitespace on first line, and auto indent second line
 nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
 
-nnoremap <Leader>t :FloatermNew<CR>
+nnoremap <Leader>t :term<CR>a
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
@@ -263,8 +263,8 @@ let g:NERDTreeShowHidden=1
 let g:NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-let g:fzf_layout = { 'down': '~20%' }
-
+let g:fzf_layout = { 'window': { 'width': 0.90, 'height': 0.8} }
+let $FZF_DEFAULT_OPTS="--reverse " " top to bottom
 
 " turn off the git branch info since it is in terminal status bar already
 let g:airline_section_b = ''
@@ -317,6 +317,43 @@ function! s:fzf_root()
   let l:path = finddir('.git', expand('%:p:h').';')
   return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
 endfunction
+
+" Files + devicons + floating fzf
+function! Fzf_dev_previews()
+  let l:fzf_files_options = '--preview "bat --line-range :'.&lines.' --theme="OneHalfDark" --style=numbers,changes --color always {2..-1}"'
+
+  function! s:files()
+    let l:files = split(system($FZF_DEFAULT_COMMAND), '\n')
+    return s:prepend_icon(l:files)
+  endfunction
+
+  function! s:prepend_icon(candidates)
+    let l:result = []
+    for l:candidate in a:candidates
+      let l:filename = fnamemodify(l:candidate, ':p:t')
+      let l:icon = WebDevIconsGetFileTypeSymbol(l:filename, isdirectory(l:filename))
+      call add(l:result, printf('%s %s', l:icon, l:candidate))
+    endfor
+
+    return l:result
+  endfunction
+
+  function! s:edit_file(item)
+    let l:pos = stridx(a:item, ' ')
+    let l:file_path = a:item[pos+1:-1]
+    execute 'silent e' l:file_path
+  endfunction
+
+  call fzf#run({
+        \ 'source': <sid>files(),
+        \ 'sink':   function('s:edit_file'),
+        \ 'options': '-m --reverse ' . l:fzf_files_options,
+        \ 'down':    '40%',
+        \ 'window': { 'width': 1, 'height': 0.8, 'highlight': 'Question'}
+        \  })
+
+endfunction
+
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
