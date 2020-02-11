@@ -17,7 +17,7 @@ export ZSH=$HOME/.oh-my-zsh
 export CONFIG_FILES_PATH=$HOME/Documents/configFiles
 
 ZSH_CUSTOM=$CONFIG_FILES_PATH/customZSH
-ZSH_THEME="minimal"
+ZSH_THEME="gitinfo"
 
 plugins=(
   gulpComplete
