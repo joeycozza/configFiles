@@ -49,7 +49,9 @@ export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/gcc-4.8.2/bin:$PATH"
 
+
 export PATH="/Users/joeycozza/bin:$PATH"
+export PATH="/Users/joeycozza/.nimble/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/2.7/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/3.7/bin:$PATH"
 
