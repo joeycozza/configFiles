@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'google/vim-searchindex'
 Plug 'ryanoasis/vim-devicons'
 
 " javascript/node
