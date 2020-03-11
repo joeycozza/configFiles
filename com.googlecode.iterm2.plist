@@ -187,13 +187,7 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<integer>0</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/Library/Application Support/iTerm2/Scripts</string>
-	<key>NSNavLastUserSetHideExtensionButtonState</key>
-	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
@@ -236,43 +230,20 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSTouchBarConfig: regular</key>
-	<dict>
-		<key>CurrentItems</key>
-		<array>
-			<string>iTermTouchBarIdentifierFunctionKeys</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
-			<string>iTermTouchBarIdentifierAddMark</string>
-			<string>iTermTouchBarIdentifierPreviousMark</string>
-			<string>iTermTouchBarIdentifierNextMark</string>
-		</array>
-		<key>DefaultItems</key>
-		<array>
-			<string>iTermTouchBarIdentifierManPage</string>
-			<string>iTermTouchBarIdentifierColorPreset</string>
-			<string>iTermTouchBarIdentifierFunctionKeys</string>
-			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
-			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
-			<string>iTermTouchBarIdentifierAddMark</string>
-			<string>iTermTouchBarIdentifierPreviousMark</string>
-			<string>iTermTouchBarIdentifierNextMark</string>
-		</array>
-	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>528 644 445 103 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>532 639 616 174 0 0 1680 1027 </string>
+	<string>412 527 616 174 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-399 1548 620 392 -1049 1050 1920 1057 </string>
+	<string>410 364 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>220 120 606 469 0 0 1680 1027 </string>
+	<string>269 126 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-765 1592 958 470 -1150 1050 1920 1057 </string>
+	<string>290 216 796 473 0 0 1440 877 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-858 1050 1880 1417 -858 1050 3440 1417 </string>
+	<string>0 0 637 697 0 0 1280 697 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1073 1050 1920 1057 -1073 1050 1920 1057 </string>
+	<string>176 70 1090 597 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1023,46 +994,6 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 									<real>0.90000000000000002</real>
 									<key>Red Component</key>
 									<real>0.63</real>
-								</dict>
-							</dict>
-							<key>layout advanced configuration dictionary value</key>
-							<dict>
-								<key>algorithm</key>
-								<integer>1</integer>
-								<key>font</key>
-								<string>.AppleSystemUIFont 12</string>
-							</dict>
-						</dict>
-					</dict>
-					<dict>
-						<key>class</key>
-						<string>iTermStatusBarGitComponent</string>
-						<key>configuration</key>
-						<dict>
-							<key>knobs</key>
-							<dict>
-								<key>base: compression resistance</key>
-								<real>25</real>
-								<key>base: priority</key>
-								<real>25</real>
-								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
-								<real>2</real>
-								<key>maxwidth</key>
-								<real>+infinity</real>
-								<key>minwidth</key>
-								<integer>0</integer>
-								<key>shared text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>0.60784316062927246</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>0.15686275064945221</real>
-									<key>Red Component</key>
-									<real>0.17647059261798859</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -2501,25 +2432,11 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.8</string>
-		<string>3.3.0</string>
 		<string>3.3.1</string>
-		<string>3.3.3</string>
-		<string>3.3.5</string>
 		<string>3.3.7</string>
+		<string>3.3.9</string>
 		<string>3.2.9</string>
-		<string>3.3.2</string>
 		<string>3.3.4</string>
-	</array>
-	<key>NoSyncBFPFavorites</key>
-	<array>
-		<string>Fira Code</string>
-		<string>FiraCode Nerd Font Mono</string>
-	</array>
-	<key>NoSyncBFPRecents</key>
-	<array>
-		<string>Helvetica</string>
-		<string>FiraCode Nerd Font Mono</string>
-		<string>Fira Code</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -2527,30 +2444,13 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<true/>
 	<key>NoSyncConfirmShellIntegrationCommand_selection</key>
 	<integer>0</integer>
-	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
-	<true/>
-	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
-	<integer>1</integer>
-	<key>NoSyncFrame_SessionsPreferences</key>
-	<dict>
-		<key>screenFrame</key>
-		<string>{{-858, 1050}, {3440, 1440}}</string>
-		<key>topLeft</key>
-		<string>{-548, 1736}</string>
-	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-858, 1050}, {3440, 1440}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{30, 1958}</string>
+		<string>{398, 710}</string>
 	</dict>
-	<key>NoSyncHaveRequestedFullDiskAccess</key>
-	<true/>
-	<key>NoSyncHaveUsedCopyMode</key>
-	<true/>
-	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
-	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallUtilitiesPackage</key>
@@ -2558,26 +2458,21 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncInstallUtilitiesPackage_selection</key>
 	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
-	<string>AF76E95F-8EC4-4133-B466-9AD570F13AA9</string>
+	<string>5BF0571F-E3B1-4ECC-8B69-35B1BF1E4267</string>
 	<key>NoSyncLastTipTime</key>
-	<real>589389893.029755</real>
+	<real>594993673.65882099</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>121</integer>
+	<integer>35</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>586802469.83202803</real>
+	<real>587428072.97444999</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
-	<key>NoSyncPersistentRateLimitedUpdates</key>
-	<dict>
-		<key>CheckForUpdatedPythonRuntime</key>
-		<real>603217327.88264203</real>
-	</dict>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -2811,14 +2706,6 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>user.badge</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>tab</string>
@@ -2830,14 +2717,6 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 				<true/>
 				<key>name</key>
 				<string>tmuxStatusLeft</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>user.packageVersion</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3008,14 +2887,6 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.user.badge</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
 				<string>id</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -3111,6 +2982,14 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 		</array>
 		<key>2</key>
 		<array>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
 			<dict>
 				<key>isTerminal</key>
 				<true/>
@@ -3235,14 +3114,6 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.user.badge</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
 				<string>id</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -3265,19 +3136,27 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<false/>
-				<key>name</key>
-				<string>iterm2</string>
-				<key>nonterminalContext</key>
-				<integer>4</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>currentSession.path</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession.termid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>iterm2</string>
+				<key>nonterminalContext</key>
+				<integer>4</integer>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
@@ -3313,14 +3192,6 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>tmuxWindow</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>currentSession</string>
@@ -3331,7 +3202,7 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession</string>
+				<string>tmuxWindow</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3364,99 +3235,93 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncScriptNameForStatusBarComponent_com.iterm2.example.status-bar-demo</key>
-	<string>/Users/joeycozza/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/nvm.py</string>
-	<key>NoSyncScriptNameForStatusBarComponent_com.iterm2.json-pretty-printer</key>
-	<string>/Users/joeycozza/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/prettyPrint.py</string>
-	<key>NoSyncScriptNameForStatusBarComponent_engineering.dane.iterm-components.github-stars</key>
-	<string>/Users/joeycozza/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/github_stars.py</string>
-	<key>NoSyncScriptNameForStatusBarComponent_engineering.dane.iterm-components.sentinel</key>
-	<string>/Users/joeycozza/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/hello_world.py</string>
-	<key>NoSyncSuppressMissingProfileInArrangementWarning</key>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
 	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>528759495.38079703</real>
+	<real>505279572.43886</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>000</string>
-		<string>0000</string>
-		<string>0001</string>
-		<string>0002</string>
-		<string>0003</string>
-		<string>0004</string>
-		<string>0005</string>
-		<string>0006</string>
-		<string>0007</string>
-		<string>0008</string>
 		<string>0009</string>
-		<string>0010</string>
-		<string>0011</string>
-		<string>0012</string>
-		<string>0013</string>
-		<string>0014</string>
-		<string>0015</string>
 		<string>0016</string>
-		<string>0017</string>
-		<string>0018</string>
-		<string>0019</string>
-		<string>0020</string>
-		<string>0021</string>
-		<string>0022</string>
 		<string>0023</string>
-		<string>0024</string>
-		<string>0025</string>
-		<string>0026</string>
-		<string>0027</string>
-		<string>0028</string>
-		<string>0029</string>
 		<string>0030</string>
-		<string>0031</string>
-		<string>0032</string>
-		<string>0033</string>
-		<string>0034</string>
-		<string>0035</string>
-		<string>0036</string>
-		<string>0037</string>
-		<string>0038</string>
-		<string>0039</string>
-		<string>0040</string>
-		<string>0041</string>
-		<string>0042</string>
-		<string>0043</string>
-		<string>0044</string>
-		<string>0045</string>
-		<string>0046</string>
-		<string>0047</string>
-		<string>0048</string>
-		<string>0049</string>
-		<string>0050</string>
-		<string>0051</string>
-		<string>0052</string>
-		<string>0053</string>
-		<string>0054</string>
-		<string>0055</string>
-		<string>0056</string>
-		<string>0057</string>
-		<string>0058</string>
 		<string>0059</string>
-		<string>0060</string>
-		<string>0061</string>
-		<string>0062</string>
-		<string>0063</string>
-		<string>0064</string>
-		<string>0065</string>
 		<string>0066</string>
-		<string>0067</string>
-		<string>0068</string>
-		<string>0069</string>
-		<string>0070</string>
-		<string>0071</string>
-		<string>0072</string>
 		<string>0073</string>
+		<string>0002</string>
+		<string>0038</string>
+		<string>0045</string>
+		<string>0052</string>
+		<string>0017</string>
+		<string>0024</string>
+		<string>0031</string>
+		<string>0067</string>
 		<string>0074</string>
+		<string>0003</string>
+		<string>0010</string>
+		<string>0039</string>
+		<string>0046</string>
+		<string>0053</string>
+		<string>0060</string>
+		<string>0018</string>
+		<string>0025</string>
+		<string>0032</string>
+		<string>0068</string>
 		<string>0075</string>
+		<string>0004</string>
+		<string>0011</string>
+		<string>0047</string>
+		<string>0054</string>
+		<string>0061</string>
+		<string>0019</string>
+		<string>0026</string>
+		<string>0033</string>
+		<string>0040</string>
+		<string>0069</string>
 		<string>0076</string>
+		<string>0005</string>
+		<string>0012</string>
+		<string>0048</string>
+		<string>0055</string>
+		<string>0062</string>
+		<string>0027</string>
+		<string>0034</string>
+		<string>0041</string>
 		<string>0077</string>
+		<string>0006</string>
+		<string>0013</string>
+		<string>0020</string>
+		<string>0049</string>
+		<string>0056</string>
+		<string>0063</string>
+		<string>0070</string>
+		<string>0028</string>
+		<string>0035</string>
+		<string>0042</string>
+		<string>0007</string>
+		<string>0014</string>
+		<string>0021</string>
+		<string>0057</string>
+		<string>0064</string>
+		<string>0071</string>
+		<string>0000</string>
+		<string>0029</string>
+		<string>0036</string>
+		<string>0043</string>
+		<string>0050</string>
+		<string>0008</string>
+		<string>0015</string>
+		<string>0022</string>
+		<string>0058</string>
+		<string>0065</string>
+		<string>0072</string>
+		<string>0001</string>
+		<string>0037</string>
+		<string>000</string>
+		<string>0044</string>
+		<string>0051</string>
 		<string>0078</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
@@ -3513,11 +3378,11 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=74</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=26</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-10T21:21:06Z</date>
+	<date>2020-03-11T02:33:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3548,6 +3413,8 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<array>
 		<string>Jobs</string>
 	</array>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1483588864</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
@@ -10103,7 +9970,7 @@ More than half - better:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8</string>
+	<string>3.3.9</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
