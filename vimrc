@@ -42,6 +42,7 @@ Plug 'joeycozza/vim-obsession'
 Plug 'wellle/targets.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'andymass/vim-matchup'
 
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 
@@ -251,6 +252,9 @@ nnoremap <Leader>t :term<CR>a
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
+
+let g:matchup_matchparen_deferred=1
+let g:matchup_matchparen_hi_surround_always=1
 
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
