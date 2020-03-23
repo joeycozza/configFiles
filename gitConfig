@@ -56,7 +56,7 @@
    prompt = false
 [pager]
 	branch = false
-  log = less --tabs=4 -RFX --pattern 'Joey'
+  log = less --tabs=4 -RFX
   diff = diff-so-fancy | less --tabs=4 -RFX --pattern '^(Date|added|deleted|modified): '
 [filter "lfs"]
 	clean = git-lfs clean -- %f
