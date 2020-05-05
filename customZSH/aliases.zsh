@@ -24,6 +24,7 @@ alias -g F="| fzf"
 alias -g S="| sort"
 alias -g U="| uniq"
 alias -g C="| pbcopy"
+alias -g L="| wc -l"
 
 alias copy='eval "$(fc -ln -1) | pbcopy"'
 
@@ -38,3 +39,4 @@ alias ping="prettyping --nolegend"
 alias cat="bat"
 
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias fixNodeGyp="sudo rm -rf $(xcode-select -print-path); sudo rm -rf /Library/Developer/CommandLineTools; xcode-select --install"

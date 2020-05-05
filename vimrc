@@ -49,6 +49,7 @@ Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'pedrohdz/vim-yaml-folds'
 Plug 'dstein64/vim-startuptime'
 
 call plug#end()
