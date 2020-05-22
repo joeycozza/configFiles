@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "coc-eslint": ">=1.2.6",
+    "coc-eslint": ">=1.2.7",
     "coc-json": ">=1.2.6",
     "coc-pairs": ">=1.2.21",
     "coc-prettier": ">=1.1.12",
