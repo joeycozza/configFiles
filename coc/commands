@@ -1,7 +1,9 @@
 prettier.formatFile
+prettier.open-output
+editor.action.organizeImport
 eslint.executeAutoFix
+extensions.forceUpdateAll
 snippets.editSnippets
 snippets.openSnippetFiles
 importCost.toggle
-extensions.forceUpdateAll
 eslint.executeAutofix
