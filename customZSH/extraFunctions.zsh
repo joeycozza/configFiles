@@ -38,3 +38,7 @@ function npm_prompt_info() {
   echo " ${ZSH_THEME_NPM_PROMPT_PREFIX} ${npm_prompt}"
 }
 
+# clone the provided repo name from fs-webdev
+function fsclone() {
+  gitclone https://github.com/fs-webdev/$1.git
+}
