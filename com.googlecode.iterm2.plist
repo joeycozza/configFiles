@@ -383,7 +383,7 @@
 		<key>0x19-0x60000</key>
 		<dict>
 			<key>Action</key>
-			<integer>39</integer>
+			<integer>2</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -412,7 +412,7 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
-			<integer>32</integer>
+			<integer>0</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -581,7 +581,7 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>586 528 620 392 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-774 1120 1968 1417 -774 1120 3440 1417 </string>
+	<string>0 7 1792 1083 0 0 1792 1097 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3234,8 +3234,10 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7</string>
 		<string>3.3.9</string>
+		<string>3.3.11</string>
+		<string>3.3.7</string>
+		<string>3.3.12</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -3245,16 +3247,16 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-774, 1120}, {3440, 1440}}</string>
+		<string>{{0, 0}, {1792, 1120}}</string>
 		<key>topLeft</key>
-		<string>{294, 2080}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>97C495F6-A9F6-47E6-B251-04F72807623C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>611775016.17223001</real>
+	<real>618250513.33597898</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>32</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3991,10 +3993,44 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 	<real>611099940.86927497</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>000</string>
-		<string>0000</string>
+		<string>0017</string>
+		<string>0029</string>
 		<string>0001</string>
+		<string>0013</string>
+		<string>0025</string>
+		<string>0021</string>
+		<string>0033</string>
+		<string>0006</string>
+		<string>0018</string>
 		<string>0002</string>
+		<string>0014</string>
+		<string>0026</string>
+		<string>0010</string>
+		<string>0022</string>
+		<string>000</string>
+		<string>0034</string>
+		<string>0030</string>
+		<string>0007</string>
+		<string>0019</string>
+		<string>0003</string>
+		<string>0015</string>
+		<string>0027</string>
+		<string>0011</string>
+		<string>0023</string>
+		<string>0035</string>
+		<string>0031</string>
+		<string>0008</string>
+		<string>0004</string>
+		<string>0016</string>
+		<string>0028</string>
+		<string>0000</string>
+		<string>0012</string>
+		<string>0024</string>
+		<string>0020</string>
+		<string>0032</string>
+		<string>0009</string>
+		<string>0005</string>
+		<string>0036</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -4052,9 +4088,11 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-21T17:29:04Z</date>
+	<date>2020-08-04T16:08:29Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>182223186</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
@@ -12779,7 +12817,7 @@ Newest Dev Arrangement:Restore Window Arrangement as Tabs</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.12</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
