@@ -157,6 +157,7 @@ set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
 " pangloss/javascript sometimes sets conceal level. hidden reveal shorten This is supposed to turn it off...
 set conceallevel=0
+let g:vimwiki_conceallevel=0
 nnoremap <leader>hide :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
 
 "-----------------------------------------------
