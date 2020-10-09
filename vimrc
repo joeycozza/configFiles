@@ -62,8 +62,8 @@ let g:mapleader=' '
 
 
 " speed up python executable finding, and fix issue with not finding python3 correctly
-let g:python_host_prog  = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog  = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 "///////////////////Defaulting Registers////////////////////////////////////
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
