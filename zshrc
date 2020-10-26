@@ -50,11 +50,13 @@ export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/gcc-4.8.2/bin:$PATH"
 
-
 export PATH="/Users/joeycozza/bin:$PATH"
 export PATH="/Users/joeycozza/.nimble/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/2.7/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/3.7/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
@@ -65,8 +67,6 @@ ulimit -n 1024
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
