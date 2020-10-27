@@ -73,4 +73,4 @@ iterm2_print_user_vars() {
 }
 
 # fnm
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
