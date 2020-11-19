@@ -63,7 +63,7 @@ let g:mapleader=' '
 
 " speed up python executable finding, and fix issue with not finding python3 correctly
 let g:python_host_prog  = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 "///////////////////Defaulting Registers////////////////////////////////////
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
@@ -155,8 +155,10 @@ set nofixendofline
 command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
 set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
-" pangloss/javascript sometimes sets conceal level. hidden reveal shorten This will turn it off
+" pangloss/javascript sometimes sets conceal level. hidden reveal shorten This is supposed to turn it off...
 set conceallevel=0
+let g:vimwiki_conceallevel=0
+nnoremap <leader>hide :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
 
 "-----------------------------------------------
 " --------------Remapping Keys------------------
