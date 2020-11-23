@@ -23,7 +23,6 @@ plugins=(
   gulpComplete
   openPr
   gitHelpers
-  aliasReminder
 )
 
 bindkey '\C-e' edit-command-line

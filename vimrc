@@ -252,6 +252,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
 
 nnoremap <Leader>t :term<CR>a
+nnoremap <Leader>tr :term node %<CR>
 " -----------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------
