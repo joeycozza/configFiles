@@ -20,7 +20,6 @@ ZSH_CUSTOM=$CONFIG_FILES_PATH/customZSH
 ZSH_THEME="gitinfo"
 
 plugins=(
-  gulpComplete
   openPr
   gitHelpers
 )
