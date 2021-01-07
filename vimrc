@@ -215,6 +215,8 @@ nnoremap Q @@
 
 nnoremap <Leader>sp :Find <C-r><C-w>
 
+" CoC doesn't load up locationlist by default, have to run CocDiagnostics first
+nnoremap <Leader><Up> :CocDiagnostics<CR>
 " LocationList navigation
 nnoremap <Up> :lopen<CR>
 nnoremap <Down> :lclose<CR>
