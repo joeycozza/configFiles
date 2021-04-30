@@ -42,6 +42,7 @@ alias cat="bat"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 alias fixNodeGyp="sudo rm -rf $(xcode-select -print-path); sudo rm -rf /Library/Developer/CommandLineTools; xcode-select --install"
 
-alias topen="open https://travis-ci.com/github/fs-webdev/$(basename $(pwd))"
-alias hopen="open https://dashboard.heroku.com/apps/fs-$(basename $(pwd))-prod"
-alias gopen="git open"
+alias topen='open https://travis-ci.com/github/fs-webdev/${PWD##*/}'
+alias techo='echo https://travis-ci.com/github/fs-webdev/${PWD##*/}'
+alias hopen='open https://dashboard.heroku.com/apps/fs-${PWD##*/}-prod'
+alias gopen='git open'

@@ -204,7 +204,7 @@ nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
 
 "Fugitive remappings for ease of use
 nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gb :Git blame<CR>
 
 " move to next or previous gittable chunk change in file
 nmap <Leader>hn <Plug>(GitGutterNextHunk)
