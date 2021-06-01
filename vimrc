@@ -261,6 +261,7 @@ nnoremap <Leader>tr :term node %<CR>
 
 let g:matchup_matchparen_deferred=1
 let g:matchup_matchparen_hi_surround_always=1
+let g:matchup_matchparen_offscreen={'method': 'popup'}
 
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeIgnore=['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
