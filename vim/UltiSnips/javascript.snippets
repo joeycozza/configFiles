@@ -23,6 +23,11 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet do "do...while statement"
+do {
+  $0
+} while($1)
+endsnippet
 snippet ed "eslint disable next line"
 /* eslint-disable-next-line $0 */
 endsnippet
@@ -65,9 +70,6 @@ for x in split:
 		finalStr += "${" + x + "}"
 snip.rv = finalStr
 `\`
-endsnippet
-snippet ed "Export Default"
-export default $0;
 endsnippet
 snippet try "write the try/catch"
 try {

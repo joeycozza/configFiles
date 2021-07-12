@@ -33,7 +33,10 @@ alias copy='eval "$(fc -ln -1) | pbcopy"'
 # heroku local, but using Procfile.dev if there is one
 alias fsh="([[ -a Procfile.dev ]] && heroku local -f Procfile.dev) || heroku local"
 alias fs="cd ~/fs"
+alias grow="cd ~/grow"
+alias zion="cd ~/fs/zion"
 alias nrs="npm run storybook"
+alias gun="gulp runAll"
 
 # Overwriting basic commands with newer ones
 alias ping="prettyping --nolegend"
