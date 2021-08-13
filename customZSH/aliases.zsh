@@ -46,6 +46,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 alias fixNodeGyp="sudo rm -rf $(xcode-select -print-path); sudo rm -rf /Library/Developer/CommandLineTools; xcode-select --install"
 
 alias topen='open https://travis-ci.com/github/fs-webdev/${PWD##*/}'
+alias topeneng='open https://travis-ci.com/github/fs-eng/${PWD##*/}'
 alias techo='echo https://travis-ci.com/github/fs-webdev/${PWD##*/}'
 alias hopen='open https://dashboard.heroku.com/apps/fs-${PWD##*/}-prod'
 alias gopen='git open'

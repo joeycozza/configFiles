@@ -22,6 +22,7 @@ ZSH_THEME="gitinfo"
 plugins=(
   openPr
   gitHelpers
+  fnm
 )
 
 bindkey '\C-e' edit-command-line
