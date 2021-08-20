@@ -26,6 +26,7 @@ alias -g S="| sort"
 alias -g U="| uniq"
 alias -g C="| pbcopy"
 alias -g L="| wc -l"
+alias -g FILES='| --files-with-matches'
 
 alias copy='eval "$(fc -ln -1) | pbcopy"'
 
