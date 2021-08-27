@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 "visual
 
 Plug 'morhetz/gruvbox'
-Plug 'EdenEast/nightfox.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -123,8 +122,7 @@ set shiftwidth=2
 set softtabstop=2
 
 syntax on
-colorscheme nightfox
-" colorscheme gruvbox
+colorscheme gruvbox
 
 set clipboard=unnamed "copy to system clipboard
 
