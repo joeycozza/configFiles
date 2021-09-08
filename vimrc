@@ -199,7 +199,7 @@ noremap <Leader>\      :bnext<CR>
 nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
 
 "Clear search highlighting and redraw the screen
-nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
+" nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
 
 "Fugitive remappings for ease of use
 nnoremap <Leader>gs :Gstatus<CR>
