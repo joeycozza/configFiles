@@ -46,8 +46,8 @@ Plug 'andymass/vim-matchup'
 
 Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'dstein64/vim-startuptime'
@@ -73,7 +73,7 @@ let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to cons
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
-set cmdheight=2
+set cmdheight=3
 
 "Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 "With this change it only rerenders at the end of the macro.
@@ -143,16 +143,6 @@ let g:clipboard = {
   \ }
 
 set nofixendofline
-
-" Find project wide
-" --line-number: Show line number
-" --no-heading: Do not show file headings in results
-" --fixed-strings: Search term as a literal string
-" --follow: Follow symlinks
-" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-" --color: Search color options
-command! -bang -nargs=* Find call fzf#vim#grep('rg --line-number --no-heading --fixed-strings --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-set grepprg=rg\ -H\ --no-heading\ --vimgrep
 
 " pangloss/javascript sometimes sets conceal level. hidden reveal shorten This is supposed to turn it off...
 set conceallevel=0
@@ -226,8 +216,9 @@ nnoremap <Right> :lnext<CR>
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
-nnoremap <silent> <Leader>f :execute 'Files ' . <SID>fzf_root()<CR>
-nnoremap <silent> <Leader>jf :call Fzf_dev_previews()<CR>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+" nnoremap <leader>fg <cmd>Telescope live_grep <cr>
+nnoremap <leader>fg :lua require('telescope.builtin').live_grep({previewer = false})<cr>
 nmap <Leader>nt :NERDTreeFind<CR>
 
 " Remap keys for gotos
@@ -272,9 +263,6 @@ let g:NERDTreeShowHidden=1
 let g:NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-let g:fzf_layout = { 'window': { 'width': 0.90, 'height': 0.8} }
-let $FZF_DEFAULT_OPTS="--reverse " " top to bottom
-
 " turn off the git branch info since it is in terminal status bar already
 let g:airline_section_b = ''
 
@@ -310,10 +298,8 @@ let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*.mdx,*.md'
 
 " Help with terminal mode. Esc will now go back to normal mode
 " if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
-if has('nvim')
-  highlight! link TermCursor Cursor
-  highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
-endif
+highlight! link TermCursor Cursor
+highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
@@ -322,49 +308,6 @@ augroup leavingVimStuff
   autocmd!
   autocmd VimLeave * set guicursor=a:ver10-blinkon0
 augroup END
-
-" Used in Normal mode completion
-function! s:fzf_root()
-  let l:path = finddir('.git', expand('%:p:h').';')
-  return fnamemodify(substitute(l:path, '.git', '', ''), ':p:h')
-endfunction
-
-" Files + devicons + floating fzf
-function! Fzf_dev_previews()
-  let l:fzf_files_options = '--preview "bat --line-range :'.&lines.' --theme="OneHalfDark" --style=numbers,changes --color always {2..-1}"'
-
-  function! s:files()
-    let l:files = split(system($FZF_DEFAULT_COMMAND), '\n')
-    return s:prepend_icon(l:files)
-  endfunction
-
-  function! s:prepend_icon(candidates)
-    let l:result = []
-    for l:candidate in a:candidates
-      let l:filename = fnamemodify(l:candidate, ':p:t')
-      let l:icon = WebDevIconsGetFileTypeSymbol(l:filename, isdirectory(l:filename))
-      call add(l:result, printf('%s %s', l:icon, l:candidate))
-    endfor
-
-    return l:result
-  endfunction
-
-  function! s:edit_file(item)
-    let l:pos = stridx(a:item, ' ')
-    let l:file_path = a:item[pos+1:-1]
-    execute 'silent e' l:file_path
-  endfunction
-
-  call fzf#run({
-        \ 'source': <sid>files(),
-        \ 'sink':   function('s:edit_file'),
-        \ 'options': '-m --reverse ' . l:fzf_files_options,
-        \ 'down':    '40%',
-        \ 'window': { 'width': 1, 'height': 0.8, 'highlight': 'Question'}
-        \  })
-
-endfunction
-
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
@@ -409,3 +352,37 @@ function! FoldText()
 	let expansionString = repeat(' ', w - strwidth(line.foldSizeStr.foldPercentage.foldLevelStr))
 	return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
 endfunction
+
+lua << EOF
+require('telescope').setup{
+  defaults = {
+    vimgrep_arguments = {
+      'rg',
+      '--line-number',
+      '--no-heading',
+      '--fixed-strings',
+      '--color=never',
+      '--with-filename',
+      '--smart-case',
+      '--column'
+    },
+    selection_strategy = "reset",
+    sorting_strategy = "ascending",
+    layout_strategy = "horizontal",
+    layout_config = {
+      width = 0.90,
+      preview_width = 0.60,
+      prompt_position = "top",
+    },
+    color_devicons = true,
+    use_less = true,
+    set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
+    file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
+    grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
+    qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+
+    -- Developer configurations: Not meant for general override
+    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
+  }
+}
+EOF
