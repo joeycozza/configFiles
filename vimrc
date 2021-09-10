@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " javascript/node
 Plug 'othree/javascript-libraries-syntax.vim'
@@ -99,8 +100,6 @@ set foldtext=FoldText()
 set updatetime=250
 set noswapfile
 set hidden             "switch buffers without saving
-
-set inccommand=nosplit
 
 set undofile                 "Save undo's after file closes
 set undodir=$HOME/.vim/undo  "Where to save undo histories
@@ -216,9 +215,10 @@ nnoremap <Right> :lnext<CR>
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>f <cmd>Telescope find_files<cr>
+nnoremap <leader>tn <cmd>Telescope file_browser<cr>
+nnoremap <leader>tg :lua require('telescope.builtin').live_grep({previewer = false})<cr>
 " nnoremap <leader>fg <cmd>Telescope live_grep <cr>
-nnoremap <leader>fg :lua require('telescope.builtin').live_grep({previewer = false})<cr>
 nmap <Leader>nt :NERDTreeFind<CR>
 
 " Remap keys for gotos
@@ -354,6 +354,8 @@ function! FoldText()
 endfunction
 
 lua << EOF
+local actions = require('telescope.actions')
+
 require('telescope').setup{
   defaults = {
     vimgrep_arguments = {
@@ -380,6 +382,11 @@ require('telescope').setup{
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
     grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
     qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      }
+    }
   }
 }
 EOF
