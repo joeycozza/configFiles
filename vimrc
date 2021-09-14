@@ -108,7 +108,7 @@ set undoreload=1000          "number of lines to save for undo
 " -----------------------------------------------------
 " Displaying text
 " -----------------------------------------------------
-set number                      " putting line numbers on in insert mode"
+set number                      " putting line numbers on the left side
 
 set scrolloff=7                 " Minimum lines to keep above and below cursor
 set nowrap                      " Don't wrap long lines Don't
@@ -215,10 +215,9 @@ nnoremap <Right> :lnext<CR>
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
-nnoremap <leader>f <cmd>Telescope find_files<cr>
+nnoremap <leader>f <cmd>Telescope find_files hidden=true<cr>
 nnoremap <leader>tn <cmd>Telescope file_browser<cr>
 nnoremap <leader>tg :lua require('telescope.builtin').live_grep({previewer = false})<cr>
-" nnoremap <leader>fg <cmd>Telescope live_grep <cr>
 nmap <Leader>nt :NERDTreeFind<CR>
 
 " Remap keys for gotos
@@ -368,9 +367,11 @@ require('telescope').setup{
       '--smart-case',
       '--column'
     },
+    hidden = true,
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
+    prompt_prefix = "🔍 ",
     layout_config = {
       width = 0.90,
       preview_width = 0.60,
@@ -378,7 +379,11 @@ require('telescope').setup{
     },
     color_devicons = true,
     use_less = true,
+    file_ignore_patterns = {
+      "node_modules/.*", ".git/.*"
+    },
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
+    file_sorter =  require'telescope.sorters'.get_fzy_sorter,
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
     grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
     qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
