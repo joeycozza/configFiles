@@ -367,7 +367,6 @@ require('telescope').setup{
       '--smart-case',
       '--column'
     },
-    hidden = true,
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
@@ -377,11 +376,11 @@ require('telescope').setup{
       preview_width = 0.60,
       prompt_position = "top",
     },
+    file_ignore_patterns = {
+      ".git/.*"
+    },
     color_devicons = true,
     use_less = true,
-    file_ignore_patterns = {
-      "node_modules/.*", ".git/.*"
-    },
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
     file_sorter =  require'telescope.sorters'.get_fzy_sorter,
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
@@ -395,3 +394,5 @@ require('telescope').setup{
   }
 }
 EOF
+
+

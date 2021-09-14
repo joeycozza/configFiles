@@ -33,7 +33,7 @@ source "$HOME/.zshrc"
 
 # installing and setting up neovim
 brew install neovim
-ln -s "$HOME/.vimrc" "$HOME/.config/nvim/init.vim"
+ln -s "$CONFIG_FILES_PATH/nvim" "$HOME/.config/nvim/"
 curl -fLo "$HOME/local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 source "$HOME/.zshrc"
 sudo pip3 install neovim
@@ -49,7 +49,7 @@ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 # setting up fast-node-manager and node
 brew install Schniz/tap/fnm
 source "$HOME/.zshrc"
-fnm install v12
+fnm install v16
 source "$HOME/.zshrc"
 command cat default-packages | xargs npm install -g
 

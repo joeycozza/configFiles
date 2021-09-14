@@ -16,7 +16,7 @@ alias deleteBowerComponents="find . -name bower_components -type d -prune -exec 
 alias cleanpackages="deleteNodeModules && deleteBowerComponents"
 alias trashorig="trash **/*.orig"
 
-#similar to my vim config to open and edit .vimrc and to source .vimrc
+# similar to my vim config to open and edit and source .vimrc
 alias ev="nvim ~/.zshrc"
 alias sv="source ~/.zshrc"
 

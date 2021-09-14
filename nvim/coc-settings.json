@@ -1,0 +1,19 @@
+{
+  "javascript.validate.enable": false,
+
+  "diagnostic.checkCurrentLine": true,
+
+  "eslint.packageManager": "npm",
+
+  "prettier.printWidth": 120,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.eslintIntegration": true,
+
+  "suggest.maxPreviewWidth": 70,
+  "suggest.detailMaxLength": 110,
+
+  "yank.highlight.duration": 1000
+
+}
