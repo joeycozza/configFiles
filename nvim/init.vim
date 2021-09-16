@@ -381,6 +381,14 @@ require('telescope').setup{
     },
     color_devicons = true,
     use_less = true,
+    path_display = function (opts, path)
+      local pathLength = string.len(path)
+      local maxLength = 41
+      if pathLength > maxLength then
+        path = '...'..string.sub(path, pathLength - maxLength - 3)
+      end
+      return path
+    end,
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
     file_sorter =  require'telescope.sorters'.get_fzy_sorter,
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
