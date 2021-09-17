@@ -1,59 +1,5 @@
-call plug#begin('~/.vim/plugged')
 
-"visual
-
-Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
-Plug 'kyazdani42/nvim-web-devicons'
-
-" javascript/node
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'othree/yajs.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'moll/vim-node'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-Plug 'styled-components/vim-styled-components', {'branch': 'main'}
-Plug 'leafgarland/typescript-vim'
-
-"React/html
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'alvan/vim-closetag'
-Plug 'jxnblk/vim-mdx-js'
-
-" Git
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-
-" extend functionality
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
-
-Plug 'vimwiki/vimwiki'
-Plug 'SirVer/ultisnips'
-
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-
-Plug 'joeycozza/vim-obsession'
-
-Plug 'wellle/targets.vim'
-Plug 'yuttie/comfortable-motion.vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'andymass/vim-matchup'
-
-Plug 'JamshedVesuna/vim-markdown-preview', { 'for': 'markdown' }
-
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
-Plug 'pedrohdz/vim-yaml-folds'
-Plug 'dstein64/vim-startuptime'
-
-call plug#end()
+lua require('plugins')
 
 if has('nvim') && executable('nvr')
   let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
@@ -147,6 +93,10 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 " turn off the git branch info since it is in terminal status bar already
 let g:airline_section_b = ''
 
+" You should know that some variable names in vimscript are not valid in lua. We still have access to them but we can't use the dot notation. For example, vim-zoom has a variable called zoom#statustext and in vimscript we use it like this.
+" let g:zoom#statustext = 'Z'
+" In lua we would have to do this.
+" vim.g['zoom#statustext'] = 'Z'
 let g:airline_theme='simple'
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
 let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
