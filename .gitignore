@@ -2,6 +2,7 @@ vim/plugged/
 vim/undo/
 vim/autoload/
 
+coc/extensions/
 coc/extensions/db.json
 coc/extensions/node_modules/
 coc/extensions/.cache

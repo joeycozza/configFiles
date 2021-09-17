@@ -65,6 +65,7 @@ let g:mapleader=' '
 " speed up python executable finding, and fix issue with not finding python3 correctly
 let g:python_host_prog  = '/usr/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
+let g:vimsyn_embed = 'l'
 
 "///////////////////Defaulting Registers////////////////////////////////////
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
@@ -74,7 +75,7 @@ let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to cons
 " Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
-set cmdheight=3
+set cmdheight=5
 
 "Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 "With this change it only rerenders at the end of the macro.
@@ -353,54 +354,7 @@ function! FoldText()
 endfunction
 
 lua << EOF
-local actions = require('telescope.actions')
-
 require('telescope').setup{
-  defaults = {
-    vimgrep_arguments = {
-      'rg',
-      '--line-number',
-      '--no-heading',
-      '--fixed-strings',
-      '--color=never',
-      '--with-filename',
-      '--smart-case',
-      '--column'
-    },
-    selection_strategy = "reset",
-    sorting_strategy = "ascending",
-    layout_strategy = "horizontal",
-    prompt_prefix = "🔍 ",
-    layout_config = {
-      width = 0.90,
-      preview_width = 0.60,
-      prompt_position = "top",
-    },
-    file_ignore_patterns = {
-      ".git/.*"
-    },
-    color_devicons = true,
-    use_less = true,
-    path_display = function (opts, path)
-      local pathLength = string.len(path)
-      local maxLength = 41
-      if pathLength > maxLength then
-        path = '...'..string.sub(path, pathLength - maxLength - 3)
-      end
-      return path
-    end,
-    set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
-    file_sorter =  require'telescope.sorters'.get_fzy_sorter,
-    file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
-    grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
-    qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
-    mappings = {
-      i = {
-        ["<esc>"] = actions.close
-      }
-    }
-  }
+  defaults = require('configs/telescope')
 }
 EOF
-
-

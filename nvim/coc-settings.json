@@ -1,5 +1,6 @@
 {
   "javascript.validate.enable": false,
+  "Lua.workspace.maxPreload": 2000,
 
   "diagnostic.checkCurrentLine": true,
 
