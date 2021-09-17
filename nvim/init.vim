@@ -65,10 +65,6 @@ let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to cons
 
 filetype plugin on
 
-set iskeyword-=.                " '.' is an end of word designator
-set iskeyword-=#                " '#' is an end of word designator
-set iskeyword-=-                " '-' is an end of word designator
-
 set foldtext=FoldText()
 
 set updatetime=250
@@ -78,23 +74,6 @@ set undofile                 "Save undo's after file closes
 set undodir=$HOME/.vim/undo  "Where to save undo histories
 set undolevels=1000          "How many undos
 set undoreload=1000          "number of lines to save for undo
-" -----------------------------------------------------
-" Displaying text
-" -----------------------------------------------------
-set number                      " putting line numbers on the left side
-
-set scrolloff=7                 " Minimum lines to keep above and below cursor
-set nowrap                      " Don't wrap long lines Don't
-set nocursorcolumn
-set cursorline
-
-set expandtab "hitting tab insert spaces instead of <Tab>
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-
-syntax on
-colorscheme gruvbox
 
 set clipboard=unnamed "copy to system clipboard
 
@@ -120,61 +99,19 @@ set nofixendofline
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
+lua require('commands')
 lua require('globals')
 lua require('options')
 lua require('mappings')
-
-" this will replace the current word with the last thing yanked. Can be
-" repeated without fear of overriding the last yanked thing
-" delete into blackhole register, then paste 0 register (last yanked item)
-nnoremap <Leader>v "_diw"0P
-
-"convenience for editing and sourcing .vimrc file
-nnoremap <Leader>ev :edit $MYVIMRC<CR>
-nnoremap <Leader>sv :source $MYVIMRC<CR>
-
-" repeat last replacement of a word
-nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
-
-"Clear search highlighting and redraw the screen
-" nnoremap <silent> <c-l> :<c-u>nohlsearch<CR><c-l>
-
-"Fugitive remappings for ease of use
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gb :Git blame<CR>
-
-" move to next or previous gittable chunk change in file
-nmap <Leader>hn <Plug>(GitGutterNextHunk)
-nmap <Leader>hp <Plug>(GitGutterPrevHunk)
-
-" who needs EX mode? last macro with Q
-nnoremap Q @@
-
-" CoC doesn't load up locationlist by default, have to run CocDiagnostics first
-nnoremap <Leader><Up> :CocDiagnostics<CR>
-" LocationList navigation
-nnoremap <Up> :lopen<CR>
-nnoremap <Down> :lclose<CR>
-nnoremap <Left> :lprev<CR>
-nnoremap <Right> :lnext<CR>
+lua require('autocommands')
 
 " Format json
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
-
-nmap <Leader>nt :NERDTreeFind<CR>
-
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-nmap <Leader>r <Plug>(coc-rename)
-nnoremap <Leader>p :CocCommand prettier.formatFile<CR>
-nnoremap <Leader>af :CocCommand eslint.executeAutoFix<CR>
-nnoremap <Leader><Leader>p :silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>
+"convenience for editing and sourcing .vimrc file
+nnoremap <Leader>ev :edit $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " use tab/shift-tab to forward/backward cycle completion list
 inoremap <expr> <Tab> pumvisible() ? "\<c-n>" : "\<tab>"
@@ -244,35 +181,6 @@ let g:closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*.mdx,*.md'
 " if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
 highlight! link TermCursor Cursor
 highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
-
-autocmd FileType json syntax match Comment +\/\/.\+$+
-
-" This fixes my cursor the way I like it in the terminal after quitting vim
-augroup leavingVimStuff
-  autocmd!
-  autocmd VimLeave * set guicursor=a:ver10-blinkon0
-augroup END
-
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('mdx', 'lightblue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " Improved Vim fold-text
 function! FoldText()

@@ -1,3 +1,5 @@
+local remap = { noremap = false }
+local silentRemap = {noremap = false, silent = true}
 
 local function map(mode, lhs, rhs, opts)
   local options = {noremap = true}
@@ -31,3 +33,41 @@ map('i', 'jk', '<Esc>:w<CR>')
 -- leader tab and leader \ for moving between buffers (nice for my ergodox keyboard)
 map('n', '<Leader><Tab>', ':bprevious<CR>')
 map('n', '<Leader>\\', ':bnext<CR>')
+
+-- this will replace the current word with the last thing yanked. Can be
+-- repeated without fear of overriding the last yanked thing
+-- delete into blackhole register, then paste 0 register (last yanked item)
+map('n', '<Leader>v', '"_diw"0P')
+
+-- Fugitive remappings for ease of use
+map('n', '<Leader>gs', ':Gstatus<CR>')
+map('n', '<Leader>gb', ':Git blame<CR>')
+
+-- move to next or previous gittable chunk change in file
+map('n', '<Leader>hn', '<Plug>(GitGutterNextHunk)', remap)
+map('n', '<Leader>hp', '<Plug>(GitGutterPrevHunk)', remap)
+
+-- who needs EX mode? last macro with Q
+map('n', 'Q', '@@')
+
+-- CoC doesn't load up locationlist by default, have to run CocDiagnostics first
+map('n', '<Leader><Up>', ':CocDiagnostics<CR>')
+-- LocationList navigation
+map('n', '<Up>', ':lopen<CR>')
+map('n', '<Down>', ':lclose<CR>')
+map('n', '<Left>', ':lprev<CR>')
+map('n', '<Right>', ':lnext<CR>')
+
+
+map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
+
+-- Remap keys for gotos
+map('n', 'gd', '<Plug>(coc-definition)', silentRemap)
+map('n', 'gy', '<Plug>(coc-type-definition)', silentRemap)
+map('n', 'gi', '<Plug>(coc-implementation)', silentRemap)
+map('n', 'gr', '<Plug>(coc-references)', silentRemap)
+
+map('n', '<Leader>r', '<Plug>(coc-rename)', remap)
+map('n', '<Leader>p', ':CocCommand prettier.formatFile<CR>')
+map('n', '<Leader>af', ':CocCommand eslint.executeAutoFix<CR>')
+map('n', '<Leader><Leader>p', ":silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>")
