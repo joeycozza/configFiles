@@ -59,30 +59,9 @@ if has('nvim') && executable('nvr')
   let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
 endif
 
-let g:mapleader=' '
-
-
-" speed up python executable finding, and fix issue with not finding python3 correctly
-let g:python_host_prog  = '/usr/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
-let g:vimsyn_embed = 'l'
-
 "///////////////////Defaulting Registers////////////////////////////////////
 let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
 "///////////////////////End Defaulting Registers/////////////////////////////
-
-" https://github.com/neoclide/coc.nvim#example-vim-configuration
-" Some servers have issues with backup files, see #649
-set nobackup
-set nowritebackup
-set cmdheight=5
-
-"Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
-"With this change it only rerenders at the end of the macro.
-set lazyredraw
-
-set ignorecase                  " Case insensitive search
-set smartcase                   " Case sensitive when uc present
 
 filetype plugin on
 
@@ -90,17 +69,10 @@ set iskeyword-=.                " '.' is an end of word designator
 set iskeyword-=#                " '#' is an end of word designator
 set iskeyword-=-                " '-' is an end of word designator
 
-set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
-
-set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold smarter
-set nofoldenable       " when opening a file, dont start with any folding
-set foldnestmax=10
-set foldlevel=10
 set foldtext=FoldText()
 
 set updatetime=250
 set noswapfile
-set hidden             "switch buffers without saving
 
 set undofile                 "Save undo's after file closes
 set undodir=$HOME/.vim/undo  "Where to save undo histories
@@ -144,15 +116,12 @@ let g:clipboard = {
 
 set nofixendofline
 
-" pangloss/javascript sometimes sets conceal level. hidden reveal shorten This is supposed to turn it off...
-set conceallevel=0
-let g:vimwiki_conceallevel=0
-nnoremap <leader>hide :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<CR>
-
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
+lua require('globals')
+lua require('options')
 lua require('mappings')
 
 " this will replace the current word with the last thing yanked. Can be
@@ -180,8 +149,6 @@ nmap <Leader>hp <Plug>(GitGutterPrevHunk)
 
 " who needs EX mode? last macro with Q
 nnoremap Q @@
-
-nnoremap <Leader>sp :Find <C-r><C-w>
 
 " CoC doesn't load up locationlist by default, have to run CocDiagnostics first
 nnoremap <Leader><Up> :CocDiagnostics<CR>
