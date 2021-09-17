@@ -153,6 +153,8 @@ nnoremap <leader>hide :exec &conceallevel ? "set conceallevel=0" : "set conceall
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
 
+lua require('mappings')
+
 " this will replace the current word with the last thing yanked. Can be
 " repeated without fear of overriding the last yanked thing
 " delete into blackhole register, then paste 0 register (last yanked item)
@@ -161,29 +163,6 @@ nnoremap <Leader>v "_diw"0P
 "convenience for editing and sourcing .vimrc file
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
 nnoremap <Leader>sv :source $MYVIMRC<CR>
-
-"add comma to end of line and put cursor back where it was
-nnoremap ,, m`A,<Esc>``m`
-"remove last character from line and put cursor back where it was
-nnoremap :: m`$x<Esc>``m`
-
-" mode selection (or line) up or down
-nnoremap <c-j> :m .+1<CR>==
-nnoremap <c-k> :m .-2<CR>==
-inoremap <c-j> <Esc>:m .+1<CR>==gi
-inoremap <c-k> <Esc>:m .-2<CR>==gi
-vnoremap <c-j> :m '>+1<CR>gv=gv
-vnoremap <c-k> :m '<-2<CR>gv=gv
-
-nnoremap <Leader>d :bdelete<CR>
-nnoremap <Leader><Leader>d :bdelete!<CR>
-tnoremap <Leader><Leader>d <c-\><c-n>:bdelete!<CR>
-
-inoremap jk <Esc>:w<CR>
-
-"leader tab and leader \ for moving between buffers (nice for my ergodox keyboard)
-noremap <Leader><Tab>  :bprevious<CR>
-noremap <Leader>\      :bnext<CR>
 
 " repeat last replacement of a word
 nnoremap <leader>. :let @/=@"<CR>/<CR>cgn<c-r>.<esc>
@@ -216,9 +195,7 @@ nnoremap <Right> :lnext<CR>
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
-nnoremap <leader>f <cmd>Telescope find_files hidden=true<cr>
-nnoremap <leader>tn <cmd>Telescope file_browser<cr>
-nnoremap <leader>tg :lua require('telescope.builtin').live_grep({previewer = false})<cr>
+
 nmap <Leader>nt :NERDTreeFind<CR>
 
 " Remap keys for gotos
