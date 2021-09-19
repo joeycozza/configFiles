@@ -52,6 +52,7 @@ map('n', 'Q', '@@')
 
 -- CoC doesn't load up locationlist by default, have to run CocDiagnostics first
 map('n', '<Leader><Up>', ':CocDiagnostics<CR>')
+
 -- LocationList navigation
 map('n', '<Up>', ':lopen<CR>')
 map('n', '<Down>', ':lclose<CR>')
@@ -71,3 +72,11 @@ map('n', '<Leader>r', '<Plug>(coc-rename)', remap)
 map('n', '<Leader>p', ':CocCommand prettier.formatFile<CR>')
 map('n', '<Leader>af', ':CocCommand eslint.executeAutoFix<CR>')
 map('n', '<Leader><Leader>p', ":silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>")
+
+-- Help with terminal mode. Esc will now go back to normal mode
+-- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
+map('t', '<Esc>', '<C-\\><C-n>')
+map('t', '<C-v><Esc>', '<Esc>')
+
+map('n', '<Leader>t', ':term<CR>a')
+map('n', '<Leader>tr', ':term node %<CR>')

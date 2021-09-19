@@ -20,6 +20,17 @@ opt.foldenable = false             -- when opening a file, dont start with any f
 opt.foldnestmax = 10
 opt.foldlevel = 10
 
+opt.updatetime = 250
+opt.swapfile = false
+
+opt.undofile = true                       -- Save undo's after file closes
+opt.undolevels = 1000                -- How many undos
+opt.undoreload = 1000                -- number of lines to save for undo
+
+opt.clipboard = 'unnamed'             -- copy to system clipboard
+
+opt.fixendofline = false
+
 -----------------------------------------------------
 -- Displaying text
 -----------------------------------------------------
