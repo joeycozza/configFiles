@@ -16,7 +16,7 @@ let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to cons
 filetype plugin on
 
 set foldtext=FoldText()
-set undodir=$HOME/.vim/undo  "Where to save undo histories
+set undodir=$HOME/.config/nvim/undo
 
 " setting the clipboard variable manually as per this reddit post
 " https://www.reddit.com/r/neovim/comments/ab01n8/improve_neovim_startup_by_60ms_for_free_on_macos/
@@ -61,7 +61,7 @@ nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
 
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.vim/UltiSnips']
+let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
 let g:NERDTreeIgnore = ['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
 
 highlight! link TermCursor Cursor

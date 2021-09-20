@@ -1,6 +1,6 @@
 local Plug = vim.fn['plug#']
 
-vim.call('plug#begin', '~/.vim/plugged')
+vim.call('plug#begin', vim.fn.expand('~/.config/nvim/plugged'))
 
 -- visual
 Plug 'morhetz/gruvbox'

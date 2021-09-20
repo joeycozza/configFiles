@@ -21,6 +21,10 @@ g['airline#extensions#tabline#ignore_bufadd_pat'] = '!|defx|gundo|nerd_tree|star
 
 g.matchup_matchparen_hi_surround_always = 1
 
+g.UltiSnipsExpandTrigger = ';;'
+g.UltiSnipsJumpForwardTrigger = ';;'
+g.UltiSnipsJumpBackwardTrigger = '::'
+
 g.NERDTreeShowBookmarks = 1
 g.NERDTreeAutoDeleteBuffer = 1
 g.NERDTreeChDirMode = 0
@@ -33,10 +37,6 @@ g.nerdtree_tabs_open_on_gui_startup = 0
 g['tern#is_show_argument_hints_enabled'] = 1
 
 g.used_javascript_libs = 'underscore,chai,react'
-
-g.UltiSnipsExpandTrigger = ';;'
-g.UltiSnipsJumpForwardTrigger = ';;'
-g.UltiSnipsJumpBackwardTrigger = '::'
 
 g.vim_markdown_preview_github = 1
 g.vim_markdown_preview_browser = 'Google Chrome'

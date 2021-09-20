@@ -1,6 +1,6 @@
-vim/plugged/
-vim/undo/
-vim/autoload/
+nvim/plugged/
+nvim/undo/
+nvim/autoload/
 
 coc/extensions/
 coc/extensions/db.json
