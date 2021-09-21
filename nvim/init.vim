@@ -90,8 +90,5 @@ function! FoldText()
 	return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
 endfunction
 
-lua << EOF
-require('telescope').setup{
-  defaults = require('configs/telescope')
-}
-EOF
+lua require('telescope').setup{ defaults = require('configs/telescope') }
+lua require('configs/nvim-treesitter')
