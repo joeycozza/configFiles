@@ -81,6 +81,9 @@ map('t', '<C-v><Esc>', '<Esc>')
 map('n', '<Leader>t', ':term<CR>a')
 map('n', '<Leader>tr', ':term node %<CR>')
 
+-- convenience for editing and sourcing .vimrc file
+map('n', '<Leader>ev', ':edit $MYVIMRC<CR>')
+
 map('x', 'iu', ':lua require"treesitter-unit".select()<CR>')
 map('x', 'au', ':lua require"treesitter-unit".select(true)<CR>')
 map('o', 'iu', ':<c-u>lua require"treesitter-unit".select()<CR>')

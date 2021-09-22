@@ -5,18 +5,9 @@ lua require('options')
 lua require('mappings')
 lua require('autocommands')
 
-if has('nvim') && executable('nvr')
-  let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
-endif
-
-"///////////////////Defaulting Registers////////////////////////////////////
-let @c = '0ciwconstjkj'    " @c macro for changing a variable definition to const
-"///////////////////////End Defaulting Registers/////////////////////////////
-
 filetype plugin on
 
 set foldtext=FoldText()
-set undodir=$HOME/.config/nvim/undo
 
 " setting the clipboard variable manually as per this reddit post
 " https://www.reddit.com/r/neovim/comments/ab01n8/improve_neovim_startup_by_60ms_for_free_on_macos/
@@ -41,10 +32,6 @@ let g:clipboard = {
 " Format json
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
-
-"convenience for editing and sourcing .vimrc file
-nnoremap <Leader>ev :edit $MYVIMRC<CR>
-nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " use tab/shift-tab to forward/backward cycle completion list
 inoremap <expr> <Tab> pumvisible() ? "\<c-n>" : "\<tab>"

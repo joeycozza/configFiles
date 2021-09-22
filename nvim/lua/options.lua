@@ -6,6 +6,8 @@ opt.backup = false
 opt.writebackup = false
 opt.cmdheight = 5
 
+opt.undodir = vim.fn.expand('$HOME/.config/nvim/undo')
+
 -- Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
 -- With this change it only rerenders at the end of the macro.
 opt.lazyredraw = true
