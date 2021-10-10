@@ -79,3 +79,5 @@ endfunction
 
 lua require('telescope').setup{ defaults = require('configs/telescope') }
 lua require('configs/nvim-treesitter')
+
+set conceallevel=0

@@ -1,4 +1,3 @@
-
 local function printv(str)
   print(vim.inspect(str))
 end
