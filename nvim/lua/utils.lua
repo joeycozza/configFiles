@@ -20,16 +20,21 @@ local function smartTruncate(opts, path)
   local pathLength = string.len(path)
   local maxLength = 42
   if pathLength > maxLength then
-    local parts = splitOnSlash(path)
+    local directoryNames = splitOnSlash(path)
+    local fileName = directoryNames[#directoryNames]
     local letters = {}
-    for index, value in ipairs(parts) do
-      local shifted = {unpack(parts, index+1)}
-        local short = table.concat(shifted, '/')
-        table.insert(letters, string.sub(value, 1, 1))
-        local smartShortPath = table.concat(letters, '/')..'/'..short
-        if string.len(smartShortPath) < maxLength then
-          return smartShortPath
-        end
+    if string.len(fileName) > maxLength then
+      return fileName
+    end
+
+    for index, dirName in ipairs(directoryNames) do
+      local shifted = {unpack(directoryNames, index+1)}
+      local short = table.concat(shifted, '/')
+      table.insert(letters, string.sub(dirName, 1, 1))
+      local smartShortPath = table.concat(letters, '/')..'/'..short
+      if string.len(smartShortPath) < maxLength then
+        return smartShortPath
+      end
     end
   end
   return path

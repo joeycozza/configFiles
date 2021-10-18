@@ -1,4 +1,5 @@
 prettier.formatFile
+lua.update
 eslint.showOutputChannel
 prettier.open-output
 editor.action.organizeImport

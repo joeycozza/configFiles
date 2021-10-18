@@ -40,6 +40,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<c-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Use Enter to confirm first option if no option is chosen
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+inoremap <Leader><Leader>hide :set concealevel=0
 
 " S to split under cursor, remove trailing whitespace on first line, and auto indent second line
 nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
