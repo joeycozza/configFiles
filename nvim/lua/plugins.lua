@@ -51,8 +51,8 @@ Plug('JamshedVesuna/vim-markdown-preview', { ['for'] = 'markdown' })
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
-Plug 'David-Kunz/treesitter-unit'
+-- Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
+-- Plug 'David-Kunz/treesitter-unit'
 
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'dstein64/vim-startuptime'
