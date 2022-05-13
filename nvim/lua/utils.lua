@@ -40,9 +40,18 @@ local function smartTruncate(opts, path)
   return path
 end
 
+local function npmInfo()
+  vim.api.nvim_exec('normal yi"', true)
+  local packageName = vim.fn.getreg('"')
+	local cmdString = "npm info " .. packageName
+  require('FTerm').run(cmdString)
+end
+
+
 return {
   split = split,
   printv = printv,
   splitOnSlash = splitOnSlash,
   smartTruncate = smartTruncate,
+  npmInfo = npmInfo,
 }

@@ -7,6 +7,7 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+map('n', '<leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
 map('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 map('n', '<leader>tn', '<cmd>Telescope file_browser<CR>')
 map('n', '<leader>tg', ":lua require('telescope.builtin').live_grep({previewer = false})<cr>")
