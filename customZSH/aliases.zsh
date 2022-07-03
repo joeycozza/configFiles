@@ -28,6 +28,7 @@ alias -g C="| pbcopy"
 alias -g L="| wc -l"
 alias -g FILES=' --files-with-matches'
 alias -g RG='| xargs rg'
+alias -g V='| xargs nvim'
 
 alias copy='eval "$(fc -ln -1) | pbcopy"'
 

@@ -8,10 +8,10 @@ if [[ -v ZSH_PROF ]]; then
   # run the following command to use this zsh/zprof stuff
   # "env ZSH_PROF=1 zsh -ic zprof"
   zmodload zsh/zprof
-
-  # nvim startup profiling. run the command, and then look at trash.log
-  # "nvim --startuptime trash.log"
 fi
+
+# nvim startup profiling. run the command, and then look at trash.log
+# "nvim --startuptime trash.log"
 
 export ZSH=$HOME/.oh-my-zsh
 export CONFIG_FILES_PATH=$HOME/Documents/configFiles
