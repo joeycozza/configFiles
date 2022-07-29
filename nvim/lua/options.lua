@@ -4,7 +4,8 @@ local opt = vim.opt
 -- Some servers have issues with backup files, see #649
 opt.backup = false
 opt.writebackup = false
-opt.cmdheight = 5
+opt.cmdheight = 2
+opt.shortmess = 'ITF'
 
 opt.undodir = vim.fn.expand('$HOME/.config/nvim/undo')
 
