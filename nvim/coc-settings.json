@@ -12,9 +12,5 @@
   "prettier.trailingComma": "es5",
   "prettier.eslintIntegration": true,
 
-  "suggest.maxPreviewWidth": 70,
-  "suggest.detailMaxLength": 110,
-
-  "yank.highlight.duration": 1000
-
+  "suggest.detailMaxLength": 110
 }

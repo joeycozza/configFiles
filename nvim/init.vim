@@ -84,3 +84,8 @@ lua require('telescope').setup{ defaults = require('configs/telescope') }
 
 set conceallevel=0
 let g:vimwiki_conceallevel=0
+
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=800 }
+augroup END
