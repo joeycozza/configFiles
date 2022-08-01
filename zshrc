@@ -79,5 +79,5 @@ iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
 }
 
-# fnm
+# fnm setup, and check for a .nvmrc file when you cd (for auto node version changing)
 eval "$(fnm env --use-on-cd)"
