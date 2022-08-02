@@ -33,13 +33,6 @@ let g:clipboard = {
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
-" use tab/shift-tab to forward/backward cycle completion list
-inoremap <expr> <Tab> pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<c-p>" : "\<S-Tab>"
-" Use Enter to confirm completion
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" Use Enter to confirm first option if no option is chosen
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 nnoremap <Leader><Leader>hide :set conceallevel=0<CR>
 
 " S to split under cursor, remove trailing whitespace on first line, and auto indent second line

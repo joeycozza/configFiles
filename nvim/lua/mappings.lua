@@ -9,7 +9,6 @@ end
 
 map('n', '<leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
 map('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>')
-map('n', '<leader>tn', '<cmd>Telescope file_browser<CR>')
 map('n', '<leader>tg', ":lua require('telescope.builtin').live_grep({previewer = false})<cr>")
 
 -- add comma to end of line and put cursor back where it was
@@ -41,7 +40,7 @@ map('n', '<Leader>\\', ':bnext<CR>')
 map('n', '<Leader>v', '"_diw"0P')
 
 -- Fugitive remappings for ease of use
-map('n', '<Leader>gs', ':Gstatus<CR>')
+map('n', '<Leader>gs', ':Git<CR>')
 map('n', '<Leader>gb', ':Git blame<CR>')
 
 -- move to next or previous gittable chunk change in file
