@@ -10,7 +10,6 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "prettier.eslintIntegration": true,
 
   "suggest.detailMaxLength": 110
 }
