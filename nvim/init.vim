@@ -72,8 +72,4 @@ function! FoldText()
 endfunction
 
 lua require('telescope').setup{ defaults = require('configs/telescope') }
-" setting up this nvim-treesitter stuff messes up folding. The new colors it gives it not worth it.
-" lua require('configs/nvim-treesitter')
-
-set conceallevel=0
-let g:vimwiki_conceallevel=0
+lua require('configs/nvim-treesitter')
