@@ -33,6 +33,8 @@ let g:clipboard = {
 vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
 nnoremap <Leader><Leader>json :enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:CocCommand prettier.formatFile<CR>
 
+nnoremap <Leader><Leader>hide :set conceallevel=0<CR>
+
 " S to split under cursor, remove trailing whitespace on first line, and auto indent second line
 nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
 
