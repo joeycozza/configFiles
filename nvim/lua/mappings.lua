@@ -12,9 +12,9 @@ map('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 map('n', '<leader>tg', ":lua require('telescope.builtin').live_grep({previewer = false})<cr>")
 
 -- add comma to end of line and put cursor back where it was
-map('n', ',,', 'm`A,<Esc>``m`')
+map('n', ',,', 'm`A,<Esc>``')
 -- remove last character from line and put cursor back where it was
-map('n', '::', 'm`$x<Esc>``m`')
+map('n', '::', 'm`$x<Esc>``')
 
 -- mode selection (or line) up or down
 map('n', '<c-j>', ':m .+1<CR>==')
@@ -69,9 +69,7 @@ map('n', 'gi', '<Plug>(coc-implementation)', silentRemap)
 map('n', 'gr', '<Plug>(coc-references)', silentRemap)
 
 map('n', '<Leader>r', '<Plug>(coc-rename)', remap)
-map('n', '<Leader>p', ':CocCommand prettier.formatFile<CR>')
-map('n', '<Leader>af', ':CocCommand eslint.executeAutoFix<CR>')
-map('n', '<Leader><Leader>p', ":silent %!prettier --stdin --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>")
+map('n', '<Leader>p', "m`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``")
 
 -- Help with terminal mode. Esc will now go back to normal mode
 -- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape

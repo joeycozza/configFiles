@@ -6,10 +6,5 @@
 
   "eslint.packageManager": "npm",
 
-  "prettier.printWidth": 120,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-
   "suggest.detailMaxLength": 110
 }
