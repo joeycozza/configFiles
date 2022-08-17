@@ -51,7 +51,7 @@ Plug 'andymass/vim-matchup'
 Plug('JamshedVesuna/vim-markdown-preview', { ['for'] = 'markdown' })
 
 Plug 'nvim-lua/plenary.nvim'
-Plug('nvim-telescope/telescope.nvim', { tag = '0.1.0' })
+Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'numToStr/FTerm.nvim'
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
