@@ -9,7 +9,10 @@ end
 
 map('n', '<leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
 map('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>')
-map('n', '<leader>tg', ":lua require('telescope.builtin').live_grep({previewer = false})<cr>")
+-- grep in the entire project
+map('n', '<leader>tg', ":Telescope live_grep<CR>")
+-- grep in the entire project but start with the string under cursor and then include filename in the fuzzy finding
+map('n', '<leader><leader>tg', ":Telescope grep_string<CR>")
 
 -- add comma to end of line and put cursor back where it was
 map('n', ',,', 'm`A,<Esc>``')

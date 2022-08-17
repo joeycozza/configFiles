@@ -64,11 +64,6 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-# Start Grow Work
-# awscli@1 for grow work
-export PATH="/usr/local/opt/awscli@1/bin:$PATH"
-# End Grow Work
-
 ulimit -n 1024
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
