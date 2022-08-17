@@ -7,12 +7,14 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map('n', '<leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
-map('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>')
+map('n', '<Leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
+map('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 -- grep in the entire project
-map('n', '<leader>tg', ":Telescope live_grep<CR>")
+map('n', '<Leader>tg', ":Telescope live_grep<CR>")
+map('n', '<Leader>ts', ":Telescope treesitter<CR>")
+map('n', '<Leader>tb', ":Telescope git_bcommits<CR>")
 -- grep in the entire project but start with the string under cursor and then include filename in the fuzzy finding
-map('n', '<leader><leader>tg', ":Telescope grep_string<CR>")
+map('n', '<Leader><Leader>tg', ":Telescope grep_string<CR>")
 
 -- add comma to end of line and put cursor back where it was
 map('n', ',,', 'm`A,<Esc>``')
@@ -33,7 +35,7 @@ map('t', '<Leader><Leader>d', '<c-\\><c-n>:bdelete!<CR>')
 
 map('i', 'jk', '<Esc>:w<CR>')
 
--- leader tab and leader \ for moving between buffers (nice for my ergodox keyboard)
+-- Leader tab and Leader \ for moving between buffers (nice for my ergodox keyboard)
 map('n', '<Leader><Tab>', ':bprevious<CR>')
 map('n', '<Leader>\\', ':bnext<CR>')
 
