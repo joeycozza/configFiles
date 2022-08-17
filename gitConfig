@@ -73,3 +73,5 @@
 	rebase = false
 [init]
 	defaultBranch = master
+[credential]
+	helper = git-credential-osxkeychain
