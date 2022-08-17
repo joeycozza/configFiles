@@ -72,4 +72,5 @@ function! FoldText()
 endfunction
 
 lua require('telescope').setup{ defaults = require('configs/telescope') }
+lua require('telescope').load_extension('fzf')
 lua require('configs/nvim-treesitter')
