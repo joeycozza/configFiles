@@ -46,7 +46,6 @@ Plug 'joeycozza/vim-obsession'
 Plug 'wellle/targets.vim'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'andymass/vim-matchup'
 
 Plug('JamshedVesuna/vim-markdown-preview', { ['for'] = 'markdown' })
 
@@ -59,6 +58,7 @@ Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
 Plug 'David-Kunz/treesitter-unit'
 
 Plug 'pedrohdz/vim-yaml-folds'
+Plug 'zegervdv/nrpattern.nvim'
 Plug 'dstein64/vim-startuptime'
 
 vim.call('plug#end')
