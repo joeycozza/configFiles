@@ -7,6 +7,16 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+local function smart_dd()
+  if vim.api.nvim_get_current_line():match("^%s*$") then
+    return "\"_dd"
+  else
+    return "dd"
+  end
+end
+
+vim.keymap.set('n', 'dd', smart_dd, {noremap=true, expr=true})
+
 map('n', '<Leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
 map('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 -- grep in the entire project
