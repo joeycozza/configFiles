@@ -35,6 +35,7 @@ Plug('scrooloose/nerdtree', { on = 'NERDTreeFind' })
 
 -- I never really use this. I want a better solution for notes
 -- Plug 'vimwiki/vimwiki'
+Plug('phaazon/mind.nvim', {branch = 'v2'})
 Plug 'SirVer/ultisnips'
 
 Plug 'tpope/vim-surround'
