@@ -101,3 +101,6 @@ map('x', 'iu', ':lua require"treesitter-unit".select()<CR>')
 map('x', 'au', ':lua require"treesitter-unit".select(true)<CR>')
 map('o', 'iu', ':<c-u>lua require"treesitter-unit".select()<CR>')
 map('o', 'au', ':<c-u>lua require"treesitter-unit".select(true)<CR>')
+
+map('n', 'mom', ':MindOpenMain<CR>')
+map('n', 'mop', ':MindOpenProject<CR>')

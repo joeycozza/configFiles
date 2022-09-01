@@ -56,11 +56,13 @@ export PATH="/Users/joeycozza/bin:$PATH"
 export PATH="/Users/joeycozza/.nimble/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/2.7/bin:$PATH"
 export PATH="/Users/joeycozza/Library/Python/3.7/bin:$PATH"
+export PATH="/Users/joeycozza/Library/Python/3.8/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
+export PATH="/Library/Frameworks/Python.framework/Versions/2.8/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
