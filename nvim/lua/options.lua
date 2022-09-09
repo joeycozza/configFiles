@@ -21,6 +21,8 @@ opt.whichwrap  ='b,s,h,l,<,>,[,]'  -- Backspace and cursor keys wrap too
 opt.foldmethod='expr'
 opt.foldexpr='nvim_treesitter#foldexpr()'
 opt.foldenable = false             -- when opening a file, dont start with any folding
+ opt.foldnestmax = 10
+ opt.foldlevel = 10
 
 opt.updatetime = 250
 opt.swapfile = false
