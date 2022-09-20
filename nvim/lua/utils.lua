@@ -18,7 +18,7 @@ end
 
 local function smartTruncate(opts, path)
   local pathLength = string.len(path)
-  local maxLength = 45
+  local maxLength = 115
   if pathLength > maxLength then
     local directoryNames = splitOnSlash(path)
     local fileName = directoryNames[#directoryNames]
