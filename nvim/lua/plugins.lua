@@ -62,4 +62,10 @@ Plug 'pedrohdz/vim-yaml-folds'
 Plug 'zegervdv/nrpattern.nvim'
 Plug 'dstein64/vim-startuptime'
 
+-- Setup neo-test
+Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'nvim-neotest/neotest'
+Plug 'haydenmeade/neotest-jest'
+Plug 'mfussenegger/nvim-dap'
+
 vim.call('plug#end')
