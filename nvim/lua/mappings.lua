@@ -76,6 +76,8 @@ map('n', '<Right>', ':lnext<CR>')
 
 
 map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
+map('n', '<Leader><Leader>\\', ':vertical resize +5<CR>', remap)
+map('n', '<Leader><Leader><Tab>', ':vertical resize -5<CR>', remap)
 
 -- Remap keys for gotos
 map('n', 'gd', '<Plug>(coc-definition)', silentRemap)
