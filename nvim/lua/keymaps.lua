@@ -76,6 +76,8 @@ map('n', '<Right>', ':lnext<CR>')
 
 
 map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
+map('n', '<Leader><Down>', ':resize -5<CR>', remap)
+map('n', '<Leader><Up>', ':resize +5<CR>', remap)
 map('n', '<Leader><Leader>\\', ':vertical resize +5<CR>', remap)
 map('n', '<Leader><Leader><Tab>', ':vertical resize -5<CR>', remap)
 
@@ -106,3 +108,9 @@ map('o', 'au', ':<c-u>lua require"treesitter-unit".select(true)<CR>')
 
 map('n', 'mom', ':MindOpenMain<CR>')
 map('n', 'mop', ':MindOpenProject<CR>')
+
+-- jest and Jester mappings
+map('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')
+map('n', '<Leader>jt', ':lua require("jester").run()<CR>')
+map('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
+map('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')

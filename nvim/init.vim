@@ -2,7 +2,7 @@ lua require('plugins')
 lua require('commands')
 lua require('globals')
 lua require('options')
-lua require('mappings')
+lua require('keymaps')
 lua require('autocommands')
 
 filetype plugin on
@@ -78,3 +78,4 @@ lua require('telescope').load_extension('fzf')
 lua require('configs/nvim-treesitter')
 lua require('configs/nrpattern')
 lua require('mind').setup()
+lua require('jester').setup(require('configs/jester'))

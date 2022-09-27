@@ -62,4 +62,6 @@ Plug 'pedrohdz/vim-yaml-folds'
 Plug 'zegervdv/nrpattern.nvim'
 Plug 'dstein64/vim-startuptime'
 
+Plug 'David-Kunz/jester'
+
 vim.call('plug#end')
