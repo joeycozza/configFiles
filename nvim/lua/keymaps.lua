@@ -78,8 +78,8 @@ map('n', '<Right>', ':lnext<CR>')
 map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
 map('n', '<Leader><Down>', ':resize -5<CR>', remap)
 map('n', '<Leader><Up>', ':resize +5<CR>', remap)
-map('n', '<Leader><Leader>\\', ':vertical resize +5<CR>', remap)
-map('n', '<Leader><Leader><Tab>', ':vertical resize -5<CR>', remap)
+map('n', '<Leader><Right>', ':vertical resize +5<CR>', remap)
+map('n', '<Leader><Left>', ':vertical resize -5<CR>', remap)
 
 -- Remap keys for gotos
 map('n', 'gd', '<Plug>(coc-definition)', silentRemap)
