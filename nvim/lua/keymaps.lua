@@ -76,10 +76,10 @@ map('n', '<Right>', ':lnext<CR>')
 
 
 map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
-map('n', '<Leader><Down>', ':resize -5<CR>', remap)
-map('n', '<Leader><Up>', ':resize +5<CR>', remap)
-map('n', '<Leader><Right>', ':vertical resize +5<CR>', remap)
-map('n', '<Leader><Left>', ':vertical resize -5<CR>', remap)
+map('n', '<Leader><Leader><Down>', ':resize -5<CR>', remap)
+map('n', '<Leader><Leader><Up>', ':resize +5<CR>', remap)
+map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>', remap)
+map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>', remap)
 
 -- Remap keys for gotos
 map('n', 'gd', '<Plug>(coc-definition)', silentRemap)
@@ -111,6 +111,6 @@ map('n', 'mop', ':MindOpenProject<CR>')
 
 -- jest and Jester mappings
 map('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')
-map('n', '<Leader>jt', ':lua require("jester").run()<CR>')
+map('n', '<Leader>js', ':lua require("jester").run()<CR>')
 map('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
 map('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')
