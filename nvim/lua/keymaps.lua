@@ -79,7 +79,9 @@ map('n', '<Leader><Leader><Up>', ':resize +5<CR>', remap)
 map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>', remap)
 map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>', remap)
 
-map('n', '<Leader>p', "m`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``")
+map('n', '<Leader>p', ':ALEFix<CR>', remap)
+map('n', '<Leader><Leader>p', "m`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``")
+map('n', '<Leader><Leader>json', ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>', remap)
 
 -- Help with terminal mode. Esc will now go back to normal mode
 -- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
