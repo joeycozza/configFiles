@@ -17,6 +17,10 @@ local nvimCmpConfig = {
       select = true
     }),
   }),
+  window = {
+    -- completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
   snippet = {
     expand = function(args)
       vim.fn["UltiSnips#Anon"](args.body)
