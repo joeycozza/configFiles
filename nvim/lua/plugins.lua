@@ -72,4 +72,6 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
+Plug 'dense-analysis/ale'
+
 vim.call('plug#end')

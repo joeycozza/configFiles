@@ -65,8 +65,6 @@ map('n', '<Leader>hp', '<Plug>(GitGutterPrevHunk)', remap)
 -- who needs EX mode? last macro with Q
 map('n', 'Q', '@@')
 
--- CoC doesn't load up locationlist by default, have to run CocDiagnostics first
-map('n', '<Leader><Up>', ':CocDiagnostics<CR>')
 
 -- LocationList navigation
 map('n', '<Up>', ':lopen<CR>')
@@ -81,13 +79,6 @@ map('n', '<Leader><Leader><Up>', ':resize +5<CR>', remap)
 map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>', remap)
 map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>', remap)
 
--- Remap keys for gotos
-map('n', 'gd', '<Plug>(coc-definition)', silentRemap)
-map('n', 'gy', '<Plug>(coc-type-definition)', silentRemap)
-map('n', 'gi', '<Plug>(coc-implementation)', silentRemap)
-map('n', 'gr', '<Plug>(coc-references)', silentRemap)
-
-map('n', '<Leader>r', '<Plug>(coc-rename)', remap)
 map('n', '<Leader>p', "m`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``")
 
 -- Help with terminal mode. Esc will now go back to normal mode

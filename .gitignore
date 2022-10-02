@@ -2,16 +2,4 @@ nvim/plugged/
 nvim/undo/
 nvim/autoload/
 
-coc/extensions/
-coc/extensions/db.json
-coc/extensions/node_modules/
-coc/extensions/.cache
-coc/extensions/coc-yank-data/
-coc/extensions/db.json
-coc/snippets-mru/
-coc/snippets-mru
-coc/suggest.txt
-coc/commands
-coc/commands/
-
 customZSH/secrets.zsh

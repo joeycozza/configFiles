@@ -1,9 +1,5 @@
 local opt = vim.opt
 
--- https://github.com/neoclide/coc.nvim#example-vim-configuration
--- Some servers have issues with backup files, see #649
-opt.backup = false
-opt.writebackup = false
 opt.cmdheight = 2
 opt.shortmess = 'ITF'
 

@@ -10,8 +10,8 @@ g.python3_host_prog = '/usr/local/bin/python3'
 g.airline_section_b = ''
 
 g.airline_theme = 'simple'
-g.airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-g.airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+-- g.airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+-- g.airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 g['airline#extensions#obsession#enabled'] = 1
 g['airline#extensions#obsession#indicator_text'] = 'Obsessed'
 g['airline#extensions#tabline#enabled'] = 1

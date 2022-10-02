@@ -11,7 +11,6 @@ ln -s "$CONFIG_FILES_PATH/gitignore_global" "$HOME/.gitignore_global"
 ln -s "$CONFIG_FILES_PATH/vintrc.yaml" "$HOME/.vintrc.yaml"
 ln -s "$CONFIG_FILES_PATH/ideavimrc" "$HOME/.ideavimrc"
 ln -s "$CONFIG_FILES_PATH/eslintrc.js" "$HOME/.eslintrc.js"
-ln -s "$CONFIG_FILES_PATH/coc" "$HOME/.config/coc"
 mkdir "$HOME/.config/bat"
 ln -s "$CONFIG_FILES_PATH/batConfig" "$HOME/.config/bat/config"
 
