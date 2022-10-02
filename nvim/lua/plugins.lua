@@ -29,7 +29,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 -- extend functionality
-Plug('neoclide/coc.nvim', {branch = 'release'})
 
 Plug('scrooloose/nerdtree', { on = 'NERDTreeFind' })
 
@@ -63,5 +62,14 @@ Plug 'zegervdv/nrpattern.nvim'
 Plug 'dstein64/vim-startuptime'
 
 Plug 'David-Kunz/jester'
+
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-nvim-lua'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 vim.call('plug#end')

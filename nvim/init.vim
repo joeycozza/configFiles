@@ -27,6 +27,8 @@ let g:clipboard = {
 
 let g:loaded_perl_provider = 0
 
+set completeopt=menu,menuone,noselect
+
 "-----------------------------------------------
 " --------------Remapping Keys------------------
 "  ---------------------------------------------
@@ -79,3 +81,4 @@ lua require('configs/nvim-treesitter')
 lua require('configs/nrpattern')
 lua require('mind').setup()
 lua require('jester').setup(require('configs/jester'))
+lua require('cmp').setup(require('configs/nvim-cmp'))
