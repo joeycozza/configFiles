@@ -63,8 +63,6 @@ Plug 'dstein64/vim-startuptime'
 
 Plug 'David-Kunz/jester'
 
-
-Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -73,5 +71,8 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 Plug 'dense-analysis/ale'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'jose-elias-alvarez/typescript.nvim'
 
 vim.call('plug#end')

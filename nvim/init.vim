@@ -6,6 +6,7 @@ lua require('globals')
 lua require('options')
 lua require('keymaps')
 lua require('autocommands')
+lua require('lsp')
 
 filetype plugin on
 
@@ -56,8 +57,6 @@ let g:ale_pattern_options = {
  \       'ale_fixers': ['eslint'],
  \   },
  \}
-
-set completeopt=menu,menuone,noselect
 
 "-----------------------------------------------
 " --------------Remapping Keys------------------

@@ -8,3 +8,5 @@ eslint
 neovim
 npm-check
 n_
+typescript-language-server
+typescript
