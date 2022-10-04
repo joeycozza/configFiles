@@ -1,12 +1,8 @@
-let g:ale_disable_lsp = 1
+" let g:ale_disable_lsp = 1
 
 lua require('plugins')
 lua require('commands')
 lua require('globals')
-lua require('options')
-lua require('keymaps')
-lua require('autocommands')
-lua require('lsp')
 
 filetype plugin on
 
@@ -103,10 +99,13 @@ function! FoldText()
   return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
 endfunction
 
-lua require('telescope').setup{ defaults = require('configs/telescope') }
-lua require('telescope').load_extension('fzf')
-lua require('configs/nvim-treesitter')
-lua require('configs/nrpattern')
-lua require('mind').setup()
-lua require('jester').setup(require('configs/jester'))
-lua require('cmp').setup(require('configs/nvim-cmp'))
+lua require('user/nrpattern')
+lua require('user/mind')
+lua require('user/jester')
+lua require('user/lsp')
+lua require('user/cmp')
+lua require('user/treesitter')
+lua require('user/telescope')
+lua require('autocommands')
+lua require('options')
+lua require('keymaps')

@@ -3,6 +3,8 @@ local opt = vim.opt
 opt.cmdheight = 2
 opt.shortmess = 'ITF'
 
+opt.completeopt = { 'menu', 'menuone', 'noselect' }
+
 opt.undodir = vim.fn.expand('$HOME/.config/nvim/undo')
 
 -- Normally Vim rerenders the screen after every step of the macro, which looks weird and slows the execution down.
