@@ -16,7 +16,7 @@ set foldmethod=syntax  " vim-javascript can take advantage of syntax to fold sma
 set nofoldenable " when opening a file, dont start with any folding
 set foldnestmax=20
 
-set updatetime=250
+set updatetime=150
 set noswapfile
 
 set hidden "switch buffers without saving

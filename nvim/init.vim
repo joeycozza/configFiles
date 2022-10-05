@@ -52,6 +52,9 @@ let g:ale_pattern_options = {
  \   '\/nunya\/.*\.jsx\=$': {
  \       'ale_fixers': ['eslint'],
  \   },
+ \   '\/pr-swat\/.*\.jsx\=$': {
+ \       'ale_fixers': ['eslint'],
+ \   },
  \}
 
 "-----------------------------------------------
