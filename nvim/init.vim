@@ -1,5 +1,3 @@
-" let g:ale_disable_lsp = 1
-
 lua require('plugins')
 lua require('commands')
 lua require('globals')
@@ -28,37 +26,6 @@ let g:clipboard = {
   \ }
 
 let g:loaded_perl_provider = 0
-
-let g:ale_fixers = {
-      \ 'css' : ['prettier'],
-      \ 'html': ['prettier'],
-      \ 'javascript': ['eslint', 'prettier'],
-      \ 'json': ['prettier'],
-      \ 'lua': ['lua-format'],
-      \ 'markdown': ['prettier'],
-      \ 'vim' : ['trim_whitespace'],
-      \ 'yaml': ['prettier']
-      \ }
-
-let g:ale_linters = {
-      \ 'bash': ['shellcheck'],
-      \ 'dockerfile': ['hadolint'],
-      \ 'javascript': ['eslint'],
-      \ 'vim': ['vint'],
-      \ 'yaml': ['yamllint'],
-      \ 'zsh': ['shellcheck']
-      \ }
-
-" Use just ESLint (not prettier) for fixing js or jsx files found in the /nunya/ directory
-" \= is to match 0 or 1 of the preceeding character in vim. http://vimregex.com/
-let g:ale_pattern_options = {
- \   '\/nunya\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   },
- \   '\/pr-swat\/.*\.jsx\=$': {
- \       'ale_fixers': ['eslint'],
- \   },
- \}
 
 "-----------------------------------------------
 " --------------Remapping Keys------------------
@@ -112,4 +79,5 @@ lua require('user/lsp')
 lua require('user/cmp')
 lua require('user/treesitter')
 lua require('user/telescope')
+lua require('user/null-ls')
 lua require('inc_rename').setup()

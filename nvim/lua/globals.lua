@@ -11,8 +11,6 @@ g.airline_section_b = ''
 
 g.airline_theme = 'simple'
 
-g['airline#extensions#ale#enabled'] = 1
-
 g['airline#extensions#obsession#enabled'] = 1
 g['airline#extensions#obsession#indicator_text'] = 'Obsessed'
 
@@ -22,11 +20,6 @@ g['airline#extensions#tabline#formatter'] = 'unique_tail'
 g['airline#extensions#tabline#ignore_bufadd_pat'] = '!|defx|gundo|nerd_tree|startify|tagbar|undotree|vimfiler' -- dont exclude term:// from buffer tablist
 
 g.matchup_matchparen_hi_surround_always = 1
-
-g.ale_fix_on_save = 0
-g.ale_lint_on_save = 1
-g.ale_lint_on_text_changed = 'never'
-g.ale_javascript_prettier_options = '--trailing-comma=es5 --no-semi --single-quote --print-width=120'
 
 g.UltiSnipsExpandTrigger = ';;'
 g.UltiSnipsJumpForwardTrigger = ';;'

@@ -74,17 +74,16 @@ map('n', '<Down>', ':lclose<CR>')
 map('n', '<Left>', ':lprev<CR>')
 map('n', '<Right>', ':lnext<CR>')
 
-map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
-map('n', '<Leader><Leader><Down>', ':resize -5<CR>', remap)
-map('n', '<Leader><Leader><Up>', ':resize +5<CR>', remap)
-map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>', remap)
-map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>', remap)
+map('n', '<Leader>nt', ':NERDTreeFind<CR>')
+map('n', '<Leader><Leader><Down>', ':resize -5<CR>')
+map('n', '<Leader><Leader><Up>', ':resize +5<CR>')
+map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>')
+map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>')
 
-map('n', '<Leader>p', ':ALEFix<CR>', remap)
-map('n', '<Leader><Leader>p',
-    'm`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``')
+map('n', '<Leader>p', ':lua vim.lsp.buf.format()<CR>')
 map('n', '<Leader><Leader>json',
-    ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>', remap)
+    ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:lua vim.lsp.buf.format()<CR>',
+    remap)
 
 -- Help with terminal mode. Esc will now go back to normal mode
 -- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
@@ -110,4 +109,3 @@ map('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR
 map('n', '<Leader>js', ':lua require("jester").run()<CR>')
 map('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
 map('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')
-
