@@ -74,6 +74,8 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 Plug 'onsails/lspkind-nvim'
 
+Plug 'smjonas/inc-rename.nvim'
+
 Plug 'dense-analysis/ale'
 
 vim.call('plug#end')

@@ -3,6 +3,9 @@
 lua require('plugins')
 lua require('commands')
 lua require('globals')
+lua require('autocommands')
+lua require('options')
+lua require('keymaps')
 
 filetype plugin on
 
@@ -109,6 +112,4 @@ lua require('user/lsp')
 lua require('user/cmp')
 lua require('user/treesitter')
 lua require('user/telescope')
-lua require('autocommands')
-lua require('options')
-lua require('keymaps')
+lua require('inc_rename').setup()

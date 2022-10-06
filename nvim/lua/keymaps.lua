@@ -1,30 +1,33 @@
 local remap = { noremap = false }
-local silentRemap = {noremap = false, silent = true}
+local silentRemap = { noremap = false, silent = true }
 
-local function map(mode, lhs, rhs, opts)
-  local options = {noremap = true}
+local function map( mode, lhs, rhs, opts )
+  local options = { noremap = true }
   if opts then options = vim.tbl_extend('force', options, opts) end
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
 local function smart_dd()
-  if vim.api.nvim_get_current_line():match("^%s*$") then
-    return "\"_dd"
+  if vim.api.nvim_get_current_line():match('^%s*$') then
+    return '"_dd'
   else
-    return "dd"
+    return 'dd'
   end
 end
 
-vim.keymap.set('n', 'dd', smart_dd, {noremap=true, expr=true})
+vim.keymap.set('n', 'dd', smart_dd, { noremap = true, expr = true })
+vim.keymap.set('n', '<Leader>r', function()
+  return ':IncRename ' .. vim.fn.expand('<cword>')
+end, { expr = true })
 
-map('n', '<Leader>ni', "<cmd>lua require('utils').npmInfo()<CR>")
+map('n', '<Leader>ni', '<cmd>lua require(\'utils\').npmInfo()<CR>')
 map('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 -- grep in the entire project
-map('n', '<Leader>tg', ":Telescope live_grep<CR>")
-map('n', '<Leader>ts', ":Telescope treesitter<CR>")
-map('n', '<Leader>tb', ":Telescope git_bcommits<CR>")
+map('n', '<Leader>tg', ':Telescope live_grep<CR>')
+map('n', '<Leader>ts', ':Telescope treesitter<CR>')
+map('n', '<Leader>tb', ':Telescope git_bcommits<CR>')
 -- grep in the entire project but start with the string under cursor and then include filename in the fuzzy finding
-map('n', '<Leader><Leader>tg', ":Telescope grep_string<CR>")
+map('n', '<Leader><Leader>tg', ':Telescope grep_string<CR>')
 
 -- add comma to end of line and put cursor back where it was
 map('n', ',,', 'm`A,<Esc>``')
@@ -36,8 +39,8 @@ map('n', '<c-j>', ':m .+1<CR>==')
 map('n', '<c-k>', ':m .-2<CR>==')
 map('i', '<c-j>', '<Esc>:m .+1<CR>==gi')
 map('i', '<c-k>', '<Esc>:m .-2<CR>==gi')
-map('v', '<c-j>', ":m '>+1<CR>gv=gv")
-map('v', '<c-k>', ":m '<-2<CR>gv=gv")
+map('v', '<c-j>', ':m \'>+1<CR>gv=gv')
+map('v', '<c-k>', ':m \'<-2<CR>gv=gv')
 
 map('n', '<Leader>d', ':bdelete<CR>')
 map('n', '<Leader><Leader>d', ':bdelete!<CR>')
@@ -65,13 +68,11 @@ map('n', '<Leader>hp', '<Plug>(GitGutterPrevHunk)', remap)
 -- who needs EX mode? last macro with Q
 map('n', 'Q', '@@')
 
-
 -- LocationList navigation
 map('n', '<Up>', ':lopen<CR>')
 map('n', '<Down>', ':lclose<CR>')
 map('n', '<Left>', ':lprev<CR>')
 map('n', '<Right>', ':lnext<CR>')
-
 
 map('n', '<Leader>nt', ':NERDTreeFind<CR>', remap)
 map('n', '<Leader><Leader><Down>', ':resize -5<CR>', remap)
@@ -80,8 +81,10 @@ map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>', remap)
 map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>', remap)
 
 map('n', '<Leader>p', ':ALEFix<CR>', remap)
-map('n', '<Leader><Leader>p', "m`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``")
-map('n', '<Leader><Leader>json', ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>', remap)
+map('n', '<Leader><Leader>p',
+    'm`:silent %!prettier --stdin-filepath % --trailing-comma es5 --no-semi --single-quote --print-width 120<CR>``')
+map('n', '<Leader><Leader>json',
+    ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:ALEFix<CR>', remap)
 
 -- Help with terminal mode. Esc will now go back to normal mode
 -- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
@@ -107,3 +110,4 @@ map('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR
 map('n', '<Leader>js', ':lua require("jester").run()<CR>')
 map('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
 map('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')
+
