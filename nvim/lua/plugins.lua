@@ -77,5 +77,6 @@ Plug 'onsails/lspkind-nvim'
 Plug 'smjonas/inc-rename.nvim'
 
 Plug 'dense-analysis/ale'
+Plug 'p00f/nvim-ts-rainbow'
 
 vim.call('plug#end')
