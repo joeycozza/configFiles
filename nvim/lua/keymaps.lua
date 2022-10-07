@@ -1,10 +1,9 @@
-local remap = { noremap = false }
-local silentRemap = { noremap = false, silent = true }
+local remap = { remap = true }
 
 local function map( mode, lhs, rhs, opts )
-  local options = { noremap = true }
+  local options = { remap = false }
   if opts then options = vim.tbl_extend('force', options, opts) end
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+  vim.keymap.set(mode, lhs, rhs, options)
 end
 
 local function smart_dd()
@@ -15,8 +14,9 @@ local function smart_dd()
   end
 end
 
-vim.keymap.set('n', 'dd', smart_dd, { noremap = true, expr = true })
-vim.keymap.set('n', '<Leader>r', function()
+map('n', 'dd', smart_dd, { expr = true })
+
+map('n', '<Leader>r', function()
   return ':IncRename ' .. vim.fn.expand('<cword>')
 end, { expr = true })
 
