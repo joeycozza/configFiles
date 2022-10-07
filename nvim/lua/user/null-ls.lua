@@ -9,5 +9,6 @@ null_ls.setup({
     formatting.prettier.with({extra_args = {'--print-width=120', '--trailing-comma=es5', '--no-semi', '--single-quote'}}),
     diagnostics.eslint,
     diagnostics.vint,
+    diagnostics.zsh,
   },
 })

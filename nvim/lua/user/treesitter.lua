@@ -4,6 +4,5 @@ require('nvim-treesitter.configs').setup({
     'http', 'java', 'jsdoc', 'json', 'json5', 'make', 'markdown', 'markdown_inline', 'ocaml',
     'python', 'regex', 'yaml'
   },
-  highlight = { enable = true, additional_vim_regex_highlighting = false },
-  rainbow = { enable = true, extended_mode = true, max_file_lines = 3000 }
+  highlight = { enable = true, additional_vim_regex_highlighting = false }
 })

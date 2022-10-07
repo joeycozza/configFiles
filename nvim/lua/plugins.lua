@@ -3,7 +3,9 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin', vim.fn.expand('~/.config/nvim/plugged'))
 
 -- visual
-Plug 'morhetz/gruvbox'
+Plug 'navarasu/onedark.nvim'
+Plug 'ellisonleao/gruvbox.nvim'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
