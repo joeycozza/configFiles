@@ -1,4 +1,5 @@
 local remap = { remap = true }
+local jsonPath = require('jsonpath')
 
 local function map( mode, lhs, rhs, opts )
   local options = { remap = false }
@@ -13,6 +14,12 @@ local function smart_dd()
     return 'dd'
   end
 end
+
+local function getJsonPath()
+  return print(require('jsonpath').get())
+end
+
+map('n', '<Leader>jp', getJsonPath)
 
 map('n', 'dd', smart_dd, { expr = true })
 

@@ -81,5 +81,6 @@ Plug 'smjonas/inc-rename.nvim'
 Plug 'p00f/nvim-ts-rainbow'
 
 Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'phelipetls/jsonpath.nvim'
 
 vim.call('plug#end')
