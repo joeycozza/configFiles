@@ -12,12 +12,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 
 -- javascript/node
-Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/yajs.vim'
--- i think that tree-sitter handles all the syntax highlighting and folding capabilities needed from this plugin
--- Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
-Plug('ternjs/tern_for_vim', { ['do'] = 'npm install' })
 Plug('styled-components/vim-styled-components', {branch = 'main'})
 Plug 'leafgarland/typescript-vim'
 
@@ -32,10 +28,9 @@ Plug 'tpope/vim-fugitive'
 
 -- extend functionality
 
-Plug('scrooloose/nerdtree', { on = 'NERDTreeFind' })
+Plug 'MunifTanjim/nui.nvim'
+Plug 'nvim-neo-tree/neo-tree.nvim'
 
--- I never really use this. I want a better solution for notes
--- Plug 'vimwiki/vimwiki'
 Plug('phaazon/mind.nvim', {branch = 'v2'})
 Plug 'SirVer/ultisnips'
 
@@ -81,7 +76,6 @@ Plug 'smjonas/inc-rename.nvim'
 Plug 'p00f/nvim-ts-rainbow'
 
 Plug 'jose-elias-alvarez/null-ls.nvim'
-Plug 'phelipetls/jsonpath.nvim'
 
 Plug 'lewis6991/impatient.nvim'
 

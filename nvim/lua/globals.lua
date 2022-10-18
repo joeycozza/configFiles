@@ -25,17 +25,6 @@ g.UltiSnipsExpandTrigger = ';;'
 g.UltiSnipsJumpForwardTrigger = ';;'
 g.UltiSnipsJumpBackwardTrigger = '::'
 
-g.NERDTreeShowBookmarks = 1
-g.NERDTreeAutoDeleteBuffer = 1
-g.NERDTreeChDirMode = 0
-g.NERDTreeQuitOnOpen = 1
-g.NERDTreeMouseMode = 2
-g.NERDTreeShowHidden = 1
-g.NERDTreeKeepTreeInNewTab = 1
-g.nerdtree_tabs_open_on_gui_startup = 0
-
-g['tern#is_show_argument_hints_enabled'] = 1
-
 g.used_javascript_libs = 'underscore,chai,react'
 
 g.vim_markdown_preview_github = 1
@@ -44,3 +33,6 @@ g.vim_markdown_preview_browser = 'Google Chrome'
 g.jsx_ext_required = 0
 
 g.closetag_filenames = '*.html,*.jsx,*.js,*.tsx,*.mdx,*.md'
+
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1

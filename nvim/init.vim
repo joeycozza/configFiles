@@ -45,7 +45,6 @@ nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
 "************************************************************************************************
 
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
-let g:NERDTreeIgnore = ['\~$', '\.swp$', '^\.git$', '^\.DS_Store$']
 
 highlight! link TermCursor Cursor
 highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
@@ -81,4 +80,5 @@ lua require('user/cmp')
 lua require('user/treesitter')
 lua require('user/telescope')
 lua require('user/null-ls')
+lua require('user/neo-tree')
 lua require('inc_rename').setup()

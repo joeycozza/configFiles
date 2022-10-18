@@ -1,118 +1,106 @@
 local remap = { remap = true }
-local jsonPath = require('jsonpath')
+local keymap = require('./utils').keymap
 
-local function map( mode, lhs, rhs, opts )
-  local options = { remap = false }
-  if opts then options = vim.tbl_extend('force', options, opts) end
-  vim.keymap.set(mode, lhs, rhs, options)
-end
-
-local function smart_dd()
+keymap('n', 'dd', function()
   if vim.api.nvim_get_current_line():match('^%s*$') then
     return '"_dd'
   else
     return 'dd'
   end
-end
+end, { expr = true })
 
-local function getJsonPath()
-  return print(require('jsonpath').get())
-end
-
-map('n', '<Leader>jp', getJsonPath)
-
-map('n', 'dd', smart_dd, { expr = true })
-
-map('n', '<Leader>r', function()
+keymap('n', '<Leader>r', function()
   return ':IncRename ' .. vim.fn.expand('<cword>')
 end, { expr = true })
 
-map('n', '<Leader>ni', '<cmd>lua require(\'utils\').npmInfo()<CR>')
-map('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
+keymap('n', '<Leader>ni', '<cmd>lua require(\'utils\').npmInfo()<CR>')
+keymap('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 -- grep in the entire project
-map('n', '<Leader>tg', ':Telescope live_grep<CR>')
-map('n', '<Leader>ts', ':Telescope treesitter<CR>')
-map('n', '<Leader>tb', ':Telescope git_bcommits<CR>')
+keymap('n', '<Leader>tg', ':Telescope live_grep<CR>')
+keymap('n', '<Leader>ts', ':Telescope treesitter<CR>')
+keymap('n', '<Leader>tb', ':Telescope git_bcommits<CR>')
 -- grep in the entire project but start with the string under cursor and then include filename in the fuzzy finding
-map('n', '<Leader><Leader>tg', ':Telescope grep_string<CR>')
+keymap('n', '<Leader><Leader>tg', ':Telescope grep_string<CR>')
 
 -- add comma to end of line and put cursor back where it was
-map('n', ',,', 'm`A,<Esc>``')
+keymap('n', ',,', 'm`A,<Esc>``')
 -- remove last character from line and put cursor back where it was
-map('n', '::', 'm`$x<Esc>``')
+keymap('n', '::', 'm`$x<Esc>``')
 
 -- mode selection (or line) up or down
-map('n', '<c-j>', ':m .+1<CR>==')
-map('n', '<c-k>', ':m .-2<CR>==')
-map('i', '<c-j>', '<Esc>:m .+1<CR>==gi')
-map('i', '<c-k>', '<Esc>:m .-2<CR>==gi')
-map('v', '<c-j>', ':m \'>+1<CR>gv=gv')
-map('v', '<c-k>', ':m \'<-2<CR>gv=gv')
+keymap('n', '<c-j>', ':m .+1<CR>==')
+keymap('n', '<c-k>', ':m .-2<CR>==')
+keymap('i', '<c-j>', '<Esc>:m .+1<CR>==gi')
+keymap('i', '<c-k>', '<Esc>:m .-2<CR>==gi')
+keymap('v', '<c-j>', ':m \'>+1<CR>gv=gv')
+keymap('v', '<c-k>', ':m \'<-2<CR>gv=gv')
 
-map('n', '<Leader>d', ':bdelete<CR>')
-map('n', '<Leader><Leader>d', ':bdelete!<CR>')
-map('t', '<Leader><Leader>d', '<c-\\><c-n>:bdelete!<CR>')
+keymap('n', '<Leader>d', ':bdelete<CR>')
+keymap('n', '<Leader><Leader>d', ':bdelete!<CR>')
+keymap('t', '<Leader><Leader>d', '<c-\\><c-n>:bdelete!<CR>')
 
-map('i', 'jk', '<Esc>:w<CR>')
+keymap('i', 'jk', '<Esc>:w<CR>')
 
 -- Leader tab and Leader \ for moving between buffers (nice for my ergodox keyboard)
-map('n', '<Leader><Tab>', ':bprevious<CR>')
-map('n', '<Leader>\\', ':bnext<CR>')
+keymap('n', '<Leader><Tab>', ':bprevious<CR>')
+keymap('n', '<Leader>\\', ':bnext<CR>')
 
 -- this will replace the current word with the last thing yanked. Can be
 -- repeated without fear of overriding the last yanked thing
 -- delete into blackhole register, then paste 0 register (last yanked item)
-map('n', '<Leader>v', '"_diw"0P')
+keymap('n', '<Leader>v', '"_diw"0P')
 
 -- Fugitive remappings for ease of use
-map('n', '<Leader>gs', ':Git<CR>')
-map('n', '<Leader>gb', ':Git blame<CR>')
+keymap('n', '<Leader>gs', ':Git<CR>')
+keymap('n', '<Leader>gb', ':Git blame<CR>')
 
 -- move to next or previous gittable chunk change in file
-map('n', '<Leader>hn', '<Plug>(GitGutterNextHunk)', remap)
-map('n', '<Leader>hp', '<Plug>(GitGutterPrevHunk)', remap)
+keymap('n', '<Leader>hn', '<Plug>(GitGutterNextHunk)', remap)
+keymap('n', '<Leader>hp', '<Plug>(GitGutterPrevHunk)', remap)
 
 -- who needs EX mode? last macro with Q
-map('n', 'Q', '@@')
+keymap('n', 'Q', '@@')
 
 -- LocationList navigation
-map('n', '<Up>', ':lopen<CR>')
-map('n', '<Down>', ':lclose<CR>')
-map('n', '<Left>', ':lprev<CR>')
-map('n', '<Right>', ':lnext<CR>')
+keymap('n', '<Up>', ':lopen<CR>')
+keymap('n', '<Down>', ':lclose<CR>')
+keymap('n', '<Left>', ':lprev<CR>')
+keymap('n', '<Right>', ':lnext<CR>')
 
-map('n', '<Leader>nt', ':NERDTreeFind<CR>')
-map('n', '<Leader><Leader><Down>', ':resize -5<CR>')
-map('n', '<Leader><Leader><Up>', ':resize +5<CR>')
-map('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>')
-map('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>')
+keymap('n', '<Leader>nt', ':Neotree toggle reveal<CR>')
+keymap('n', '<Leader>ng', ':Neotree git_status float<CR>')
 
-map('n', '<Leader>p', ':lua vim.lsp.buf.format()<CR>')
-map('n', '<Leader><Leader>json',
+keymap('n', '<Leader><Leader><Down>', ':resize -5<CR>')
+keymap('n', '<Leader><Leader><Up>', ':resize +5<CR>')
+keymap('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>')
+keymap('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>')
+
+keymap('n', '<Leader>p', ':lua vim.lsp.buf.format()<CR>')
+keymap('n', '<Leader><Leader>json',
     ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:lua vim.lsp.buf.format()<CR>',
     remap)
 
 -- Help with terminal mode. Esc will now go back to normal mode
 -- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
-map('t', '<Esc>', '<C-\\><C-n>')
-map('t', '<C-v><Esc>', '<Esc>')
+keymap('t', '<Esc>', '<C-\\><C-n>')
+keymap('t', '<C-v><Esc>', '<Esc>')
 
-map('n', '<Leader>t', ':term<CR>a')
-map('n', '<Leader>tr', ':term node %<CR>')
+keymap('n', '<Leader>t', ':term<CR>a')
+keymap('n', '<Leader>tr', ':term node %<CR>')
 
 -- convenience for editing and sourcing .vimrc file
-map('n', '<Leader>ev', ':edit $MYVIMRC<CR>')
+keymap('n', '<Leader>ev', ':edit $MYVIMRC<CR>')
 
-map('x', 'iu', ':lua require"treesitter-unit".select()<CR>')
-map('x', 'au', ':lua require"treesitter-unit".select(true)<CR>')
-map('o', 'iu', ':<c-u>lua require"treesitter-unit".select()<CR>')
-map('o', 'au', ':<c-u>lua require"treesitter-unit".select(true)<CR>')
+keymap('x', 'iu', ':lua require"treesitter-unit".select()<CR>')
+keymap('x', 'au', ':lua require"treesitter-unit".select(true)<CR>')
+keymap('o', 'iu', ':<c-u>lua require"treesitter-unit".select()<CR>')
+keymap('o', 'au', ':<c-u>lua require"treesitter-unit".select(true)<CR>')
 
-map('n', 'mom', ':MindOpenMain<CR>')
-map('n', 'mop', ':MindOpenProject<CR>')
+keymap('n', 'mom', ':MindOpenMain<CR>')
+keymap('n', 'mop', ':MindOpenProject<CR>')
 
 -- jest and Jester mappings
-map('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')
-map('n', '<Leader>js', ':lua require("jester").run()<CR>')
-map('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
-map('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')
+keymap('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')
+keymap('n', '<Leader>js', ':lua require("jester").run()<CR>')
+keymap('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
+keymap('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')

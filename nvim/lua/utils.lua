@@ -1,3 +1,9 @@
+local function keymap( mode, lhs, rhs, opts )
+  local options = { remap = false }
+  if opts then options = vim.tbl_extend('force', options, opts) end
+  vim.keymap.set(mode, lhs, rhs, options)
+end
+
 local function printv(str)
   print(vim.inspect(str))
 end
@@ -49,6 +55,7 @@ end
 
 
 return {
+  keymap = keymap,
   split = split,
   printv = printv,
   splitOnSlash = splitOnSlash,
