@@ -82,5 +82,4 @@ keymap('n', '<Leader>tr', ':term node %<CR>')
 -- convenience for editing and sourcing .vimrc file
 keymap('n', '<Leader>ev', ':edit $MYVIMRC<CR>')
 
--- jest
 keymap('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')

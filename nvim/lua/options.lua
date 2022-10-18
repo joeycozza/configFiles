@@ -33,6 +33,9 @@ opt.clipboard = 'unnamed'             -- copy to system clipboard
 
 opt.fixendofline = false
 
+-- Turn off all mouse functionality
+opt.mouse = ''
+
 -----------------------------------------------------
 -- Displaying text
 -----------------------------------------------------
