@@ -1,4 +1,5 @@
 lua require('plugins')
+lua require('impatient')
 lua require('commands')
 lua require('globals')
 lua require('autocommands')

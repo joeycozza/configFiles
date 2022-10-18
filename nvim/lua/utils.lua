@@ -16,7 +16,7 @@ local function splitOnSlash(inputStr)
   return split(inputStr, '([^/]+)')
 end
 
-local function smartTruncate(opts, path)
+local function smartTruncate(_, path)
   local pathLength = string.len(path)
   local maxLength = 115
   if pathLength > maxLength then
