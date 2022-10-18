@@ -1,4 +1,5 @@
 local neotree = require('neo-tree')
+local keymap = require('../utils').keymap
 
 local config = {
   add_blank_line_at_top = false, -- Add a blank line at the top of the tree.
@@ -428,4 +429,8 @@ local config = {
     }
   }
 }
+
 neotree.setup(config)
+
+keymap('n', '<Leader>nt', ':Neotree toggle reveal<CR>')
+keymap('n', '<Leader>ng', ':Neotree git_status float<CR>')

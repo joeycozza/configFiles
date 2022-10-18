@@ -14,13 +14,7 @@ keymap('n', '<Leader>r', function()
 end, { expr = true })
 
 keymap('n', '<Leader>ni', '<cmd>lua require(\'utils\').npmInfo()<CR>')
-keymap('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
--- grep in the entire project
-keymap('n', '<Leader>tg', ':Telescope live_grep<CR>')
-keymap('n', '<Leader>ts', ':Telescope treesitter<CR>')
-keymap('n', '<Leader>tb', ':Telescope git_bcommits<CR>')
--- grep in the entire project but start with the string under cursor and then include filename in the fuzzy finding
-keymap('n', '<Leader><Leader>tg', ':Telescope grep_string<CR>')
+
 
 -- add comma to end of line and put cursor back where it was
 keymap('n', ',,', 'm`A,<Esc>``')
@@ -67,9 +61,6 @@ keymap('n', '<Down>', ':lclose<CR>')
 keymap('n', '<Left>', ':lprev<CR>')
 keymap('n', '<Right>', ':lnext<CR>')
 
-keymap('n', '<Leader>nt', ':Neotree toggle reveal<CR>')
-keymap('n', '<Leader>ng', ':Neotree git_status float<CR>')
-
 keymap('n', '<Leader><Leader><Down>', ':resize -5<CR>')
 keymap('n', '<Leader><Leader><Up>', ':resize +5<CR>')
 keymap('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>')
@@ -91,16 +82,5 @@ keymap('n', '<Leader>tr', ':term node %<CR>')
 -- convenience for editing and sourcing .vimrc file
 keymap('n', '<Leader>ev', ':edit $MYVIMRC<CR>')
 
-keymap('x', 'iu', ':lua require"treesitter-unit".select()<CR>')
-keymap('x', 'au', ':lua require"treesitter-unit".select(true)<CR>')
-keymap('o', 'iu', ':<c-u>lua require"treesitter-unit".select()<CR>')
-keymap('o', 'au', ':<c-u>lua require"treesitter-unit".select(true)<CR>')
-
-keymap('n', 'mom', ':MindOpenMain<CR>')
-keymap('n', 'mop', ':MindOpenProject<CR>')
-
--- jest and Jester mappings
+-- jest
 keymap('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')
-keymap('n', '<Leader>js', ':lua require("jester").run()<CR>')
-keymap('n', '<Leader>jf', ':lua require("jester").run_file()<CR>')
-keymap('n', '<Leader>jl', ':lua require("jester").run_last()<CR>')
