@@ -2,32 +2,11 @@ local neotree = require('neo-tree')
 local keymap = require('../utils').keymap
 
 local config = {
-  add_blank_line_at_top = false, -- Add a blank line at the top of the tree.
-  close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
-  -- popup_border_style is for input and confirmation dialogs.
-  -- Configurtaion of floating window is done in the individual source sections.
-  -- "NC" is a special style that works well with NormalNC set
-  close_floats_on_escape_key = true,
-  default_source = 'filesystem',
+  add_blank_line_at_top = true,
   enable_diagnostics = true,
   enable_git_status = true,
   enable_modified_markers = true, -- Show markers for files with unsaved changes.
-  enable_refresh_on_write = true, -- Refresh the tree when a file is written. Only used if `use_libuv_file_watcher` is false.
-  git_status_async = true,
-  -- These options are for people with VERY large git repos
-  git_status_async_options = {
-    batch_size = 1000, -- how many lines of git status results to process at a time
-    batch_delay = 10, -- delay in ms between batches. Spreads out the workload to let other processes run.
-    max_lines = 10000 -- How many lines of git status results to process. Anything after this will be dropped.
-    -- Anything before this will be used. The last items to be processed are the untracked files.
-  },
-  hide_root_node = false, -- Hide the root node.
-  retain_hidden_root_indent = false, -- IF the root node is hidden, keep the indentation anyhow.
-  -- This is needed if you use expanders because they render in the indent.
-  log_level = 'info', -- "trace", "debug", "info", "warn", "error", "fatal"
-  log_to_file = false, -- true, false, "/path/to/file.log", use :NeoTreeLogs to show the file
-  open_files_in_last_window = true, -- false = open files in top left window
-  popup_border_style = 'NC', -- "double", "none", "rounded", "shadow", "single" or "solid"
+  popup_border_style = 'double', -- "double", "none", "rounded", "shadow", "single" or "solid"
   resize_timer_interval = 500, -- in ms, needed for containers to redraw right aligned and faded content
   -- set to -1 to disable the resize timer entirely
   --                           -- NOTE: this will speed up to 50 ms for 1 second following a resize
@@ -35,123 +14,14 @@ local config = {
   sort_function = nil, -- uses a custom function for sorting files and directories in the tree
   use_popups_for_input = true, -- If false, inputs will use vim.ui.input() instead of custom floats.
   use_default_mappings = true,
-  -- source_selector provides clickable tabs to switch between sources.
-  source_selector = {
-    winbar = false, -- toggle to show selector on winbar
-    statusline = false, -- toggle to show selector on statusline
-    show_scrolled_off_parent_node = false, -- this will replace the tabs with the parent path
-    -- of the top visible node when scrolled down.
-    tab_labels = { -- falls back to source_name if nil
-      filesystem = '  Files ',
-      buffers = '  Buffers ',
-      git_status = '  Git ',
-      diagnostics = ' 裂Diagnostics '
-    },
-    content_layout = 'start', -- only with `tabs_layout` = "equal", "focus"
-    --                start  : |/ 裡 bufname     \/...
-    --                end    : |/     裡 bufname \/...
-    --                center : |/   裡 bufname   \/...
-    tabs_layout = 'equal', -- start, end, center, equal, focus
-    --             start  : |/  a  \/  b  \/  c  \            |
-    --             end    : |            /  a  \/  b  \/  c  \|
-    --             center : |      /  a  \/  b  \/  c  \      |
-    --             equal  : |/    a    \/    b    \/    c    \|
-    --             active : |/  focused tab    \/  b  \/  c  \|
-    truncation_character = '…', -- character to use when truncating the tab label
-    tabs_min_width = nil, -- nil | int: if int padding is added based on `content_layout`
-    tabs_max_width = nil, -- this will truncate text even if `text_trunc_to_fit = false`
-    padding = 0, -- can be int or table
-    -- padding = { left = 2, right = 0 },
-    -- separator = "▕", -- can be string or table, see below
-    separator = { left = '▏', right = '▕' },
-    -- separator = { left = "/", right = "\\", override = nil },     -- |/  a  \/  b  \/  c  \...
-    -- separator = { left = "/", right = "\\", override = "right" }, -- |/  a  \  b  \  c  \...
-    -- separator = { left = "/", right = "\\", override = "left" },  -- |/  a  /  b  /  c  /...
-    -- separator = { left = "/", right = "\\", override = "active" },-- |/  a  / b:active \  c  \...
-    -- separator = "|",                                              -- ||  a  |  b  |  c  |...
-    separator_active = nil, -- set separators around the active tab. nil falls back to `source_selector.separator`
-    show_separator_on_edge = false,
-    --                       true  : |/    a    \/    b    \/    c    \|
-    --                       false : |     a    \/    b    \/    c     |
-    highlight_tab = 'NeoTreeTabInactive',
-    highlight_tab_active = 'NeoTreeTabActive',
-    highlight_background = 'NeoTreeTabInactive',
-    highlight_separator = 'NeoTreeTabSeparatorInactive',
-    highlight_separator_active = 'NeoTreeTabSeparatorActive'
+  event_handlers = {
+    {
+      event = 'file_opened',
+      handler = function()
+        require('neo-tree').close_all()
+      end
+    }
   },
-  --
-  -- event_handlers = {
-  --  {
-  --    event = "before_render",
-  --    handler = function (state)
-  --      -- add something to the state that can be used by custom components
-  --    end
-  --  },
-  --  {
-  --    event = "file_opened",
-  --    handler = function(file_path)
-  --      --auto close
-  --      require("neo-tree").close_all()
-  --    end
-  --  },
-  --  {
-  --    event = "file_opened",
-  --    handler = function(file_path)
-  --      --clear search after opening a file
-  --      require("neo-tree.sources.filesystem").reset_search()
-  --    end
-  --  },
-  --  {
-  --    event = "file_renamed",
-  --    handler = function(args)
-  --      -- fix references to file
-  --      print(args.source, " renamed to ", args.destination)
-  --    end
-  --  },
-  --  {
-  --    event = "file_moved",
-  --    handler = function(args)
-  --      -- fix references to file
-  --      print(args.source, " moved to ", args.destination)
-  --    end
-  --  },
-  --  {
-  --    event = "neo_tree_buffer_enter",
-  --    handler = function()
-  --      vim.cmd 'highlight! Cursor blend=100'
-  --    end
-  --  },
-  --  {
-  --    event = "neo_tree_buffer_leave",
-  --    handler = function()
-  --      vim.cmd 'highlight! Cursor guibg=#5f87af blend=0'
-  --    end
-  --  },
-  -- {
-  --   event = "neo_tree_window_before_open",
-  --   handler = function(args)
-  --     print("neo_tree_window_before_open", vim.inspect(args))
-  --   end
-  -- },
-  -- {
-  --   event = "neo_tree_window_after_open",
-  --   handler = function(args)
-  --     vim.cmd("wincmd =")
-  --   end
-  -- },
-  -- {
-  --   event = "neo_tree_window_before_close",
-  --   handler = function(args)
-  --     print("neo_tree_window_before_close", vim.inspect(args))
-  --   end
-  -- },
-  -- {
-  --   event = "neo_tree_window_after_close",
-  --   handler = function(args)
-  --     vim.cmd("wincmd =")
-  --   end
-  -- }
-  -- },
   default_component_configs = {
     container = { enable_character_fade = true, width = '100%', right_padding = 0 },
     -- diagnostics = {
@@ -198,7 +68,7 @@ local config = {
         -- Change type
         added = '✚', -- NOTE: you can set any of these to an empty string to not show them
         deleted = '✖',
-        modified = '',
+        modified = '+',
         renamed = '',
         -- Status type
         untracked = '',
@@ -338,10 +208,6 @@ local config = {
       hide_dotfiles = true,
       hide_gitignored = true,
       hide_hidden = true, -- only works on Windows for hidden files/directories
-      hide_by_name = {
-        '.DS_Store', 'thumbs.db'
-        -- "node_modules",
-      },
       hide_by_pattern = { -- uses glob style patterns
         -- "*.meta",
         -- "*/src/*/tsconfig.json"
@@ -350,7 +216,7 @@ local config = {
         -- ".gitignored",
       },
       never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
-        -- ".DS_Store",
+        '.DS_Store', 'Session.vim'
         -- "thumbs.db"
       },
       never_show_by_pattern = { -- uses glob style patterns
@@ -394,13 +260,11 @@ local config = {
     search_limit = 50, -- max number of search results when using filters
     follow_current_file = false, -- This will find and focus the file in the active buffer every time
     -- the current file is changed while the tree is open.
-    hijack_netrw_behavior = 'open_default', -- netrw disabled, opening a directory opens neo-tree
+    hijack_netrw_behavior = 'open_default' -- netrw disabled, opening a directory opens neo-tree
     -- in whatever position is specified in window.position
     -- "open_current",-- netrw disabled, opening a directory opens within the
     -- window like netrw would, regardless of window.position
     -- "disabled",    -- netrw left alone, neo-tree does not handle opening dirs
-    use_libuv_file_watcher = false -- This will use the OS level file watchers to detect changes
-    -- instead of relying on nvim autocmd events.
   },
   buffers = {
     bind_to_cwd = true,
