@@ -23,9 +23,10 @@ telescope.setup({
 telescope.load_extension('fzf')
 
 keymap('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
--- grep in the entire project
-keymap('n', '<Leader>tg', ':Telescope live_grep<CR>')
 keymap('n', '<Leader>ts', ':Telescope treesitter<CR>')
 keymap('n', '<Leader>tb', ':Telescope git_bcommits<CR>')
+keymap('n', '<Leader>td', ':Telescope diagnostics<CR>')
+-- grep in the entire project
+keymap('n', '<Leader>tg', ':Telescope live_grep<CR>')
 -- grep in the entire project but start with the string under cursor and then include filename in the fuzzy finding
 keymap('n', '<Leader><Leader>tg', ':Telescope grep_string<CR>')

@@ -15,7 +15,6 @@ end, { expr = true })
 
 keymap('n', '<Leader>ni', '<cmd>lua require(\'utils\').npmInfo()<CR>')
 
-
 -- add comma to end of line and put cursor back where it was
 keymap('n', ',,', 'm`A,<Esc>``')
 -- remove last character from line and put cursor back where it was
@@ -45,7 +44,6 @@ keymap('n', '<Leader>\\', ':bnext<CR>')
 keymap('n', '<Leader>v', '"_diw"0P')
 
 -- Fugitive remappings for ease of use
-keymap('n', '<Leader>gs', ':Git<CR>')
 keymap('n', '<Leader>gb', ':Git blame<CR>')
 
 -- move to next or previous gittable chunk change in file
@@ -68,8 +66,7 @@ keymap('n', '<Leader><Leader><Left>', ':vertical resize -5<CR>')
 
 keymap('n', '<Leader>p', ':lua vim.lsp.buf.format()<CR>')
 keymap('n', '<Leader><Leader>json',
-    ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR>:lua vim.lsp.buf.format()<CR>',
-    remap)
+       ':enew<CR>:file scratchTrash.json<CR>p:set filetype=json<CR><Leader>p', remap)
 
 -- Help with terminal mode. Esc will now go back to normal mode
 -- if you NEED Esc to go to the terminal, do Ctrl-v and Esc, Verbatim Escape
