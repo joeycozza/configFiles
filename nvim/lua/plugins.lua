@@ -51,6 +51,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug('nvim-telescope/telescope-fzf-native.nvim', {['do'] = 'make'})
 
 Plug 'numToStr/FTerm.nvim'
+
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
 Plug 'David-Kunz/treesitter-unit'
 
@@ -61,6 +62,8 @@ Plug 'dstein64/vim-startuptime'
 Plug 'David-Kunz/jester'
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'onsails/lspkind-nvim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -69,13 +72,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
-Plug 'onsails/lspkind-nvim'
-
 Plug 'smjonas/inc-rename.nvim'
-
-Plug 'p00f/nvim-ts-rainbow'
-
-Plug 'jose-elias-alvarez/null-ls.nvim'
 
 Plug 'lewis6991/impatient.nvim'
 
