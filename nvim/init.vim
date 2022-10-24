@@ -1,10 +1,10 @@
 lua require('plugins')
 lua require('impatient')
-lua require('commands')
 lua require('globals')
 lua require('autocommands')
 lua require('options')
 lua require('keymaps')
+lua require('onedark').load()
 
 filetype plugin on
 
