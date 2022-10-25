@@ -4,7 +4,6 @@ vim.call('plug#begin', vim.fn.expand('~/.config/nvim/plugged'))
 
 -- visual
 Plug 'navarasu/onedark.nvim'
-Plug 'ellisonleao/gruvbox.nvim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -42,7 +41,9 @@ Plug 'joeycozza/vim-obsession'
 
 Plug 'wellle/targets.vim'
 Plug 'yuttie/comfortable-motion.vim'
-Plug 'easymotion/vim-easymotion'
+Plug 'ggandor/leap.nvim'
+Plug 'ggandor/flit.nvim'
+-- Plug 'easymotion/vim-easymotion'
 
 Plug('JamshedVesuna/vim-markdown-preview', { ['for'] = 'markdown' })
 

@@ -37,17 +37,11 @@ vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Past
 
 nnoremap <Leader><Leader>hide :set conceallevel=0<CR>
 
-" S to split under cursor, remove trailing whitespace on first line, and auto indent second line
-nnoremap S :keeppatterns substitute/\s*\%#\s*/\r/e <bar> normal! ==<CR>
-
 "************************************************************************************************
 "**************END PLUGIN SETTINGS***************************************************************
 "************************************************************************************************
 
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
-
-highlight! link TermCursor Cursor
-highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
 
 " Improved Vim fold-text
 function! FoldText()
@@ -81,4 +75,5 @@ lua require('user/treesitter')
 lua require('user/telescope')
 lua require('user/null-ls')
 lua require('user/neo-tree')
+lua require('user/leap')
 lua require('inc_rename').setup()
