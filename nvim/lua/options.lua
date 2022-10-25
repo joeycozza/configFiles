@@ -22,6 +22,7 @@ opt.foldenable = false             -- when opening a file, dont start with any f
 opt.foldnestmax = 10
 opt.foldlevel = 10
 
+opt.timeoutlen = 500
 opt.updatetime = 250
 opt.swapfile = false
 
