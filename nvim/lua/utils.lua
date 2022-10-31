@@ -8,6 +8,10 @@ local function printv(str)
   print(vim.inspect(str))
 end
 
+local function printTable(str)
+  printv(vim.inspect(str))
+end
+
 -- Split on / character:
 --   local parts = utils.split(path, '([^/]+)')
 local function split(inputStr, pattern)
@@ -58,6 +62,7 @@ return {
   keymap = keymap,
   split = split,
   printv = printv,
+  printTable = printTable,
   splitOnSlash = splitOnSlash,
   smartTruncate = smartTruncate,
   npmInfo = npmInfo,

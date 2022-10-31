@@ -4,7 +4,6 @@ lua require('globals')
 lua require('autocommands')
 lua require('options')
 lua require('keymaps')
-lua require('onedark').load()
 
 filetype plugin on
 
@@ -66,6 +65,7 @@ function! FoldText()
   return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
 endfunction
 
+lua require('user/onedark')
 lua require('user/nrpattern')
 lua require('user/mind')
 lua require('user/jester')

@@ -1,0 +1,1042 @@
+
+
+SpecialKey
+EndOfBuffer
+TermCursor
+NonText
+Directory
+ErrorMsg
+IncSearch
+Search
+MoreMsg
+ModeMsg
+LineNr LineNrAbove LineNrBelow
+CursorLineNr
+Question
+StatusLine MsgSeparator
+StatusLineNC
+VertSplit WinSeparator
+Title
+Visual
+WarningMsg
+WildMenu
+Folded
+FoldColumn CursorLineFold
+DiffAdd
+DiffChange
+DiffDelete
+DiffText
+SignColumn CursorLineSign
+Conceal
+SpellBad
+SpellCap
+SpellRare
+SpellLocal
+Pmenu
+PmenuSel
+PmenuSbar
+PmenuThumb
+TabLine
+TabLineSel
+TabLineFill
+CursorColumn
+CursorLine
+ColorColumn
+QuickFixLine
+Whitespace
+NormalFloat
+FloatBorder
+WinBar WinBarNC
+Cursor
+lCursor
+Normal
+Substitute
+FloatShadow
+FloatShadowThrough
+RedrawDebugNormal
+RedrawDebugClear
+RedrawDebugComposed
+RedrawDebugRecompose
+Error
+Todo Todo
+String
+Constant
+Character
+Number
+Boolean
+Float
+Function
+Identifier
+Conditional
+Statement
+Repeat
+Label
+Operator
+Keyword
+Exception
+Include
+PreProc
+Define Define
+Macro
+PreCondit
+StorageClass
+Type
+Structure
+Typedef
+Tag
+Special
+SpecialChar
+Delimiter
+SpecialComment
+Debug Debug
+DiagnosticError DiagnosticFloatingError DiagnosticSignError
+DiagnosticWarn DiagnosticFloatingWarn DiagnosticSignWarn
+DiagnosticInfo DiagnosticFloatingInfo DiagnosticSignInfo
+DiagnosticHint DiagnosticFloatingHint DiagnosticSignHint
+DiagnosticUnderlineError
+DiagnosticUnderlineWarn
+DiagnosticUnderlineInfo
+DiagnosticUnderlineHint
+DiagnosticVirtualTextError
+DiagnosticVirtualTextWarn
+DiagnosticVirtualTextInfo
+DiagnosticVirtualTextHint
+@text
+@text.underline
+Underlined
+@comment
+Comment
+@constant
+@constant.builtin
+@constant.macro
+@string
+@string.escape
+@character SpecialChar
+@number
+@boolean
+@float
+@function
+@function.builtin
+@function.macro Macro
+@parameter
+@method
+@field
+@property
+@constructor
+@conditional
+@repeat
+@label
+@operator
+@keyword
+@exception
+@type
+@include
+MatchParen
+Ignore
+NvimInternalError
+StatusLineTermNC
+StatusLineTerm
+Terminal
+DiffIndexLine
+DiffFile
+DiffRemoved
+DiffAdded
+ToolbarButton
+debugBreakpoint
+CursorIM
+iCursor
+vCursor
+ToolbarLine
+debugPC
+VisualNOS
+@error
+@attribute
+@annotation
+@variable
+@variable.builtin
+@type.builtin
+@danger
+@warning
+@note
+@text.enviroment
+@text.enviroment.name
+@text.reference
+@text.math
+@text.uri
+@text.literal
+@text.title
+@text.strike
+@text.emphasis
+@text.strong
+@tag
+@tag.delimiter
+@symbol
+@string.regex
+@punctuation.special
+@punctuation.bracket
+@punctuation.delimiter Delimiter
+@parameter.reference
+@none
+@namespace
+@keyword.operator
+@keyword.function
+phpHereDoc
+phpNumber
+phpBoolean
+phpIdentifier
+phpVarSelector
+phpMemberSelector
+phpOperator
+phpStructure
+phpMethods
+phpFunctions
+phpRegion
+phpFCKeyword
+phpSCKeyword
+phpNowDoc
+vimMap
+vimSetEqual
+vimOption
+vimCommentTitle
+vimVar
+vimMapRhs
+vimMapLhs
+vimNotation
+vimMapModKey
+markdownCodeDelimiter
+markdownCodeBlock
+markdownCode
+markdownBoldDelimiter
+markdownBold
+markdownBlockquote
+markdownUrlTitleDelimiter
+markdownUrlDelimiter
+markdownUrl
+markdownRule
+markdownOrderedListMarker
+markdownListMarker
+markdownLinkTextDelimiter
+markdownLinkText
+markdownLinkDelimiter
+markdownItalicDelimiter
+markdownItalic
+markdownIdDeclaration
+markdownId
+markdownHeadingRule
+markdownHeadingDelimiter
+markdownH6
+markdownH5
+markdownH4
+markdownH3
+markdownH2
+markdownH1
+cppTSConstant
+cppTSInclude
+cppStatement
+cppTSOperator
+cppTSConstMacro
+texPgfType
+texCmdPackage
+texCmdPart
+texCmd
+texMathOper
+texMathDelim
+texMathDelimZone
+texMathZoneXX
+texMathZoneX
+latexTSMath
+latexTSType
+latexTSTitle
+texEnvArgName
+texCmdEnv
+latexTSEnvironmentName
+latexTSEnvironment
+latexTSFuncMacro
+latexTSInclude
+scalaTypeOperator
+scalaInterpolation
+scalaInterpolationBoundary
+scalaNameDefinition
+scalaKeywordModifier
+scalaOperator
+cTypedef
+cStorageClass
+cInclude
+cTSOperator
+cTSConstMacro
+cTSConstant
+cTSInclude
+cDefine
+NeoTreeSymbolicLinkTarget
+NeoTreeIndentMarker
+NeoTreeGitUntracked
+NeoTreeGitConflict
+NeoTreeGitModified
+NeoTreeGitDeleted
+NeoTreeGitAdded
+NeoTreeRootName
+NeoTreeEndOfBuffer
+NeoTreeWinSeparator
+NeoTreeVertSplit
+NeoTreeNormalNC
+NeoTreeNormal
+CmpItemKindConstructor
+CmpItemKindUnit
+CmpItemKindColor
+CmpItemKindTypeParameter
+CmpItemKindClass
+CmpItemKindText
+CmpItemKindArray
+CmpItemKindStruct
+CmpItemKindDefault
+CmpItemKindSnippet
+CmpItemKindFile
+CmpItemKindReference
+CmpItemKindModule
+CmpItemKindProperty
+CmpItemKindNumber
+CmpItemKindKeyword
+CmpItemMenu
+CmpItemKindObject
+CmpItemAbbrMatch
+CmpItemAbbrDeprecated
+CmpItemKindNull
+CmpItemAbbr
+CmpItemKindNamespace
+CmpItemKindConstant
+CmpItemKindMethod
+CmpItemKindKey
+CmpItemKindInterface
+CmpItemKindFolder
+CmpItemKindBoolean
+CmpItemKindField
+CmpItemKindOperator
+CmpItemKindEnum
+CmpItemKindEvent
+CmpItemKindFunction
+CmpItemKindPackage
+CmpItemKindEnumMember
+CmpItemKindVariable
+CmpItemKind
+CmpItemKindString
+CmpItemKindValue
+CmpItemAbbrMatchFuzzy
+DashboardHeader
+DashboardShortCut
+DashboardFooter
+DashboardCenter
+HopNextKey
+HopUnmatched
+HopNextKey2
+HopNextKey1
+GitSignsDeleteNr
+GitSignsDeleteLn
+GitSignsDelete
+GitSignsChangeNr
+GitSignsChangeLn
+GitSignsChange
+GitSignsAddNr
+GitSignsAddLn
+GitSignsAdd
+LspDiagnosticsDefaultHint
+LspDiagnosticsDefaultError
+LspCodeLensSeparator
+LspCodeLens
+LspReferenceRead
+LspReferenceWrite
+LspReferenceText
+LspCxxHlSkippedRegionBeginEnd
+LspCxxHlSkippedRegion
+LspCxxHlGroupNamespace
+LspCxxHlGroupMemberVariable
+LspCxxHlGroupEnumConstant
+LspDiagnosticsVirtualTextHint
+LspDiagnosticsVirtualTextInformation
+LspDiagnosticsVirtualTextWarning
+LspDiagnosticsVirtualTextError
+LspDiagnosticsUnderlineWarning
+LspDiagnosticsUnderlineInformation
+LspDiagnosticsUnderlineHint
+LspDiagnosticsUnderlineError
+LspDiagnosticsDefaultWarning
+LspDiagnosticsDefaultInformation
+BufferCurrent
+BufferVisibleMod
+BufferVisible
+BufferInactiveMod
+BufferCurrentSign
+BufferCurrentMod
+BufferVisibleIndex
+BufferVisibleTarget
+BufferVisibleSign
+WhichKeyDesc
+WhichKey
+WhichKeySeperator
+WhichKeyGroup
+ALEErrorSign
+ALEWarningSign
+ALEInfoSign
+MiniJump
+MiniIndentscopePrefix
+MiniIndentscopeSymbol
+MiniCursorwordCurrent
+MiniCursorword
+MiniCompletionActiveParameter
+MiniTestFail
+MiniTestEmphasis
+MiniTablineVisible
+MiniTablineTabpagesection
+MiniTablineModifiedVisible
+MiniTablineModifiedHidden
+MiniTablineModifiedCurrent
+MiniTablineHidden
+MiniTablineFill
+MiniTablineCurrent
+MiniSurround
+MiniStatuslineModeVisual
+MiniStatuslineModeReplace
+MiniStatuslineModeOther
+MiniStatuslineModeNormal
+MiniStatuslineModeInsert
+MiniStatuslineModeCommand
+MiniStatuslineInactive
+MiniStatuslineFilename
+MiniStatuslineFileinfo
+MiniStatuslineDevinfo
+MiniStarterQuery
+MiniStarterSection
+MiniStarterItemPrefix
+MiniStarterItemBullet
+MiniStarterItem
+MiniStarterInactive
+MiniStarterHeader
+MiniStarterFooter
+MiniStarterCurrent
+MiniJump2dSpot
+MiniTrailspace
+MiniTestPass
+CocInfoSign
+CocHintSign
+CocErrorSign
+CocWarningSign
+GitGutterAdd
+GitGutterDelete
+GitGutterChange
+NavicIconsValue
+NavicIconsConstructor
+NavicIconsUnit
+NavicIconsColor
+NavicIconsTypeParameter
+NavicIconsClass
+NavicIconsText
+NavicIconsArray
+NavicIconsStruct
+NavicIconsDefault
+NavicIconsSnippet
+NavicIconsFile
+NavicIconsReference
+NavicIconsModule
+NavicIconsProperty
+NavicIconsNumber
+NavicIconsKeyword
+NavicIconsPackage
+NavicIconsObject
+NavicIconsEnum
+NavicSeparator
+NavicText
+NavicIconsNamespace
+NavicIconsConstant
+NavicIconsMethod
+NavicIconsKey
+NavicIconsInterface
+NavicIconsFolder
+NavicIconsBoolean
+NavicIconsField
+NavicIconsOperator
+NavicIconsEvent
+NavicIconsFunction
+NavicIconsEnumMember
+NavicIconsVariable
+NavicIconsNull
+NavicIconsString
+NvimTreeNormal
+NvimTreeFolderName
+NvimTreeSymlink
+NvimTreeImageFile
+NvimTreeIndentMarker
+NvimTreeSpecialFile
+NvimTreeGitDeleted
+NvimTreeGitNew
+NvimTreeGitDirty
+NvimTreeRootFolder
+NvimTreeEndOfBuffer
+NvimTreeVertSplit
+DiffviewNormal
+DiffviewFilePanelFileName
+DiffviewFilePanelCounter
+DiffviewFilePanelTitle
+DiffviewStatusBroken
+DiffviewStatusDeleted
+DiffviewStatusUnknown
+DiffviewStatusUnmerged
+DiffviewStatusTypeChange
+DiffviewStatusCopied
+DiffviewStatusRenamed
+DiffviewStatusModified
+DiffviewStatusUntracked
+DiffviewStatusAdded
+DiffviewFilePanelDeletions
+DiffviewFilePanelInsertions
+DiffviewFilePanelPath
+DiffviewFilePanelRootPath
+DiffviewEndOfBuffer
+DiffviewStatusLineNC
+DiffviewStatusLine
+DiffviewSignColumn
+DiffviewVertSplit
+DiffviewCursorLine
+AerialConstructorIcon
+AerialUnitIcon
+AerialColorIcon
+AerialTypeParameterIcon
+AerialClassIcon
+AerialTextIcon
+AerialArrayIcon
+AerialStructIcon
+AerialDefaultIcon
+AerialSnippetIcon
+AerialFileIcon
+AerialReferenceIcon
+AerialModuleIcon
+AerialPropertyIcon
+AerialNumberIcon
+AerialKeywordIcon
+AerialPackageIcon
+AerialObjectIcon
+AerialEnumIcon
+AerialNullIcon
+AerialLine
+FocusedSymbol
+AerialConstantIcon
+AerialMethodIcon
+AerialKeyIcon
+AerialInterfaceIcon
+AerialFolderIcon
+AerialBooleanIcon
+AerialFieldIcon
+AerialOperatorIcon
+AerialEventIcon
+AerialFunctionIcon
+AerialEnumMemberIcon
+AerialVariableIcon
+AerialNamespaceIcon
+AerialStringIcon
+AerialValueIcon
+rainbowcol5
+rainbowcol4
+rainbowcol3
+rainbowcol2
+rainbowcol1
+rainbowcol7
+rainbowcol6
+NeotestDir
+NeotestAdapterName
+NeotestUnknown
+NeotestTest
+NeotestTarget
+NeotestSkipped
+NeotestWinSelect
+NeotestRunning
+NeotestPassed
+NeotestNamespace
+NeotestMarked
+NeotestIndent
+NeotestFocused
+NeotestFile
+NeotestFailed
+NeotestExpandMarker
+TelescopeSelection
+TelescopePromptPrefix
+TelescopeMatching
+TelescopePreviewBorder
+TelescopeResultsBorder
+TelescopePromptBorder
+TelescopeBorder
+TelescopeSelectionCaret
+NeoTreeFloatTitle
+NeoTreeTitleBar
+NeoTreeDimText
+NeoTreeMessage
+NeoTreeFadeText1
+NeoTreeFadeText2
+NeoTreeDotfile
+NeoTreeFileNameOpened
+NeoTreeModified
+NeoTreeTabActive
+NeoTreeTabInactive
+NeoTreeTabSeparatorActive
+NeoTreeTabSeparatorInactive
+GitGutterAddInvisible
+GitGutterChangeInvisible
+GitGutterDeleteInvisible
+GitGutterAddIntraLine
+GitGutterDeleteIntraLine
+diffChanged
+CmpItemAbbrDefault
+CmpItemAbbrDeprecatedDefault
+CmpItemAbbrMatchDefault
+CmpItemAbbrMatchFuzzyDefault
+CmpItemMenuDefault
+airline_x_inactive
+airline_x_inactive_bold
+airline_x_inactive_red
+airline_y_inactive
+airline_y_inactive_bold
+airline_y_inactive_red
+airline_z_inactive
+airline_z_inactive_bold
+airline_z_inactive_red
+airline_term_inactive
+airline_term_inactive_bold
+airline_term_inactive_red
+airline_error_inactive
+airline_error_inactive_bold
+airline_error_inactive_red
+airline_a_inactive
+airline_a_inactive_bold
+airline_a_inactive_red
+airline_b_inactive
+airline_b_inactive_bold
+airline_b_inactive_red
+airline_c_inactive
+airline_c_inactive_bold
+airline_c_inactive_red
+airline_warning_inactive
+airline_warning_inactive_bold
+airline_warning_inactive_red
+airline_x
+airline_x_bold
+airline_x_red
+airline_y
+airline_y_bold
+airline_y_red
+airline_z
+airline_z_bold
+airline_z_red
+airline_term
+airline_term_bold
+airline_term_red
+airline_error
+airline_error_bold
+airline_error_red
+airline_a
+airline_a_bold
+airline_a_red
+airline_b
+airline_b_bold
+airline_b_red
+airline_c
+airline_c_bold
+airline_c_red
+airline_warning
+airline_warning_bold
+airline_warning_red
+airline_tablabel
+airline_tab
+airline_tabsel
+airline_tabtype
+airline_tabfill
+airline_tabmod
+airline_tabmod_unsel
+airline_tabhid
+airline_tablabel_right
+airline_tab_right
+airline_tabsel_right
+airline_tabmod_right
+airline_tabhid_right
+airline_tabmod_unsel_right
+airline_a_to_airline_b
+airline_b_to_airline_c
+airline_c_to_airline_x
+airline_x_to_airline_y
+airline_y_to_airline_z
+airline_z_to_airline_warning
+airline_warning_to_airline_error
+airline_c1_inactive
+airline_tabfill_to_airline_tabfill
+airline_tabfill_to_airline_tablabel_right
+airline_tabhid_to_airline_tabsel
+airline_tabsel_to_airline_tabhid
+airline_c9_inactive
+airline_tabhid_to_airline_tabmod
+airline_tabmod_to_airline_tabhid
+airline_c8_inactive
+airline_c8_to_airline_x
+airline_tabhid_to_airline_tab
+airline_tab_to_airline_tabhid
+airline_tabsel_to_airline_tabfill
+airline_c91_inactive
+airline_c8_inactive_bold
+airline_c8_inactive_red
+airline_tabhid_to_airline_tab_inactive
+airline_tabsel_to_airline_tabfill_inactive
+airline_tabfill_to_airline_tabfill_inactive
+airline_c_to_airline_x_inactive
+airline_y_to_airline_z_inactive
+airline_warning_to_airline_error_inactive
+airline_tabhid_to_airline_tabsel_inactive
+airline_z_to_airline_warning_inactive
+airline_a_to_airline_b_inactive
+airline_tab_to_airline_tabhid_inactive
+airline_b_to_airline_c_inactive
+airline_tabfill_to_airline_tablabel_right_inactive
+airline_tabhid_to_airline_tabmod_inactive
+airline_x_to_airline_y_inactive
+airline_tabsel_to_airline_tabhid_inactive
+airline_tabmod_to_airline_tabhid_inactive
+airline_c8_to_airline_x_inactive
+airline_c8_to_airline_x_bold
+airline_c8_to_airline_x_red
+airline_c8_to_airline_x_inactive_inactive
+airline_c8_to_airline_x_inactive_inactive_bold
+airline_c8_to_airline_x_inactive_inactive_red
+@type.definition links to
+@storageclass  links to StorageClass
+@structure     links to Structure
+@preproc       links to PreProc
+Operator	links to NvimAssignment
+NvimAssignment	links to NvimPlainAssignment
+NvimAssignment	links to NvimAugmentedAssignment
+NvimAugmentedAssignment	links to NvimAssignmentWithAddition
+NvimAugmentedAssignment	links to NvimAssignmentWithSubtraction
+NvimAugmentedAssignment	links to NvimAssignmentWithConcatenation
+Operator	links to NvimOperator
+NvimOperator	links to NvimUnaryOperator
+NvimUnaryOperator	links to NvimUnaryPlus
+NvimUnaryOperator	links to NvimUnaryMinus
+NvimUnaryOperator	links to NvimNot
+NvimOperator	links to NvimBinaryOperator
+NvimBinaryOperator	links to NvimComparison
+NvimComparison	links to NvimComparisonModifier
+NvimBinaryOperator	links to NvimBinaryPlus
+NvimBinaryOperator	links to NvimBinaryMinus
+NvimBinaryOperator	links to NvimConcat
+NvimConcat	links to NvimConcatOrSubscript
+NvimBinaryOperator	links to NvimOr
+NvimBinaryOperator	links to NvimAnd
+NvimBinaryOperator	links to NvimMultiplication
+NvimBinaryOperator	links to NvimDivision
+NvimBinaryOperator	links to NvimMod
+NvimOperator	links to NvimTernary
+NvimTernary	links to NvimTernaryColon
+Delimiter	links to NvimParenthesis
+NvimParenthesis	links to NvimLambda
+NvimParenthesis	links to NvimNestingParenthesis
+NvimParenthesis	links to NvimCallingParenthesis
+NvimParenthesis	links to NvimSubscript
+NvimSubscript	links to NvimSubscriptBracket
+NvimSubscript	links to NvimSubscriptColon
+NvimSubscript	links to NvimCurly
+NvimParenthesis	links to NvimContainer
+NvimContainer	links to NvimDict
+NvimContainer	links to NvimList
+Identifier	links to NvimIdentifier
+NvimIdentifier	links to NvimIdentifierScope
+NvimIdentifier	links to NvimIdentifierScopeDelimiter
+NvimIdentifier	links to NvimIdentifierName
+NvimIdentifier	links to NvimIdentifierKey
+Delimiter	links to NvimColon
+Delimiter	links to NvimComma
+Delimiter	links to NvimArrow
+SpecialChar	links to NvimRegister
+Number	links to NvimNumber
+NvimNumber	links to NvimFloat
+Type	links to NvimNumberPrefix
+Type	links to NvimOptionSigil
+NvimIdentifier	links to NvimOptionName
+NvimIdentifierScope	links to NvimOptionScope
+NvimIdentifierScopeDelimiter	links to NvimOptionScopeDelimiter
+NvimOptionSigil	links to NvimEnvironmentSigil
+NvimIdentifier	links to NvimEnvironmentName
+String	links to NvimString
+NvimString	links to NvimStringBody
+NvimString	links to NvimStringQuote
+SpecialChar	links to NvimStringSpecial
+NvimStringQuote	links to NvimSingleQuote
+NvimStringBody	links to NvimSingleQuotedBody
+NvimStringSpecial	links to NvimSingleQuotedQuote
+NvimStringQuote	links to NvimDoubleQuote
+NvimStringBody	links to NvimDoubleQuotedBody
+NvimStringSpecial	links to NvimDoubleQuotedEscape
+NvimInternalError	links to NvimFigureBrace
+NvimInternalError	links to NvimSingleQuotedUnknownEscape
+Normal	links to NvimSpacing
+NvimInternalError	links to NvimInvalidSingleQuotedUnknownEscape
+Error	links to NvimInvalid
+NvimInvalid	links to NvimInvalidAssignment
+NvimInvalidAssignment	links to NvimInvalidPlainAssignment
+NvimInvalidAssignment	links to NvimInvalidAugmentedAssignment
+NvimInvalidAugmentedAssignment	links to NvimInvalidAssignmentWithAddition
+NvimInvalidAugmentedAssignment	links to NvimInvalidAssignmentWithSubtraction
+NvimInvalidAugmentedAssignment	links to NvimInvalidAssignmentWithConcatenation
+NvimInvalid	links to NvimInvalidOperator
+NvimInvalidOperator	links to NvimInvalidUnaryOperator
+NvimInvalidUnaryOperator	links to NvimInvalidUnaryPlus
+NvimInvalidUnaryOperator	links to NvimInvalidUnaryMinus
+NvimInvalidUnaryOperator	links to NvimInvalidNot
+NvimInvalidOperator	links to NvimInvalidBinaryOperator
+NvimInvalidBinaryOperator	links to NvimInvalidComparison
+NvimInvalidComparison	links to NvimInvalidComparisonModifier
+NvimInvalidBinaryOperator	links to NvimInvalidBinaryPlus
+NvimInvalidBinaryOperator	links to NvimInvalidBinaryMinus
+NvimInvalidBinaryOperator	links to NvimInvalidConcat
+NvimInvalidConcat	links to NvimInvalidConcatOrSubscript
+NvimInvalidBinaryOperator	links to NvimInvalidOr
+NvimInvalidBinaryOperator	links to NvimInvalidAnd
+NvimInvalidBinaryOperator	links to NvimInvalidMultiplication
+NvimInvalidBinaryOperator	links to NvimInvalidDivision
+NvimInvalidBinaryOperator	links to NvimInvalidMod
+NvimInvalidOperator	links to NvimInvalidTernary
+NvimInvalidTernary	links to NvimInvalidTernaryColon
+NvimInvalid	links to NvimInvalidDelimiter
+NvimInvalidDelimiter	links to NvimInvalidParenthesis
+NvimInvalidParenthesis	links to NvimInvalidLambda
+NvimInvalidParenthesis	links to NvimInvalidNestingParenthesis
+NvimInvalidParenthesis	links to NvimInvalidCallingParenthesis
+NvimInvalidParenthesis	links to NvimInvalidSubscript
+NvimInvalidSubscript	links to NvimInvalidSubscriptBracket
+NvimInvalidSubscript	links to NvimInvalidSubscriptColon
+NvimInvalidSubscript	links to NvimInvalidCurly
+NvimInvalidParenthesis	links to NvimInvalidContainer
+NvimInvalidContainer	links to NvimInvalidDict
+NvimInvalidContainer	links to NvimInvalidList
+NvimInvalid	links to NvimInvalidValue
+NvimInvalidValue	links to NvimInvalidIdentifier
+NvimInvalidIdentifier	links to NvimInvalidIdentifierScope
+NvimInvalidIdentifier	links to NvimInvalidIdentifierScopeDelimiter
+NvimInvalidIdentifier	links to NvimInvalidIdentifierName
+NvimInvalidIdentifier	links to NvimInvalidIdentifierKey
+NvimInvalidDelimiter	links to NvimInvalidColon
+NvimInvalidDelimiter	links to NvimInvalidComma
+NvimInvalidDelimiter	links to NvimInvalidArrow
+NvimInvalidValue	links to NvimInvalidRegister
+NvimInvalidValue	links to NvimInvalidNumber
+NvimInvalidNumber	links to NvimInvalidFloat
+NvimInvalidNumber	links to NvimInvalidNumberPrefix
+NvimInvalidIdentifier	links to NvimInvalidOptionSigil
+NvimInvalidIdentifier	links to NvimInvalidOptionName
+NvimInvalidIdentifierScope	links to NvimInvalidOptionScope
+NvimInvalidIdentifierScopeDelimiter	links to NvimInvalidOptionScopeDelimiter
+NvimInvalidOptionSigil	links to NvimInvalidEnvironmentSigil
+NvimInvalidIdentifier	links to NvimInvalidEnvironmentName
+NvimInvalidValue	links to NvimInvalidString
+NvimStringBody	links to NvimInvalidStringBody
+NvimInvalidString	links to NvimInvalidStringQuote
+NvimStringSpecial	links to NvimInvalidStringSpecial
+NvimInvalidStringQuote	links to NvimInvalidSingleQuote
+NvimInvalidStringBody	links to NvimInvalidSingleQuotedBody
+NvimInvalidStringSpecial	links to NvimInvalidSingleQuotedQuote
+NvimInvalidStringQuote	links to NvimInvalidDoubleQuote
+NvimInvalidStringBody	links to NvimInvalidDoubleQuotedBody
+NvimInvalidStringSpecial	links to NvimInvalidDoubleQuotedEscape
+NvimInvalidValue	links to NvimInvalidDoubleQuotedUnknownEscape
+NvimInvalidDelimiter	links to NvimInvalidFigureBrace
+ErrorMsg	links to NvimInvalidSpacing
+NvimInvalidValue	links to NvimDoubleQuotedUnknownEscape
+LineNr	links to MindClosedMarker
+LineNr	links to MindOpenMarker
+Function	links to MindNodeRoot
+String	links to MindNodeLeaf
+Title	links to MindNodeParent
+Comment	links to MindLocalMarker
+Grey	links to MindDataMarker
+Label	links to MindURLMarker
+CursorLineNr	links to MindModifierEmpty
+Error	links to MindSelectMarker
+SignColumn	links to NeoTreeSignColumn
+StatusLine	links to NeoTreeStatusLine
+StatusLineNC	links to NeoTreeStatusLineNC
+FloatBorder	links to NeoTreeFloatBorder
+SpecialChar	links to NeoTreeBufferNumber
+NeoTreeDotfile	links to NeoTreeHiddenByName
+CursorLine	links to NeoTreeCursorLine
+Directory	links to NeoTreeDirectoryName
+Directory	links to NeoTreeDirectoryIcon
+NeoTreeDirectoryIcon	links to NeoTreeFileIcon
+SpecialChar	links to NeoTreeFilterTerm
+NeoTreeDimText	links to NeoTreeExpander
+NeoTreeDotfile	links to NeoTreeWindowsHidden
+Search	links to NeoTreePreview
+NeoTreeDotfile	links to NeoTreeGitIgnored
+NeoTreeGitModified	links to NeoTreeGitRenamed
+NeoTreeGitAdded	links to NeoTreeGitStaged
+NeoTreeGitConflict	links to NeoTreeGitUnstaged
+GitGutterChangeInvisible	links to GitGutterChangeDeleteInvisible
+GitGutterChange	links to GitGutterChangeDelete
+DiffAdd	links to GitGutterAddLine
+DiffChange	links to GitGutterChangeLine
+DiffDelete	links to GitGutterDeleteLine
+GitGutterChangeLine	links to GitGutterChangeDeleteLine
+CursorLineNr	links to GitGutterAddLineNr
+CursorLineNr	links to GitGutterChangeLineNr
+CursorLineNr	links to GitGutterDeleteLineNr
+CursorLineNr	links to GitGutterChangeDeleteLineNr
+Normal	links to StartupTimeStartupKey
+Title	links to StartupTimeStartupValue
+ModeMsg	links to StartupTimeHeader
+Type	links to StartupTimeSourcingEvent
+Identifier	links to StartupTimeOtherEvent
+Directory	links to StartupTimeTime
+Special	links to StartupTimePercent
+Normal	links to StartupTimePlot
+Constant	links to TelescopeResultsConstant
+Identifier	links to TelescopeResultsIdentifier
+NonText	links to TelescopeResultsDiffUntracked
+DiffDelete	links to TelescopeResultsDiffDelete
+DiffAdd	links to TelescopeResultsDiffAdd
+DiffChange	links to TelescopeResultsDiffChange
+SpecialComment	links to TelescopeResultsSpecialComment
+Comment	links to TelescopeResultsComment
+Number	links to TelescopeResultsNumber
+Function	links to TelescopeResultsFunction
+LineNr	links to TelescopeResultsLineNr
+Struct	links to TelescopeResultsStruct
+Operator	links to TelescopeResultsOperator
+Method	links to TelescopeResultsMethod
+Function	links to TelescopeResultsField
+Function	links to TelescopeResultsClass
+TelescopePreviewMessage	links to TelescopePreviewMessageFillchar
+TelescopePreviewNormal	links to TelescopePreviewMessage
+TelescopeNormal	links to TelescopePreviewNormal
+Normal	links to TelescopeNormal
+Directory	links to TelescopePreviewDate
+Constant	links to TelescopePreviewGroup
+Constant	links to TelescopePreviewUser
+String	links to TelescopePreviewSize
+Keyword	links to TelescopePreviewSticky
+NonText	links to TelescopePreviewHyphen
+String	links to TelescopePreviewExecute
+Statement	links to TelescopePreviewWrite
+Constant	links to TelescopePreviewRead
+Statement	links to TelescopePreviewSocket
+Identifier	links to TelescopeMultiIcon
+TelescopeTitle	links to TelescopePreviewTitle
+TelescopeBorder	links to TelescopeTitle
+TelescopeTitle	links to TelescopeResultsTitle
+TelescopeTitle	links to TelescopePromptTitle
+TelescopeNormal	links to TelescopeResultsNormal
+TelescopeNormal	links to TelescopePromptNormal
+SpecialChar	links to TelescopeResultsVariable
+Type	links to TelescopeMultiSelection
+NonText	links to TelescopePromptCounter
+Visual	links to TelescopePreviewLine
+Search	links to TelescopePreviewMatch
+Constant	links to TelescopePreviewPipe
+Constant	links to TelescopePreviewCharDev
+Directory	links to TelescopePreviewDirectory
+Constant	links to TelescopePreviewBlock
+Special	links to TelescopePreviewLink
+Type	links to LspInfoFiletype
+Title	links to LspInfoTitle
+Comment	links to LspInfoTip
+Function	links to LspInfoList
+Label	links to LspInfoBorder
+CmpItemKind	links to CmpItemKindUnitDefault
+CmpItemKind	links to CmpItemKindTypeParameterDefault
+CmpItemKind	links to CmpItemKindTextDefault
+CmpItemKind	links to CmpItemKindStructDefault
+CmpItemKind	links to CmpItemKindSnippetDefault
+CmpItemKind	links to CmpItemKindReferenceDefault
+CmpItemKind	links to CmpItemKindPropertyDefault
+CmpItemKind	links to CmpItemKindKeywordDefault
+CmpItemKind	links to CmpItemKindModuleDefault
+CmpItemKind	links to CmpItemKindMethodDefault
+CmpItemKind	links to CmpItemKindInterfaceDefault
+CmpItemKind	links to CmpItemKindFolderDefault
+CmpItemKind	links to CmpItemKindFileDefault
+CmpItemKind	links to CmpItemKindFieldDefault
+CmpItemKind	links to CmpItemKindEventDefault
+CmpItemKind	links to CmpItemKindEnumMemberDefault
+CmpItemKind	links to CmpItemKindEnumDefault
+CmpItemKind	links to CmpItemKindConstructorDefault
+CmpItemKind	links to CmpItemKindColorDefault
+CmpItemKind	links to CmpItemKindClassDefault
+CmpItemKind	links to CmpItemKindOperatorDefault
+CmpItemKind	links to CmpItemKindFunctionDefault
+CmpItemKind	links to CmpItemKindConstantDefault
+CmpItemKind	links to CmpItemKindVariableDefault
+CmpItemKind	links to CmpItemKindValueDefault
+Function	links to luaMetaMethod
+Error	links to luaParenError
+Error	links to luaError
+Function	links to luaFunction
+Conditional	links to luaCondElse
+Conditional	links to luaCond
+Statement	links to luaStatement
+Repeat	links to luaRepeat
+Repeat	links to luaFor
+Label	links to luaLabel
+Operator	links to luaOperator
+luaOperator	links to luaSymbolOperator
+Todo	links to luaTodo
+Comment	links to luaComment
+luaComment	links to luaCommentDelimiter
+Constant	links to luaConstant
+SpecialChar	links to luaSpecial
+String	links to luaString2
+luaString	links to luaStringDelimiter
+String	links to luaString
+Number	links to luaNumber
+Structure	links to luaTable
+Identifier	links to luaFunc
+Statement	links to helpHeadline
+PreProc	links to helpSectionDelim
+Ignore	links to helpIgnore
+Comment	links to helpExample
+Ignore	links to helpBar
+Identifier	links to helpHyperTextJump
+Ignore	links to helpStar
+String	links to helpHyperTextEntry
+Ignore	links to helpBacktick
+Identifier	links to helpVim
+Type	links to helpOption
+Comment	links to helpCommand
+PreProc	links to helpHeader
+Todo	links to helpNote
+Todo	links to helpWarning
+Todo	links to helpDeprecated
+Special	links to helpSpecial
+Comment	links to helpComment
+Constant	links to helpConstant
+String	links to helpString
+Character	links to helpCharacter
+Number	links to helpNumber
+Boolean	links to helpBoolean
+Float	links to helpFloat
+Identifier	links to helpIdentifier
+Function	links to helpFunction
+Statement	links to helpStatement
+Conditional	links to helpConditional
+Repeat	links to helpRepeat
+Label	links to helpLabel
+Operator	links to helpOperator
+Keyword	links to helpKeyword
+Exception	links to helpException
+PreProc	links to helpPreProc
+Include	links to helpInclude
+Define	links to helpDefine
+Macro	links to helpMacro
+PreCondit	links to helpPreCondit
+Type	links to helpType
+StorageClass	links to helpStorageClass
+Structure	links to helpStructure
+Typedef	links to helpTypedef
+SpecialChar	links to helpSpecialChar
+Tag	links to helpTag
+Delimiter	links to helpDelimiter
+SpecialComment	links to helpSpecialComment
+Debug	links to helpDebug
+Underlined	links to helpUnderlined
+Error	links to helpError
+Todo	links to helpTodo
+String	links to helpURL
