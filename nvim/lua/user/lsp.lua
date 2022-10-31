@@ -1,6 +1,7 @@
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
+-- Highlighting the cursor under word is handled by Mini.cursorword right now
 -- local function lsp_highlight_document( client )
 --   -- Set autocommands conditional on server_capabilities
 --   -- print(vim.notify(vim.inspect(capabilities.textDocument.documentHighlight)))

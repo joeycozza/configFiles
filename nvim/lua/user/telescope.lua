@@ -5,11 +5,11 @@ local telescope = require('telescope')
 
 telescope.setup({
   defaults = {
-    sorting_strategy = 'descending',
+    sorting_strategy = 'ascending',
     prompt_prefix = '🔍 ',
     selection_caret = '->',
     layout_strategy = 'vertical',
-    layout_config = { width = 0.95, preview_width = 0.55, prompt_position = 'bottom' },
+    layout_config = { mirror = true, width = 0.95, preview_width = 0.55, prompt_position = 'top' },
     file_ignore_patterns = { 'dist/index.js', '.git/.*' },
     dynamic_preview_title = true,
     color_devicons = true,
