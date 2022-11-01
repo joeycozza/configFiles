@@ -21,5 +21,6 @@ vim.cmd('au CursorMoved * lua _G.cursorword_blocklist()')
 
 
 -- Note to self: I update the MiniCursorword highlight in the onedark theme
-
 require('mini.cursorword').setup({})
+
+require('mini.pairs').setup({})
