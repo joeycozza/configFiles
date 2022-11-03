@@ -1,7 +1,8 @@
 local utils = require('utils')
 local keymap = utils.keymap
-local actions = require('telescope.actions')
 local telescope = require('telescope')
+local actions = require('telescope.actions')
+local trouble = require('trouble.providers.telescope')
 
 telescope.setup({
   defaults = {
@@ -15,7 +16,10 @@ telescope.setup({
     color_devicons = true,
     path_display = utils.smartTruncate,
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
-    mappings = { i = { ['<esc>'] = actions.close } },
+    mappings = {
+      i = { ['<esc>'] = actions.close, ['<c-t>'] = trouble.open_with_trouble },
+      n = { ['<c-t>'] = trouble.open_with_trouble }
+    },
     preview = { filesize_limit = 5, timeout = 100 }
   }
 })

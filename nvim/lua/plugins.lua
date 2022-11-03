@@ -78,5 +78,6 @@ Plug 'smjonas/inc-rename.nvim'
 Plug 'lewis6991/impatient.nvim'
 
 Plug 'echasnovski/mini.nvim'
+Plug 'folke/trouble.nvim'
 
 vim.call('plug#end')

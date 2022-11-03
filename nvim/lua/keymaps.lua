@@ -53,12 +53,6 @@ keymap('n', '<Leader>hp', '<Plug>(GitGutterPrevHunk)', remap)
 -- who needs EX mode? last macro with Q
 keymap('n', 'Q', '@@')
 
--- LocationList navigation
-keymap('n', '<Up>', ':lopen<CR>')
-keymap('n', '<Down>', ':lclose<CR>')
-keymap('n', '<Left>', ':lprev<CR>')
-keymap('n', '<Right>', ':lnext<CR>')
-
 keymap('n', '<Leader><Leader><Down>', ':resize -5<CR>')
 keymap('n', '<Leader><Leader><Up>', ':resize +5<CR>')
 keymap('n', '<Leader><Leader><Right>', ':vertical resize +5<CR>')
