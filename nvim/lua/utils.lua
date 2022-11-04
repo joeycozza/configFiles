@@ -51,7 +51,15 @@ local function npmInfo()
   require('FTerm').run(cmdString)
 end
 
+-- Close every floating window
+local function closeFloatingWindows()
+  for _, win in pairs(vim.api.nvim_list_wins()) do
+    if vim.api.nvim_win_get_config(win).relative == 'win' then vim.api.nvim_win_close(win, false) end
+  end
+end
+
 return {
+  closeFloatingWindows = closeFloatingWindows,
   keymap = keymap,
   split = split,
   printv = printv,
