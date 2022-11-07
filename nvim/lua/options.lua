@@ -16,6 +16,10 @@ opt.smartcase = true
 
 opt.whichwrap  ='b,s,h,l,<,>,[,]'  -- Backspace and cursor keys wrap too
 
+opt.laststatus = 0
+
+opt.sessionoptions:append({"globals"})
+
 opt.foldmethod='expr'
 opt.foldexpr='nvim_treesitter#foldexpr()'
 opt.foldenable = false             -- when opening a file, dont start with any folding

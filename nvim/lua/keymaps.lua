@@ -34,10 +34,6 @@ keymap('t', '<Leader><Leader>d', '<c-\\><c-n>:bdelete!<CR>')
 
 keymap('i', 'jk', '<Esc>:w<CR>')
 
--- Leader tab and Leader \ for moving between buffers (nice for my ergodox keyboard)
-keymap('n', '<Leader><Tab>', ':bprevious<CR>')
-keymap('n', '<Leader>\\', ':bnext<CR>')
-
 -- this will replace the current word with the last thing yanked. Can be
 -- repeated without fear of overriding the last yanked thing
 -- delete into blackhole register, then paste 0 register (last yanked item)

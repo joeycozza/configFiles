@@ -27,18 +27,6 @@ let g:clipboard = {
 
 let g:loaded_perl_provider = 0
 
-"-----------------------------------------------
-" --------------Remapping Keys------------------
-"  ---------------------------------------------
-
-" Format json
-vnoremap <Leader><Leader>j :'<,'>!python $CONFIG_FILES_PATH/jsonTool.py<CR><Paste>:set nopaste<CR>
-
-nnoremap <Leader><Leader>hide :set conceallevel=0<CR>
-
-"************************************************************************************************
-"**************END PLUGIN SETTINGS***************************************************************
-"************************************************************************************************
 
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/UltiSnips']
 
@@ -79,4 +67,5 @@ lua require('user/leap')
 lua require('user/mini')
 lua require('user/trouble')
 lua require('user/incline')
+lua require('user/bufferline')
 lua require('inc_rename').setup()
