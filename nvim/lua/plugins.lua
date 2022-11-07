@@ -79,5 +79,6 @@ Plug 'lewis6991/impatient.nvim'
 
 Plug 'echasnovski/mini.nvim'
 Plug 'folke/trouble.nvim'
+Plug 'b0o/incline.nvim'
 
 vim.call('plug#end')
