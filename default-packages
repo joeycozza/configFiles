@@ -8,5 +8,6 @@ eslint
 neovim
 npm-check
 n_
+vscode-json-languageserver
 typescript-language-server
 typescript
