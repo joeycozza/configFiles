@@ -20,7 +20,7 @@ end
 
 local function onAttach()
   vim.keymap.set('n', 'K', diagnosticsOrLspInfo, { buffer = 0 })
-  vim.keymap.set('n', '<Esc>', utils.closeFloatingWindows, {buffer = 0})
+  vim.keymap.set('n', '<Esc>', utils.closeFloatingWindows, { buffer = 0 })
   vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, { buffer = 0 })
   vim.keymap.set('n', '<Leader>a', vim.lsp.buf.code_action, { buffer = 0 })
 end
@@ -44,11 +44,7 @@ require('lspconfig').sumneko_lua.setup({
 vim.cmd [[autocmd! ColorScheme * highlight NormalFloat guibg=#1f2335]]
 vim.cmd [[autocmd! ColorScheme * highlight FloatBorder guifg=white guibg=#1f2335]]
 
-local border = {
-  { '/', 'FloatBorder' }, { '▔', 'FloatBorder' }, { '\\', 'FloatBorder' },
-  { '▕', 'FloatBorder' }, { '/', 'FloatBorder' }, { '▁', 'FloatBorder' },
-  { '\\', 'FloatBorder' }, { '▏', 'FloatBorder' }
-}
+local border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }
 
 -- To instead override globally
 local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview

@@ -1,6 +1,6 @@
 local cmp = require('cmp')
 
-local ok, lspkind = pcall(require, "lspkind")
+local ok, lspkind = pcall(require, 'lspkind')
 if not ok then
   print('lspkind was NOT found')
   return
@@ -26,21 +26,19 @@ cmp.setup({
     { name = 'buffer', keyword_length = 4 }
   }),
   formatting = {
-    -- Youtube: How to set up nice formatting for your sources.
     format = lspkind.cmp_format({
       with_text = true,
       menu = {
-        buffer = "[buf]",
-        nvim_lsp = "[LSP]",
-        nvim_lua = "[api]",
-        path = "[path]",
-        ultisnips = "[snip]"
-      },
-    }),
+        buffer = '[buf]',
+        nvim_lsp = '[LSP]',
+        nvim_lua = '[api]',
+        path = '[path]',
+        ultisnips = '[snip]'
+      }
+    })
   },
   window = {
     -- completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered()
   }
 })
-
