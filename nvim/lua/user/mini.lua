@@ -12,6 +12,8 @@ _G.cursorword_blocklist = function()
     blocklist = { 'local', 'require' }
   elseif filetype == 'javascript' then
     blocklist = { 'import', 'const' }
+  elseif filetype == 'typescript' then
+    blocklist = { 'import', 'const' }
   end
   vim.b.minicursorword_disable = vim.tbl_contains(blocklist, curword)
 end
@@ -22,4 +24,4 @@ vim.cmd('au CursorMoved * lua _G.cursorword_blocklist()')
 -- Note to self: I update the MiniCursorword highlight in the onedark theme
 require('mini.cursorword').setup({})
 
-require('mini.pairs').setup({})
+-- require('mini.pairs').setup({})

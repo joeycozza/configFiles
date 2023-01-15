@@ -15,7 +15,7 @@ local function get_diagnostic_label( props )
 end
 
 incline.setup({
-  debounce_threshold = { falling = 500, rising = 250 },
+  debounce_threshold = { falling = 50, rising = 10 },
   render = function( props )
     local bufname = vim.api.nvim_buf_get_name(props.buf)
     local filename = vim.fn.fnamemodify(bufname, ':t')

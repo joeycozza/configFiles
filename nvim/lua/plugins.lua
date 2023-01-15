@@ -53,6 +53,7 @@ Plug 'numToStr/FTerm.nvim'
 
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
 Plug 'David-Kunz/treesitter-unit'
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'zegervdv/nrpattern.nvim'

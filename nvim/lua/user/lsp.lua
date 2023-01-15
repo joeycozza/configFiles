@@ -22,7 +22,7 @@ local function onAttach()
   vim.keymap.set('n', 'K', diagnosticsOrLspInfo, { buffer = 0 })
   vim.keymap.set('n', '<Esc>', utils.closeFloatingWindows, { buffer = 0 })
   vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, { buffer = 0 })
-  vim.keymap.set('n', '<Leader>a', vim.lsp.buf.code_action, { buffer = 0 })
+  vim.keymap.set('n', '<Leader><Leader>a', vim.lsp.buf.code_action, { buffer = 0 })
 end
 
 require('lspconfig').tsserver.setup({

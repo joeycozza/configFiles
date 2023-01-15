@@ -7,7 +7,39 @@ treesitterConfigs.setup({
     'http', 'java', 'jsdoc', 'json', 'json5', 'make', 'markdown', 'markdown_inline', 'ocaml',
     'python', 'regex', 'yaml'
   },
-  highlight = { enable = true, additional_vim_regex_highlighting = false }
+  highlight = { enable = true, additional_vim_regex_highlighting = false },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = '<c-space>',
+      node_incremental = '<c-space>',
+      scope_incremental = '<c-s>',
+      node_decremental = '<c-backspace>'
+    }
+  },
+  textobjects = {
+    select = {
+      enable = true,
+      lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
+      keymaps = {
+        ['af'] = '@function.outer',
+        ['if'] = '@function.inner'
+      }
+    },
+    swap = {
+      enable = true,
+      swap_next = { ['<Leader>a'] = '@parameter.inner' },
+      swap_previous = { ['<Leader>A'] = '@parameter.inner' }
+    },
+    lsp_interop = {
+      enable = true,
+      peek_definition_code = {
+        -- go peek
+        -- users/lsp.lua has gt for go to type_definition
+        ['gp'] = '@function.outer'
+      }
+    }
+  }
 })
 
 keymap('x', 'iu', ':lua require"treesitter-unit".select()<CR>')
