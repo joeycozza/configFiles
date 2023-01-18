@@ -21,10 +21,7 @@ treesitterConfigs.setup({
     select = {
       enable = true,
       lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
-      keymaps = {
-        ['af'] = '@function.outer',
-        ['if'] = '@function.inner'
-      }
+      keymaps = { ['af'] = '@function.outer', ['if'] = '@function.inner' }
     },
     swap = {
       enable = true,
