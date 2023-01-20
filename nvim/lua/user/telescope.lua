@@ -20,7 +20,7 @@ telescope.setup({
       i = { ['<esc>'] = actions.close, ['<c-t>'] = trouble.open_with_trouble },
       n = { ['<c-t>'] = trouble.open_with_trouble }
     },
-    preview = { filesize_limit = 5, timeout = 100 }
+    preview = { filesize_limit = 3, timeout = 100 }
   }
 })
 
