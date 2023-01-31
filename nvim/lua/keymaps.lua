@@ -1,5 +1,5 @@
 local remap = { remap = true }
-local keymap = require('./utils').keymap
+local keymap = require('utils').keymap
 
 keymap('n', 'dd', function()
   if vim.api.nvim_get_current_line():match('^%s*$') then

@@ -1,5 +1,5 @@
 local treesitterConfigs = require('nvim-treesitter.configs')
-local keymap = require('../utils').keymap
+local keymap = require('utils').keymap
 
 treesitterConfigs.setup({
   ensure_installed = {

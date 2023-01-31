@@ -24,7 +24,8 @@ telescope.setup({
   }
 })
 
-telescope.load_extension('fzf')
+-- TODO: figure out this issue here. going to lazy.nvim started showing errors on this line
+-- telescope.load_extension('fzf')
 
 keymap('n', '<Leader>f', '<cmd>Telescope find_files hidden=true<CR>')
 keymap('n', '<Leader>ts', ':Telescope treesitter<CR>')

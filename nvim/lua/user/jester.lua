@@ -1,5 +1,5 @@
 local jester = require('jester')
-local keymap = require('../utils').keymap
+local keymap = require('utils').keymap
 
 jester.setup({
   path_to_jest = './node_modules/.bin/jest',
