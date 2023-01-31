@@ -1,7 +1,8 @@
 return {
   'folke/trouble.nvim',
   keys = {
-    { '<Up>', ':Trouble document_diagnostics<CR>', desc = 'Up to open Trouble' },
+    { '<Leader><Up>', ':Trouble workspace_diagnostics<CR>', desc = 'Leader Up to open Workspace Diagnostics' },
+    { '<Up>', ':Trouble document_diagnostics<CR>', desc = 'Up to open Document Diagnostics' },
     { '<Down>', ':TroubleClose<CR>', desc = 'Down to close Trouble' }, {
       '<Left>',
       '<cmd>lua require(\'trouble\').previous({skip_groups = true, jump = true})<CR>',

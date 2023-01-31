@@ -20,9 +20,7 @@ return {
   'tpope/vim-commentary',
   'joeycozza/vim-obsession',
   'wellle/targets.vim',
-  'yuttie/comfortable-motion.vim',
-  'ggandor/leap.nvim',
-  'ggandor/flit.nvim',
+
   {
     'JamshedVesuna/vim-markdown-preview',
     ft = 'markdown'
