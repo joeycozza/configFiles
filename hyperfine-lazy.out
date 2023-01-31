@@ -1,0 +1,4 @@
+Benchmark 1: nvim --headless +qa
+  Time (mean ± σ):     209.2 ms ±   2.2 ms    [User: 136.2 ms, System: 66.1 ms]
+  Range (min … max):   205.3 ms … 213.2 ms    14 runs
+ 
