@@ -78,3 +78,6 @@ iterm2_print_user_vars() {
 
 # fnm setup, and check for a .nvmrc file when you cd (for auto node version changing)
 eval "$(fnm env --use-on-cd)"
+
+# added by travis gem
+[ ! -s /Users/joeycozza/.travis/travis.sh ] || source /Users/joeycozza/.travis/travis.sh

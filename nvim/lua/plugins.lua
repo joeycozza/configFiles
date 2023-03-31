@@ -10,10 +10,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 
 -- javascript/node
-Plug 'othree/yajs.vim'
-Plug 'moll/vim-node'
-Plug('styled-components/vim-styled-components', {branch = 'main'})
-Plug 'leafgarland/typescript-vim'
+-- Plug 'othree/yajs.vim'
+-- Plug 'moll/vim-node'
+-- Plug('styled-components/vim-styled-components', {branch = 'main'})
+-- Plug 'leafgarland/typescript-vim'
 
 -- React/html
 Plug 'MaxMEllon/vim-jsx-pretty'
@@ -29,7 +29,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 
-Plug('phaazon/mind.nvim', {branch = 'v2'})
+Plug('phaazon/mind.nvim', { branch = 'v2' })
 Plug 'SirVer/ultisnips'
 
 Plug 'tpope/vim-surround'
@@ -47,13 +47,15 @@ Plug('JamshedVesuna/vim-markdown-preview', { ['for'] = 'markdown' })
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug('nvim-telescope/telescope-fzf-native.nvim', {['do'] = 'make'})
+Plug('nvim-telescope/telescope-fzf-native.nvim', { ['do'] = 'make' })
 
 Plug 'numToStr/FTerm.nvim'
 
-Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'} )
+Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 Plug 'David-Kunz/treesitter-unit'
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
+Plug 'Wansmer/treesj'
 
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'zegervdv/nrpattern.nvim'
@@ -63,7 +65,9 @@ Plug 'David-Kunz/jester'
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'onsails/lspkind-nvim'
+Plug 'ray-x/lsp_signature.nvim'
 Plug 'jose-elias-alvarez/null-ls.nvim'
+-- Plug('williamboman/mason.nvim', { ['do'] = ':MasonUpdate' })
 
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'

@@ -6,7 +6,6 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 vim.diagnostic.config({ virtual_text = false })
 
 local function diagnosticsOrLspInfo()
-
   local lineNum = vim.api.nvim_win_get_cursor(0)[1]
   local diagnosticsOnLine = vim.diagnostic.get(0, { lnum = lineNum - 1 })
 
@@ -15,15 +14,14 @@ local function diagnosticsOrLspInfo()
   else
     vim.diagnostic.open_float({ source = true }, { focus = false })
   end
-
 end
 
 local function onAttach()
   vim.keymap.set('n', 'K', diagnosticsOrLspInfo, { buffer = 0 })
   vim.keymap.set('n', '<Esc>', utils.closeFloatingWindows, { buffer = 0 })
   vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, { buffer = 0 })
-  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {buffer = 0})
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {buffer = 0})
+  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = 0 })
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = 0 })
   vim.keymap.set('n', '<Leader><Leader>a', vim.lsp.buf.code_action, { buffer = 0 })
 end
 
@@ -37,7 +35,7 @@ require('lspconfig').jsonls.setup({ capabilities = capabilities, on_attach = onA
 
 require('lspconfig').yamlls.setup({ capabilities = capabilities, on_attach = onAttach })
 
-require('lspconfig').sumneko_lua.setup({
+require('lspconfig').lua_ls.setup({
   capabilities = capabilities,
   on_attach = onAttach,
   settings = { Lua = { diagnostics = { globals = { 'vim' } } } }
