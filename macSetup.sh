@@ -55,6 +55,6 @@ command cat default-packages | xargs npm install -g
 echo ""
 echo "Do an fnm default {version that was installed}"
 echo "Manually set iterm2 settings to point to the configFile directory"
-echo "Manually setup firacode nerd font for iterm2"
+echo "Manually setup firacode nerd font for iterm2 (already installed by brew)"
 echo "Download better touch tools, karabiner"
 echo "Download intelliJ community and make sure the directory matches what gitconfig is looking for"
