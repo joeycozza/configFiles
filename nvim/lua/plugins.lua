@@ -4,6 +4,7 @@ vim.call('plug#begin', vim.fn.expand('~/.config/nvim/plugged'))
 
 -- visual
 Plug 'navarasu/onedark.nvim'
+Plug 'HampusHauffman/block.nvim'
 
 Plug 'akinsho/bufferline.nvim'
 Plug 'ryanoasis/vim-devicons'
