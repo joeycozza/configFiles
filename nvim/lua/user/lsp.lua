@@ -33,7 +33,16 @@ require('lspconfig').tsserver.setup({
 
 require('lspconfig').jsonls.setup({ capabilities = capabilities, on_attach = onAttach })
 
-require('lspconfig').yamlls.setup({ capabilities = capabilities, on_attach = onAttach })
+require('lspconfig').yamlls.setup({
+  settings = {
+    yaml = {
+      keyOrdering = false,
+      schemas = { ['https://json.schemastore.org/github-workflow.json'] = '/.github/workflows/*' }
+    }
+  },
+  capabilities = capabilities,
+  on_attach = onAttach
+})
 
 require('lspconfig').lua_ls.setup({
   capabilities = capabilities,

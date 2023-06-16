@@ -70,11 +70,13 @@ ulimit -n 1024
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
-[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 iterm2_print_user_vars() {
   iterm2_set_user_var nodeVersion ${NODE_SYMBOL}$(node -v)
 }
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fnm setup, and check for a .nvmrc file when you cd (for auto node version changing)
 eval "$(fnm env --use-on-cd)"

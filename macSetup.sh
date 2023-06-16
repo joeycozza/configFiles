@@ -13,6 +13,7 @@ ln -s "$CONFIG_FILES_PATH/ideavimrc" "$HOME/.ideavimrc"
 ln -s "$CONFIG_FILES_PATH/eslintrc.js" "$HOME/.eslintrc.js"
 mkdir "$HOME/.config/bat"
 ln -s "$CONFIG_FILES_PATH/batConfig" "$HOME/.config/bat/config"
+ln -s "$CONFIG_FILES_PATH/lua-format" "$HOME/.lua-format"
 
 # Setting up and install homebrew applications
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -28,6 +29,8 @@ brew install hadolint
 brew install luajit
 # grip is for markdown preview github option
 brew install grip
+# lua lsp
+brew install lua-language-server
 source "$HOME/.zshrc"
 
 # installing and setting up neovim

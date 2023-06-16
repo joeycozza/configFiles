@@ -19,7 +19,10 @@ local config = {
     git_status = { symbols = { modified = '+' } }
   },
   filesystem = {
-    filtered_items = { never_show = { '.DS_Store', 'Session.vim' } },
+    filtered_items = {
+      never_show = { '.DS_Store', 'Session.vim' },
+      hide_dotfiles = false
+    },
     find_by_full_path_words = false -- `false` means it only searches the tail of a path.
   }
 }
