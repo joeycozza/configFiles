@@ -70,3 +70,5 @@ keymap('n', '<Leader>tr', ':term node %<CR>')
 keymap('n', '<Leader>ev', ':edit $MYVIMRC<CR>')
 
 keymap('n', '<Leader>jw', ':split | terminal ./node_modules/.bin/jest --watchAll<CR>')
+
+keymap('n', '<Leader>b', ':Block<CR>')
