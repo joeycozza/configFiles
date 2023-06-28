@@ -22,7 +22,7 @@ brew install fzf
 brew install ripgrep
 brew install zsh-syntax-highlighting
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code-nerd-font
+brew install --cask font-fira-code-nerd-font
 # hadolint is a dockerfile linter tool
 brew install hadolint
 # luajit is for neovim plugins and such
