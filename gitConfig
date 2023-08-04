@@ -44,16 +44,6 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-[merge]
-   tool = intellij
-[mergetool "intellij"]
-   cmd = /Applications/IntelliJ\\ IDEA\\ CE.app/Contents/MacOS/idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
-   trustExitCode = true
-[diff]
-   tool = intellij
-[difftool "intellij"]
-   cmd = /Applications/IntelliJ\\ IDEA\\ CE.app/Contents/MacOS/idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
-   prompt = false
 [pager]
 	branch = false
   log = less --tabs=4 -RFX
@@ -63,12 +53,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [pull]
 	rebase = false
 [init]
