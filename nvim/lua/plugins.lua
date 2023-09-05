@@ -55,6 +55,7 @@ Plug 'numToStr/FTerm.nvim'
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 Plug 'David-Kunz/treesitter-unit'
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'nvim-treesitter/playground'
 
 Plug 'Wansmer/treesj'
 

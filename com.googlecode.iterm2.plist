@@ -2565,6 +2565,8 @@ Curved FS Dev:Restore Window Arrangement as Tabs</string>
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>

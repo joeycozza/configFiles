@@ -5,7 +5,7 @@ treesitterConfigs.setup({
   ensure_installed = {
     'typescript', 'javascript', 'lua', 'bash', 'vim', 'comment', 'css', 'go', 'graphql', 'html',
     'http', 'java', 'jsdoc', 'json', 'json5', 'make', 'markdown', 'markdown_inline', 'ocaml',
-    'python', 'regex', 'yaml', 'vimdoc'
+    'python', 'regex', 'yaml', 'vimdoc', 'query'
   },
   highlight = { enable = true, additional_vim_regex_highlighting = false },
   incremental_selection = {
@@ -21,7 +21,7 @@ treesitterConfigs.setup({
     select = {
       enable = true,
       lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
-      keymaps = { ['af'] = '@function.outer',['if'] = '@function.inner' }
+      keymaps = { ['af'] = '@function.outer', ['if'] = '@function.inner' }
     },
     swap = {
       enable = true,
