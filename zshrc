@@ -83,3 +83,10 @@ eval "$(fnm env --use-on-cd)"
 
 # added by travis gem
 [ ! -s /Users/joeycozza/.travis/travis.sh ] || source /Users/joeycozza/.travis/travis.sh
+
+# bun completions
+[ -s "/Users/joeycozza/.bun/_bun" ] && source "/Users/joeycozza/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
