@@ -3,9 +3,12 @@ local onedark = require("onedark")
 onedark.setup({
 	style = "darker",
 	highlights = {
-		IlluminatedWordText = { fmt = "italic,bold" },
-		IlluminatedWordRead = { fmt = "italic,bold" },
-		IlluminatedWordWrite = { fmt = "italic,bold" },
+		MiniCursorword = {
+			fmt = "italic,bold",
+		},
+		MiniCursorwordCurrent = {
+			fmt = "italic,bold",
+		},
 	},
 })
 

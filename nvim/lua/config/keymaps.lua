@@ -11,7 +11,7 @@ keymap("n", "dd", function()
   else
     return "dd"
   end
-end, { expr = true })
+end, { desc = "delete line", expr = true })
 
 keymap(
   "n",
@@ -28,3 +28,8 @@ keymap(
   "<c-\\><c-n>:bdelete!<CR>",
   { silent = true, desc = "Delete Buffer (force, while in a Terminal) " }
 )
+
+keymap("t", "<Esc>", "<C-\\><C-n>", { desc = "In terminal mode, Esc will go back to normal mode" })
+keymap("t", "<C-v><Esc>", "<Esc>", { desc = "In terminal mode, send Verbatim Esc to the terminal itself" })
+
+keymap("n", ",,", "m`A,<Esc>``", { desc = "Add comma to end of line and put cursor back where it was" })
