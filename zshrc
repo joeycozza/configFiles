@@ -50,6 +50,7 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/gcc-4.8.2/bin:$PATH"
+export PATH="/usr/local/nvim-macos/bin:$PATH"
 export PATH="/usr/local/apache-maven-3.6.3/bin:$PATH"
 
 export PATH="/Users/joeycozza/bin:$PATH"
