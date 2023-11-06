@@ -18,6 +18,9 @@ return {
       },
     },
     opts = {
+      experimental = {
+        ghost_text = false,
+      },
       sources = cmp.config.sources({
         { name = "luasnip" },
         { name = "nvim_lsp" },
