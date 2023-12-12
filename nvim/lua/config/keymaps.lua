@@ -33,3 +33,4 @@ keymap("t", "<Esc>", "<C-\\><C-n>", { desc = "In terminal mode, Esc will go back
 keymap("t", "<C-v><Esc>", "<Esc>", { desc = "In terminal mode, send Verbatim Esc to the terminal itself" })
 
 keymap("n", ",,", "m`A,<Esc>``", { desc = "Add comma to end of line and put cursor back where it was" })
+keymap("n", ";;", "m`$x``", { desc = "Remove last character of a line and put cursor back where it was" })
