@@ -4,7 +4,6 @@
 local keymap = require("./utils").keymap
 
 keymap("i", "jk", "<Esc>:w<CR>", { silent = true })
-keymap("c", "<Tab>", "", { silent = true })
 
 keymap("n", "dd", function()
   if vim.api.nvim_get_current_line():match("^%s*$") then
