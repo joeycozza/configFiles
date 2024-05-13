@@ -59,6 +59,11 @@ local function npmInfo()
   require("FTerm").run(cmdString)
 end
 
+local function runBufferAsNode()
+  local cmdString = "node " .. vim.api.nvim_buf_get_name(0)
+  require("FTerm").run(cmdString)
+end
+
 -- Close every floating window
 local function closeFloatingWindows()
   for _, win in pairs(vim.api.nvim_list_wins()) do
@@ -77,4 +82,5 @@ return {
   splitOnSlash = splitOnSlash,
   smartTruncate = smartTruncate,
   npmInfo = npmInfo,
+  runBufferAsNode = runBufferAsNode,
 }
