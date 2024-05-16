@@ -24,6 +24,9 @@ return {
     opts = {
       defaults = {
         sorting_strategy = "ascending",
+        path_display = {
+          "filename_first",
+        },
         selection_caret = "->",
         layout_config = {
           width = 0.95,
