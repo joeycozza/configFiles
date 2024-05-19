@@ -23,35 +23,19 @@ brew install ripgrep
 brew install zsh-syntax-highlighting
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
-# hadolint is a dockerfile linter tool
-brew install hadolint
-# luajit is for neovim plugins and such
-brew install luajit
-# grip is for markdown preview github option
-brew install grip
-# lua lsp
-brew install lua-language-server
 source "$HOME/.zshrc"
 
 # installing and setting up neovim
 brew install neovim
 ln -s "$CONFIG_FILES_PATH/nvim" "$HOME/.config/nvim/"
-curl -fLo "$HOME/local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 source "$HOME/.zshrc"
-sudo pip3 install neovim
-sudo pip3 install vim-vint
-sudo pip3 install neovim-remote
-sudo pip3 install yamllint
-sudo gem install neovim
-nvim --headless +PlugInstall +qa
-nvim --headless +UpdateRemotePlugins +qa
-curl https://iterm2.com/downloads/stable/iTerm2-3_4_20.zip -o "$HOME/Downloads/iterm2Beta.zip"
-curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+
+curl https://iterm2.com/downloads/beta/iTerm2-3_5_0beta26.zip -o "$HOME/Downloads/iterm2Beta.zip"
 
 # setting up fast-node-manager and node
 brew install Schniz/tap/fnm
 source "$HOME/.zshrc"
-fnm install v16
+fnm install v20
 source "$HOME/.zshrc"
 command cat default-packages | xargs npm install -g
 
@@ -60,4 +44,3 @@ echo "Do an fnm default {version that was installed}"
 echo "Manually set iterm2 settings to point to the configFile directory"
 echo "Manually setup firacode nerd font for iterm2 (already installed by brew)"
 echo "Download better touch tools, karabiner"
-echo "Download intelliJ community and make sure the directory matches what gitconfig is looking for"
