@@ -67,7 +67,7 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.8/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-ulimit -n 1024
+ulimit -n 2048
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "${HOME}/.iterm2_shell_integration.zsh" ] && source "${HOME}/.iterm2_shell_integration.zsh"
