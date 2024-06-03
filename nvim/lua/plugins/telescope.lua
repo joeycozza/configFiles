@@ -40,7 +40,7 @@ return {
             -- ["<C-K>"] = actions.move_selection_previous,
             -- ["<TAB>"] = actions.toggle_selection + actions.move_selection_next,
             -- ["<CR>"] = telescope_custom_actions.multi_selection_open,
-            ["<c-t>"] = trouble.open_with_trouble,
+            ["<c-t>"] = require("trouble.sources.telescope").open,
           },
           n = i,
         },
