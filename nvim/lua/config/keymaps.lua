@@ -28,6 +28,8 @@ keymap(
   "<c-\\><c-n>:bdelete!<CR>",
   { silent = true, desc = "Delete Buffer (force, while in a Terminal) " }
 )
+keymap("n", "<Leader>[", "<cmd>BufferLineMovePrev<cr>", { silent = true, desc = "Move buffer prev" })
+keymap("n", "<Leader>]", "<cmd>BufferLineMoveNext<cr>", { silent = true, desc = "Move buffer next" })
 
 keymap("t", "<Esc>", "<C-\\><C-n>", { desc = "In terminal mode, Esc will go back to normal mode" })
 keymap("t", "<C-v><Esc>", "<Esc>", { desc = "In terminal mode, send Verbatim Esc to the terminal itself" })
