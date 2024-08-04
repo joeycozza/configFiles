@@ -23,8 +23,8 @@ plugins=(
   openPr
   gitHelpers
   fnm
-  ripgrep
-  fd
+  # ripgrep
+  # fd
 )
 
 bindkey '\C-e' edit-command-line
