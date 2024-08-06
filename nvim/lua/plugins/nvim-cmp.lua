@@ -1,22 +1,12 @@
 local cmp = require("cmp")
+local luasnip = require("luasnip")
+
+local fromSnip = require("luasnip.loaders.from_snipmate")
+fromSnip.lazy_load({ paths = { "./lua/snippets" } })
+
 return {
   {
     "hrsh7th/nvim-cmp",
-    dependencies = {
-      {
-        "L3MON4D3/LuaSnip",
-        config = function()
-          local ls = require("luasnip")
-          ls.config.setup({ store_selection_keys = "<Tab>" })
-          local fromSnip = require("luasnip.loaders.from_snipmate")
-          fromSnip.lazy_load({ paths = "./lua/snippets" })
-        end,
-        dependencies = {
-          "rafamadriz/friendly-snippets",
-          "saadparwaiz1/cmp_luasnip",
-        },
-      },
-    },
     opts = {
       experimental = {
         ghost_text = false,
@@ -28,6 +18,31 @@ return {
       }, {
         { name = "buffer" },
       }),
+    },
+    keys = {
+      {
+        "<tab>",
+        function()
+          return luasnip.jumpable(1) and "<Plug>luasnip-jump-next" or "<tab>"
+        end,
+        expr = true,
+        silent = true,
+        mode = "i",
+      },
+      {
+        "<tab>",
+        function()
+          luasnip.jump(1)
+        end,
+        mode = "s",
+      },
+      {
+        "<s-tab>",
+        function()
+          luasnip.jump(-1)
+        end,
+        mode = { "i", "s" },
+      },
     },
   },
 }
