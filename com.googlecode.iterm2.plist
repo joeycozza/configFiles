@@ -1450,18 +1450,20 @@ Curved FS Dev:Restore Window Arrangement as Tabs</string>
 								<real>+infinity</real>
 								<key>minwidth</key>
 								<string>0</string>
+								<key>shared font</key>
+								<string></string>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.28929091338068247</real>
+									<real>0.33394777774810791</real>
 									<key>Color Space</key>
-									<string>sRGB</string>
+									<string>P3</string>
 									<key>Green Component</key>
-									<real>0.65509033203125</real>
+									<real>0.64704877138137817</real>
 									<key>Red Component</key>
-									<real>0.29879219698199599</real>
+									<real>0.39356225728988647</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
