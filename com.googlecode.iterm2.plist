@@ -2536,6 +2536,10 @@ Curved FS Dev:Restore Window Arrangement as Tabs</string>
 			<string>/Users/joeycozza</string>
 		</dict>
 	</array>
+	<key>OpenArrangementAtStartup</key>
+	<true/>
+	<key>OpenNoWindowsAtStartup</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
