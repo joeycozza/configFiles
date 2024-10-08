@@ -49,6 +49,7 @@ export PATH="/usr/local/git/bin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/sonar-scanner-6.2.1.4610-macosx-x64/bin:$PATH"
 export PATH="/usr/gcc-4.8.2/bin:$PATH"
 export PATH="/usr/local/apache-maven-3.6.3/bin:$PATH"
 
