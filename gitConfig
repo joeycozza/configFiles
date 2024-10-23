@@ -28,6 +28,7 @@
 	insteadOf = git://
 [branch]
 	autosetuprebase = always
+	sort = -committerdate
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [color]
@@ -59,3 +60,7 @@
 	defaultBranch = master
 [credential]
 	helper = git-credential-osxkeychain
+[rerere]
+	enabled = true
+[column]
+	ui = auto
