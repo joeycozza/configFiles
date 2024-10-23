@@ -62,5 +62,3 @@
 	helper = git-credential-osxkeychain
 [rerere]
 	enabled = true
-[column]
-	ui = auto
