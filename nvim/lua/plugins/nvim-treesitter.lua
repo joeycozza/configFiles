@@ -8,8 +8,10 @@ return {
         "git_config",
         "gitignore",
         "graphql",
+        "markdown",
         "markdown_inline",
       })
+      vim.treesitter.language.register("markdown", "mdx")
     end,
   },
 }
