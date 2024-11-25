@@ -2,11 +2,10 @@
 
 ZSH_DISABLE_COMPFIX=true
 
-# That cmd will profile starting up zsh 
 # https://github.com/robbyrussell/oh-my-zsh/issues/5327#issuecomment-298378567 for more info and help debugging
+# run the following command to use this zsh/zprof stuff
+# "env ZSH_PROF=1 zsh -ic zprof"
 if [[ -v ZSH_PROF ]]; then
-  # run the following command to use this zsh/zprof stuff
-  # "env ZSH_PROF=1 zsh -ic zprof"
   zmodload zsh/zprof
 fi
 

@@ -11,6 +11,7 @@ vim.o.scrolloff = 7 -- Minimum lines to keep above and below cursor
 vim.o.wrap = false
 
 vim.g.loaded_perl_provider = 0
+vim.g.lazyvim_eslint_auto_format = 0
 
 -- https://jdotc.xyz/blog/adding-mdx-support-to-lazyvim/
 vim.filetype.add({
