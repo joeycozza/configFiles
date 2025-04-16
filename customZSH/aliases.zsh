@@ -43,6 +43,7 @@ alias fs="cd ~/fs"
 # Overwriting basic commands with newer ones
 alias ping="prettyping --nolegend"
 alias cat="bat"
+alias j="jump"
 
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 alias fixNodeGyp="sudo rm -rf $(xcode-select -print-path); sudo rm -rf /Library/Developer/CommandLineTools; xcode-select --install"
