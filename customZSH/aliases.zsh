@@ -58,3 +58,5 @@ alias aopeneng='open https://github.com/fs-webdev/${PWD##*/}/actions'
 
 alias nas="open 'smb://joeycozza:$COZZA_NAS_PW@192.168.86.15'"
 alias mountnas="open 'smb://joeycozza:$COZZA_NAS_PW@192.168.86.15'"
+
+alias ziontest="CI=true JEST_RETRY_COUNT=0 INCLUDE_JEST=true node ./scripts/runTests.js"

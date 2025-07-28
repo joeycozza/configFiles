@@ -81,7 +81,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
 
 # fnm setup, and check for a .nvmrc file when you cd (for auto node version changing)
-eval "$(fnm env --use-on-cd)"
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+  eval "$(fnm env --use-on-cd)"
+fi
 
 # added by travis gem
 [ ! -s /Users/joeycozza/.travis/travis.sh ] || source /Users/joeycozza/.travis/travis.sh
