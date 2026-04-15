@@ -3,3 +3,5 @@ nvim/undo/
 nvim/autoload/
 
 customZSH/secrets.zsh
+
+.claude/settings.local.json

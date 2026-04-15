@@ -66,6 +66,8 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.8/bin:$PATH"
 export PATH="/opt/X11/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 ulimit -n 2048
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -84,8 +86,5 @@ eval "$(fzf --zsh)"
 if [[ "$TERM_PROGRAM" != "vscode" ]]; then
   eval "$(fnm env --use-on-cd)"
 fi
-
-# added by travis gem
-[ ! -s /Users/joeycozza/.travis/travis.sh ] || source /Users/joeycozza/.travis/travis.sh
 
 # eval "$(pyenv init --path)"

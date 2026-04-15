@@ -35,7 +35,7 @@ curl https://iterm2.com/downloads/beta/iTerm2-3_5_0beta26.zip -o "$HOME/Download
 # setting up fast-node-manager and node
 brew install Schniz/tap/fnm
 source "$HOME/.zshrc"
-fnm install v20
+fnm install v24
 source "$HOME/.zshrc"
 command cat default-packages | xargs npm install -g
 
