@@ -23,6 +23,7 @@ brew install ripgrep
 brew install zsh-syntax-highlighting
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
+brew install --cask firefox
 source "$HOME/.zshrc"
 
 # installing and setting up neovim
