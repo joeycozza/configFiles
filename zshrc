@@ -23,7 +23,6 @@ plugins=(
   gitHelpers
   fnm
   jump
-  you-should-use
 )
 
 bindkey '\C-e' edit-command-line
