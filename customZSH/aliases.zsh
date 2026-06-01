@@ -6,6 +6,7 @@ alias cleanmods="rm -f package-lock.json && rm -rf node_modules && npm install"
 alias conf="cd $CONFIG_FILES_PATH"
 alias p="ps -A | fzf"
 alias v="nvim"
+alias c="claude"
 
 # Get disk usage of top 45 largest directories from within current directory
 alias diskusage="du -mx | sort --reverse --numeric-sort | head -46 | tail -45 | (echo 'Mb      Directory\n-----------------' && command cat) "
